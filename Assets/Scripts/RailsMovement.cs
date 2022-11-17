@@ -5,8 +5,8 @@ using UnityEngine;
 
 public class RailsMovement : MonoBehaviour
 {
-    [SerializeField] BezierPath pathToFollow;
-    int movingToIndex = 0;
+    public BezierPath pathToFollow;
+    [HideInInspector] public int movingToIndex = 0;
 
     public float speed = 1;
 
@@ -15,7 +15,7 @@ public class RailsMovement : MonoBehaviour
         
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (movingToIndex <= pathToFollow.getPath.Length - 1) {
             gameObject.transform.LookAt(pathToFollow.getPath[movingToIndex]);
