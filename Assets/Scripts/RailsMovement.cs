@@ -5,20 +5,25 @@ using UnityEngine;
 
 public class RailsMovement : MonoBehaviour
 {
-    [SerializeField] BezierPath pathToFollow;
-    int movingToIndex = 0;
+    public BezierPath pathToFollow;
+    [HideInInspector] public int movingToIndex = 0;
 
     public float speed = 1;
+    public float rotationSpeed = 5f;
+
+    float deltaAngle;
+    Quaternion targetRotation;
 
     void Start()
     {
         
     }
 
-    void Update()
+    protected virtual void Update()
     {
         if (movingToIndex <= pathToFollow.getPath.Length - 1) {
-            gameObject.transform.LookAt(pathToFollow.getPath[movingToIndex]);
+            //gameObject.transform.LookAt(pathToFollow.getPath[movingToIndex]);
+            RotateTowards(pathToFollow.getPath[movingToIndex]);
 
             float remainingMovement = speed * Time.deltaTime;
 
@@ -30,10 +35,15 @@ public class RailsMovement : MonoBehaviour
                     remainingMovement -= targetDistance;
                     ++movingToIndex;
                 } else {
-                    transform.position += transform.forward * remainingMovement;
+                    transform.position += (pathToFollow.getPath[movingToIndex] - transform.position).normalized * remainingMovement;
                     break;
                 }
             }
         }
+    }
+
+    void RotateTowards(Vector3 point)
+    {
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(point - transform.position), rotationSpeed * Time.deltaTime);
     }
 }
