@@ -9,10 +9,15 @@ public class BezierPath : MonoBehaviour
     public List<Vector3> pathPoints;
     [HideInInspector] public List<Vector3> controlPoints;
 
-    private Vector3[] calculatedBezier;
+    [SerializeField] private Vector3[] calculatedBezier;
     public Vector3[] getPath { get { return calculatedBezier; } }
 
     private void Start()
+    {
+        
+    }
+
+    public void GeneratePath()
     {
         calculatedBezier = new Vector3[(pathPoints.Count - 1) * bezierSmoothingPointsPerNode];
 

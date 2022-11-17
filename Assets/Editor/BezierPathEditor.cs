@@ -134,5 +134,9 @@ public class BezierPathEditor : Editor
                 }
             }
         }
+
+        if (GUILayout.Button("Generate Path") && selectedScript != null) {
+            selectedScript.GeneratePath();
+        }
     }
 }
