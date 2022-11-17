@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class BezierPath : MonoBehaviour
 {
-    int bezierSmoothingPointsPerNode = 50;
+    [SerializeField] int bezierSmoothingPointsPerNode = 50;
 
     public List<Vector3> pathPoints;
     [HideInInspector] public List<Vector3> controlPoints;
 
-    [SerializeField] private Vector3[] calculatedBezier;
+    private Vector3[] calculatedBezier;
     public Vector3[] getPath { get { return calculatedBezier; } }
 
     private void Start()
