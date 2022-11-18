@@ -11,8 +11,7 @@ public class RailsMovement : MonoBehaviour
     public float speed = 1;
     public float rotationSpeed = 5f;
 
-    float deltaAngle;
-    Quaternion targetRotation;
+    public bool loopAtEnd = true;
 
     void Start()
     {
@@ -21,13 +20,12 @@ public class RailsMovement : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (movingToIndex <= pathToFollow.getPath.Length - 1) {
-            //gameObject.transform.LookAt(pathToFollow.getPath[movingToIndex]);
+        if (movingToIndex < pathToFollow.getPath.Length) {
             RotateTowards(pathToFollow.getPath[movingToIndex]);
 
             float remainingMovement = speed * Time.deltaTime;
 
-            while (remainingMovement > 0) {
+            while (remainingMovement > 0 && movingToIndex < pathToFollow.getPath.Length) {
                 float targetDistance = (transform.position - pathToFollow.getPath[movingToIndex]).magnitude;
 
                 if (remainingMovement - targetDistance >= 0) {
@@ -39,6 +37,8 @@ public class RailsMovement : MonoBehaviour
                     break;
                 }
             }
+        } else if (loopAtEnd) {
+            movingToIndex = 0;
         }
     }
 

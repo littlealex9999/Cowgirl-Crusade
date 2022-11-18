@@ -236,6 +236,7 @@ MonoBehaviour:
   movingToIndex: 0
   speed: 5
   rotationSpeed: 5
+  loopAtEnd: 1
 --- !u!1 &303690520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1038,10 +1039,13 @@ MonoBehaviour:
   movingToIndex: 0
   speed: 5
   rotationSpeed: 5
+  loopAtEnd: 1
   thingToFollow: {fileID: 192894377}
-  numPointsAheads: 5
+  numPointsAhead: 10
   maxDeviation: 3
-  ignoreDeviation: 1
+  ignoreDeviation: 0
+  targetSpeed: 10
+  slowDownMult: 0.19
 --- !u!65 &1745278885
 BoxCollider:
   m_ObjectHideFlags: 0
