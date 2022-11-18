@@ -11,6 +11,7 @@ public class SwapRails : MonoBehaviour
         RailsMovement moveScript = other.GetComponent<RailsMovement>();
         if (moveScript != null && newPath != null) {
             moveScript.pathToFollow = newPath;
+            moveScript.movingToIndex = 0;
         }
     }
 }
