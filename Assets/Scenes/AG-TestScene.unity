@@ -237,6 +237,7 @@ MonoBehaviour:
   damageAddition: 0
   damageMultiplier: 1
   moveSpeed: 10
+  boundaries: {x: 0, y: 0}
 --- !u!1 &303690520
 GameObject:
   m_ObjectHideFlags: 0
