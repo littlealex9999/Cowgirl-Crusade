@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Data.Common;
+using System.Linq;
 using UnityEngine;
 
 public class RailsMovement : MonoBehaviour
@@ -20,6 +21,11 @@ public class RailsMovement : MonoBehaviour
 
     protected virtual void Update()
     {
+        // if we have somewhere to move to, calculate our speed with delta time
+        // then find the distance to the next point, and teleport to it if we have more speed than required
+        // finally, if we don't have enough speed, move towards the next point and stop
+        // this gives us consistant move speed through the bezier curve
+
         if (movingToIndex < pathToFollow.getPath.Length) {
             RotateTowards(pathToFollow.getPath[movingToIndex]);
 
@@ -37,7 +43,9 @@ public class RailsMovement : MonoBehaviour
                     break;
                 }
             }
-        } else if (loopAtEnd) {
+        } 
+        
+        if (loopAtEnd && movingToIndex >= pathToFollow.getPath.Length) {
             movingToIndex = 0;
         }
     }
@@ -45,5 +53,10 @@ public class RailsMovement : MonoBehaviour
     void RotateTowards(Vector3 point)
     {
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(point - transform.position), rotationSpeed * Time.deltaTime);
+    }
+
+    public virtual void SetSpeed(float value)
+    {
+        speed = value;
     }
 }
