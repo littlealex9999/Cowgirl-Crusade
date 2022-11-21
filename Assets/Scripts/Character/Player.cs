@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Player : Character
 {
-    public float moveSpeed = 10;
+    [Header("Player Specific"), Space] public float moveSpeed = 10;
     public Vector2 boundaryMoveMultipliers = new Vector2(0.8f, 0.5f);
+
+    public float shootDistance = 10;
 
     Vector2 boundaries;
     Camera mainCamera;
@@ -60,13 +62,13 @@ public class Player : Character
         if (Input.GetMouseButton(0)) {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
-            Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + 10, LayerMask.NameToLayer("RayHitLayer"));
-
-            GameObject temp = Instantiate(bullet.gameObject);
-            temp.transform.position = hitInfo.point;
-            Debug.Log(ray.direction);
-
-            base.Shoot(hitInfo.point);
+            if (Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + shootDistance, LayerMask.NameToLayer("RayHitLayer"))) {
+                base.Shoot(hitInfo.point);
+            } else {
+                Vector3 point = Input.mousePosition;
+                point.z = -mainCamera.transform.localPosition.z + shootDistance;
+                base.Shoot(mainCamera.ScreenToWorldPoint(point));
+            }
         }
     }
 }

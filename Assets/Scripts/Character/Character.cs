@@ -10,13 +10,16 @@ public class Character : MonoBehaviour
     [SerializeField] float sdmax = 20;
 
     [SerializeField] protected Bullet bullet;
+    [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] float shootCooldown = 1;
     float cldtimer;
 
     float ShootCooldownMultiplier;
 
-    [SerializeField] float damageAddition = 0;
-    [SerializeField] float damageMultiplier = 1;
+    [SerializeField, Header("Bullet Attributes"), Space] float bulletDamageAddition = 0;
+    [SerializeField] float bulletDamageMultiplier = 1;
+    [SerializeField] float bulletSpeedAddition = 0;
+    [SerializeField] float bulletSpeedMultiplier = 1;
 
     void Start()
     {
@@ -55,13 +58,13 @@ public class Character : MonoBehaviour
         if (cldtimer <= 0) {
             // create bullet
             GameObject bulletRef = Instantiate(bullet.gameObject, transform.parent);
-            Destroy(bulletRef, 10f);
+            Destroy(bulletRef, deleteBulletsAfterSeconds);
             bulletRef.transform.position = transform.position;
             bulletRef.transform.LookAt(shootToPoint);
             Bullet firedScript = bulletRef.GetComponent<Bullet>();
 
-            firedScript.SetDamage(damageAddition, damageMultiplier);
-            firedScript.SetSpeed();
+            firedScript.SetDamage(bulletDamageAddition, bulletDamageMultiplier);
+            firedScript.SetSpeed(bulletSpeedAddition, bulletSpeedMultiplier);
 
             cldtimer = shootCooldown;
         }
