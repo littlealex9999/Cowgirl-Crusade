@@ -233,11 +233,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 50
   sdmax: 20
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  deleteBulletsAfterSeconds: 2
   shootCooldown: 1
-  damageAddition: 0
-  damageMultiplier: 1
+  bulletDamageAddition: 0
+  bulletDamageMultiplier: 1
+  bulletSpeedAddition: 0
+  bulletSpeedMultiplier: 1
   moveSpeed: 10
-  boundaries: {x: 0, y: 0}
+  boundaryMoveMultipliers: {x: 0.8, y: 0.5}
+  shootDistance: 10
 --- !u!1 &303690520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1181,7 @@ GameObject:
   - component: {fileID: 694394974}
   - component: {fileID: 694394973}
   - component: {fileID: 694394972}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1413,7 +1418,7 @@ GameObject:
   - component: {fileID: 1745278885}
   - component: {fileID: 1745278884}
   - component: {fileID: 1745278889}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
