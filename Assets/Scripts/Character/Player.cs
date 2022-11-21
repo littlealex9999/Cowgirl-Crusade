@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : Character
 {
     public float moveSpeed = 10;
+    public Vector2 boundaryMoveMultipliers = new Vector2(0.8f, 0.5f);
 
     Vector2 boundaries;
     Camera mainCamera;
@@ -47,9 +48,9 @@ public class Player : Character
 
     void CalculateBoundaries()
     {
-        Vector3 camOffset = mainCamera.transform.localPosition;
-
         Vector3 v3ViewPort = new Vector3(1, 1, -mainCamera.transform.localPosition.z);
         boundaries = transform.InverseTransformPoint(mainCamera.ViewportToWorldPoint(v3ViewPort));
+        boundaries.x *= boundaryMoveMultipliers.x;
+        boundaries.y *= boundaryMoveMultipliers.y;
     }
 }
