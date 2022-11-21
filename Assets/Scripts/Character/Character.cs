@@ -9,14 +9,17 @@ public class Character : MonoBehaviour
     [SerializeField] float hpmax = 50;
     [SerializeField] float sdmax = 20;
 
-    Bullet bullet;
+    [SerializeField] protected Bullet bullet;
+    [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] float shootCooldown = 1;
     float cldtimer;
 
     float ShootCooldownMultiplier;
 
-    [SerializeField] float damageAddition = 0;
-    [SerializeField] float damageMultiplier = 1;
+    [SerializeField, Header("Bullet Attributes"), Space] float bulletDamageAddition = 0;
+    [SerializeField] float bulletDamageMultiplier = 1;
+    [SerializeField] float bulletSpeedAddition = 0;
+    [SerializeField] float bulletSpeedMultiplier = 1;
 
     void Start()
     {
@@ -50,17 +53,20 @@ public class Character : MonoBehaviour
         shootCooldown = value;
     }
 
-    public virtual void Shoot()
+    public virtual void Shoot(Vector3 shootToPoint)
     {
         if (cldtimer <= 0) {
             // create bullet
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                bullet.SetDamage(damageAddition, damageMultiplier);
-                bullet.SetSpeed();
-                Instantiate(bullet.gameObject);
+            GameObject bulletRef = Instantiate(bullet.gameObject, transform.parent);
+            Destroy(bulletRef, deleteBulletsAfterSeconds);
+            bulletRef.transform.position = transform.position;
+            bulletRef.transform.LookAt(shootToPoint);
+            Bullet firedScript = bulletRef.GetComponent<Bullet>();
 
-                cldtimer = shootCooldown;
-            }
+            firedScript.SetDamage(bulletDamageAddition, bulletDamageMultiplier);
+            firedScript.SetSpeed(bulletSpeedAddition, bulletSpeedMultiplier);
+
+            cldtimer = shootCooldown;
         }
     }
 }
