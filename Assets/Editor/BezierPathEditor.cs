@@ -145,6 +145,11 @@ public class BezierPathEditor : Editor
             }
         }
 
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("Calculated Bezier Points");
+        GUILayout.Label(selectedScript.getPath.Count().ToString());
+        GUILayout.EndHorizontal();
+
         if (GUILayout.Button("Generate Path") && selectedScript != null) {
             selectedScript.GeneratePath();
         }
