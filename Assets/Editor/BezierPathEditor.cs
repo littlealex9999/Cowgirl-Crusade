@@ -14,10 +14,14 @@ public class BezierPathEditor : Editor
 
     bool pathDirtied;
 
+    Texture noButtonsImage;
+
     private void OnEnable()
     {
         SceneView.duringSceneGui += CustomOnSceneGUI;
         editorList = serializedObject.FindProperty("pathPoints");
+
+        noButtonsImage = (Texture)AssetDatabase.LoadAssetAtPath("Assets/Editor/Images/NoButtons.jpg", typeof(Texture));
     }
 
     private void CustomOnSceneGUI(SceneView sceneView)
@@ -154,9 +158,14 @@ public class BezierPathEditor : Editor
 
         if (GUILayout.Button("Generate Path") && selectedScript != null) {
             selectedScript.GeneratePath();
+            pathDirtied = false;
         }
 
         if (pathDirtied) {
+            if (noButtonsImage != null) {
+                GUILayout.Box(noButtonsImage);
+            }
+
             GUILayout.Box("GENERATE A NEW PATH \n OH GOD, PLEASE DO IT NOW \n YOU'LL DOOM US ALL IF YOU DON'T \n GODDAMN IT IT'S JUST ONE SINGLE BUTTON HOW ARE YOU NOT HITTING IT");
         }
     }
