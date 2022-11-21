@@ -155,7 +155,7 @@ public class BezierPathEditor : Editor
         }
 
         if (pathDirtied) {
-            GUILayout.Box("GENERATE A NEW PATH \n OH GOD, PLEASE DO IT NOW \n YOU'LL DOOM US ALL IF YOU DON'T");
+            GUILayout.Box("GENERATE A NEW PATH \n OH GOD, PLEASE DO IT NOW \n YOU'LL DOOM US ALL IF YOU DON'T \n GODDAMN IT IT'S JUST ONE SINGLE BUTTON HOW ARE YOU NOT HITTING IT");
         }
     }
 }
