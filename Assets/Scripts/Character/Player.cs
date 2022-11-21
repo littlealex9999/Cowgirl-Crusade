@@ -21,6 +21,7 @@ public class Player : Character
         base.Update();
 
         Move();
+        Shoot();
     }
 
     void Move()
@@ -52,5 +53,20 @@ public class Player : Character
         boundaries = transform.InverseTransformPoint(mainCamera.ViewportToWorldPoint(v3ViewPort));
         boundaries.x *= boundaryMoveMultipliers.x;
         boundaries.y *= boundaryMoveMultipliers.y;
+    }
+
+    void Shoot()
+    {
+        if (Input.GetMouseButton(0)) {
+            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hitInfo;
+            Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + 10, LayerMask.NameToLayer("RayHitLayer"));
+
+            GameObject temp = Instantiate(bullet.gameObject);
+            temp.transform.position = hitInfo.point;
+            Debug.Log(ray.direction);
+
+            base.Shoot(hitInfo.point);
+        }
     }
 }
