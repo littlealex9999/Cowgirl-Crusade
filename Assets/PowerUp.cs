@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlaySFX : MonoBehaviour
+public class PowerUp : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -15,4 +15,16 @@ public class PlaySFX : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Player")
+        {
+            Debug.Log("Player has hit powerup");
+            Destroy(gameObject);
+        }
+    }
+
+
+
 }

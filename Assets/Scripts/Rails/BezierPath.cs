@@ -9,7 +9,7 @@ public class BezierPath : MonoBehaviour
     public List<Vector3> pathPoints;
     [HideInInspector] public List<Vector3> controlPoints;
 
-    private Vector3[] calculatedBezier;
+    [SerializeField, HideInInspector] private Vector3[] calculatedBezier;
     public Vector3[] getPath { get { return calculatedBezier; } }
 
     private void Start()
