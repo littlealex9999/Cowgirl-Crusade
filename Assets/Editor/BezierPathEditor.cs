@@ -28,7 +28,7 @@ public class BezierPathEditor : Editor
     {
         selectedScript = target as BezierPath;
 
-        if (selectedScript != null) {
+        if (selectedScript != null && selectedScript.pathPoints != null) {
             if (selectedScript.pathPoints.Count <= 2 || selectedScript.controlPoints.Count < selectedScript.pathPoints.Count * 2 - 1) {
                 return;
             }
@@ -136,16 +136,22 @@ public class BezierPathEditor : Editor
 
         // change bezier control point count on edit points list
         if (selectedScript != null) {
-            while (selectedScript.controlPoints.Count != selectedScript.pathPoints.Count * 2 - 1) {
-                if (selectedScript.controlPoints.Count < selectedScript.pathPoints.Count * 2 - 1) {
-                    if (selectedScript.controlPoints.Count != 0) {
-                        selectedScript.controlPoints.Add(selectedScript.controlPoints.Last());
+            if (selectedScript.controlPoints != null) {
+                while (selectedScript.controlPoints.Count != selectedScript.pathPoints.Count * 2 - 1) {
+                    if (selectedScript.controlPoints.Count < selectedScript.pathPoints.Count * 2 - 1) {
+                        if (selectedScript.controlPoints.Count != 0) {
+                            selectedScript.controlPoints.Add(selectedScript.controlPoints.Last());
+                        } else {
+                            selectedScript.controlPoints.Add(Vector3.zero);
+                        }
+                    } else if (selectedScript.controlPoints.Count != 0) {
+                        selectedScript.controlPoints.Remove(selectedScript.controlPoints.Last());
                     } else {
-                        selectedScript.controlPoints.Add(Vector3.zero);
+                        break;
                     }
-                } else {
-                    selectedScript.controlPoints.Remove(selectedScript.controlPoints.Last());
                 }
+            } else {
+                selectedScript.controlPoints = new List<Vector3>();
             }
 
 

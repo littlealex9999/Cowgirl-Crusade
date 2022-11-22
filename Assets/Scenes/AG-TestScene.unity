@@ -1310,6 +1310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPath: {fileID: 430001475}
+  destroyOnPlayerEnter: 0
 --- !u!65 &824997294
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1337,7 +1338,7 @@ GameObject:
   - component: {fileID: 979835722}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
