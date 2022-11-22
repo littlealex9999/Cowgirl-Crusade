@@ -7,7 +7,7 @@ public class SwapRails : MonoBehaviour
     public BezierPath newPath;
     public bool destroyOnPlayerEnter;
 
-    private void OnTriggerEnter(Collider other)
+    protected void OnTriggerEnter(Collider other)
     {
         RailsMovement moveScript = other.GetComponent<RailsMovement>();
         if (moveScript != null && newPath != null) {
