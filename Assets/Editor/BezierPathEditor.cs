@@ -147,26 +147,29 @@ public class BezierPathEditor : Editor
                     selectedScript.controlPoints.Remove(selectedScript.controlPoints.Last());
                 }
             }
-        }
 
-        GUILayout.BeginHorizontal();
-        GUILayout.Label("Calculated Bezier Points");
-        if (selectedScript.getPath != null) {
-            GUILayout.Label(selectedScript.getPath.Count().ToString());
-        }
-        GUILayout.EndHorizontal();
 
-        if (GUILayout.Button("Generate Path") && selectedScript != null) {
-            selectedScript.GeneratePath();
-            pathDirtied = false;
-        }
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Calculated Bezier Points");
+            if (selectedScript.getPath != null) {
+                GUILayout.Label(selectedScript.getPath.Count().ToString());
+            } else {
+                GUILayout.Label("0");
+            }
+            GUILayout.EndHorizontal();
 
-        if (pathDirtied) {
-            if (noButtonsImage != null) {
-                GUILayout.Box(noButtonsImage);
+            if (GUILayout.Button("Generate Path") && selectedScript != null) {
+                selectedScript.GeneratePath();
+                pathDirtied = false;
             }
 
-            GUILayout.Box("GENERATE A NEW PATH \n OH GOD, PLEASE DO IT NOW \n YOU'LL DOOM US ALL IF YOU DON'T \n GODDAMN IT IT'S JUST ONE SINGLE BUTTON HOW ARE YOU NOT HITTING IT");
+            if (pathDirtied) {
+                if (noButtonsImage != null) {
+                    GUILayout.Box(noButtonsImage);
+                }
+
+                GUILayout.Box("GENERATE A NEW PATH \n OH GOD, PLEASE DO IT NOW \n YOU'LL DOOM US ALL IF YOU DON'T \n GODDAMN IT IT'S JUST ONE SINGLE BUTTON HOW ARE YOU NOT HITTING IT");
+            }
         }
     }
 }
