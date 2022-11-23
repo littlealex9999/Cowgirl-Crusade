@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float baseDamage = 5;
     [SerializeField] private float baseSpeed = 5;
 
+    [SerializeField] private int team;
+
     float dmg;
     float spd;
 
@@ -24,4 +26,21 @@ public class Bullet : MonoBehaviour
     {
         spd = baseSpeed * multiplier + additional;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Character character = other.gameObject.GetComponent<Character>();
+
+        if (character != null)
+        {
+            if(team != 1)
+            character.TakeDamage(dmg);
+
+            Destroy(gameObject);
+        }
+    }
+
+
+
+
 }

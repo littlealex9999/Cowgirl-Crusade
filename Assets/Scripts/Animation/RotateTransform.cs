@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spin_Powerup : MonoBehaviour
+public class RotateTransform : MonoBehaviour
 {
-    [SerializeField] int spinSpeed = 100;
+    [SerializeField] Vector3 spinSpeed = new Vector3(0f, 0f, 0f);
     
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,6 @@ public class Spin_Powerup : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0f, spinSpeed * Time.deltaTime, 0f, Space.Self);
+        transform.Rotate(spinSpeed.x * Time.deltaTime, spinSpeed.y * Time.deltaTime, spinSpeed.z * Time.deltaTime, Space.Self);
     }
 }

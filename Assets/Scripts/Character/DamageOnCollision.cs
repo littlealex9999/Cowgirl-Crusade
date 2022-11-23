@@ -6,6 +6,8 @@ using UnityEngine;
 public class DamageOnCollision : MonoBehaviour
 {
     [SerializeField] float enemyCollisionDamage = 70f;
+
+
     
     
     // Start is called before the first frame update
