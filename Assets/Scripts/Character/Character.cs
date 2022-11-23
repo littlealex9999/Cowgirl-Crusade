@@ -24,6 +24,16 @@ public class Character : MonoBehaviour
 
     List<PowerupStats> powerups = new List<PowerupStats>();
 
+    public enum TEAMS
+    {
+        NONE,
+        PLAYER,
+        ENEMY
+    }
+    [SerializeField] TEAMS team;
+
+    public TEAMS getTeam { get { return team; } }
+
     void Start()
     {
         health = hpmax;
@@ -143,6 +153,7 @@ public class Character : MonoBehaviour
 
             firedScript.SetDamage(GetBulletDamageAdd(), GetBulletDamageMult());
             firedScript.SetSpeed(GetBulletSpeedAdd(), GetBulletSpeedMult());
+            firedScript.SetTeam(team);
 
             cldtimer = shootCooldown;
         }
