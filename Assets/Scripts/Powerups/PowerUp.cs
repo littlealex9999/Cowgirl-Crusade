@@ -7,11 +7,8 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-
-    private enum PowerupType {  };
-
     [Header("Powerup Settings")]
-    [SerializeField] private PowerupType powerup;
+    [SerializeField] private PowerupStats powerupType;
     [SerializeField] private GameObject effect;
     [SerializeField] private int amount = 1;
 
@@ -36,14 +33,15 @@ public class PowerUp : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            // Get player's stat script
-            // Check power up type
+            Character player = other.gameObject.GetComponent<Character>();
+            player.AddPowerup(powerupType);
+
+            Debug.Log("Player has received " + powerupType.name + "powerup");
+
                 // Play audio clip    
                 // Create instance of particle effect
 
-                // Call function of relevant powerup
             
-            Debug.Log("Player has hit powerup");
             Destroy(gameObject);
 
         }
