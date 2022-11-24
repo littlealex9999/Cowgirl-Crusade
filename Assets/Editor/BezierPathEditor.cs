@@ -7,19 +7,15 @@ using System.Linq;
 [CustomEditor(typeof(BezierPath))]
 public class BezierPathEditor : Editor
 {
-    SerializedProperty editorList;
     private BezierPath selectedScript;
 
     float size = 0.1f;
-
-    bool pathDirtied;
 
     Texture noButtonsImage;
 
     private void OnEnable()
     {
         SceneView.duringSceneGui += CustomOnSceneGUI;
-        editorList = serializedObject.FindProperty("pathPoints");
 
         noButtonsImage = (Texture)AssetDatabase.LoadAssetAtPath("Assets/Editor/Images/NoButtons.jpg", typeof(Texture));
     }
@@ -56,7 +52,7 @@ public class BezierPathEditor : Editor
                         selectedScript.controlPoints[j - 1] = cpOff * -1 + selectedScript.pathPoints[i];
                     }
 
-                    pathDirtied = true;
+                    selectedScript.pathDirtied = true;
                 }
 
                 // END
@@ -80,7 +76,7 @@ public class BezierPathEditor : Editor
 
                     selectedScript.controlPoints[j + 1] = cpOff + selectedScript.pathPoints[i + 1];
 
-                    pathDirtied = true;
+                    selectedScript.pathDirtied = true;
                 }
 
                 // P2
@@ -98,7 +94,7 @@ public class BezierPathEditor : Editor
                         selectedScript.controlPoints[j - 1] = (selectedScript.pathPoints[i] - p2) + selectedScript.pathPoints[i];
                     }
 
-                    pathDirtied = true;
+                    selectedScript.pathDirtied = true;
                 }
 
                 // P3
@@ -116,7 +112,7 @@ public class BezierPathEditor : Editor
                         selectedScript.controlPoints[j + 2] = (selectedScript.pathPoints[i + 1] - p3) + selectedScript.pathPoints[i + 1];
                     }
 
-                    pathDirtied = true;
+                    selectedScript.pathDirtied = true;
                 }
 
                 Handles.color = Color.blue;
@@ -166,10 +162,10 @@ public class BezierPathEditor : Editor
 
             if (GUILayout.Button("Generate Path")) {
                 selectedScript.GeneratePath();
-                pathDirtied = false;
+                selectedScript.pathDirtied = false;
             }
 
-            if (pathDirtied) {
+            if (selectedScript.pathDirtied) {
                 if (noButtonsImage != null) {
                     GUILayout.Box(noButtonsImage);
                 } else {
