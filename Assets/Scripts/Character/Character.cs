@@ -10,6 +10,8 @@ public class Character : MonoBehaviour
     [SerializeField] float hpmax = 50;
     [SerializeField] float sdmax = 20;
 
+    float invincibleTime;
+
     [SerializeField] protected Bullet bullet;
     [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] float shootCooldown = 1;
@@ -34,7 +36,7 @@ public class Character : MonoBehaviour
 
     public TEAMS getTeam { get { return team; } }
 
-    void Start()
+    protected void Start()
     {
         health = hpmax;
         shield = sdmax;
@@ -43,6 +45,7 @@ public class Character : MonoBehaviour
     protected virtual void Update()
     {
         cldtimer -= Time.deltaTime;
+        invincibleTime -= Time.deltaTime;
 
         for (int i = 0; i < powerups.Count; ++i) {
             if (!powerups[i].permanent) {
@@ -89,6 +92,8 @@ public class Character : MonoBehaviour
         return output;
     }
 
+    public float getCurrentHealth { get { return health; } }
+
     public float GetShieldMax()
     {
         float output = sdmax;
@@ -98,6 +103,8 @@ public class Character : MonoBehaviour
 
         return output;
     }
+
+    public float getCurrentShield { get { return shield; } }
 
     public float GetBulletDamageAdd()
     {
@@ -159,11 +166,15 @@ public class Character : MonoBehaviour
         }
     }
 
-    public virtual void TakeDamage(float damage)
+    public virtual bool TakeDamage(float damage)
     {
+        if (invincibleTime > 0) {
+            return false;
+        }
+
         if (shield > damage) {
             shield -= damage;
-            return;
+            return true;
         } else {
             damage -= shield;
             health -= damage;
@@ -172,6 +183,8 @@ public class Character : MonoBehaviour
         if (health <= 0) {
             Destroy(gameObject);
         }
+
+        return true;
     }
 
     public virtual void AddPowerup(PowerupStats pus)

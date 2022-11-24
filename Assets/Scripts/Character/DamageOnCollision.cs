@@ -24,7 +24,13 @@ public class DamageOnCollision : MonoBehaviour
         if(other.gameObject.GetComponent<Terrain>() != null)
         {
             Debug.Log("Collision with terrain");
+
+        }else if(other.gameObject.GetComponent<Hazard>() ){
+
         }
+
+
+
         if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
         {
             DamagePlayer(enemyCollisionDamage);
