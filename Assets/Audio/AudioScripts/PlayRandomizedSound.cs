@@ -10,7 +10,7 @@ public class PlayRandomizedSound : MonoBehaviour
     private AudioSource audioSource;
 
 
-    [SerializeField] AudioClip[] sounds;
+    [SerializeField] AudioClip[] soundVariations;
 
 
     [Range(0f, 0.5f)]
@@ -29,14 +29,10 @@ public class PlayRandomizedSound : MonoBehaviour
         maxVolume = audioSource.volume;
         volumeRandomization *= maxVolume;
 
-        if(sounds.Length != 0)
+        if(soundVariations.Length != 0)
         {
-            audioSource.clip = sounds[Random.Range(0, sounds.Length)];
-            Debug.Log("Not equal to null");
-        }
-        else
-        {
-            Debug.Log("null");
+            audioSource.clip = soundVariations[Random.Range(0, soundVariations.Length)];
+            
         }
         
 
@@ -53,12 +49,13 @@ public class PlayRandomizedSound : MonoBehaviour
         if(audioSource.clip != null)
         {
             audioSource.Play();
-            Destroy(gameObject, audioSource.clip.length);
+            //Destroy(gameObject, audioSource.clip.length);
         }
         else
         {
-            Debug.Log("Audio object was destroyed, because there was no clip assigned to its Sounds array or audiosource.");
-            Destroy(gameObject);
+            //Debug.Log("Audio object was destroyed, because there was no clip assigned to its Sounds array or audiosource.");
+            Debug.Log("There  were no audio clips assigned to " + gameObject.name + "'s SoundVariations array or audiosource.");
+            //Destroy(gameObject);
         }
         
     }
