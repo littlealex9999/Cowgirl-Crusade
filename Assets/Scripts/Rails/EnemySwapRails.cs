@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySwapRails : SwapRails
 {
-    public RailsMovement newThingToFollow;
+    [Space] public RailsMovement newThingToFollow;
 
     private void OnTriggerEnter(Collider other)
     {
