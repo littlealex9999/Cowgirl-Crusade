@@ -6,7 +6,7 @@ public class Hazard : MonoBehaviour
 {
     [SerializeField] GameObject destructionPrefab;
 
-    [SerializeField] float dmg = 50;
+    [SerializeField] float dmg = 10;
 
 
     // Start is called before the first frame update
@@ -39,7 +39,7 @@ public class Hazard : MonoBehaviour
 
     public void Destruct()
     {
-        Object.Instantiate(destructionPrefab);
+        // Object.Instantiate(destructionPrefab);
 
         Destroy(gameObject);
     }
