@@ -49,13 +49,12 @@ public class PlayRandomizedSound : MonoBehaviour
         if(audioSource.clip != null)
         {
             audioSource.Play();
-            //Destroy(gameObject, audioSource.clip.length);
+            Destroy(gameObject, audioSource.clip.length);
         }
         else
         {
-            //Debug.Log("Audio object was destroyed, because there was no clip assigned to its Sounds array or audiosource.");
-            Debug.Log("There  were no audio clips assigned to " + gameObject.name + "'s SoundVariations array or audiosource.");
-            //Destroy(gameObject);
+            Debug.Log("There were no audio clips assigned to " + gameObject.name + "'s SoundVariations array or audiosource.");
+            Destroy(gameObject);
         }
         
     }
