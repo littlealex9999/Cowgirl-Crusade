@@ -166,10 +166,12 @@ public class Character : MonoBehaviour
         }
     }
 
-    public virtual bool TakeDamage(float damage)
+    public virtual bool TakeDamage(float damage, float setInvincibleTime = 0)
     {
         if (invincibleTime > 0) {
             return false;
+        } else {
+            invincibleTime = setInvincibleTime;
         }
 
         if (shield >= damage) {

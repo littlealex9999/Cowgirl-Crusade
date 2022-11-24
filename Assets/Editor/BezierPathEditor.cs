@@ -164,7 +164,7 @@ public class BezierPathEditor : Editor
             }
             GUILayout.EndHorizontal();
 
-            if (GUILayout.Button("Generate Path") && selectedScript != null) {
+            if (GUILayout.Button("Generate Path")) {
                 selectedScript.GeneratePath();
                 pathDirtied = false;
             }
@@ -172,10 +172,15 @@ public class BezierPathEditor : Editor
             if (pathDirtied) {
                 if (noButtonsImage != null) {
                     GUILayout.Box(noButtonsImage);
+                } else {
+                    noButtonsImage = (Texture)AssetDatabase.LoadAssetAtPath("Assets/Editor/Images/NoButtons.jpg", typeof(Texture));
                 }
 
                 GUILayout.Box("GENERATE A NEW PATH \n OH GOD, PLEASE DO IT NOW \n YOU'LL DOOM US ALL IF YOU DON'T \n GODDAMN IT IT'S JUST ONE SINGLE BUTTON HOW ARE YOU NOT HITTING IT");
             }
+        } else {
+            selectedScript = target as BezierPath;
+            Repaint();
         }
     }
 }
