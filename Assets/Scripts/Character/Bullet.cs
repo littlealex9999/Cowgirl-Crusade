@@ -10,6 +10,13 @@ public class Bullet : MonoBehaviour
     float dmg;
     float spd;
 
+    Character.TEAMS team;
+
+    private void Start()
+    {
+        Debug.Log("Created Bullet");
+    }
+
     void Update()
     {
         transform.position += transform.forward * spd * Time.deltaTime;
@@ -24,4 +31,24 @@ public class Bullet : MonoBehaviour
     {
         spd = baseSpeed * multiplier + additional;
     }
+
+    public void SetTeam(Character.TEAMS t)
+    {
+        team = t;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Character character = other.gameObject.GetComponent<Character>();
+
+        if (character != null && character.getTeam != team) {
+            if (character.TakeDamage(dmg)) {
+                Destroy(gameObject);
+            }
+        }
+    }
+
+
+
+
 }
