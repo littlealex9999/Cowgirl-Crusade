@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 69e10e886d52d20478f9ed5424126be8, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.056336965, g: 0.009480024, b: 0.0009113174, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -526,6 +526,7 @@ MonoBehaviour:
   - {x: 14.32128, y: 1.0397503, z: 114.25559}
   - {x: 14.476842, y: 1.0469223, z: 113.686646}
   - {x: 14.63894, y: 1.0542485, z: 113.11139}
+  pathDirtied: 0
 --- !u!4 &130629401
 Transform:
   m_ObjectHideFlags: 0
@@ -799,6 +800,7 @@ MonoBehaviour:
   - {x: -6.861813, y: 1.9433956, z: 241.39352}
   - {x: -7.024447, y: 2.492544, z: 241.44838}
   - {x: -7.164208, y: 3.0853226, z: 241.62938}
+  pathDirtied: 0
 --- !u!4 &156928681
 Transform:
   m_ObjectHideFlags: 0
@@ -2148,6 +2150,7 @@ MonoBehaviour:
   - {x: 33.28096, y: -0.05956205, z: 392.2658}
   - {x: 33.585716, y: -0.043154176, z: 392.28348}
   - {x: 33.865795, y: -0.023340832, z: 392.39365}
+  pathDirtied: 0
 --- !u!4 &369133839
 Transform:
   m_ObjectHideFlags: 0
@@ -2483,7 +2486,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 505318242}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 212.3, y: 3, z: 2.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2630,6 +2633,7 @@ MonoBehaviour:
   - {x: 33.28096, y: -0.05956205, z: 392.2658}
   - {x: 33.585716, y: -0.043154176, z: 392.28348}
   - {x: 33.865795, y: -0.023340832, z: 392.39365}
+  pathDirtied: 0
 --- !u!4 &605192750
 Transform:
   m_ObjectHideFlags: 0
@@ -3243,6 +3247,7 @@ MonoBehaviour:
   - {x: 33.28096, y: -0.05956205, z: 392.2658}
   - {x: 33.585716, y: -0.043154176, z: 392.28348}
   - {x: 33.865795, y: -0.023340832, z: 392.39365}
+  pathDirtied: 0
 --- !u!4 &861605964
 Transform:
   m_ObjectHideFlags: 0
@@ -3412,6 +3417,7 @@ MonoBehaviour:
   - {x: 33.28096, y: -0.05956205, z: 392.2658}
   - {x: 33.585716, y: -0.043154176, z: 392.28348}
   - {x: 33.865795, y: -0.023340832, z: 392.39365}
+  pathDirtied: 0
 --- !u!1 &905287465
 GameObject:
   m_ObjectHideFlags: 0
@@ -3462,7 +3468,7 @@ MonoBehaviour:
   - {x: 710, y: 0, z: 900}
   - {x: 710, y: 0, z: 1000}
   controlPoints:
-  - {x: 9.947222, y: -0.075214386, z: 16.24609}
+  - {x: 10.055039, y: -0.09394932, z: 16.051018}
   - {x: 10.073879, y: 0.074991226, z: 98.6865}
   - {x: 9.926121, y: -0.074991226, z: 101.3135}
   - {x: 9.993795, y: -0.2946205, z: 195.00836}
@@ -7748,6 +7754,7 @@ MonoBehaviour:
   - {x: 710.00006, y: 0.0005908014, z: 999.9341}
   - {x: 710.00006, y: 0.0003753424, z: 999.96545}
   - {x: 710, y: 0.00017830907, z: 999.9874}
+  pathDirtied: 1
 --- !u!4 &905287467
 Transform:
   m_ObjectHideFlags: 0
@@ -10570,6 +10577,7 @@ MonoBehaviour:
   - {x: 734.6576, y: 0.13287304, z: 709.93915}
   - {x: 734.3492, y: 0.091844395, z: 709.9827}
   - {x: 734.02997, y: 0.04758237, z: 710.00336}
+  pathDirtied: 0
 --- !u!4 &1618080332
 Transform:
   m_ObjectHideFlags: 0
@@ -10725,6 +10733,7 @@ MonoBehaviour:
   - {x: 33.28096, y: -0.05956205, z: 392.2658}
   - {x: 33.585716, y: -0.043154176, z: 392.28348}
   - {x: 33.865795, y: -0.023340832, z: 392.39365}
+  pathDirtied: 0
 --- !u!4 &1636551938
 Transform:
   m_ObjectHideFlags: 0
@@ -11340,7 +11349,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8714434841443749964, guid: ba63025afe96bf646ab3108776caedeb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.71
+      value: -0.14
       objectReference: {fileID: 0}
     - target: {fileID: 8714434841443749964, guid: ba63025afe96bf646ab3108776caedeb, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12661,6 +12670,7 @@ MonoBehaviour:
   - {x: 33.28096, y: -0.05956205, z: 392.2658}
   - {x: 33.585716, y: -0.043154176, z: 392.28348}
   - {x: 33.865795, y: -0.023340832, z: 392.39365}
+  pathDirtied: 0
 --- !u!4 &2080512031
 Transform:
   m_ObjectHideFlags: 0
@@ -13564,6 +13574,7 @@ MonoBehaviour:
   - {x: 741.783, y: -0.031700134, z: 763.7583}
   - {x: 741.49835, y: -0.02158465, z: 763.8378}
   - {x: 741.20404, y: -0.011020564, z: 763.91504}
+  pathDirtied: 0
 --- !u!4 &2143434281
 Transform:
   m_ObjectHideFlags: 0
