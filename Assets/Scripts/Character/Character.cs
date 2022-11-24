@@ -7,8 +7,8 @@ public class Character : MonoBehaviour
 {
     float health;
     float shield;
-    [SerializeField] float hpmax = 50;
-    [SerializeField] float sdmax = 20;
+    [SerializeField, InspectorName("Max Health")] float hpmax = 50;
+    [SerializeField, InspectorName("Max Shield")] float sdmax = 20;
 
     float invincibleTime;
 
