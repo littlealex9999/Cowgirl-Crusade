@@ -3274,6 +3274,7 @@ MonoBehaviour:
   - {x: 563.4104, y: 101.599106, z: 443.0761}
   - {x: 515.157, y: 66.731964, z: 371.0321}
   calculatedBezier: []
+  pathDirtied: 0
 --- !u!4 &698842965
 Transform:
   m_ObjectHideFlags: 0
@@ -28416,6 +28417,7 @@ MonoBehaviour:
   - {x: 539.39935, y: 84.25366, z: 407.25064}
   - {x: 539.36096, y: 84.224434, z: 407.18542}
   - {x: 539.3225, y: 84.195145, z: 407.12012}
+  pathDirtied: 0
 --- !u!4 &1466571451
 Transform:
   m_ObjectHideFlags: 0
