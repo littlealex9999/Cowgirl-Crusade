@@ -14,6 +14,8 @@ public class Player : Character
 
     void Start()
     {
+        base.Start();
+
         mainCamera = Camera.main;
         CalculateBoundaries();
     }

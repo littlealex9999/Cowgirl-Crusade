@@ -42,8 +42,9 @@ public class Bullet : MonoBehaviour
         Character character = other.gameObject.GetComponent<Character>();
 
         if (character != null && character.getTeam != team) {
-            character.TakeDamage(dmg);
-            Destroy(gameObject);
+            if (character.TakeDamage(dmg)) {
+                Destroy(gameObject);
+            }
         }
     }
 
