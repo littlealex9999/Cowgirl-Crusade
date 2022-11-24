@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemySwapRails : SwapRails
 {
-    public RailsMovement newThingToFollow;
+    [Space] public RailsMovement newThingToFollow;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,6 +12,7 @@ public class EnemySwapRails : SwapRails
         if (enemyRailsScript != null) {
             if (newThingToFollow != null) {
                 enemyRailsScript.thingToFollow = newThingToFollow;
+                enemyRailsScript.pathToFollow = newThingToFollow.pathToFollow;
                 enemyRailsScript.movingToIndex = newThingToFollow.movingToIndex + enemyRailsScript.numPointsAhead;
             } else {
                 base.OnTriggerEnter(other);
