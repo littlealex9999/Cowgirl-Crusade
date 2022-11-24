@@ -172,11 +172,12 @@ public class Character : MonoBehaviour
             return false;
         }
 
-        if (shield > damage) {
+        if (shield >= damage) {
             shield -= damage;
             return true;
         } else {
             damage -= shield;
+            shield = 0;
             health -= damage;
         }
 
