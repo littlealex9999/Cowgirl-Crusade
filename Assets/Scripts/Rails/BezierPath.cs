@@ -12,6 +12,8 @@ public class BezierPath : MonoBehaviour
     [SerializeField, HideInInspector] private Vector3[] calculatedBezier;
     public Vector3[] getPath { get { return calculatedBezier; } }
 
+    [HideInInspector] public bool pathDirtied;
+
     private void Start()
     {
         
