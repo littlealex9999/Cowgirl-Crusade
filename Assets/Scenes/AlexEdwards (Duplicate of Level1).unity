@@ -3661,6 +3661,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructionPrefab: {fileID: 0}
   dmg: 4
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 1
 --- !u!135 &908058871
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5040,7 +5043,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1377151254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 399.41, y: 86.47, z: 910.55}
+  m_LocalPosition: {x: 409.15, y: 78.51, z: 910.55}
   m_LocalScale: {x: 6, y: 6, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
@@ -31404,6 +31407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPath: {fileID: 698842964}
+  newMovePoint: 0
   destroyOnPlayerEnter: 1
 --- !u!65 &1921443386
 BoxCollider:

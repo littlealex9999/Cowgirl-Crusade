@@ -42,7 +42,9 @@ public class Hazard : MonoBehaviour
 
     public void Destruct()
     {
-        Instantiate(destructionPrefab, transform.position, transform.rotation);
+        if (destructionPrefab != null) {
+            Instantiate(destructionPrefab, transform.position, transform.rotation);
+        }
 
         Destroy(gameObject);
     }

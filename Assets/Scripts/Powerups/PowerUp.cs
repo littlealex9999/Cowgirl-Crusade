@@ -23,11 +23,6 @@ public class PowerUp : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -36,12 +31,10 @@ public class PowerUp : MonoBehaviour
             Character player = other.gameObject.GetComponent<Character>();
             player.AddPowerup(powerupType);
 
-            Debug.Log("Player has received " + powerupType.name + "powerup");
+            Debug.Log("Player has received " + powerupType.name + "powerup. Player now has " + player.GetHealthMax() + " max health.");
 
-                // Play audio clip    
-                // Create instance of particle effect
+            // Object.Instantiate(effect, gameObject.transform.position, Quaternion.identity);
 
-            
             Destroy(gameObject);
 
         }
