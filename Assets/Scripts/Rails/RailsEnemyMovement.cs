@@ -17,6 +17,8 @@ public class RailsEnemyMovement : RailsMovement
         if (thingToFollow != null) {
             pathToFollow = thingToFollow.pathToFollow;
             movingToIndex = thingToFollow.movingToIndex + numPointsAhead;
+        } else {
+            targetSpeed = speed;
         }
     }
 
