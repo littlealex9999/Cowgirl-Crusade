@@ -32,8 +32,8 @@ public class RailsEnemyMovementEditor : Editor
             EditorGUILayout.PropertyField(serializedObject.FindProperty("ignoreDeviation"), new GUIContent("Ignore Deviation?"));
             if (!serializedObject.FindProperty("ignoreDeviation").boolValue) {
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("maxDeviation"), new GUIContent("Max Deviation"));
+                EditorGUILayout.PropertyField(serializedObject.FindProperty("slowDownMult"), new GUIContent("Slow Down Multiplier"));
             }
-            EditorGUILayout.PropertyField(serializedObject.FindProperty("slowDownMult"), new GUIContent("Slow Down Multiplier"));
         }
 
         serializedObject.ApplyModifiedProperties();

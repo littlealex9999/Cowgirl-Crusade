@@ -148,7 +148,7 @@ public class Character : MonoBehaviour
     #endregion
 
     #region action methods
-    public virtual void Shoot(Vector3 shootToPoint)
+    public virtual Bullet Shoot(Vector3 shootToPoint)
     {
         if (cldtimer <= 0) {
             // create bullet & set stats
@@ -163,7 +163,11 @@ public class Character : MonoBehaviour
             firedScript.SetTeam(team);
 
             cldtimer = shootCooldown;
+
+            return firedScript;
         }
+
+        return null;
     }
 
     public virtual bool TakeDamage(float damage, float setInvincibleTime = 0)

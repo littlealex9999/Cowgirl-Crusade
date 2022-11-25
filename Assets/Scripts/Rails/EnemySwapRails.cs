@@ -6,17 +6,31 @@ public class EnemySwapRails : SwapRails
 {
     [Space] public RailsMovement newThingToFollow;
 
-    private void OnTriggerEnter(Collider other)
+    protected void OnTriggerEnter(Collider other)
     {
         RailsEnemyMovement enemyRailsScript = other.GetComponent<RailsEnemyMovement>();
+        EnemyTriggerLogic(enemyRailsScript, other);
+    }
+
+    protected void EnemyTriggerLogic(RailsEnemyMovement enemyRailsScript, Collider other)
+    {
         if (enemyRailsScript != null) {
             if (newThingToFollow != null) {
-                enemyRailsScript.thingToFollow = newThingToFollow;
-                enemyRailsScript.pathToFollow = newThingToFollow.pathToFollow;
-                enemyRailsScript.movingToIndex = newThingToFollow.movingToIndex + enemyRailsScript.numPointsAhead;
+                SwapRailsEnemy(enemyRailsScript);
             } else {
                 base.OnTriggerEnter(other);
             }
+        }
+    }
+
+    protected void SwapRailsEnemy(RailsEnemyMovement scriptToSwap)
+    {
+        scriptToSwap.thingToFollow = newThingToFollow;
+        scriptToSwap.pathToFollow = newThingToFollow.pathToFollow;
+        scriptToSwap.movingToIndex = newThingToFollow.movingToIndex + scriptToSwap.numPointsAhead;
+
+        foreach (Enemy e in scriptToSwap.GetComponentsInChildren<Enemy>()) {
+            e.FindTarget();
         }
     }
 }
