@@ -65,7 +65,8 @@ public class Player : Character
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
             if (Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + shootDistance, LayerMask.NameToLayer("RayHitLayer"))) {
-                base.Shoot(hitInfo.point);
+                Bullet firedScript = base.Shoot(hitInfo.point);
+                firedScript.SetTarget(hitInfo.collider.gameObject);
             } else {
                 Vector3 point = Input.mousePosition;
                 point.z = -mainCamera.transform.localPosition.z + shootDistance;
