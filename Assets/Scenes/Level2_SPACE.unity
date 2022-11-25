@@ -137,19 +137,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 9045632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &9045636
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -182,19 +183,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 15402627}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &15402630
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -263,6 +265,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &32929508 stripped
@@ -284,19 +290,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 32929508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &32929511
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -364,6 +371,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -479,7 +490,7 @@ Transform:
   - {fileID: 1065127054}
   - {fileID: 2143434281}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -35.271, z: 0}
 --- !u!1 &69762061 stripped
 GameObject:
@@ -500,19 +511,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 69762061}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &69762064
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -545,19 +557,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 99194638}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &99194641
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -590,19 +603,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 102865543}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &102865546
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1270,19 +1284,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 176795389}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &176795392
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1350,6 +1365,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -1484,7 +1503,8 @@ GameObject:
   - component: {fileID: 211788963}
   - component: {fileID: 211788962}
   - component: {fileID: 211788965}
-  m_Layer: 0
+  - component: {fileID: 211788966}
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1513,7 +1533,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211788960}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1589,6 +1609,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &211788966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 211788960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 1
 --- !u!1 &227052083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1624,7 +1661,7 @@ Transform:
   - {fileID: 1146816224}
   - {fileID: 955738748}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: -189.05, z: 0}
 --- !u!1001 &234471237
 PrefabInstance:
@@ -1681,6 +1718,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &252639165
@@ -1696,7 +1737,8 @@ GameObject:
   - component: {fileID: 252639168}
   - component: {fileID: 252639167}
   - component: {fileID: 252639170}
-  m_Layer: 0
+  - component: {fileID: 252639171}
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1725,7 +1767,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252639165}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -1801,6 +1843,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &252639171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 252639165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 1
+  destroyOnHit: 1
 --- !u!1 &259124054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +1953,7 @@ Transform:
   m_LocalScale: {x: 54.525414, y: 54.525414, z: 54.525414}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &269849658 stripped
 GameObject:
@@ -1915,19 +1974,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 269849658}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &269849663
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1995,6 +2055,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -2148,6 +2212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &297856241
@@ -2163,6 +2231,7 @@ GameObject:
   - component: {fileID: 297856244}
   - component: {fileID: 297856243}
   - component: {fileID: 297856246}
+  - component: {fileID: 297856247}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -2192,7 +2261,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 297856241}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -2268,6 +2337,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &297856247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 297856241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 1
 --- !u!1 &303598471
 GameObject:
   m_ObjectHideFlags: 0
@@ -2599,67 +2685,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329531188}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &330769255
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 330769256}
-  - component: {fileID: 330769258}
-  - component: {fileID: 330769257}
-  m_Layer: 0
-  m_Name: Enemy Trigger 1-3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &330769256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330769255}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.11, y: -5.26, z: -25.71}
-  m_LocalScale: {x: 2.9171, y: 1.9414, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1557784407}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &330769257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330769255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d814479e9f5334896ced7ea967d6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newPath: {fileID: 0}
-  newMovePoint: 0
-  destroyOnPlayerEnter: 0
-  newThingToFollow: {fileID: 764226964}
---- !u!65 &330769258
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330769255}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.371623, y: 6.692462, z: 1}
-  m_Center: {x: -0.012764454, y: 1.0930048, z: 0}
 --- !u!1001 &347652520
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2784,6 +2809,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &365674976
@@ -2881,6 +2910,70 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 365674976}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &367892435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 367892438}
+  - component: {fileID: 367892437}
+  - component: {fileID: 367892436}
+  m_Layer: 0
+  m_Name: 'Enemy Batch 1 -2-3 Trigger '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &367892436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367892435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b061f53e75ed4c44599228a7ada5ae56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newPath: {fileID: 0}
+  newMovePoint: 0
+  destroyOnPlayerEnter: 0
+  newThingToFollow: {fileID: 764226964}
+  enemyMoveScripts:
+  - {fileID: 1141173916}
+  - {fileID: 1406985855}
+--- !u!65 &367892437
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367892435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.5319996, y: 1.663263, z: 0.7977791}
+  m_Center: {x: 0.49094582, y: 0.33163172, z: 0.10111046}
+--- !u!4 &367892438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367892435}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -92.85775, y: -177.36932, z: -457.67346}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1994506053}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &369133837
 GameObject:
   m_ObjectHideFlags: 0
@@ -3094,7 +3187,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &385081842 stripped
 GameObject:
@@ -3115,19 +3208,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 385081842}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &385081845
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3196,8 +3290,58 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+--- !u!1 &398808729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8714434841629158295, guid: ba63025afe96bf646ab3108776caedeb, type: 3}
+  m_PrefabInstance: {fileID: 1765638246}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &398808731 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8714434841629158292, guid: ba63025afe96bf646ab3108776caedeb, type: 3}
+  m_PrefabInstance: {fileID: 1765638246}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398808729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796a3014f28d2ab429d06a5fc0b97e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!136 &398808732
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398808729}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 2.09
+  m_Height: 11.86
+  m_Direction: 2
+  m_Center: {x: 0, y: 0.62, z: -0.2}
+--- !u!54 &398808733
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398808729}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &429021006 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -3217,19 +3361,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 429021006}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &429021009
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3262,19 +3407,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 429108825}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &429108828
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3438,6 +3584,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1001 &484201675
@@ -3530,7 +3680,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &502561978
 GameObject:
@@ -3580,7 +3730,7 @@ Transform:
   - {fileID: 1687623302}
   - {fileID: 902738364}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &505318242
 GameObject:
@@ -3675,128 +3825,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &518279692
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 518279695}
-  - component: {fileID: 518279694}
-  - component: {fileID: 518279693}
-  m_Layer: 0
-  m_Name: Enemy 1 Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &518279693
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518279692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d814479e9f5334896ced7ea967d6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newPath: {fileID: 0}
-  newMovePoint: 0
-  destroyOnPlayerEnter: 0
-  newThingToFollow: {fileID: 764226964}
---- !u!65 &518279694
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518279692}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!4 &518279695
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 518279692}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.11, z: 56.670002}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1515828064}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &534632618
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 534632619}
-  - component: {fileID: 534632621}
-  - component: {fileID: 534632620}
-  m_Layer: 0
-  m_Name: Enemy Trigger 1-2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &534632619
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534632618}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.4, y: -6.6, z: -25.71}
-  m_LocalScale: {x: 2.9171, y: 1.9414, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1557784407}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &534632620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534632618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d814479e9f5334896ced7ea967d6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newPath: {fileID: 0}
-  newMovePoint: 0
-  destroyOnPlayerEnter: 0
-  newThingToFollow: {fileID: 764226964}
---- !u!65 &534632621
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 534632618}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.371623, y: 6.692462, z: 1}
-  m_Center: {x: -0.012764454, y: 1.0930048, z: 0}
 --- !u!1 &585871471 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -3816,19 +3844,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 585871471}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &585871474
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4048,7 +4077,7 @@ Transform:
   - {fileID: 211788961}
   - {fileID: 156928681}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &655425437
 GameObject:
@@ -4063,6 +4092,7 @@ GameObject:
   - component: {fileID: 655425440}
   - component: {fileID: 655425439}
   - component: {fileID: 655425442}
+  - component: {fileID: 655425443}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -4092,7 +4122,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 655425437}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -4168,6 +4198,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &655425443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655425437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 1
 --- !u!1001 &673040905
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4275,7 +4322,7 @@ Transform:
   - {fileID: 1213578424}
   - {fileID: 130629401}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &680289566
 GameObject:
@@ -4450,6 +4497,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &734331224 stripped
@@ -4471,19 +4522,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 734331224}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &734331229
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4516,19 +4568,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 755084094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &755084097
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4597,6 +4650,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!114 &764226964 stripped
@@ -4623,7 +4680,8 @@ GameObject:
   - component: {fileID: 811038633}
   - component: {fileID: 811038632}
   - component: {fileID: 811038635}
-  m_Layer: 0
+  - component: {fileID: 811038636}
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4652,7 +4710,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 811038630}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -4728,6 +4786,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &811038636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811038630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 1
 --- !u!1 &816577109 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -4747,19 +4822,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 816577109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &816577112
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4792,19 +4868,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 826488546}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &826488549
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4832,19 +4909,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 858604467}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &858604471
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9519,7 +9597,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &921854996
 PrefabInstance:
@@ -9575,6 +9653,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -9880,6 +9962,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1001 &985515789
@@ -9939,6 +10025,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+--- !u!1 &1010800646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010800649}
+  - component: {fileID: 1010800648}
+  - component: {fileID: 1010800647}
+  m_Layer: 0
+  m_Name: Enemy Batch 2 Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1010800647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010800646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b061f53e75ed4c44599228a7ada5ae56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newPath: {fileID: 0}
+  newMovePoint: 0
+  destroyOnPlayerEnter: 0
+  newThingToFollow: {fileID: 764226964}
+  enemyMoveScripts:
+  - {fileID: 1487284569}
+--- !u!65 &1010800648
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010800646}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 4.258186, z: 5.53302}
+  m_Center: {x: 0, y: -0.21464282, z: 0.46255493}
+--- !u!4 &1010800649
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010800646}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.9477463, y: -177.36932, z: -17.373474}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1994506053}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011087749
 GameObject:
   m_ObjectHideFlags: 0
@@ -10053,6 +10202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &1036053302
@@ -10103,7 +10256,7 @@ Transform:
   - {fileID: 1306530717}
   - {fileID: 861605964}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1036604506 stripped
 GameObject:
@@ -10124,19 +10277,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1036604506}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &1036604509
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10300,6 +10454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1001 &1059739554
@@ -10413,6 +10571,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -10661,6 +10823,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &1102832040 stripped
@@ -10682,19 +10848,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1102832040}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &1102832043
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10708,6 +10875,69 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.4948312
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1113063628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1113063631}
+  - component: {fileID: 1113063630}
+  - component: {fileID: 1113063629}
+  m_Layer: 0
+  m_Name: Enemy Batch 1 Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1113063629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113063628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b061f53e75ed4c44599228a7ada5ae56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newPath: {fileID: 0}
+  newMovePoint: 0
+  destroyOnPlayerEnter: 0
+  newThingToFollow: {fileID: 764226964}
+  enemyMoveScripts:
+  - {fileID: 1698935128}
+--- !u!65 &1113063630
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113063628}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.5319996, y: 1.663263, z: 0.7977791}
+  m_Center: {x: 0.49094582, y: 0.33163172, z: 0.10111046}
+--- !u!4 &1113063631
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113063628}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -92.85775, y: -177.36932, z: -517.5735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1994506053}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1119333806
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10762,6 +10992,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -10893,7 +11127,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1141173917}
   - component: {fileID: 1141173916}
-  - component: {fileID: 1141173915}
   - component: {fileID: 1141173914}
   m_Layer: 0
   m_Name: Enemy Batch 1-2
@@ -10918,19 +11151,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1141173915
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141173913}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 10.019325, y: 15.762386, z: 1.009964}
-  m_Center: {x: -4.5096626, y: 7.381193, z: -0.0049819946}
 --- !u!114 &1141173916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10976,7 +11196,7 @@ Transform:
   - {fileID: 176795390}
   - {fileID: 755084095}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1146816223
 GameObject:
@@ -11092,19 +11312,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1157609276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &1157609279
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11173,6 +11394,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &1179233619 stripped
@@ -11194,19 +11419,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1179233619}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &1179233622
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11328,7 +11554,8 @@ GameObject:
   - component: {fileID: 1213578426}
   - component: {fileID: 1213578425}
   - component: {fileID: 1213578428}
-  m_Layer: 0
+  - component: {fileID: 1213578429}
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11357,7 +11584,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213578423}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -11433,6 +11660,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &1213578429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213578423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 1
+  destroyOnHit: 1
 --- !u!1 &1229594735
 GameObject:
   m_ObjectHideFlags: 0
@@ -11547,19 +11791,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1232948548}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &1232948553
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11586,7 +11831,8 @@ GameObject:
   - component: {fileID: 1256269336}
   - component: {fileID: 1256269335}
   - component: {fileID: 1256269338}
-  m_Layer: 0
+  - component: {fileID: 1256269339}
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11615,7 +11861,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1256269333}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -11691,6 +11937,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &1256269339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256269333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 1
 --- !u!1001 &1260913513
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11745,6 +12008,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -11826,19 +12093,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1270215826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &1270215829
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12001,6 +12269,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -12172,6 +12444,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -12438,7 +12714,7 @@ Transform:
   - {fileID: 297856242}
   - {fileID: 1636551938}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1316662075
 PrefabInstance:
@@ -12495,6 +12771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &1317998836 stripped
@@ -12516,19 +12796,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1317998836}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &1317998839
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12590,7 +12871,7 @@ Transform:
   - {fileID: 1821219794}
   - {fileID: 2080512031}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1333952027 stripped
 GameObject:
@@ -12611,19 +12892,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1333952027}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &1333952030
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12637,6 +12919,107 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.4948312
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &1338386808
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1023368405538822784, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 398808731}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1023368405957733836, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_Name
+      value: HUD_Canvas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
 --- !u!1001 &1338750483
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12691,6 +13074,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -12977,7 +13364,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1406985856}
   - component: {fileID: 1406985855}
-  - component: {fileID: 1406985854}
   - component: {fileID: 1406985853}
   m_Layer: 0
   m_Name: Enemy Batch 1-3
@@ -13002,19 +13388,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1406985854
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1406985852}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 13.601322, z: 1}
-  m_Center: {x: 0, y: 6.300661, z: 0}
 --- !u!114 &1406985855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13061,7 +13434,7 @@ Transform:
   - {fileID: 1102832041}
   - {fileID: 585871472}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1411681074 stripped
 GameObject:
@@ -13082,19 +13455,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1411681074}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &1411681077
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13108,66 +13482,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.4948312
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1425487206
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1425487207}
-  - component: {fileID: 1425487208}
-  - component: {fileID: 1425487209}
-  m_Layer: 0
-  m_Name: Enemy Trigger 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1425487207
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425487206}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.057747, y: -177.48932, z: -17.553467}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 2129650752}
-  m_Father: {fileID: 1994506053}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1425487208
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425487206}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 11.938979, z: 15.234131}
-  m_Center: {x: 0, y: 0.3552184, z: 0.016479492}
---- !u!114 &1425487209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425487206}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60c370863eeb19147a159a7f8ae49b4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToEnable:
-  - {fileID: 1487284566}
 --- !u!1 &1429285209 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -13187,19 +13501,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1429285209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &1429285214
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13438,7 +13753,7 @@ Transform:
   - {fileID: 445506984}
   - {fileID: 2045962236}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -2.685, z: 0}
 --- !u!1 &1461877091 stripped
 GameObject:
@@ -13459,19 +13774,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1461877091}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &1461877094
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13533,7 +13849,7 @@ Transform:
   - {fileID: 1514125659}
   - {fileID: 369133839}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1476273521
 PrefabInstance:
@@ -13590,6 +13906,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &1487284566
@@ -13602,7 +13922,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1487284570}
   - component: {fileID: 1487284569}
-  - component: {fileID: 1487284568}
   - component: {fileID: 1487284567}
   m_Layer: 0
   m_Name: Enemy Batch 2
@@ -13627,19 +13946,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1487284568
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487284566}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1487284569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13685,7 +13991,7 @@ Transform:
   - {fileID: 1411681075}
   - {fileID: 69762062}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &1499820922 stripped
 GameObject:
@@ -13706,19 +14012,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1499820922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &1499820927
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13945,66 +14252,6 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
---- !u!1 &1515828061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1515828064}
-  - component: {fileID: 1515828063}
-  - component: {fileID: 1515828062}
-  m_Layer: 0
-  m_Name: Enemy Trigger 1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1515828062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515828061}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60c370863eeb19147a159a7f8ae49b4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToEnable:
-  - {fileID: 1698935124}
---- !u!65 &1515828063
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515828061}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 25.0806, y: 20.489807, z: 1}
-  m_Center: {x: 1.9904861, y: -0.78633165, z: 0}
---- !u!4 &1515828064
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1515828061}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -92.62775, y: -177.47932, z: -528.24347}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 518279695}
-  m_Father: {fileID: 1994506053}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1531342276 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -14024,19 +14271,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1531342276}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &1531342279
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14069,19 +14317,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1532011742}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &1532011745
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14155,70 +14404,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
---- !u!1 &1557784406
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1557784407}
-  - component: {fileID: 1557784409}
-  - component: {fileID: 1557784408}
-  m_Layer: 0
-  m_Name: Enemy Trigger 1-2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1557784407
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557784406}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -92.62775, y: -177.50932, z: -453.08347}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 330769256}
-  - {fileID: 534632619}
-  m_Father: {fileID: 1994506053}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1557784408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557784406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60c370863eeb19147a159a7f8ae49b4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectsToEnable:
-  - {fileID: 1141173913}
-  - {fileID: 1406985852}
---- !u!65 &1557784409
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1557784406}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.371623, y: 6.692462, z: 1}
-  m_Center: {x: -0.012764454, y: 1.0930048, z: 0}
 --- !u!1 &1571716923 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -14238,19 +14429,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571716923}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &1571716926
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14864,19 +15056,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1649298764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &1649298767
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15040,6 +15233,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1001 &1684509514
@@ -15096,6 +15293,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -15322,7 +15523,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1698935125}
   - component: {fileID: 1698935128}
-  - component: {fileID: 1698935127}
   - component: {fileID: 1698935126}
   m_Layer: 0
   m_Name: Enemy Batch 1
@@ -15339,7 +15539,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698935124}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 10.23, y: 0.2, z: 95.8}
+  m_LocalPosition: {x: 10.23, y: 0.2, z: 83}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1536711267}
@@ -15353,7 +15553,7 @@ Transform:
   - {fileID: 1499820923}
   - {fileID: 1429285210}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!54 &1698935126
 Rigidbody:
@@ -15371,19 +15571,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &1698935127
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698935124}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1698935128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15404,7 +15591,7 @@ MonoBehaviour:
   thingToFollow: {fileID: 764226964}
   numPointsAhead: 150
   maxDeviation: 300
-  ignoreDeviation: 0
+  ignoreDeviation: 1
   targetSpeed: 30
   slowDownMult: 0.01
 --- !u!1 &1728433439 stripped
@@ -15426,19 +15613,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1728433439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1141173916}
 --- !u!135 &1728433442
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15742,7 +15930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8714434841443749964, guid: ba63025afe96bf646ab3108776caedeb, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8714434841443749964, guid: ba63025afe96bf646ab3108776caedeb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15837,19 +16025,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1784685570}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &1784685573
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15916,7 +16105,7 @@ Transform:
   - {fileID: 2068956512}
   - {fileID: 1618080332}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1821219793
 GameObject:
@@ -16055,19 +16244,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1854503982}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &1854503985
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16247,7 +16437,7 @@ Transform:
   - {fileID: 1857370478}
   - {fileID: 605192750}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1914540652 stripped
 GameObject:
@@ -16268,19 +16458,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 1914540652}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1406985855}
 --- !u!135 &1914540655
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16443,6 +16634,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -16632,11 +16827,11 @@ Transform:
   - {fileID: 2102202227}
   - {fileID: 1269792694}
   - {fileID: 1352713803}
-  - {fileID: 1515828064}
-  - {fileID: 1557784407}
-  - {fileID: 1425487207}
+  - {fileID: 1113063631}
+  - {fileID: 367892438}
+  - {fileID: 1010800649}
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2010684557
 PrefabInstance:
@@ -16692,6 +16887,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_Name
       value: Mech_Blockout
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -16771,19 +16970,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2026264719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &2026264724
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16852,6 +17052,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Blockout (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
 --- !u!1 &2042804118 stripped
@@ -16873,19 +17077,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2042804118}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1487284569}
 --- !u!135 &2042804121
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16912,6 +17117,7 @@ GameObject:
   - component: {fileID: 2043328840}
   - component: {fileID: 2043328839}
   - component: {fileID: 2043328842}
+  - component: {fileID: 2043328843}
   m_Layer: 0
   m_Name: Sphere (1)
   m_TagString: Untagged
@@ -16941,7 +17147,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2043328837}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -17017,6 +17223,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &2043328843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043328837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 1
 --- !u!1 &2045962235
 GameObject:
   m_ObjectHideFlags: 0
@@ -17339,19 +17562,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2071275385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &2071275389
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17378,7 +17602,8 @@ GameObject:
   - component: {fileID: 2075781368}
   - component: {fileID: 2075781367}
   - component: {fileID: 2075781370}
-  m_Layer: 0
+  - component: {fileID: 2075781371}
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17407,7 +17632,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2075781365}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
@@ -17483,6 +17708,23 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
+--- !u!114 &2075781371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2075781365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 1
+  destroyOnHit: 1
 --- !u!1 &2080123801 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -17502,19 +17744,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2080123801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 671055fd65f5e2147b4eb3a2a357c50b, type: 3}
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 20
+  hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 10
   team: 2
+  myMoveScript: {fileID: 1698935128}
 --- !u!135 &2080123806
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17925,67 +18168,6 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   team: 0
---- !u!1 &2129650751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2129650752}
-  - component: {fileID: 2129650754}
-  - component: {fileID: 2129650753}
-  m_Layer: 0
-  m_Name: Enemy 2 Trigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2129650752
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129650751}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.89, y: 0.27999878, z: -0.020019531}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1425487207}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2129650753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129650751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48d814479e9f5334896ced7ea967d6ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newPath: {fileID: 0}
-  newMovePoint: 0
-  destroyOnPlayerEnter: 0
-  newThingToFollow: {fileID: 764226964}
---- !u!65 &2129650754
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129650751}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2143434279
 GameObject:
   m_ObjectHideFlags: 0
