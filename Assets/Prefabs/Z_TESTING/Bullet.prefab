@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 5
   baseSpeed: 5
+  homingRotationSpeed: 5
 --- !u!114 &-2476343665609048771
 MonoBehaviour:
   m_ObjectHideFlags: 0

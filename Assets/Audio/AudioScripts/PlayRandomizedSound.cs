@@ -31,7 +31,7 @@ public class PlayRandomizedSound : MonoBehaviour
 
         if(soundVariations.Length != 0)
         {
-            audioSource.clip = soundVariations[Random.Range(0, soundVariations.Length)];
+            audioSource.clip = soundVariations[Random.Range(0, soundVariations.Length - 1)];
             
         }
         
