@@ -30,6 +30,7 @@ public class Bullet : MonoBehaviour
         transform.position += transform.forward * spd * Time.deltaTime;
     }
 
+    #region set value methods
     public void SetDamage(float additional = 0, float multiplier = 1)
     {
         dmg = baseDamage * multiplier + additional;
@@ -49,6 +50,12 @@ public class Bullet : MonoBehaviour
     {
         homingTarget = target;
     }
+
+    public void SetHomingSpeed(float speed)
+    {
+        homingRotationSpeed = speed;
+    }
+    #endregion
 
     private void OnTriggerEnter(Collider other)
     {
