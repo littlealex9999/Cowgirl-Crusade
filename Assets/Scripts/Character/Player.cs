@@ -8,6 +8,7 @@ public class Player : Character
     public Vector2 boundaryMoveMultipliers = new Vector2(0.8f, 0.5f);
 
     public float shootDistance = 10;
+    public float bulletHomingSpeed = 100;
 
     Vector2 boundaries;
     Camera mainCamera;
@@ -64,14 +65,22 @@ public class Player : Character
         if (Input.GetMouseButton(0)) {
             Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
             RaycastHit hitInfo;
-            if (Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + shootDistance, LayerMask.NameToLayer("RayHitLayer"))) {
+            //LayerMask.NameToLayer("RayHitLayer")
+            if (Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + shootDistance, 1 << 6)) {
                 Bullet firedScript = base.Shoot(hitInfo.point);
-                firedScript.SetTarget(hitInfo.collider.gameObject);
+
+                if (firedScript != null) { // bullet actually fired
+                    firedScript.SetTarget(hitInfo.collider.gameObject);
+                    firedScript.SetHomingSpeed(bulletHomingSpeed);
+                }
             } else {
                 Vector3 point = Input.mousePosition;
                 point.z = -mainCamera.transform.localPosition.z + shootDistance;
                 base.Shoot(mainCamera.ScreenToWorldPoint(point));
             }
+
+            Debug.DrawRay(ray.origin, ray.direction, Color.blue);
+            Debug.DrawLine(ray.origin, ray.origin + ray.direction * (-mainCamera.transform.localPosition.z + shootDistance), Color.cyan);
         }
     }
 }
