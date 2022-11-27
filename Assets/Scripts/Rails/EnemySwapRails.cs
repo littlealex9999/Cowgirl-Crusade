@@ -18,6 +18,11 @@ public class EnemySwapRails : SwapRails
             if (newThingToFollow != null) {
                 SwapRailsEnemy(enemyRailsScript);
             } else {
+                enemyRailsScript.thingToFollow = null;
+                foreach (Enemy e in enemyRailsScript.GetComponentsInChildren<Enemy>()) {
+                    e.FindTarget();
+                }
+
                 base.OnTriggerEnter(other);
             }
         }

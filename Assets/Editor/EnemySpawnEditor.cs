@@ -22,6 +22,7 @@ public class EnemySpawnEditor : Editor
 
         EditorGUILayout.PropertyField(serializedObject.FindProperty("destroyOnPlayerEnter"), new GUIContent("Destroy On Player Enter"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("forceOntoPath"), new GUIContent("Force Onto Path"));
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("setRotation"), new GUIContent("Set Rotation To Leader"));
         EditorGUILayout.PropertyField(serializedObject.FindProperty("enemyMoveScripts"), new GUIContent("Enemy Move Scripts"));
 
         serializedObject.ApplyModifiedProperties();
