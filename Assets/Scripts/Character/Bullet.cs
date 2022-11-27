@@ -6,14 +6,14 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private float baseDamage = 5;
     [SerializeField] private float baseSpeed = 5;
-    [SerializeField] private float homingRotationSpeed = 5;
-
+    
     float dmg;
     float spd;
 
     Character.TEAMS team;
 
     GameObject homingTarget;
+    float homingRotationSpeed = 5;
 
     private void Start()
     {
