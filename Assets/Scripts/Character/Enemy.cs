@@ -21,7 +21,9 @@ public class Enemy : Character
 
     void Shoot()
     {
-        base.Shoot(shootTarget.transform.position);
+        if (shootTarget != null) {
+            base.Shoot(shootTarget.transform.position);
+        }
     }
 
     public void FindTarget()
