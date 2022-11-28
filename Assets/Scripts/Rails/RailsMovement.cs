@@ -59,4 +59,9 @@ public class RailsMovement : MonoBehaviour
     {
         speed = value;
     }
+
+    public virtual void SetRotationSpeed(float value)
+    {
+        rotationSpeed = value;
+    }
 }
