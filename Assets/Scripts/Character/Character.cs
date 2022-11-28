@@ -17,6 +17,9 @@ public class Character : MonoBehaviour
     [SerializeField] float shootCooldown = 1;
     [SerializeField, InspectorName("Spawn Shoot Cooldown")] float cldtimer;
 
+    [SerializeField] float turnMult = 100;
+    [SerializeField] float resetRotationStrength = 4f;
+
     float ShootCooldownMultiplier;
 
     [SerializeField, Header("Bullet Attributes"), Space] float bulletDamageAddition = 0;
@@ -36,10 +39,14 @@ public class Character : MonoBehaviour
 
     public TEAMS getTeam { get { return team; } }
 
+    private Vector3 posLastFrame;
+
     protected void Start()
     {
         health = hpmax;
         shield = sdmax;
+
+        posLastFrame = transform.position;
     }
 
     protected virtual void Update()
@@ -56,6 +63,22 @@ public class Character : MonoBehaviour
                 }
             }
         }
+
+
+        // ROTATION
+        if (posLastFrame != transform.localPosition) {
+            Vector3 direction = (transform.localPosition - posLastFrame).normalized;
+
+            if (direction.x != 0) {
+                transform.Rotate(transform.parent.forward, turnMult * Time.deltaTime * -direction.x, Space.World);
+            } 
+            if (direction.y != 0) {
+                transform.Rotate(transform.parent.right, turnMult * Time.deltaTime * -direction.y, Space.World);
+            }
+
+            posLastFrame = transform.localPosition;
+        }
+        transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
     }
 
     #region stat setting
