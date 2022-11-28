@@ -145,6 +145,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -191,6 +192,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -298,6 +300,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -591,6 +594,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -692,6 +696,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -799,6 +804,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -845,6 +851,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -891,6 +898,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -998,6 +1006,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -1434,6 +1443,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -1683,6 +1693,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 9
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -1790,6 +1801,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -1983,6 +1995,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -2102,6 +2115,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -2212,6 +2226,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -2356,6 +2371,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -2524,6 +2540,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -2631,6 +2648,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 9
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -2764,6 +2782,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -2908,6 +2927,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -3102,6 +3122,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -3299,6 +3320,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -3409,6 +3431,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 9
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -3516,6 +3539,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -3648,6 +3672,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -3766,6 +3791,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -3859,6 +3885,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -4061,6 +4088,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -5137,6 +5165,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -5351,6 +5380,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -5397,6 +5427,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -5443,6 +5474,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 9
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -5740,6 +5772,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -6143,6 +6176,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 9
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -6250,6 +6284,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -6357,6 +6392,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -6403,6 +6439,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 11
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -6744,6 +6781,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -6992,6 +7030,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -7753,6 +7792,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -7799,6 +7839,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -8004,6 +8045,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -8053,6 +8095,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -8099,6 +8142,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -8140,6 +8184,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -8403,6 +8448,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -13363,6 +13409,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -13766,6 +13813,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -14177,6 +14225,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -14313,6 +14362,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -14424,6 +14474,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -14531,6 +14582,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -14884,6 +14936,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15167,6 +15220,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15213,6 +15267,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15320,6 +15375,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 9
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15427,6 +15483,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15560,6 +15617,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15697,6 +15755,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15841,6 +15900,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -15948,6 +16008,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -16081,6 +16142,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -16250,6 +16312,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -16722,6 +16785,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -16858,6 +16922,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -17003,6 +17068,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -17099,6 +17165,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -17394,6 +17461,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -17589,6 +17657,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -17812,6 +17881,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 9
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18046,6 +18116,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18092,6 +18163,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18225,6 +18297,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18361,6 +18434,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18447,6 +18521,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18604,6 +18679,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18772,6 +18848,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -18913,6 +18990,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 9
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19140,6 +19218,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19172,6 +19251,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19279,6 +19359,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19325,6 +19406,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19498,6 +19580,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19544,6 +19627,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19651,6 +19735,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -19819,6 +19904,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -20294,6 +20380,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -20401,6 +20488,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -20603,6 +20691,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -20736,6 +20825,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -20847,6 +20937,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -21101,6 +21192,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -21384,6 +21476,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 3
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -21430,6 +21523,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -21621,6 +21715,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -21745,6 +21840,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -21892,6 +21988,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -21999,6 +22096,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -22186,6 +22284,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -22218,6 +22317,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 6
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -22350,6 +22450,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -22432,6 +22533,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -22634,6 +22736,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -22863,6 +22966,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 7
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -22996,6 +23100,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -23106,6 +23211,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 4
+  cldtimer: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -23318,6 +23424,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 3
+  cldtimer: 7
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -23425,6 +23532,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
+  cldtimer: 5
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -23558,6 +23666,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -23788,6 +23897,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -23907,6 +24017,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -23952,6 +24063,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 2
+  cldtimer: 2
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -24085,6 +24197,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -24134,6 +24247,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 10
+  cldtimer: 6
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -24545,6 +24659,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -24638,6 +24753,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 8
+  cldtimer: 8
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -25413,6 +25529,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 1
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
