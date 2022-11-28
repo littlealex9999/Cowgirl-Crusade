@@ -11,16 +11,18 @@ public class EnemySpawn : EnemySwapRails
 
     private void OnTriggerEnter(Collider other)
     {
-        foreach (RailsEnemyMovement rem in enemyMoveScripts) {
-            rem.gameObject.SetActive(true);
-            EnemyTriggerLogic(rem, other);
+        if (other.tag == "Player") {
+            foreach (RailsEnemyMovement rem in enemyMoveScripts) {
+                rem.gameObject.SetActive(true);
+                EnemyTriggerLogic(rem, other);
 
-            if (forceOntoPath) {
-                rem.transform.position = rem.pathToFollow.getPath[rem.movingToIndex];
-            }
-            if (setRotation) {
-                if (rem.thingToFollow != null) {
-                    rem.transform.rotation = rem.thingToFollow.transform.rotation;
+                if (forceOntoPath) {
+                    rem.transform.position = rem.pathToFollow.getPath[rem.movingToIndex];
+                }
+                if (setRotation) {
+                    if (rem.thingToFollow != null) {
+                        rem.transform.rotation = rem.thingToFollow.transform.rotation;
+                    }
                 }
             }
         }
