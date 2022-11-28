@@ -15,7 +15,7 @@ public class Character : MonoBehaviour
     [SerializeField] protected Bullet bullet;
     [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] float shootCooldown = 1;
-    float cldtimer;
+    [SerializeField, InspectorName("Spawn Shoot Cooldown")] float cldtimer;
 
     float ShootCooldownMultiplier;
 
