@@ -2,23 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Score : MonoBehaviour
+[CreateAssetMenu(fileName = "ScoresObject", menuName = "Score/ScoreObject")]
+public class Score : ScriptableObject
 {
+
+    [SerializeField] int[] scores = new int[10];
+
     int points = 0;
     float multiplier = 1.0f;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
     public void AddMultiplier(float increase)
     {
@@ -41,14 +32,28 @@ public class Score : MonoBehaviour
 
     public void ResetPoints()
     {
+        AddHighscore(points);
         points = 0;
     }
 
-    private void UpdateDisplay()
+    void SaveHighscoresToFile()
     {
 
     }
 
+    void UpdateDisplay()
+    {
 
+    }
 
+    void AddHighscore(int score)
+    {
+
+    }
+
+    public void OnGameQuit()
+    {
+        ResetPoints();
+        SaveHighscoresToFile();
+    }
 }
