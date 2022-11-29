@@ -63,24 +63,32 @@ public class Player : Character
     void Shoot()
     {
         if (Input.GetMouseButton(0)) {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitInfo;
-            //LayerMask.NameToLayer("RayHitLayer")
-            if (Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + shootDistance, 1 << 6)) {
-                Bullet firedScript = base.Shoot(hitInfo.point);
+            Vector3 shootTo = GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo);
+            if (hitEnemy) {
+                Bullet firedScript = base.Shoot(shootTo);
 
                 if (firedScript != null) { // bullet actually fired
                     firedScript.SetTarget(hitInfo.collider.gameObject);
                     firedScript.SetHomingSpeed(bulletHomingSpeed);
                 }
             } else {
-                Vector3 point = Input.mousePosition;
-                point.z = -mainCamera.transform.localPosition.z + shootDistance;
-                base.Shoot(mainCamera.ScreenToWorldPoint(point));
+                base.Shoot(shootTo);
             }
+        }
+    }
 
-            Debug.DrawRay(ray.origin, ray.direction, Color.blue);
-            Debug.DrawLine(ray.origin, ray.origin + ray.direction * (-mainCamera.transform.localPosition.z + shootDistance), Color.cyan);
+    public Vector3 GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo)
+    {
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + shootDistance, 1 << 6)) {
+            hitEnemy = true;
+            return hitInfo.point;
+        } else {
+            hitEnemy = false;
+
+            Vector3 point = Input.mousePosition;
+            point.z = -mainCamera.transform.localPosition.z + shootDistance;
+            return mainCamera.ScreenToWorldPoint(point);
         }
     }
 }
