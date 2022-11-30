@@ -12,12 +12,14 @@ public class Player : Character
 
     Vector2 boundaries;
     Camera mainCamera;
+    Vector3 initialOffset;
 
     void Start()
     {
         base.Start();
 
         mainCamera = Camera.main;
+        initialOffset = mainCamera.transform.localPosition;
         CalculateBoundaries();
     }
 
@@ -37,16 +39,16 @@ public class Player : Character
         }
         moveInput *= moveSpeed * Time.deltaTime;
 
-        if (transform.localPosition.x + moveInput.x - mainCamera.transform.localPosition.x > boundaries.x) {
-            moveInput.x = boundaries.x + mainCamera.transform.localPosition.x - transform.localPosition.x;
-        } else if (transform.localPosition.x + moveInput.x - mainCamera.transform.localPosition.x < -boundaries.x) {
-            moveInput.x = -boundaries.x + mainCamera.transform.localPosition.x - transform.localPosition.x;
+        if (transform.localPosition.x + moveInput.x - initialOffset.x > boundaries.x) {
+            moveInput.x = boundaries.x + initialOffset.x - transform.localPosition.x;
+        } else if (transform.localPosition.x + moveInput.x - initialOffset.x < -boundaries.x) {
+            moveInput.x = -boundaries.x + initialOffset.x - transform.localPosition.x;
         }
 
-        if (transform.localPosition.y + moveInput.y - mainCamera.transform.localPosition.y > boundaries.y) {
-            moveInput.y = boundaries.y + mainCamera.transform.localPosition.y - transform.localPosition.y;
-        } else if (transform.localPosition.y + moveInput.y - mainCamera.transform.localPosition.y < -boundaries.y) {
-            moveInput.y = -boundaries.y + mainCamera.transform.localPosition.y - transform.localPosition.y;
+        if (transform.localPosition.y + moveInput.y - initialOffset.y > boundaries.y) {
+            moveInput.y = boundaries.y + initialOffset.y - transform.localPosition.y;
+        } else if (transform.localPosition.y + moveInput.y - initialOffset.y < -boundaries.y) {
+            moveInput.y = -boundaries.y + initialOffset.y - transform.localPosition.y;
         }
 
         gameObject.transform.localPosition += moveInput;
@@ -54,7 +56,7 @@ public class Player : Character
 
     void CalculateBoundaries()
     {
-        Vector3 v3ViewPort = new Vector3(1, 1, -mainCamera.transform.localPosition.z);
+        Vector3 v3ViewPort = new Vector3(1, 1, -initialOffset.z);
         boundaries = transform.InverseTransformPoint(mainCamera.ViewportToWorldPoint(v3ViewPort));
         boundaries.x *= boundaryMoveMultipliers.x;
         boundaries.y *= boundaryMoveMultipliers.y;
@@ -63,24 +65,32 @@ public class Player : Character
     void Shoot()
     {
         if (Input.GetMouseButton(0)) {
-            Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitInfo;
-            //LayerMask.NameToLayer("RayHitLayer")
-            if (Physics.Raycast(ray, out hitInfo, -mainCamera.transform.localPosition.z + shootDistance, 1 << 6)) {
-                Bullet firedScript = base.Shoot(hitInfo.point);
+            Vector3 shootTo = GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo);
+            if (hitEnemy) {
+                Bullet firedScript = base.Shoot(shootTo);
 
                 if (firedScript != null) { // bullet actually fired
                     firedScript.SetTarget(hitInfo.collider.gameObject);
                     firedScript.SetHomingSpeed(bulletHomingSpeed);
                 }
             } else {
-                Vector3 point = Input.mousePosition;
-                point.z = -mainCamera.transform.localPosition.z + shootDistance;
-                base.Shoot(mainCamera.ScreenToWorldPoint(point));
+                base.Shoot(shootTo);
             }
+        }
+    }
 
-            Debug.DrawRay(ray.origin, ray.direction, Color.blue);
-            Debug.DrawLine(ray.origin, ray.origin + ray.direction * (-mainCamera.transform.localPosition.z + shootDistance), Color.cyan);
+    public Vector3 GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo)
+    {
+        Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hitInfo, -initialOffset.z + shootDistance, 1 << 6)) {
+            hitEnemy = true;
+            return hitInfo.point;
+        } else {
+            hitEnemy = false;
+
+            Vector3 point = Input.mousePosition;
+            point.z = -initialOffset.z + shootDistance;
+            return mainCamera.ScreenToWorldPoint(point);
         }
     }
 }

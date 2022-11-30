@@ -3642,6 +3642,9 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
+  turnMult: 100
+  resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -31538,7 +31541,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh62906
+  m_Name: pb_Mesh21330
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2

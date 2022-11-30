@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: b97e50cea2c78da4f844304925976549, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -236,6 +236,7 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 2
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 10
   bulletSpeedAddition: 0
@@ -244,6 +245,7 @@ MonoBehaviour:
   moveSpeed: 10
   boundaryMoveMultipliers: {x: 0.8, y: 0.5}
   shootDistance: 10
+  bulletHomingSpeed: 100
 --- !u!1 &303690520
 GameObject:
   m_ObjectHideFlags: 0
@@ -1379,6 +1381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newPath: {fileID: 430001475}
+  newMovePoint: 0
   destroyOnPlayerEnter: 0
 --- !u!65 &824997294
 BoxCollider:
@@ -1740,6 +1743,7 @@ MonoBehaviour:
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
+  cldtimer: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
