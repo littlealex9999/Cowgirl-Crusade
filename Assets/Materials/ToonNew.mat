@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Toon
-  m_Shader: {fileID: -6465566751694194690, guid: e04a9fd5f01e5194982e29d62d8febb1, type: 3}
+  m_Name: ToonNew
+  m_Shader: {fileID: -6465566751694194690, guid: 8d27ee9784837d343b1e4d6d8c8a39e6, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -19,12 +19,8 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_42c4d3c5a1d54e8db50243c6704dfa63:
-        m_Texture: {fileID: 2800000, guid: a4156609cb9e84be5b5fafc60adeac6d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - Texture2D_bb1566877b2f4c15a051d699b0945217:
-        m_Texture: {fileID: 0}
+    - Texture2D_857f07542b07490dab53d631378be483:
+        m_Texture: {fileID: 2800000, guid: fc4046b544caebe429699cda56053794, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -84,12 +80,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_231ec358f29e497fb2c63315589f413d: 0.66
-    - Vector1_2c877c64c3db4a1ea7ba2c452b34f65f: 0
-    - Vector1_44dc88a6bdc84a38be5d7fd975f5ecef: 0
-    - Vector1_48eea261b91f4959bde50be143d90bd7: 2
-    - Vector1_4d7fb2a982304f54b4634fcceb4de40b: 1
-    - Vector1_8f965f4de6ff413386aa8c0547e2f9ee: 0
+    - Vector1_2ed2605a18bd46578a8017e4f0cadaa3: 0
+    - Vector1_559325bdd4a34ea1900b4f6260c8c4b2: 5000
+    - Vector1_86592ba3aee64606a1a6ec2230c2877c: 0
+    - Vector1_db09c27e72054b36baddc180618c6a55: 0.1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -117,13 +111,16 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_a0a10b1a08694bf9aa427d5e69ec1388: {r: 0, g: 0, b: 0, a: 1}
+    - Color_0caee73e196b4abb8e94bef77bc6a9b1: {r: 1, g: 1, b: 1, a: 0}
+    - Color_19ca6f1c56ca4f10bd49e36956fad327: {r: 0, g: 0, b: 0, a: 0}
+    - Color_8b9f58cffc6e49f0ba6b10e414d16dbc: {r: 1, g: 1, b: 1, a: 0}
+    - Vector3_12fb579aa29d4aaab07cde03b4c24c7e: {r: 0.05, g: 0.05, b: 0.05, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
---- !u!114 &6621491457129497794
+--- !u!114 &3287489093646599100
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
