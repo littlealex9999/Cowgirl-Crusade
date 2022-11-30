@@ -8,17 +8,30 @@ public class Score : ScriptableObject
 
     [SerializeField] int[] scores = new int[10];
 
+    [SerializeField] float maxMultiplier = 2.0f;
+
+
     int points = 0;
     float multiplier = 1.0f;
 
+    public int GetPoints { get { return points; } }
+
+    public float GetMultiplier { get { return multiplier; } }
+
     public void AddMultiplier(float increase)
     {
-        multiplier += increase;
+        if (multiplier < maxMultiplier)
+        {
+            multiplier += increase;
+            GameManager.instance.UpdateMultiplier();
+        }
     }
 
     public void ResetMultiplier()
     {
         multiplier = 1;
+        GameManager.instance.UpdateMultiplier();
+
     }
 
 
@@ -26,6 +39,7 @@ public class Score : ScriptableObject
     public void AddPoints(int amount)
     {
         points += (int)(amount * multiplier);
+        GameManager.instance.UpdateScore();
 
     }
 
@@ -34,6 +48,7 @@ public class Score : ScriptableObject
     {
         AddHighscore(points);
         points = 0;
+        GameManager.instance.UpdateScore();
     }
 
     void SaveHighscoresToFile()
@@ -41,10 +56,6 @@ public class Score : ScriptableObject
 
     }
 
-    void UpdateDisplay()
-    {
-
-    }
 
     void AddHighscore(int score)
     {
