@@ -13,7 +13,7 @@ public class MoveToEditor : Editor
         MoveTo selected = target as MoveTo;
 
         if (selected.localPosition) {
-            Vector3 movePoint = Handles.FreeMoveHandle(selected.moveTo + selected.transform.position, Quaternion.identity, size, new Vector3(0.1f, 0.1f, 0f), Handles.DotHandleCap);
+            Vector3 movePoint = Handles.FreeMoveHandle(selected.moveTo + selected.transform.position - selected.transform.localPosition, Quaternion.identity, size, new Vector3(0.1f, 0.1f, 0f), Handles.DotHandleCap);
             if (EditorGUI.EndChangeCheck()) {
                 Undo.RecordObject(target, "Changed Move Point");
 
@@ -32,7 +32,7 @@ public class MoveToEditor : Editor
         Handles.color = Color.blue;
 
         if (selected.localPosition) {
-            Handles.DrawLine(selected.transform.position, selected.moveTo + selected.transform.position);
+            Handles.DrawLine(selected.transform.position, selected.moveTo + selected.transform.position - selected.transform.localPosition);
         } else {
             Handles.DrawLine(selected.transform.position, selected.moveTo);
         }
