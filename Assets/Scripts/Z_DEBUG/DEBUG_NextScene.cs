@@ -16,6 +16,14 @@ public class DEBUG_NextScene : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.F1)) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F2)) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        if (Input.GetKeyDown(KeyCode.F3)) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
