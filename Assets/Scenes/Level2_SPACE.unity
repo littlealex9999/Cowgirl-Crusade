@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.85
+      value: 62.249996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -385,14 +385,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 576355366}
 --- !u!135 &170979750
@@ -420,9 +420,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -9.7, y: 4.67, z: 50}
-  speed: 5
+  moveTo: {x: 10.3, y: -5.33, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &222435889 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -449,14 +450,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 601708226}
 --- !u!135 &222435892
@@ -484,9 +485,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -6.14, y: 7.499998, z: 50}
-  speed: 5
+  moveTo: {x: 13.859997, y: -7.500002, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1001 &251327296
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -500,7 +502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.54
+      value: 59.94
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -660,11 +662,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.440002
+      value: 63.540005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.33
+      value: 22.900002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -844,7 +846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.7
+      value: -88.450005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1029,11 +1031,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.47
+      value: -66.42
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.540001
+      value: 32.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1108,13 +1110,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 45721566}
 --- !u!135 &439965437
@@ -1142,9 +1144,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -1.9, y: 9, z: 50}
-  speed: 5
+  moveTo: {x: -11.9, y: 9, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &467975380 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -1171,14 +1174,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 7738952}
 --- !u!135 &467975383
@@ -1206,9 +1209,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -15.5599985, y: 8.67, z: 50}
-  speed: 5
+  moveTo: {x: -15.5599985, y: -1.33, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &487740977
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,13 +1759,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 568685713}
 --- !u!135 &626687390
@@ -1789,9 +1793,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 3.1, y: 8.540001, z: 50}
-  speed: 5
+  moveTo: {x: 18.1, y: 8.540001, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &628707193 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -1819,13 +1824,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 7738952}
 --- !u!135 &628707196
@@ -1853,9 +1858,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -11.9, y: 4.67, z: 50}
-  speed: 5
+  moveTo: {x: -11.9, y: -5.33, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &712117980 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -1882,14 +1888,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 45721566}
 --- !u!135 &712117985
@@ -1917,9 +1923,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -5.56, y: 13, z: 50}
-  speed: 5
+  moveTo: {x: -15.5599985, y: 13, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1001 &722484931
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1933,11 +1940,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 66.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.5
+      value: 44.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2124,7 +2131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.5599985
+      value: -84.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2276,6 +2283,7 @@ MonoBehaviour:
   moveTo: {x: 0, y: 0, z: 1400}
   speed: 33
   localPosition: 0
+  finished: 0
 --- !u!65 &904249841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32535,11 +32543,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.440002
+      value: 46.860004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.540001
+      value: -18.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32600,11 +32608,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 21.659996
+      value: 55.579998
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.5
+      value: -32.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32665,11 +32673,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25
+      value: 71.01
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.5
+      value: 39.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32747,14 +32755,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 1994930154}
 --- !u!135 &984462176
@@ -32782,9 +32790,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 10, y: 2.5, z: 50}
-  speed: 5
+  moveTo: {x: 20, y: 12.5, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1001 &985984212
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32798,11 +32807,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.27
+      value: -74.22
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.54
+      value: 32.949997
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -32876,14 +32885,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 146385081}
 --- !u!135 &1009245121
@@ -32911,9 +32920,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -7.27, y: -1.46, z: 50}
-  speed: 5
+  moveTo: {x: -22.27, y: 8.54, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &1115690782 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -32940,14 +32950,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 1994930154}
 --- !u!135 &1115690787
@@ -32975,9 +32985,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 15, y: -2.5, z: 50}
-  speed: 5
+  moveTo: {x: 25, y: 7.5, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &1162691164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -33004,14 +33015,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 568685713}
 --- !u!135 &1162691167
@@ -33039,9 +33050,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -0.56, y: 12.540001, z: 50}
-  speed: 5
+  moveTo: {x: 14.440002, y: 12.540001, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &1163295736 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -33068,14 +33080,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 601708226}
 --- !u!135 &1163295739
@@ -33103,9 +33115,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -2, y: 11.5, z: 50}
-  speed: 5
+  moveTo: {x: 18, y: -3.5, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &1237105724
 GameObject:
   m_ObjectHideFlags: 0
@@ -33184,11 +33197,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.5599985
+      value: -53.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13
+      value: 34.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33358,11 +33371,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.129997
+      value: -70.079994
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.540001
+      value: 36.95
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33423,11 +33436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.859997
+      value: 47.78
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.500002
+      value: -32.17
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33488,11 +33501,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.3
+      value: 42.72
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.54
+      value: -22.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33575,6 +33588,7 @@ MonoBehaviour:
   moveTo: {x: 20, y: 0, z: 1400}
   speed: 33
   localPosition: 0
+  finished: 0
 --- !u!65 &1462928566
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33664,11 +33678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.7
+      value: -57.660004
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9
+      value: 30.830002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33729,7 +33743,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.41
+      value: 56.81
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -33807,14 +33821,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 146385081}
 --- !u!135 &1558604204
@@ -33842,9 +33856,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -3.13, y: 2.54, z: 50}
-  speed: 5
+  moveTo: {x: -18.129997, y: 12.540001, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1001 &1568889166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33858,11 +33873,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 10.3
+      value: 59.4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.33
+      value: 18.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -33937,13 +33952,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 1994930154}
 --- !u!135 &1584313230
@@ -33971,9 +33986,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 5, y: -2.5, z: 50}
-  speed: 5
+  moveTo: {x: 15, y: 7.5, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1001 &1619512479
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33987,11 +34003,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.1
+      value: 67.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.33
+      value: 18.900002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34117,11 +34133,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.1
+      value: 50.52
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.540001
+      value: -22.91
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34182,11 +34198,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15
+      value: 61.010002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.5
+      value: 39.47
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34365,14 +34381,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 45721566}
 --- !u!135 &1782140602
@@ -34400,9 +34416,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 12.85, y: 20, z: 50}
+  moveTo: {x: 12.85, y: 0, z: 50}
   speed: 5
   localPosition: 1
+  finished: 0
 --- !u!1 &1790231421 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -34429,14 +34446,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 568685713}
 --- !u!135 &1790231424
@@ -34464,9 +34481,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -4.7, y: 8.54, z: 50}
-  speed: 5
+  moveTo: {x: 10.3, y: 8.54, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &1815348879 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -34494,13 +34512,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 146385081}
 --- !u!135 &1815348882
@@ -34528,9 +34546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 0.53, y: -1.459999, z: 50}
-  speed: 0
+  moveTo: {x: -14.47, y: 8.540001, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &1864820312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -34558,13 +34577,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 576355366}
 --- !u!135 &1864820315
@@ -34592,9 +34611,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -1.9, y: 4.67, z: 50}
-  speed: 5
+  moveTo: {x: 18.1, y: -5.33, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &1914880258
 GameObject:
   m_ObjectHideFlags: 0
@@ -34738,7 +34758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.9
+      value: -80.65
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -34803,11 +34823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.9
+      value: -49.86
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9
+      value: 30.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -34893,6 +34913,7 @@ MonoBehaviour:
   moveTo: {x: -70, y: 30, z: 520}
   speed: 20
   localPosition: 0
+  finished: 0
 --- !u!114 &1991225607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35127,11 +35148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18
+      value: 51.920002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.5
+      value: -28.169996
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -35335,14 +35356,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 45721566}
 --- !u!135 &2064583960
@@ -35370,9 +35391,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -9.7, y: 9, z: 50}
-  speed: 5
+  moveTo: {x: -19.7, y: 9, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &2069409696
 GameObject:
   m_ObjectHideFlags: 0
@@ -35487,6 +35509,7 @@ MonoBehaviour:
   moveTo: {x: 80, y: 30, z: 520}
   speed: 20
   localPosition: 0
+  finished: 0
 --- !u!114 &2069409702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35572,13 +35595,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 601708226}
 --- !u!135 &2072691869
@@ -35606,9 +35629,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 1.66, y: 7.5, z: 50}
-  speed: 5
+  moveTo: {x: 21.659996, y: -7.5, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1 &2085330329 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -35635,14 +35659,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 2
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 576355366}
 --- !u!135 &2085330332
@@ -35670,9 +35694,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -5.56, y: 3.67, z: 50}
-  speed: 5
+  moveTo: {x: 14.440002, y: -1.33, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
 --- !u!1001 &2115366312
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35757,13 +35782,13 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
-  cldtimer: 0
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 45721566}
 --- !u!135 &2124759937
@@ -35791,9 +35816,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 7.41, y: 20, z: 50}
+  moveTo: {x: 7.41, y: 0, z: 50}
   speed: 5
   localPosition: 1
+  finished: 0
 --- !u!1 &2145397018 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -35820,14 +35846,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 45721566}
 --- !u!135 &2145397021
@@ -35855,9 +35881,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: 10.54, y: 23.82, z: 50}
+  moveTo: {x: 10.54, y: 3.82, z: 50}
   speed: 5
   localPosition: 1
+  finished: 0
 --- !u!1 &2146786427 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
@@ -35884,14 +35911,14 @@ MonoBehaviour:
   sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 3
+  cldtimer: 4
   turnMult: 100
   resetRotationStrength: 4
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
-  bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedAddition: 10
+  bulletSpeedMultiplier: 15
   team: 2
   myMoveScript: {fileID: 7738952}
 --- !u!135 &2146786430
@@ -35919,6 +35946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3b522073543a4f4d9d6fa8a77126190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveTo: {x: -19.7, y: 4.67, z: 50}
-  speed: 5
+  moveTo: {x: -19.7, y: -5.33, z: 50}
+  speed: 20
   localPosition: 1
+  finished: 0
