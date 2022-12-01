@@ -4,9 +4,15 @@ using UnityEngine;
 
 public class PlayerLaser : MonoBehaviour
 {
-    public Player player;
+    Player player;
     [SerializeField] float forwardOffset = 2;
     [SerializeField] float rotationSpeed = 5;
+
+    private void Start()
+    {
+        player = transform.parent.GetComponent<Player>();
+        transform.parent = null;
+    }
 
     void Update()
     {

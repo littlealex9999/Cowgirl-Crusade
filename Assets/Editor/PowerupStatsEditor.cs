@@ -24,6 +24,10 @@ public class PowerupStatsEditor : Editor
         serializedObject.FindProperty("bulletSpeedMultiplier").floatValue = EditorGUILayout.FloatField("Bullet Speed Multiplier", serializedObject.FindProperty("bulletSpeedMultiplier").floatValue);
 
         EditorGUILayout.Space();
+        EditorGUILayout.LabelField("Special Projectile", EditorStyles.boldLabel);
+        EditorGUILayout.PropertyField(serializedObject.FindProperty("specialSpawn"), new GUIContent("Special Spawn"));
+
+        EditorGUILayout.Space();
         EditorGUILayout.LabelField("Time", EditorStyles.boldLabel);
         serializedObject.FindProperty("permanent").boolValue = EditorGUILayout.Toggle("Permanent", serializedObject.FindProperty("permanent").boolValue);
         if (!serializedObject.FindProperty("permanent").boolValue) {

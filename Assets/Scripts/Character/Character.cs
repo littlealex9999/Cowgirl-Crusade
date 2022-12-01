@@ -16,6 +16,8 @@ public class Character : MonoBehaviour
     [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] float shootCooldown = 1;
     [SerializeField, InspectorName("Spawn Shoot Cooldown")] float cldtimer;
+    [SerializeField] int maxSpecialProjectiles = 3;
+    SpecialProjectile[] specialProjectiles;
 
     [SerializeField] float turnMult = 100;
     [SerializeField] float resetRotationStrength = 4f;
@@ -49,6 +51,7 @@ public class Character : MonoBehaviour
         shield = sdmax;
 
         posLastFrame = transform.position;
+        specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
     }
 
     protected virtual void Update()
@@ -217,6 +220,20 @@ public class Character : MonoBehaviour
         return null;
     }
 
+    public virtual void SpawnSpecialProjectile()
+    {
+        if (cldtimer <= 0 && specialProjectiles != null && specialProjectiles[0] != null) {
+            Instantiate(specialProjectiles[0], transform);
+            cldtimer = specialProjectiles[0].cooldownInduced;
+
+            for (int i = 1; i < specialProjectiles.Length; ++i) {
+                specialProjectiles[i - 1] = specialProjectiles[i];
+            }
+            specialProjectiles[specialProjectiles.Length - 1] = null;
+
+        }
+    }
+
     public virtual bool TakeDamage(float damage, float setInvincibleTime = 0)
     {
         if (invincibleTime > 0) {
@@ -241,14 +258,25 @@ public class Character : MonoBehaviour
         return true;
     }
 
-    public virtual void AddPowerup(PowerupStats pus)
+    public virtual void AddPowerup(PowerupStats stats)
     {
+        PowerupStats pus = Instantiate(stats);
+
         powerups.Add(pus);
         if (pus.health > 0) {
             health += pus.health;
         }
         if (pus.shield > 0) {
             shield += pus.shield;
+        }
+
+        if (pus.specialSpawn != null) {
+            for (int i = 0; i < specialProjectiles.Length; ++i) {
+                if (specialProjectiles[i] == null) {
+                    specialProjectiles[i] = pus.specialSpawn;
+                    break;
+                }
+            }
         }
     }
     #endregion
