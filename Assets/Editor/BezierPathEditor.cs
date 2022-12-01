@@ -7,22 +7,24 @@ using System.Linq;
 [CustomEditor(typeof(BezierPath))]
 public class BezierPathEditor : Editor
 {
-    SerializedProperty editorList;
     private BezierPath selectedScript;
 
     float size = 0.1f;
 
+    Texture noButtonsImage;
+
     private void OnEnable()
     {
         SceneView.duringSceneGui += CustomOnSceneGUI;
-        editorList = serializedObject.FindProperty("pathPoints");
+
+        noButtonsImage = (Texture)AssetDatabase.LoadAssetAtPath("Assets/Editor/Images/NoButtons.jpg", typeof(Texture));
     }
 
     private void CustomOnSceneGUI(SceneView sceneView)
     {
         selectedScript = target as BezierPath;
 
-        if (selectedScript != null) {
+        if (selectedScript != null && selectedScript.pathPoints != null) {
             if (selectedScript.pathPoints.Count <= 2 || selectedScript.controlPoints.Count < selectedScript.pathPoints.Count * 2 - 1) {
                 return;
             }
@@ -49,6 +51,8 @@ public class BezierPathEditor : Editor
                     if (j - 1 >= 0) {
                         selectedScript.controlPoints[j - 1] = cpOff * -1 + selectedScript.pathPoints[i];
                     }
+
+                    selectedScript.pathDirtied = true;
                 }
 
                 // END
@@ -71,6 +75,8 @@ public class BezierPathEditor : Editor
                     selectedScript.pathPoints[i + 1] = ep;
 
                     selectedScript.controlPoints[j + 1] = cpOff + selectedScript.pathPoints[i + 1];
+
+                    selectedScript.pathDirtied = true;
                 }
 
                 // P2
@@ -87,6 +93,8 @@ public class BezierPathEditor : Editor
                     if (j != 0) {
                         selectedScript.controlPoints[j - 1] = (selectedScript.pathPoints[i] - p2) + selectedScript.pathPoints[i];
                     }
+
+                    selectedScript.pathDirtied = true;
                 }
 
                 // P3
@@ -103,6 +111,8 @@ public class BezierPathEditor : Editor
                     if (j != selectedScript.controlPoints.Count) {
                         selectedScript.controlPoints[j + 2] = (selectedScript.pathPoints[i + 1] - p3) + selectedScript.pathPoints[i + 1];
                     }
+
+                    selectedScript.pathDirtied = true;
                 }
 
                 Handles.color = Color.blue;
@@ -122,21 +132,51 @@ public class BezierPathEditor : Editor
 
         // change bezier control point count on edit points list
         if (selectedScript != null) {
-            while (selectedScript.controlPoints.Count != selectedScript.pathPoints.Count * 2 - 1) {
-                if (selectedScript.controlPoints.Count < selectedScript.pathPoints.Count * 2 - 1) {
-                    if (selectedScript.controlPoints.Count != 0) {
-                        selectedScript.controlPoints.Add(selectedScript.controlPoints.Last());
+            if (selectedScript.controlPoints != null) {
+                while (selectedScript.controlPoints.Count != selectedScript.pathPoints.Count * 2 - 1) {
+                    if (selectedScript.controlPoints.Count < selectedScript.pathPoints.Count * 2 - 1) {
+                        if (selectedScript.controlPoints.Count != 0) {
+                            selectedScript.controlPoints.Add(selectedScript.controlPoints.Last());
+                        } else {
+                            selectedScript.controlPoints.Add(Vector3.zero);
+                        }
+                    } else if (selectedScript.controlPoints.Count != 0) {
+                        selectedScript.controlPoints.Remove(selectedScript.controlPoints.Last());
                     } else {
-                        selectedScript.controlPoints.Add(Vector3.zero);
+                        break;
                     }
-                } else {
-                    selectedScript.controlPoints.Remove(selectedScript.controlPoints.Last());
                 }
+            } else {
+                selectedScript.controlPoints = new List<Vector3>();
             }
-        }
 
-        if (GUILayout.Button("Generate Path") && selectedScript != null) {
-            selectedScript.GeneratePath();
+
+            GUILayout.BeginHorizontal();
+            GUILayout.Label("Calculated Bezier Points");
+            if (selectedScript.getPath != null) {
+                GUILayout.Label(selectedScript.getPath.Count().ToString());
+            } else {
+                GUILayout.Label("0");
+            }
+            GUILayout.EndHorizontal();
+
+            if (GUILayout.Button("Generate Path")) {
+                selectedScript.GeneratePath();
+                selectedScript.pathDirtied = false;
+            }
+
+            if (selectedScript.pathDirtied) {
+                if (noButtonsImage != null) {
+                    GUILayout.Box(noButtonsImage);
+                } else {
+                    noButtonsImage = (Texture)AssetDatabase.LoadAssetAtPath("Assets/Editor/Images/NoButtons.jpg", typeof(Texture));
+                }
+
+                GUILayout.Box("GENERATE A NEW PATH \n OH GOD, PLEASE DO IT NOW \n YOU'LL DOOM US ALL IF YOU DON'T \n GODDAMN IT IT'S JUST ONE SINGLE BUTTON HOW ARE YOU NOT HITTING IT");
+            }
+        } else {
+            selectedScript = target as BezierPath;
+            Repaint();
         }
     }
 }

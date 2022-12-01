@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: d1c3109bdb54ad54c8a2b2838528e640
+    path: Assets/Scenes/Level1_MiningDrillv2.unity
+    guid: e4aa2476e3926e248b0939ed5da950b8
+  - enabled: 1
+    path: Assets/Scenes/Level2_SPACE.unity
+    guid: a4c3e06a8dfe8f049a093c04793583ba
   m_configObjects: {}
