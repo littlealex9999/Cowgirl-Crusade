@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text scoreText;
     [SerializeField] Text multiplierText;
 
-    // Start is called before the first frame update
+    public Score GetScore { get { return scoreObject; } }
+
     void Start()
     {
         if (instance == null)
@@ -25,7 +26,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         

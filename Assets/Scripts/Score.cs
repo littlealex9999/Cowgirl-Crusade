@@ -59,7 +59,15 @@ public class Score : ScriptableObject
 
     void AddHighscore(int score)
     {
-
+        for (int i = 0; i < scores.Length; ++i) {
+            if (score > scores[i]) {
+                int temp = scores[i];
+                scores[i] = score;
+                if (i < scores.Length + 1) {
+                    scores[i + 1] = temp;
+                }
+            }
+        }
     }
 
     public void OnGameQuit()
