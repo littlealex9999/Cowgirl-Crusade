@@ -19,7 +19,7 @@ public class Character : MonoBehaviour
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
-    [SerializeField] float turnMult = 100;
+    [SerializeField] Vector2 turnMult = new Vector2(100, 100);
     [SerializeField] float resetRotationStrength = 4f;
 
     [SerializeField] int pointsGiven;
@@ -71,36 +71,21 @@ public class Character : MonoBehaviour
 
 
         // ROTATION
-        if (posLastFrame != transform.localPosition) {
-            Vector3 direction = (transform.localPosition - posLastFrame).normalized;
+        if (posLastFrame != transform.position) {
+            Vector3 direction = (transform.position - posLastFrame).normalized;
+            Vector3 crossdir = Vector3.Cross(direction, transform.up);
+            Debug.DrawLine(transform.position, transform.position + crossdir * 5, Color.blue, 10);
 
-            if (direction.x != 0) {
-                transform.Rotate(transform.parent.forward, turnMult * Time.deltaTime * -direction.x, Space.World);
-            }
-            if (direction.y != 0) {
-                transform.Rotate(transform.parent.right, turnMult * Time.deltaTime * -direction.y, Space.World);
-            }
+            transform.Rotate(transform.forward, Vector3.Dot(direction, -transform.right) * turnMult.x * Time.deltaTime, Space.World);
+            transform.Rotate(transform.parent.right, Vector3.Dot(direction, transform.parent.up) * turnMult.y * -1 * Time.deltaTime, Space.World);
 
-            posLastFrame = transform.localPosition;
+            Debug.Log("Dot Cross Left: " + Vector3.Dot(crossdir, -transform.right));
+            Debug.Log("Dot Cross Right: " + Vector3.Dot(crossdir, transform.right));
+            Debug.Log("Dot Dir Right: " + Vector3.Dot(direction, transform.right));
+
+            posLastFrame = transform.position;
         }
         transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
-
-        //if (posLastFrame != transform.position) {
-        //    Vector3 direction = (transform.position - posLastFrame).normalized;
-        //    Vector3 crossdir = Vector3.Cross(direction, transform.up);
-        //    Debug.DrawLine(transform.position, transform.position + crossdir * 5, Color.blue, 10);
-        //    Debug.Log(Vector3.Dot(crossdir, transform.forward));
-
-        //    if (direction.x != 0) {
-
-        //    }
-        //    if (direction.y != 0) {
-
-        //    }
-
-        //    posLastFrame = transform.position;
-        //}
-
     }
 
     protected virtual void OnDestroy()
