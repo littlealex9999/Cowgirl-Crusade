@@ -71,17 +71,11 @@ public class Character : MonoBehaviour
 
 
         // ROTATION
-        if (posLastFrame != transform.position) {
+        if (transform.parent != null && posLastFrame != transform.position) {
             Vector3 direction = (transform.position - posLastFrame).normalized;
-            Vector3 crossdir = Vector3.Cross(direction, transform.up);
-            Debug.DrawLine(transform.position, transform.position + crossdir * 5, Color.blue, 10);
 
             transform.Rotate(transform.forward, Vector3.Dot(direction, -transform.right) * turnMult.x * Time.deltaTime, Space.World);
             transform.Rotate(transform.parent.right, Vector3.Dot(direction, transform.parent.up) * turnMult.y * -1 * Time.deltaTime, Space.World);
-
-            Debug.Log("Dot Cross Left: " + Vector3.Dot(crossdir, -transform.right));
-            Debug.Log("Dot Cross Right: " + Vector3.Dot(crossdir, transform.right));
-            Debug.Log("Dot Dir Right: " + Vector3.Dot(direction, transform.right));
 
             posLastFrame = transform.position;
         }
