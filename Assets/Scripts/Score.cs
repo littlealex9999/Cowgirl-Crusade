@@ -11,8 +11,8 @@ public class Score : ScriptableObject
     [SerializeField] float maxMultiplier = 2.0f;
 
 
-    int points = 0;
-    float multiplier = 1.0f;
+    [SerializeField] int points = 0;
+    [SerializeField] float multiplier = 1.0f;
 
     public int GetPoints { get { return points; } }
 
