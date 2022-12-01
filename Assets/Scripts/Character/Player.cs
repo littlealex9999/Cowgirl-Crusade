@@ -31,6 +31,12 @@ public class Player : Character
         Shoot();
     }
 
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        GameManager.instance.GetScore.ResetPoints();
+    }
+
     void Move()
     {
         Vector3 moveInput = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));

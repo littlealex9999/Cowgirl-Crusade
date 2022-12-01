@@ -20,6 +20,8 @@ public class Character : MonoBehaviour
     [SerializeField] float turnMult = 100;
     [SerializeField] float resetRotationStrength = 4f;
 
+    [SerializeField] int pointsGiven;
+
     float ShootCooldownMultiplier;
 
     [SerializeField, Header("Bullet Attributes"), Space] float bulletDamageAddition = 0;
@@ -66,19 +68,41 @@ public class Character : MonoBehaviour
 
 
         // ROTATION
-        if (posLastFrame != transform.localPosition) {
-            Vector3 direction = (transform.localPosition - posLastFrame).normalized;
+        //if (posLastFrame != transform.localPosition) {
+        //    Vector3 direction = (transform.localPosition - posLastFrame).normalized;
+
+        //    if (direction.x != 0) {
+        //        transform.Rotate(transform.parent.forward, turnMult * Time.deltaTime * -direction.x, Space.World);
+        //    } 
+        //    if (direction.y != 0) {
+        //        transform.Rotate(transform.parent.right, turnMult * Time.deltaTime * -direction.y, Space.World);
+        //    }
+
+        //    posLastFrame = transform.localPosition;
+        //}
+        //transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
+
+        if (posLastFrame != transform.position) {
+            Vector3 direction = (transform.position - posLastFrame).normalized;
+            Vector3 crossdir = Vector3.Cross(direction, transform.up);
+            Debug.DrawLine(transform.position, transform.position + crossdir * 5, Color.blue, 10);
+            Debug.Log(Vector3.Dot(crossdir, transform.forward));
 
             if (direction.x != 0) {
-                transform.Rotate(transform.parent.forward, turnMult * Time.deltaTime * -direction.x, Space.World);
-            } 
+                //transform.Rotate(transform.parent.forward, turnMult * Time.deltaTime * -direction.x, Space.World);
+            }
             if (direction.y != 0) {
-                transform.Rotate(transform.parent.right, turnMult * Time.deltaTime * -direction.y, Space.World);
+                //transform.Rotate(transform.parent.right, turnMult * Time.deltaTime * -direction.y, Space.World);
             }
 
-            posLastFrame = transform.localPosition;
+            posLastFrame = transform.position;
         }
-        transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
+        //transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
+    }
+
+    protected virtual void OnDestroy()
+    {
+        GameManager.instance.GetScore.AddPoints(pointsGiven);
     }
 
     #region stat setting
