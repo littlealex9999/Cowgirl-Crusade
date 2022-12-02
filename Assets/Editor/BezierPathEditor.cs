@@ -9,7 +9,7 @@ public class BezierPathEditor : Editor
 {
     private BezierPath selectedScript;
 
-    float size = 0.1f;
+    float size = 0.5f;
 
     Texture noButtonsImage;
 
