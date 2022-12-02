@@ -26,7 +26,7 @@ public class RailsMovement : MonoBehaviour
         // finally, if we don't have enough speed, move towards the next point and stop
         // this gives us consistant move speed through the bezier curve
 
-        if (movingToIndex < pathToFollow.getPath.Length) {
+        if (pathToFollow != null && movingToIndex < pathToFollow.getPath.Length) {
             RotateTowards(pathToFollow.getPath[movingToIndex]);
 
             float remainingMovement = speed * Time.deltaTime;
