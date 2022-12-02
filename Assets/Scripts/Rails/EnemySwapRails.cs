@@ -23,7 +23,7 @@ public class EnemySwapRails : SwapRails
                     e.FindTarget();
                 }
 
-                base.OnTriggerEnter(other);
+                SwapRailsLogic(enemyRailsScript);
             }
         }
     }
