@@ -71,15 +71,17 @@ public class Character : MonoBehaviour
 
 
         // ROTATION
-        if (transform.parent != null && posLastFrame != transform.position) {
-            Vector3 direction = (transform.position - posLastFrame).normalized;
+        if (transform.parent != null) {
+            if (posLastFrame != transform.position) {
+                Vector3 direction = (transform.position - posLastFrame).normalized;
 
-            transform.Rotate(transform.forward, Vector3.Dot(direction, -transform.right) * turnMult.x * Time.deltaTime, Space.World);
-            transform.Rotate(transform.parent.right, Vector3.Dot(direction, transform.parent.up) * turnMult.y * -1 * Time.deltaTime, Space.World);
+                transform.Rotate(transform.forward, Vector3.Dot(direction, -transform.right) * turnMult.x * Time.deltaTime, Space.World);
+                transform.Rotate(transform.parent.right, Vector3.Dot(direction, transform.parent.up) * turnMult.y * -1 * Time.deltaTime, Space.World);
 
-            posLastFrame = transform.position;
+                posLastFrame = transform.position;
+            }
+            transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
         }
-        transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
     }
 
     protected virtual void OnDestroy()

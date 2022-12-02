@@ -5,11 +5,11 @@ using UnityEngine;
 public class PlayerNuke : MonoBehaviour
 {
     Player player;
-    Collider collider;
 
     [SerializeField] float damage = 100;
     [SerializeField] float delayUntilTriggerMovement = 5;
     [SerializeField] Vector3 explodeTargetPoint;
+    [SerializeField] float explosionSize = 50;
 
     [SerializeField, Space] float rotationSpeed;
     [SerializeField] float moveSpeed;
@@ -17,8 +17,6 @@ public class PlayerNuke : MonoBehaviour
     [SerializeField, Space] GameObject explosionPrefab;
 
     Vector3 posLastFrame;
-
-    bool destroy = false;
 
     void Start()
     {
@@ -35,21 +33,10 @@ public class PlayerNuke : MonoBehaviour
 
             transform.rotation = player.transform.rotation;
         }
-
-        collider = GetComponent<Collider>();
-        if (collider == null) {
-            Destroy(gameObject);
-        }
-
-        collider.enabled = false;
     }
 
     void Update()
     {
-        if (destroy) {
-            Destroy(gameObject);
-        }
-
         if (delayUntilTriggerMovement > 0) {
             delayUntilTriggerMovement -= Time.deltaTime;
 
@@ -60,30 +47,27 @@ public class PlayerNuke : MonoBehaviour
             if (targetDistance > moveSpeedThisFrame) {
                 transform.localPosition += (explodeTargetPoint - transform.localPosition).normalized * moveSpeedThisFrame;
             } else { // target reached, explode
-                collider.enabled = true;
+                Collider[] objectsHit = Physics.OverlapSphere(transform.position, explosionSize);
+                for (int i = 0; i < objectsHit.Length; ++i) {
+                    if (objectsHit[i].tag != "Player") {
+                        Character hitChara = objectsHit[i].GetComponent<Character>();
+
+                        if (hitChara != null) {
+                            hitChara.TakeDamage(damage);
+                        }
+                    }
+                }
 
                 if (explosionPrefab != null) {
                     Instantiate(explosionPrefab);
                 }
+
+                Destroy(gameObject);
             }
         }
 
         transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation((transform.position - posLastFrame).normalized), rotationSpeed * Time.deltaTime);
 
         posLastFrame = transform.position;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player") {
-            return;
-        }
-
-        Character otherChara = other.GetComponent<Character>();
-        if (otherChara != null) {
-            otherChara.TakeDamage(damage);
-        }
-
-        destroy = true;
     }
 }
