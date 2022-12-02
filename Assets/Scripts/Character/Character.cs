@@ -16,8 +16,10 @@ public class Character : MonoBehaviour
     [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] float shootCooldown = 1;
     [SerializeField, InspectorName("Spawn Shoot Cooldown")] float cldtimer;
+    [SerializeField] int maxSpecialProjectiles = 3;
+    SpecialProjectile[] specialProjectiles;
 
-    [SerializeField] float turnMult = 100;
+    [SerializeField] Vector2 turnMult = new Vector2(100, 100);
     [SerializeField] float resetRotationStrength = 4f;
 
     [SerializeField] int pointsGiven;
@@ -49,6 +51,7 @@ public class Character : MonoBehaviour
         shield = sdmax;
 
         posLastFrame = transform.position;
+        specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
     }
 
     protected virtual void Update()
@@ -68,36 +71,17 @@ public class Character : MonoBehaviour
 
 
         // ROTATION
-        if (posLastFrame != transform.localPosition) {
-            Vector3 direction = (transform.localPosition - posLastFrame).normalized;
+        if (transform.parent != null) {
+            if (posLastFrame != transform.position) {
+                Vector3 direction = (transform.position - posLastFrame).normalized;
 
-            if (direction.x != 0) {
-                transform.Rotate(transform.parent.forward, turnMult * Time.deltaTime * -direction.x, Space.World);
-            }
-            if (direction.y != 0) {
-                transform.Rotate(transform.parent.right, turnMult * Time.deltaTime * -direction.y, Space.World);
-            }
+                transform.Rotate(transform.forward, Vector3.Dot(direction, -transform.right) * turnMult.x * Time.deltaTime, Space.World);
+                transform.Rotate(transform.parent.right, Vector3.Dot(direction, transform.parent.up) * turnMult.y * -1 * Time.deltaTime, Space.World);
 
-            posLastFrame = transform.localPosition;
+                posLastFrame = transform.position;
+            }
+            transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
         }
-        transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
-
-        //if (posLastFrame != transform.position) {
-        //    Vector3 direction = (transform.position - posLastFrame).normalized;
-        //    Vector3 crossdir = Vector3.Cross(direction, transform.up);
-        //    Debug.DrawLine(transform.position, transform.position + crossdir * 5, Color.blue, 10);
-        //    Debug.Log(Vector3.Dot(crossdir, transform.forward));
-
-        //    if (direction.x != 0) {
-
-        //    }
-        //    if (direction.y != 0) {
-
-        //    }
-
-        //    posLastFrame = transform.position;
-        //}
-
     }
 
     protected virtual void OnDestroy()
@@ -217,6 +201,20 @@ public class Character : MonoBehaviour
         return null;
     }
 
+    public virtual void SpawnSpecialProjectile()
+    {
+        if (cldtimer <= 0 && specialProjectiles != null && specialProjectiles[0] != null) {
+            Instantiate(specialProjectiles[0], transform);
+            cldtimer = specialProjectiles[0].cooldownInduced;
+
+            for (int i = 1; i < specialProjectiles.Length; ++i) {
+                specialProjectiles[i - 1] = specialProjectiles[i];
+            }
+            specialProjectiles[specialProjectiles.Length - 1] = null;
+
+        }
+    }
+
     public virtual bool TakeDamage(float damage, float setInvincibleTime = 0)
     {
         if (invincibleTime > 0) {
@@ -241,14 +239,25 @@ public class Character : MonoBehaviour
         return true;
     }
 
-    public virtual void AddPowerup(PowerupStats pus)
+    public virtual void AddPowerup(PowerupStats stats)
     {
+        PowerupStats pus = Instantiate(stats);
+
         powerups.Add(pus);
         if (pus.health > 0) {
             health += pus.health;
         }
         if (pus.shield > 0) {
             shield += pus.shield;
+        }
+
+        if (pus.specialSpawn != null) {
+            for (int i = 0; i < specialProjectiles.Length; ++i) {
+                if (specialProjectiles[i] == null) {
+                    specialProjectiles[i] = pus.specialSpawn;
+                    break;
+                }
+            }
         }
     }
     #endregion

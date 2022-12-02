@@ -28,7 +28,7 @@ public class PowerUp : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
-            Character player = other.gameObject.GetComponent<Character>();
+            Character player = other.gameObject.GetComponentInChildren<Character>();
             player.AddPowerup(powerupType);
 
             Debug.Log("Player has received " + powerupType.name + "powerup. Player now has " + player.GetHealthMax() + " max health.");

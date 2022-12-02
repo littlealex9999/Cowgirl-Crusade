@@ -83,6 +83,10 @@ public class Player : Character
                 base.Shoot(shootTo);
             }
         }
+
+        if (Input.GetMouseButtonDown(1)) {
+            base.SpawnSpecialProjectile();
+        }
     }
 
     public Vector3 GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo)
