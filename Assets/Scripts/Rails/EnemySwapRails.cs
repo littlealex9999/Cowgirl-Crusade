@@ -23,6 +23,7 @@ public class EnemySwapRails : SwapRails
                     e.FindTarget();
                 }
 
+                enemyRailsScript.SetSpeed(enemyRailsScript.targetSpeed);
                 SwapRailsLogic(enemyRailsScript);
             }
         }

@@ -24,7 +24,7 @@ public class RailsEnemyMovement : RailsMovement
 
     override protected void Update()
     {
-        if (thingToFollow != null) {
+        if (thingToFollow != null && pathToFollow != null) {
             int pointsAheadOfTarget = pathToFollow.getPath.Length - 1 - thingToFollow.movingToIndex + (movingToIndex);
 
             bool tooFarLoop = pointsAheadOfTarget > numPointsAhead + maxDeviation;
@@ -51,6 +51,10 @@ public class RailsEnemyMovement : RailsMovement
 
     public override void SetSpeed(float value)
     {
-        targetSpeed = value;
+        if (thingToFollow != null) {
+            targetSpeed = value;
+        } else {
+            base.SetSpeed(value);
+        }
     }
 }
