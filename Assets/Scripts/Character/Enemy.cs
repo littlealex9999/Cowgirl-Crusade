@@ -34,4 +34,9 @@ public class Enemy : Character
             shootTarget = null;
         }
     }
+
+    public void SetTarget(Character chara)
+    {
+        shootTarget = chara;
+    }
 }
