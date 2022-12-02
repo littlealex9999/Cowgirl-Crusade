@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 492d6677b5a126b498fb105af6d1142a
+  - enabled: 1
     path: Assets/Scenes/Level1_MiningDrillv2.unity
     guid: e4aa2476e3926e248b0939ed5da950b8
   - enabled: 1
