@@ -33,11 +33,13 @@ public class Enemy : Character
     void Shoot()
     {
         if (shootTarget != null) {
+            Vector3 spreadVector = new Vector3();
+            
             if (Random.Range(0, 1) <= spreadFrequency) {
-
+                spreadVector += new Vector3(Random.Range(-spread, spread), Random.Range(-spread, spread), Random.Range(-spread, spread));
             }
 
-            base.Shoot(shootTarget.transform.position);
+            base.Shoot(shootTarget.transform.position + spreadVector, shootTarget.transform.parent);
         }
     }
 
