@@ -9,9 +9,16 @@ public class EnemySpawn : EnemySwapRails
     [SerializeField] bool forceOntoPath;
     [SerializeField] bool setRotation;
 
+    [SerializeField] bool conditionalSpawn;
+    [SerializeField] int maxEnemyRequirement;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player") {
+            if (conditionalSpawn && Player.GetNumAttackers() > maxEnemyRequirement) {
+                return;
+            }
+
             foreach (RailsEnemyMovement rem in enemyMoveScripts) {
                 rem.gameObject.SetActive(true);
                 EnemyTriggerLogic(rem, other);
