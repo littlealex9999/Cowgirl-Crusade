@@ -24266,7 +24266,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpmax: 50
-  sdmax: 20
+  sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 2
   shootCooldown: 0.2
