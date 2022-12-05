@@ -11,6 +11,7 @@ public class RailsMovement : MonoBehaviour
 
     public float speed = 1;
     public float rotationSpeed = 5f;
+    public int rotationPointOffset = 1;
 
     public bool loopAtEnd = true;
 
@@ -26,8 +27,10 @@ public class RailsMovement : MonoBehaviour
         // finally, if we don't have enough speed, move towards the next point and stop
         // this gives us consistant move speed through the bezier curve
 
-        if (movingToIndex < pathToFollow.getPath.Length) {
-            RotateTowards(pathToFollow.getPath[movingToIndex]);
+        if (pathToFollow != null && movingToIndex < pathToFollow.getPath.Length) {
+            if (movingToIndex + rotationPointOffset >= 0 && movingToIndex + rotationPointOffset < pathToFollow.getPath.Length) {
+                RotateTowards(pathToFollow.getPath[movingToIndex + rotationPointOffset]);
+            }
 
             float remainingMovement = speed * Time.deltaTime;
 
