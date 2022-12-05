@@ -179,11 +179,14 @@ public class Character : MonoBehaviour
     #endregion
 
     #region action methods
-    public virtual Bullet Shoot(Vector3 shootToPoint)
+    public virtual Bullet Shoot(Vector3 shootToPoint, Transform parentOverride = null)
     {
         if (cldtimer <= 0) {
             // create bullet & set stats
-            GameObject bulletRef = Instantiate(bullet.gameObject, transform.parent);
+            if (parentOverride == null) {
+                parentOverride = transform.parent;
+            }
+            GameObject bulletRef = Instantiate(bullet.gameObject, parentOverride);
             Destroy(bulletRef, deleteBulletsAfterSeconds);
             bulletRef.transform.position = transform.position;
             bulletRef.transform.LookAt(shootToPoint);

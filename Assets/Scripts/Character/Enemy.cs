@@ -7,7 +7,7 @@ public class Enemy : Character
     [SerializeField] RailsEnemyMovement myMoveScript;
     Character shootTarget;
 
-    [SerializeField, Range(0, 1)] float spreadFrequency = 0.5f;
+    [SerializeField, Range(0, 1)] float spreadFrequency = 0.5f; // 0 = never spread, 1 = always spread
     [SerializeField] float spread = 3;
 
     void Start()
@@ -33,9 +33,13 @@ public class Enemy : Character
     void Shoot()
     {
         if (shootTarget != null) {
-            Random.Range(0, spreadFrequency);
+            Vector3 spreadVector = new Vector3();
+            
+            if (Random.Range(0, 1) <= spreadFrequency) {
+                spreadVector += new Vector3(Random.Range(-spread, spread), Random.Range(-spread, spread), Random.Range(-spread, spread));
+            }
 
-            base.Shoot(shootTarget.transform.position);
+            base.Shoot(shootTarget.transform.position + spreadVector, shootTarget.transform.parent);
         }
     }
 
