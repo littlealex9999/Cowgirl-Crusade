@@ -14,7 +14,7 @@ public class Player : Character
     Camera mainCamera;
     Vector3 initialOffset;
 
-    int numEnemiesAttacking;
+    static int numEnemiesAttacking;
 
     void Start()
     {
@@ -23,6 +23,8 @@ public class Player : Character
         mainCamera = Camera.main;
         initialOffset = mainCamera.transform.localPosition;
         CalculateBoundaries();
+
+        numEnemiesAttacking = 0;
     }
 
     protected override void Update()
@@ -106,18 +108,18 @@ public class Player : Character
         }
     }
 
-    public void AddAttacker()
+    public static void AddAttacker()
     {
         ++numEnemiesAttacking;
     }
 
-    public void RemoveAttacker()
+    public static void RemoveAttacker()
     {
         if (numEnemiesAttacking > 0)
             --numEnemiesAttacking;
     }
 
-    public int GetNumAttackers()
+    public static int GetNumAttackers()
     {
         return numEnemiesAttacking;
     }

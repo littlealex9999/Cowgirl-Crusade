@@ -19,6 +19,14 @@ public class Enemy : Character
         Shoot();
     }
 
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        if (myMoveScript.thingToFollow.tag == "Player") {
+            Player.RemoveAttacker();
+        }
+    }
+
     void Shoot()
     {
         if (shootTarget != null) {
