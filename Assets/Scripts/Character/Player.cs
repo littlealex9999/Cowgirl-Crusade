@@ -14,6 +14,8 @@ public class Player : Character
     Camera mainCamera;
     Vector3 initialOffset;
 
+    int numEnemiesAttacking;
+
     void Start()
     {
         base.Start();
@@ -102,5 +104,21 @@ public class Player : Character
             point.z = -initialOffset.z + shootDistance;
             return mainCamera.ScreenToWorldPoint(point);
         }
+    }
+
+    public void AddAttacker()
+    {
+        ++numEnemiesAttacking;
+    }
+
+    public void RemoveAttacker()
+    {
+        if (numEnemiesAttacking > 0)
+            --numEnemiesAttacking;
+    }
+
+    public int GetNumAttackers()
+    {
+        return numEnemiesAttacking;
     }
 }
