@@ -206,7 +206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 5
   sdmax: 0
-  bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -316,6 +316,7 @@ MonoBehaviour:
   enemiesToSet:
   - {fileID: 360700577}
   newTarget: {fileID: 0}
+  justFigureOutWhoThePlayerIs: 1
 --- !u!65 &527257742
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -327,8 +328,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 30, y: 30, z: 30}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 30, y: 71.26935, z: 112.880615}
+  m_Center: {x: 0, y: 20.634674, z: 0.6940918}
 --- !u!4 &527257743
 Transform:
   m_ObjectHideFlags: 0
@@ -337,7 +338,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527257740}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3332.5, y: 48.1, z: -1412.6}
+  m_LocalPosition: {x: -3426.1, y: 48.1, z: -1437.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
