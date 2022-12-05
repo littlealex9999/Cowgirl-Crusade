@@ -7,6 +7,9 @@ public class Enemy : Character
     [SerializeField] RailsEnemyMovement myMoveScript;
     Character shootTarget;
 
+    [SerializeField, Range(0, 1)] float spreadFrequency = 0.5f;
+    [SerializeField] float spread = 3;
+
     void Start()
     {
         base.Start();
@@ -19,9 +22,19 @@ public class Enemy : Character
         Shoot();
     }
 
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        if (myMoveScript.thingToFollow.tag == "Player") {
+            Player.RemoveAttacker();
+        }
+    }
+
     void Shoot()
     {
         if (shootTarget != null) {
+            Random.Range(0, spreadFrequency);
+
             base.Shoot(shootTarget.transform.position);
         }
     }
