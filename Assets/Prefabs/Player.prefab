@@ -24071,6 +24071,7 @@ MonoBehaviour:
   movingToIndex: 0
   speed: 30
   rotationSpeed: 2
+  rotationPointOffset: 1
   loopAtEnd: 0
 --- !u!136 &8714434841443749963
 CapsuleCollider:
@@ -24263,10 +24264,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpmax: 50
-  sdmax: 20
+  sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 2
   shootCooldown: 0.2
+  cldtimer: 0
+  maxSpecialProjectiles: 3
+  turnMult: {x: 100, y: 100}
+  resetRotationStrength: 4
+  pointsGiven: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
@@ -24275,6 +24281,7 @@ MonoBehaviour:
   moveSpeed: 10
   boundaryMoveMultipliers: {x: 0.8, y: 0.6}
   shootDistance: 50
+  bulletHomingSpeed: 100
 --- !u!1001 &6804691846760805694
 PrefabInstance:
   m_ObjectHideFlags: 0
