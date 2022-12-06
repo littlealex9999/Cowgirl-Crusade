@@ -44,9 +44,9 @@ public class TurretAim : MonoBehaviour
 
     private void SearchForTarget()
     {
-        float distance = Vector3.Distance(transform.position, target.position);
+        float distance = GameManager.instance.DistanceFromPlayer(gameObject.transform);
 
-        if(distance < range)
+        if (distance < range)
         {
             aiming = true;
         }
