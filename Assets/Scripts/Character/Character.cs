@@ -19,6 +19,7 @@ public class Character : MonoBehaviour
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
+    [SerializeField] bool dontRotate;
     [SerializeField] Vector2 turnMult = new Vector2(100, 100);
     [SerializeField] float resetRotationStrength = 4f;
 
@@ -71,7 +72,7 @@ public class Character : MonoBehaviour
 
 
         // ROTATION
-        if (transform.parent != null) {
+        if (!dontRotate && transform.parent != null) {
             if (posLastFrame != transform.position) {
                 Vector3 direction = (transform.position - posLastFrame).normalized;
 
