@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LookAt : MonoBehaviour
 {
-    public GameObject target;
+    public Transform target;
     public bool aiming;
     
     
@@ -19,7 +19,7 @@ public class LookAt : MonoBehaviour
     {
         if (aiming)
         {
-            transform.LookAt(target.transform);
+            transform.LookAt(target);
         }
     }
 }
