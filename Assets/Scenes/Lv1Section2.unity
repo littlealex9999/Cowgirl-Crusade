@@ -628,6 +628,7 @@ MonoBehaviour:
   shootCooldown: 1
   cldtimer: 0
   maxSpecialProjectiles: 3
+  dontRotate: 0
   turnMult: {x: 100, y: 100}
   resetRotationStrength: 4
   pointsGiven: 0
