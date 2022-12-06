@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: EnemyMech_Tex
-    second: {fileID: 2100000, guid: 489c0a507d1cb9343b222e1fb80c7440, type: 2}
+    second: {fileID: 2100000, guid: 24c3653861866d84a9d66a4fd0c38ce6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: GreenBorder
-    second: {fileID: 2100000, guid: a53c18b2aaf6d3b48bfd00c077545d08, type: 2}
+    second: {fileID: 2100000, guid: a1833544d71e277489232d1047d83d4a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: 9adf2cfee45944e498992872d70d7985, type: 2}
+    second: {fileID: 2100000, guid: d0012773a07d72d4d97861a29fb94272, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
