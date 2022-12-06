@@ -9,22 +9,28 @@ public class MechAnimation : MonoBehaviour
 {
     Animator animator;
 
-    [SerializeField] float openRange = 100f;
-    [SerializeField] float closeRange = 150f;
+    [SerializeField] float inRange = 100f;
+    [SerializeField] float maxRange = 150f;
 
-    bool open = false;
+    [SerializeField] bool onTrigger = true;
+
+    bool hostile = false;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
 
-        InvokeRepeating("SearchForTarget", 0f, 1.0f);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!onTrigger)
+        {
+            SearchForTarget();
+        }
         
     }
 
@@ -33,15 +39,15 @@ public class MechAnimation : MonoBehaviour
     {
         float distance = GameManager.instance.DistanceFromPlayer(gameObject.transform);
 
-        if (distance < openRange)
+        if (distance < inRange)
         {
-            if (!open)
+            if (!hostile)
             {
                 OpenAnimation();
             }
-        }else if (distance > closeRange)
+        }else if (distance > maxRange)
         {
-            if (open)
+            if (hostile)
             {
                 CloseAnimation();
             }
@@ -49,26 +55,53 @@ public class MechAnimation : MonoBehaviour
     }
 
 
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.material != null)
+        {
+            if (other.material.name.Contains("Activate")) // The projectile has hit an enemy
+            {
+                OpenAnimation();
+            }
+            else if (other.material.name.Contains("Deactivate"))
+            {
+                CloseAnimation();
+            }
+            else if (other.material.name.Contains("Destroy"))
+            {
+                Destroy(gameObject);
+            }
+
+        }
+    }
+
+
+
     void OpenAnimation()
     {
-        open = true;
+        hostile = true;
         animator.SetTrigger("Open");
     }
 
 
     void CloseAnimation()
     {
-        open = false;
+        hostile = false;
         animator.SetTrigger("Close");
     }
 
 
     void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, openRange);
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, closeRange);
+        if (!onTrigger)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, inRange);
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, maxRange);
+        }
+        
     }
 
 }

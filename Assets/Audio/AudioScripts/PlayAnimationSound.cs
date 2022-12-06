@@ -19,7 +19,7 @@ public class PlayAnimationSound : StateMachineBehaviour
         }
         else
         {
-            Debug.Log("There was no clip attached to " + animator.gameObject.name + "'s animator event.");
+           // Debug.Log("There was no clip attached to " + animator.gameObject.name + "'s animator event.");
         }
         
     }
