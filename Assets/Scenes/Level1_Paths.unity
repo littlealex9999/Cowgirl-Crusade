@@ -162,6 +162,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &6152845
@@ -306,6 +307,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &13815316
@@ -450,6 +452,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &35277933
@@ -738,6 +741,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &41926921
@@ -946,6 +950,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &51097224
@@ -1180,6 +1185,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &108691250
@@ -1293,6 +1299,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &114549716
@@ -1391,7 +1398,7 @@ Transform:
   - {fileID: 1981954911}
   - {fileID: 460057094}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &153494315
 PrefabInstance:
@@ -1522,6 +1529,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &153494320
@@ -1605,7 +1613,7 @@ Transform:
   - {fileID: 1770264872}
   - {fileID: 1666763562}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &170692413
 PrefabInstance:
@@ -1684,75 +1692,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af41deb6bafd9e448a92d676a3375e1c, type: 3}
---- !u!1001 &176428689
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 13.363265
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 13.363265
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 13.363265
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2308.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 150.42657
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1411.2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.17401943
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9847422
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 200.043
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_Name
-      value: LightTurret (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
 --- !u!1 &189446276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,6 +2021,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &242838926
@@ -2239,6 +2179,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &250293153
@@ -2332,7 +2273,7 @@ Transform:
   - {fileID: 1236595010}
   - {fileID: 40001908}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &287490456
 PrefabInstance:
@@ -2463,6 +2404,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &287490461
@@ -2607,6 +2549,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &313018390
@@ -2797,6 +2740,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &327248120
@@ -2954,6 +2898,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &377371647
@@ -3085,6 +3030,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &409389685
@@ -3288,6 +3234,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &440981151
@@ -3463,7 +3410,7 @@ Transform:
   - {fileID: 1101709523}
   - {fileID: 322809268}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &458348120
 GameObject:
@@ -3541,7 +3488,7 @@ Transform:
   - {fileID: 1235479467}
   - {fileID: 2019650322}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &460057093
 GameObject:
@@ -3641,6 +3588,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &500635527
@@ -3708,6 +3656,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &508460667
@@ -3775,6 +3724,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &511859210
@@ -3919,6 +3869,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &519682112
@@ -3986,6 +3937,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &559992754
@@ -4174,7 +4126,7 @@ Transform:
   - {fileID: 1656634862}
   - {fileID: 810744719}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 81.979, z: 0}
 --- !u!1 &627951788 stripped
 GameObject:
@@ -4215,6 +4167,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &627951791
@@ -4372,6 +4325,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &650608165
@@ -4457,7 +4411,7 @@ Transform:
   - {fileID: 1722505202}
   - {fileID: 2069402160}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &662970799
 PrefabInstance:
@@ -4575,6 +4529,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &684297767
@@ -4719,6 +4674,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &702029918
@@ -4771,8 +4727,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 724648904}
-  m_LocalRotation: {x: -0.38270405, y: -0.008715234, z: -0.0036103842, w: 0.9238229}
-  m_LocalPosition: {x: -80.80847, y: 128.9491, z: 461.92728}
+  m_LocalRotation: {x: -0.37062502, y: -0.017705353, z: -0.0070667025, w: 0.92858696}
+  m_LocalPosition: {x: -80.41351, y: 129.66896, z: 461.40683}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1188542582}
@@ -4875,7 +4831,7 @@ Transform:
   - {fileID: 1929589577}
   - {fileID: 427672256}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &731561877
 PrefabInstance:
@@ -5035,7 +4991,7 @@ Transform:
   m_Children:
   - {fileID: 1754885633}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &760307963
 PrefabInstance:
@@ -5243,6 +5199,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &762321068
@@ -5374,6 +5331,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &789051229
@@ -5500,6 +5458,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &828821158
@@ -5734,6 +5693,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &890676245
@@ -6014,6 +5974,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &904138948
@@ -6158,6 +6119,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &906898292
@@ -6212,6 +6174,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &912096415
@@ -6441,6 +6404,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &943361142
@@ -6585,6 +6549,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &991679663
@@ -6639,6 +6604,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &999252787
@@ -6855,6 +6821,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1018677311
@@ -6986,6 +6953,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1033915288
@@ -7094,7 +7062,7 @@ Transform:
   - {fileID: 939148556}
   - {fileID: 896904563}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1043102881
 PrefabInstance:
@@ -7225,6 +7193,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1043102886
@@ -7279,6 +7248,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1098432931
@@ -7495,6 +7465,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1106766955
@@ -7562,6 +7533,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1122508103
@@ -7719,6 +7691,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1127342042
@@ -7850,6 +7823,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1130891377
@@ -8007,6 +7981,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1134076234
@@ -8092,7 +8067,7 @@ Transform:
   - {fileID: 1359865603}
   - {fileID: 189446277}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1162882730
 PrefabInstance:
@@ -8223,6 +8198,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1162882735
@@ -8344,11 +8320,11 @@ MonoBehaviour:
     pathColor: {r: 0, g: 1, b: 0, a: 1}
     inactivePathColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     width: 6.54
-  m_Looped: 0
+  m_Looped: 1
   m_Waypoints:
   - position: {x: 0, y: 0, z: 0}
     roll: 0
-  - position: {x: -25.976135, y: -10.094986, z: 95.16788}
+  - position: {x: -38.049988, y: -9.190001, z: 127.57999}
     roll: 0
   - position: {x: -77.001526, y: 23.90536, z: 329.82175}
     roll: 0
@@ -8356,9 +8332,9 @@ MonoBehaviour:
     roll: 0
   - position: {x: -141.85059, y: 185.79471, z: 574.4064}
     roll: 0
-  - position: {x: -223.33597, y: 185.7947, z: 553.0952}
+  - position: {x: -234.04999, y: 185.7947, z: 548.57996}
     roll: 0
-  - position: {x: -162.34647, y: 155.197, z: 413.96445}
+  - position: {x: -179.04999, y: 155.197, z: 371.58}
     roll: 0
   - position: {x: -133.94913, y: 101, z: 212.04935}
     roll: 0
@@ -8370,11 +8346,11 @@ MonoBehaviour:
     roll: 0
   - position: {x: -464.3006, y: 89.78809, z: -288.3809}
     roll: 0
-  - position: {x: -481.04022, y: 78.57619, z: -170.862}
+  - position: {x: -475.05, y: 78.57619, z: -199.42001}
     roll: 0
   - position: {x: -390.7916, y: 50, z: -138.93002}
     roll: 0
-  - position: {x: -235.71411, y: 38, z: -137.26205}
+  - position: {x: -236.04999, y: 38, z: -136.42001}
     roll: 0
   - position: {x: -48.045288, y: 38, z: -138.03354}
     roll: 0
@@ -8384,7 +8360,7 @@ MonoBehaviour:
     roll: 0
   - position: {x: 317.4082, y: 78.57619, z: -239.91774}
     roll: 0
-  - position: {x: 254.26141, y: 89.78809, z: -325.5103}
+  - position: {x: 245.95001, y: 89.78809, z: -323.42}
     roll: 0
   - position: {x: 123.00842, y: 101, z: -271.11154}
     roll: 0
@@ -8396,9 +8372,9 @@ MonoBehaviour:
     roll: 0
   - position: {x: -434.3676, y: 101, z: 173.49759}
     roll: 0
-  - position: {x: -434.7964, y: 101, z: 265.90396}
+  - position: {x: -421.05, y: 101, z: 258.58}
     roll: 0
-  - position: {x: -327.29227, y: 85.11481, z: 271.40695}
+  - position: {x: -332.05, y: 85.11481, z: 272.58}
     roll: 0
   - position: {x: -250.03207, y: 67.56033, z: 247.35898}
     roll: 0
@@ -8408,9 +8384,59 @@ MonoBehaviour:
     roll: 0
   - position: {x: 14.050995, y: 38, z: 141.37906}
     roll: 0
-  - position: {x: 107.183105, y: 38, z: 104.09775}
+  - position: {x: 111.95001, y: 38, z: 113.57999}
     roll: 0
-  - position: {x: 200.31522, y: 38, z: 66.81644}
+  - position: {x: 224.95001, y: 38, z: 60.579987}
+    roll: 0
+  - position: {x: 215.95001, y: 38, z: -57.420013}
+    roll: 0
+  - position: {x: 85.95001, y: 38, z: -118.42001}
+    roll: 0
+  - position: {x: -147.04999, y: 38, z: -128.42001}
+    roll: 0
+  - position: {x: -382.05, y: 38, z: -126.42001}
+    roll: 0
+  - position: {x: -500.05, y: 38, z: -77.42001}
+    roll: 0
+  - position: {x: -480.05, y: 38, z: 32.579987}
+    roll: 0
+  - position: {x: -347.05, y: 20, z: 96.57999}
+    roll: 0
+  - position: {x: -155.04999, y: 0, z: 107.57999}
+    roll: 0
+  - position: {x: 38.950012, y: 20, z: 114.57999}
+    roll: 0
+  - position: {x: 177.95001, y: 38, z: 147.57999}
+    roll: 0
+  - position: {x: 195.95001, y: 50, z: 255.57999}
+    roll: 0
+  - position: {x: 103.95001, y: 67.56033, z: 321.58}
+    roll: 0
+  - position: {x: -14.049988, y: 85.11481, z: 271.58}
+    roll: 0
+  - position: {x: -106.04999, y: 101, z: 175.57999}
+    roll: 0
+  - position: {x: -204.04999, y: 101, z: 81.57999}
+    roll: 0
+  - position: {x: -302.05, y: 101, z: -12.420013}
+    roll: 0
+  - position: {x: -400.05, y: 101, z: -106.42001}
+    roll: 0
+  - position: {x: -491.05, y: 101, z: -208.42001}
+    roll: 0
+  - position: {x: -458.05, y: 101, z: -301.42}
+    roll: 0
+  - position: {x: -347.05, y: 101, z: -338.42}
+    roll: 0
+  - position: {x: -248.04999, y: 85.11481, z: -353.42}
+    roll: 0
+  - position: {x: -141.04999, y: 67.56033, z: -381.42}
+    roll: 0
+  - position: {x: -14.049988, y: 38, z: -401.42}
+    roll: 0
+  - position: {x: 86.95001, y: 38, z: -340.42}
+    roll: 0
+  - position: {x: 58.950012, y: 18.81, z: -198.42001}
     roll: 0
 --- !u!4 &1188542582
 Transform:
@@ -8425,7 +8451,7 @@ Transform:
   m_Children:
   - {fileID: 724648905}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1197931763
 PrefabInstance:
@@ -8633,6 +8659,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1202759359
@@ -8687,6 +8714,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1206892258
@@ -8844,6 +8872,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1207278922
@@ -8988,6 +9017,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1208660503
@@ -9119,6 +9149,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1215920413
@@ -9420,6 +9451,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1243298933
@@ -9551,6 +9583,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1246828976
@@ -9695,6 +9728,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1269662223
@@ -10034,6 +10068,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1339210050
@@ -10191,6 +10226,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1340433025
@@ -10335,6 +10371,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1342116452
@@ -10581,7 +10618,7 @@ Transform:
   - {fileID: 1381030871}
   - {fileID: 1007081151}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1381030870
 GameObject:
@@ -10784,6 +10821,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1381031215
@@ -10838,6 +10876,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1389125868
@@ -10940,7 +10979,7 @@ Transform:
   - {fileID: 1931096522}
   - {fileID: 1764222883}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1431779056
 GameObject:
@@ -11215,6 +11254,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1477473103
@@ -11590,6 +11630,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1548851905
@@ -11644,6 +11685,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1557997937
@@ -11711,6 +11753,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1584551762
@@ -11868,6 +11911,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1591768912
@@ -12012,6 +12056,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1609648300
@@ -12156,6 +12201,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1629362512
@@ -12282,6 +12328,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1662305627
@@ -12575,6 +12622,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1680860885
@@ -12659,7 +12707,7 @@ Transform:
   m_Children:
   - {fileID: 40124262}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1722505199
 GameObject:
@@ -12849,6 +12897,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1739376410
@@ -13078,6 +13127,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1756111286
@@ -13209,6 +13259,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1761211185
@@ -13428,7 +13479,7 @@ Transform:
   m_LocalScale: {x: 126.37793, y: 92.06148, z: 2.3445}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: -16.67, z: 0}
 --- !u!1001 &1798753098
 PrefabInstance:
@@ -13559,6 +13610,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1798753103
@@ -13683,6 +13735,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1831064448
@@ -13750,6 +13803,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1838144948
@@ -13894,6 +13948,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1856986397
@@ -13961,6 +14016,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1870356340
@@ -14118,6 +14174,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1880289326
@@ -14249,6 +14306,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1882950039
@@ -14406,6 +14464,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1918590086
@@ -14460,6 +14519,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1920793538
@@ -14838,6 +14898,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1936386915
@@ -15046,6 +15107,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1955898581
@@ -15203,6 +15265,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1966240538
@@ -15483,6 +15546,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1986802167
@@ -15575,7 +15639,7 @@ Transform:
   - {fileID: 1459317915}
   - {fileID: 114489214}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1999616345 stripped
 GameObject:
@@ -15616,6 +15680,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1999616348
@@ -15773,6 +15838,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2000004983
@@ -15917,6 +15983,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2018492810
@@ -16120,6 +16187,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2039111297
@@ -16341,6 +16409,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2043466064
@@ -16437,93 +16506,8 @@ Transform:
   m_Children:
   - {fileID: 1431779057}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &2045447725
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 35.672794
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 35.672794
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 35.672794
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4225
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 253.3
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1508.8
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.3819363
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.9241887
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 135.093
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_Name
-      value: LightTurret
-      objectReference: {fileID: 0}
-    - target: {fileID: 3728871641290219735, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999955
-      objectReference: {fileID: 0}
-    - target: {fileID: 3728871641290219735, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3728871641290219735, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.0029876824
-      objectReference: {fileID: 0}
-    - target: {fileID: 3728871641290219735, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -0.342
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 8332958bcd402d942885d726ddccdaff, type: 3}
 --- !u!1001 &2052897014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16653,6 +16637,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2052897019
@@ -16698,7 +16683,7 @@ Transform:
   m_LocalScale: {x: 188.66959, y: 138.75342, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: -82.342, z: 0}
 --- !u!114 &2063044779
 MonoBehaviour:
@@ -16812,7 +16797,7 @@ Transform:
   - {fileID: 1177085238}
   - {fileID: 1317919524}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2069402159
 GameObject:
@@ -17002,6 +16987,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   team: 2
   myMoveScript: {fileID: 0}
+  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2073783658
