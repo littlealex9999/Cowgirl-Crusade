@@ -8,6 +8,17 @@ public class CM_FollowLeader : MonoBehaviour
 {
     CinemachineDollyCart myCart;
 
+    public CinemachineDollyCart thisCart
+    {
+        get {
+            if (myCart == null) {
+                myCart = GetComponent<CinemachineDollyCart>();
+            }
+
+            return myCart;
+        }
+    }
+
     public CinemachineDollyCart leader;
     public float targetPointsDifference = 10;
     public float maxDeviation = 3;
@@ -16,15 +27,10 @@ public class CM_FollowLeader : MonoBehaviour
     public float targetSpeed = 20;
     public float slowDownMult = 0.01f;
 
-    private void Start()
-    {
-        myCart = GetComponent<CinemachineDollyCart>();
-    }
-
     void Update()
     {
-        if (leader != null && myCart.m_Path != null) {
-            float pointsAheadOfTarget = leader.m_Path.PathLength - 1 - leader.m_Position + (myCart.m_Position);
+        if (leader != null && thisCart.m_Path != null) {
+            float pointsAheadOfTarget = leader.m_Path.PathLength - 1 - leader.m_Position + (thisCart.m_Position);
 
             bool tooFarLoop = pointsAheadOfTarget > targetPointsDifference + maxDeviation;
 
@@ -32,16 +38,16 @@ public class CM_FollowLeader : MonoBehaviour
             // or if it's looped to the start and is too far, slow down a lot
             // if it's moving far enough, but within deviation, set speed to leader's speed
             // otherwise, move at target speed
-            if (!ignoreDeviation && myCart.m_Position > leader.m_Position + targetPointsDifference + maxDeviation ||
-                !ignoreDeviation && (leader.m_Position + targetPointsDifference + maxDeviation > myCart.m_Path.PathLength - 1 &&
-                tooFarLoop && myCart.m_Path.Looped)) {
+            if (!ignoreDeviation && thisCart.m_Position > leader.m_Position + targetPointsDifference + maxDeviation ||
+                !ignoreDeviation && (leader.m_Position + targetPointsDifference + maxDeviation > thisCart.m_Path.PathLength - 1 &&
+                tooFarLoop && thisCart.m_Path.Looped)) {
                 myCart.m_Speed = Mathf.Lerp(0, targetSpeed, 1 / (pointsAheadOfTarget * slowDownMult));
-            } else if (!ignoreDeviation && myCart.m_Position > leader.m_Position + targetPointsDifference ||
-                       !ignoreDeviation && (leader.m_Position + targetPointsDifference > myCart.m_Path.PathLength - 1 &&
+            } else if (!ignoreDeviation && thisCart.m_Position > leader.m_Position + targetPointsDifference ||
+                       !ignoreDeviation && (leader.m_Position + targetPointsDifference > thisCart.m_Path.PathLength - 1 &&
                        pointsAheadOfTarget > targetPointsDifference)) {
-                myCart.m_Speed = leader.m_Speed;
+                thisCart.m_Speed = leader.m_Speed;
             } else {
-                myCart.m_Speed = targetSpeed;
+                thisCart.m_Speed = targetSpeed;
             }
         }
     }
