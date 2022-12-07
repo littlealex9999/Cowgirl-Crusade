@@ -108,6 +108,17 @@ public class Player : Character
         }
     }
 
+
+    public override bool TakeDamage(float damage, float setInvincibleTime = 0)
+    {
+        
+        //GameManager.instance.ScreenShake(shakeIntensity, shakeDuration);
+        // Red border on screen
+        return base.TakeDamage(damage, setInvincibleTime);
+    }
+
+
+
     public static void AddAttacker()
     {
         ++numEnemiesAttacking;

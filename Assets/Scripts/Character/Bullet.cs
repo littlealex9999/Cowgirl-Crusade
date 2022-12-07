@@ -6,6 +6,8 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] private float baseDamage = 5;
     [SerializeField] private float baseSpeed = 5;
+
+    [SerializeField] GameObject impact;
     
     float dmg;
     float spd;
@@ -63,6 +65,18 @@ public class Bullet : MonoBehaviour
 
         if (character != null && character.getTeam != team) {
             if (character.TakeDamage(dmg)) {
+
+                if (character.gameObject.CompareTag("Enemy"))
+                {
+                    // Crosshair hit marker
+                }
+
+
+                if(impact != null)
+                {
+                    Object.Instantiate(impact, transform.position, transform.rotation);
+                }
+
                 Destroy(gameObject);
             }
         }
