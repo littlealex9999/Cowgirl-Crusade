@@ -53,7 +53,7 @@ public class PlayRandomizedSound : MonoBehaviour
         }
         else
         {
-            Debug.Log("There were no audio clips assigned to " + gameObject.name + "'s SoundVariations array or audiosource.");
+           // Debug.Log("There were no audio clips assigned to " + gameObject.name + "'s SoundVariations array or audiosource.");
             Destroy(gameObject);
         }
         

@@ -19,6 +19,7 @@ public class Character : MonoBehaviour
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
+    [SerializeField] bool dontRotate;
     [SerializeField] Vector2 turnMult = new Vector2(100, 100);
     [SerializeField] float resetRotationStrength = 4f;
 
@@ -71,21 +72,17 @@ public class Character : MonoBehaviour
 
 
         // ROTATION
-        if (posLastFrame != transform.position) {
-            Vector3 direction = (transform.position - posLastFrame).normalized;
-            Vector3 crossdir = Vector3.Cross(direction, transform.up);
-            Debug.DrawLine(transform.position, transform.position + crossdir * 5, Color.blue, 10);
+        if (!dontRotate && transform.parent != null) {
+            if (posLastFrame != transform.position) {
+                Vector3 direction = (transform.position - posLastFrame).normalized;
 
-            transform.Rotate(transform.forward, Vector3.Dot(direction, -transform.right) * turnMult.x * Time.deltaTime, Space.World);
-            transform.Rotate(transform.parent.right, Vector3.Dot(direction, transform.parent.up) * turnMult.y * -1 * Time.deltaTime, Space.World);
+                transform.Rotate(transform.forward, Vector3.Dot(direction, -transform.right) * turnMult.x * Time.deltaTime, Space.World);
+                transform.Rotate(transform.parent.right, Vector3.Dot(direction, transform.parent.up) * turnMult.y * -1 * Time.deltaTime, Space.World);
 
-            Debug.Log("Dot Cross Left: " + Vector3.Dot(crossdir, -transform.right));
-            Debug.Log("Dot Cross Right: " + Vector3.Dot(crossdir, transform.right));
-            Debug.Log("Dot Dir Right: " + Vector3.Dot(direction, transform.right));
-
-            posLastFrame = transform.position;
+                posLastFrame = transform.position;
+            }
+            transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
         }
-        transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
     }
 
     protected virtual void OnDestroy()
@@ -183,11 +180,14 @@ public class Character : MonoBehaviour
     #endregion
 
     #region action methods
-    public virtual Bullet Shoot(Vector3 shootToPoint)
+    public virtual Bullet Shoot(Vector3 shootToPoint, Transform parentOverride = null)
     {
         if (cldtimer <= 0) {
             // create bullet & set stats
-            GameObject bulletRef = Instantiate(bullet.gameObject, transform.parent);
+            if (parentOverride == null) {
+                parentOverride = transform.parent;
+            }
+            GameObject bulletRef = Instantiate(bullet.gameObject, parentOverride);
             Destroy(bulletRef, deleteBulletsAfterSeconds);
             bulletRef.transform.position = transform.position;
             bulletRef.transform.LookAt(shootToPoint);

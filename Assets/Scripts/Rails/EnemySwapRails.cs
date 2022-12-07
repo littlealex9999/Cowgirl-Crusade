@@ -21,9 +21,11 @@ public class EnemySwapRails : SwapRails
                 enemyRailsScript.thingToFollow = null;
                 foreach (Enemy e in enemyRailsScript.GetComponentsInChildren<Enemy>()) {
                     e.FindTarget();
+                    Player.RemoveAttacker(); // you can totally break this and good job if you do
                 }
 
-                base.OnTriggerEnter(other);
+                enemyRailsScript.SetSpeed(enemyRailsScript.targetSpeed);
+                SwapRailsLogic(enemyRailsScript);
             }
         }
     }
@@ -36,6 +38,7 @@ public class EnemySwapRails : SwapRails
 
         foreach (Enemy e in scriptToSwap.GetComponentsInChildren<Enemy>()) {
             e.FindTarget();
+            Player.AddAttacker();
         }
     }
 }

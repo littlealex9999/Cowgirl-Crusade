@@ -14,6 +14,8 @@ public class Player : Character
     Camera mainCamera;
     Vector3 initialOffset;
 
+    static int numEnemiesAttacking;
+
     void Start()
     {
         base.Start();
@@ -21,6 +23,8 @@ public class Player : Character
         mainCamera = Camera.main;
         initialOffset = mainCamera.transform.localPosition;
         CalculateBoundaries();
+
+        numEnemiesAttacking = 0;
     }
 
     protected override void Update()
@@ -102,5 +106,32 @@ public class Player : Character
             point.z = -initialOffset.z + shootDistance;
             return mainCamera.ScreenToWorldPoint(point);
         }
+    }
+
+
+    public override bool TakeDamage(float damage, float setInvincibleTime = 0)
+    {
+        
+        //GameManager.instance.ScreenShake(shakeIntensity, shakeDuration);
+        // Red border on screen
+        return base.TakeDamage(damage, setInvincibleTime);
+    }
+
+
+
+    public static void AddAttacker()
+    {
+        ++numEnemiesAttacking;
+    }
+
+    public static void RemoveAttacker()
+    {
+        if (numEnemiesAttacking > 0)
+            --numEnemiesAttacking;
+    }
+
+    public static int GetNumAttackers()
+    {
+        return numEnemiesAttacking;
     }
 }

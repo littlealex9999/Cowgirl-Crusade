@@ -18,6 +18,6 @@ MonoBehaviour:
   bulletDamageMultiplier: 0
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 0
-  specialSpawn: {fileID: 0}
+  specialSpawn: {fileID: 7353246862204650648, guid: 7d2457243ab6a3140bef4d2af08f6c2a, type: 3}
   permanent: 0
   duration: 0

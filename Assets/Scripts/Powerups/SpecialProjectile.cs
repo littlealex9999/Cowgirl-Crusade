@@ -9,7 +9,7 @@ public class SpecialProjectile : MonoBehaviour
 
     void Start()
     {
-        if (destroyAfter != null) {
+        if (destroyAfter != 0) {
             Destroy(gameObject, destroyAfter);
         }
     }

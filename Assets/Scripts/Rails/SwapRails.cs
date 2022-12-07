@@ -14,12 +14,17 @@ public class SwapRails : MonoBehaviour
     {
         RailsMovement moveScript = other.GetComponent<RailsMovement>();
         if (moveScript != null && newPath != null) {
-            moveScript.pathToFollow = newPath;
-            moveScript.movingToIndex = newMovePoint;
+            SwapRailsLogic(moveScript);
 
             if (destroyOnPlayerEnter && other.tag == "Player") {
                 Destroy(gameObject);
             }
         }
+    }
+
+    protected void SwapRailsLogic(RailsMovement moveScript)
+    {
+        moveScript.pathToFollow = newPath;
+        moveScript.movingToIndex = newMovePoint;
     }
 }

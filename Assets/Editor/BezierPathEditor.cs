@@ -9,7 +9,8 @@ public class BezierPathEditor : Editor
 {
     private BezierPath selectedScript;
 
-    float size = 0.1f;
+    float size = 0.5f;
+    float controlPointSpawnDistance = 1;
 
     Texture noButtonsImage;
 
@@ -132,13 +133,13 @@ public class BezierPathEditor : Editor
 
         // change bezier control point count on edit points list
         if (selectedScript != null) {
-            if (selectedScript.controlPoints != null) {
+            if (selectedScript.controlPoints != null && selectedScript.pathPoints.Count > 2) {
                 while (selectedScript.controlPoints.Count != selectedScript.pathPoints.Count * 2 - 1) {
                     if (selectedScript.controlPoints.Count < selectedScript.pathPoints.Count * 2 - 1) {
                         if (selectedScript.controlPoints.Count != 0) {
-                            selectedScript.controlPoints.Add(selectedScript.controlPoints.Last());
+                            selectedScript.controlPoints.Add(selectedScript.pathPoints.Last() + Vector3.one * controlPointSpawnDistance);
                         } else {
-                            selectedScript.controlPoints.Add(Vector3.zero);
+                            selectedScript.controlPoints.Add(selectedScript.pathPoints[0] + Vector3.one * controlPointSpawnDistance);
                         }
                     } else if (selectedScript.controlPoints.Count != 0) {
                         selectedScript.controlPoints.Remove(selectedScript.controlPoints.Last());

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27c8a523322854348a405824c21e6d22, type: 3}
+  m_Name: Nuke
+  m_EditorClassIdentifier: 
+  health: 0
+  shield: 0
+  bulletDamageAddition: 0
+  bulletDamageMultiplier: 0
+  bulletSpeedAddition: 0
+  bulletSpeedMultiplier: 0
+  specialSpawn: {fileID: 1009699397658858373, guid: 879f2b13eb1496440931712670d64941, type: 3}
+  permanent: 0
+  duration: 0
