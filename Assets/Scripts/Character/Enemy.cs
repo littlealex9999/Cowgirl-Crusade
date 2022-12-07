@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemy : Character
 {
-    [SerializeField] RailsEnemyMovement myMoveScript;
+    [SerializeField] CM_FollowLeader myMoveScript;
     Character shootTarget;
 
     EnemyAnimation hostileAnimation;
@@ -36,7 +36,7 @@ public class Enemy : Character
     protected override void OnDestroy()
     {
         base.OnDestroy();
-        if (myMoveScript.thingToFollow.tag == "Player") {
+        if (myMoveScript.leader.tag == "Player") {
             Player.RemoveAttacker();
         }
     }
@@ -56,8 +56,8 @@ public class Enemy : Character
 
     public void FindTarget()
     {
-        if (myMoveScript.thingToFollow != null) {
-            shootTarget = myMoveScript.thingToFollow.GetComponentInChildren<Character>();
+        if (myMoveScript.leader != null) {
+            shootTarget = myMoveScript.leader.GetComponentInChildren<Character>();
         } else {
             shootTarget = null;
         }
