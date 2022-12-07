@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 2650785165844631752}
   - component: {fileID: 2543941600153565676}
   m_Layer: 6
-  m_Name: GreenMech 1
+  m_Name: gren boi
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -205,12 +205,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpmax: 5
-  sdmax: 2
+  sdmax: 0
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
   maxSpecialProjectiles: 3
+  dontRotate: 0
   turnMult: {x: 100, y: 100}
   resetRotationStrength: 4
   pointsGiven: 100
@@ -235,7 +236,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  aiming: 0
+  AimOnlyWhenInRange: 0
+  inRange: 150
+  maxRange: 200
 --- !u!1 &8527781580902661347
 GameObject:
   m_ObjectHideFlags: 0
