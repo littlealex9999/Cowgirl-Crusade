@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class LaserEnemy : Character
 {
+    [SerializeField] CM_FollowLeader myMoveScript;
+
     Character target;
 
     [SerializeField, Space] GameObject enemyLaser;
@@ -24,6 +26,8 @@ public class LaserEnemy : Character
     {
         base.Start();
 
+        myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
+
         lr = GetComponent<LineRenderer>();
     }
 
@@ -32,6 +36,14 @@ public class LaserEnemy : Character
         base.Update();
 
         Shoot();
+    }
+
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        if (myMoveScript.leader.tag == "Player") {
+            Player.RemoveAttacker();
+        }
     }
 
     private void Shoot()

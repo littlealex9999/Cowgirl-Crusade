@@ -19,7 +19,7 @@ public class EnemySwapRails : SwapRails
                 SwapRailsEnemy(enemyRailsScript);
             } else {
                 enemyRailsScript.thingToFollow = null;
-                foreach (Enemy e in enemyRailsScript.GetComponentsInChildren<Enemy>()) {
+                foreach (BasicEnemy e in enemyRailsScript.GetComponentsInChildren<BasicEnemy>()) {
                     e.FindTarget();
                     Player.RemoveAttacker(); // you can totally break this and good job if you do
                 }
@@ -36,7 +36,7 @@ public class EnemySwapRails : SwapRails
         scriptToSwap.pathToFollow = newThingToFollow.pathToFollow;
         scriptToSwap.movingToIndex = newThingToFollow.movingToIndex + scriptToSwap.numPointsAhead;
 
-        foreach (Enemy e in scriptToSwap.GetComponentsInChildren<Enemy>()) {
+        foreach (BasicEnemy e in scriptToSwap.GetComponentsInChildren<BasicEnemy>()) {
             e.FindTarget();
             Player.AddAttacker();
         }

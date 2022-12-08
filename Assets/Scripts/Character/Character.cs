@@ -32,6 +32,9 @@ public class Character : MonoBehaviour
     [SerializeField] float bulletSpeedAddition = 0;
     [SerializeField] float bulletSpeedMultiplier = 1;
 
+    EnemyAnimation hostileAnimation;
+    [Space] public bool hostile = false;
+
     List<PowerupStats> powerups = new List<PowerupStats>();
 
     public enum TEAMS
@@ -50,6 +53,8 @@ public class Character : MonoBehaviour
     {
         health = hpmax;
         shield = sdmax;
+
+        hostileAnimation = GetComponent<EnemyAnimation>();
 
         posLastFrame = transform.position;
         specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
@@ -268,6 +273,24 @@ public class Character : MonoBehaviour
     public virtual void SetTarget(Character target)
     {
         return; // change functionality with inheritance
+    }
+
+    public void EnterCombat()
+    {
+        hostile = true;
+
+        if (hostileAnimation != null) {
+            hostileAnimation.EnterCombat();
+        }
+    }
+
+    public void ExitCombat()
+    {
+        hostile = false;
+
+        if (hostileAnimation != null) {
+            hostileAnimation.ExitCombat();
+        }
     }
     #endregion
 }

@@ -14,13 +14,13 @@ public class EnemyAnimation : MonoBehaviour
 
     [SerializeField] bool onTrigger = true;
 
-    Enemy enemy;
+    BasicEnemy enemy;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        enemy = GetComponent<Enemy>();
+        enemy = GetComponent<BasicEnemy>();
         
     }
 
