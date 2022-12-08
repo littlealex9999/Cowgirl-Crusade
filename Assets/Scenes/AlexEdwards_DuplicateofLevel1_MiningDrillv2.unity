@@ -227,9 +227,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &6152845
@@ -578,9 +578,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &13815316
@@ -1347,9 +1347,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &35277933
@@ -1696,9 +1696,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &41926921
@@ -1984,9 +1984,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &51097224
@@ -2356,6 +2356,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+--- !u!4 &66007613 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 66007612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &67703231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3325,9 +3330,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &108691250
@@ -3454,9 +3459,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &114549716
@@ -4607,9 +4612,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &153494320
@@ -7470,9 +7475,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &242838926
@@ -7866,9 +7871,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &250293153
@@ -8821,9 +8826,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &287490461
@@ -9702,9 +9707,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &313018390
@@ -10658,9 +10663,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &327248120
@@ -11491,8 +11496,8 @@ Transform:
   m_LocalPosition: {x: -676.5947, y: 738.9861, z: 237.26721}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1016311270}
-  - {fileID: 1002950579}
+  - {fileID: 66007613}
+  - {fileID: 505370930}
   m_Father: {fileID: 805714202}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11770,6 +11775,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+--- !u!4 &371286523 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 371286522}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &372288230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -12097,9 +12107,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &377371647
@@ -13077,9 +13087,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &409389685
@@ -13975,9 +13985,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &440981151
@@ -16279,9 +16289,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &500635527
@@ -16372,6 +16382,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+--- !u!4 &505370930 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 505370929}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &506548690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16478,9 +16493,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &508460667
@@ -16546,9 +16561,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &511859210
@@ -16819,9 +16834,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &519682112
@@ -16986,6 +17001,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+--- !u!4 &523915615 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 523915614}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &525373401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17536,11 +17556,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
   m_PrefabInstance: {fileID: 2047199886}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &553160778 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 371286522}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &554637106
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17778,9 +17793,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &559992754
@@ -19435,9 +19450,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &627951791
@@ -19963,9 +19978,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &650608165
@@ -20981,9 +20996,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &684297767
@@ -21493,9 +21508,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &702029918
@@ -22289,11 +22304,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -4.885, y: -26.033, z: 2.397}
---- !u!4 &736235916 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 523915614}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &736236070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
@@ -22923,9 +22933,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &762321068
@@ -23434,9 +23444,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &789051229
@@ -28924,17 +28934,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &814920159 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 896530744617498838, guid: 8a134b3b9b138204da783648184583b3, type: 3}
-  m_PrefabInstance: {fileID: 4500529941452975245}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ca3f98c2b25a3c4cbe62c93e30eb385, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &815118298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29581,9 +29580,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &828821158
@@ -31012,9 +31011,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &890676245
@@ -31589,9 +31588,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &904138948
@@ -31796,9 +31795,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &906898292
@@ -32028,9 +32027,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &912096415
@@ -32711,9 +32710,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &943361142
@@ -33903,9 +33902,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &991679663
@@ -34091,9 +34090,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &999252787
@@ -34126,11 +34125,6 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
   m_PrefabInstance: {fileID: 1354277682}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1002950579 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 505370929}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1005019609 stripped
 Transform:
@@ -34679,11 +34673,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
---- !u!4 &1016311270 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 66007612}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1017316024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -34821,9 +34810,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1018677311
@@ -35286,9 +35275,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1033915288
@@ -35892,9 +35881,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1043102886
@@ -37172,9 +37161,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1098432931
@@ -37545,9 +37534,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1106766955
@@ -38010,9 +37999,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1122508103
@@ -38178,9 +38167,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1127342042
@@ -38375,9 +38364,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1130891377
@@ -38538,9 +38527,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1134076234
@@ -39264,9 +39253,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1162882735
@@ -40974,9 +40963,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1202759359
@@ -41029,9 +41018,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1206892258
@@ -41187,9 +41176,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1207278922
@@ -41396,9 +41385,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1208660503
@@ -41612,9 +41601,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1215920413
@@ -42580,9 +42569,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1243298933
@@ -42712,9 +42701,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1246828976
@@ -43340,9 +43329,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1269662223
@@ -45254,9 +45243,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1339210050
@@ -45412,9 +45401,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1340433025
@@ -45562,9 +45551,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1342116452
@@ -51464,9 +51453,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1381031215
@@ -51777,9 +51766,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1389125868
@@ -57949,9 +57938,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1477473103
@@ -59298,9 +59287,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1548851905
@@ -59643,9 +59632,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1557997937
@@ -60332,9 +60321,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1584551762
@@ -60574,9 +60563,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1591768912
@@ -61146,9 +61135,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1609648300
@@ -61928,9 +61917,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1629362512
@@ -62924,9 +62913,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1662305627
@@ -63765,9 +63754,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1680860885
@@ -65338,9 +65327,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1739376410
@@ -66002,9 +65991,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1756111286
@@ -66139,9 +66128,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1761211185
@@ -67218,9 +67207,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1798753103
@@ -67902,9 +67891,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1831064448
@@ -68187,9 +68176,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1838144948
@@ -68706,9 +68695,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1856986397
@@ -68784,9 +68773,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1870356340
@@ -69441,9 +69430,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1880289326
@@ -69657,9 +69646,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1882950039
@@ -70546,9 +70535,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1918590086
@@ -70685,9 +70674,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1920793538
@@ -71222,9 +71211,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1936386915
@@ -71852,9 +71841,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1955898581
@@ -72231,9 +72220,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &1966240538
@@ -72901,9 +72890,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1986802167
@@ -73129,9 +73118,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &1999616348
@@ -73287,9 +73276,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2000004983
@@ -73402,8 +73391,8 @@ Transform:
   m_LocalPosition: {x: -676.5947, y: 738.9861, z: 237.26721}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 736235916}
-  - {fileID: 553160778}
+  - {fileID: 371286523}
+  - {fileID: 523915615}
   m_Father: {fileID: 1796380048}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73699,9 +73688,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2018492810
@@ -74389,9 +74378,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2039111297
@@ -74811,9 +74800,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2043466064
@@ -75119,9 +75108,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2052897019
@@ -75743,9 +75732,9 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!135 &2073783658
@@ -77869,7 +77858,7 @@ PrefabInstance:
     - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
       propertyPath: cameraShake
       value: 
-      objectReference: {fileID: 814920159}
+      objectReference: {fileID: 4500529941452975246}
     - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
       propertyPath: virtualCamera
       value: 
@@ -77965,10 +77954,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8407589935284642243, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: far clip plane
-      value: 2000
+      value: 3000
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+--- !u!114 &4500529941452975246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8793959080400111493, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+  m_PrefabInstance: {fileID: 4500529941452975245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca3f98c2b25a3c4cbe62c93e30eb385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5795977204454687624
 PrefabInstance:
   m_ObjectHideFlags: 0
