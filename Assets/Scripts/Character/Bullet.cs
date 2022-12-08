@@ -68,7 +68,7 @@ public class Bullet : MonoBehaviour
 
                 if (character.gameObject.CompareTag("Enemy"))
                 {
-                    // Crosshair hit marker
+                    GameManager.instance.HitEnemy();
                 }
 
 
