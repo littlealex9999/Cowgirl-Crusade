@@ -6,8 +6,8 @@ public class ExplodeEnemy : Character
 {
     CM_FollowLeader myMoveScript;
 
-    float explosionRadius;
-    float damage;
+    [SerializeField] float explosionRadius;
+    [SerializeField] float damage;
 
     protected override void Start()
     {
