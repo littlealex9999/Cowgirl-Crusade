@@ -69,6 +69,10 @@ public class Bullet : MonoBehaviour
                 if (character.gameObject.CompareTag("Enemy"))
                 {
                     GameManager.instance.HitEnemy();
+
+                }else if (character.gameObject.CompareTag("Player"))
+                {
+                    GameManager.instance.ScreenShake(4f, 0.25f);
                 }
 
 
