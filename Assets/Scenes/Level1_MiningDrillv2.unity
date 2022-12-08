@@ -68179,6 +68179,7 @@ MonoBehaviour:
   scoreObject: {fileID: 0}
   scoreText: {fileID: 0}
   multiplierText: {fileID: 0}
+  hitmarker: {fileID: 0}
 --- !u!4 &1748171972
 Transform:
   m_ObjectHideFlags: 0
