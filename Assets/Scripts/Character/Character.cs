@@ -9,6 +9,7 @@ public class Character : MonoBehaviour
     float shield;
     [SerializeField, InspectorName("Max Health")] float hpmax = 50;
     [SerializeField, InspectorName("Max Shield")] float sdmax = 20;
+    [SerializeField] GameObject destructionPrefab;
 
     float invincibleTime;
 
@@ -92,7 +93,10 @@ public class Character : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
-        GameManager.instance.GetScore.AddPoints(pointsGiven);
+        if (destructionPrefab != null) {
+            GameObject d = Instantiate(destructionPrefab);
+            d.transform.position = transform.position;
+        }
     }
 
     #region stat setting
@@ -115,6 +119,11 @@ public class Character : MonoBehaviour
     public void SetShootCooldown(float value)
     {
         shootCooldown = value;
+    }
+
+    public void SetCurrentCooldown(float value)
+    {
+        cldtimer = value;
     }
     #endregion
 
@@ -224,7 +233,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    public virtual bool TakeDamage(float damage, float setInvincibleTime = 0)
+    public virtual bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
         if (invincibleTime > 0) {
             return false;
@@ -242,6 +251,7 @@ public class Character : MonoBehaviour
         }
 
         if (health <= 0) {
+            GameManager.instance.GetScore.AddPoints(pointsGiven);
             Destroy(gameObject);
         }
 

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 5fede2aba4b8e8b45a80c013a7c771d5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Western Wonderment
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d430ef981a1fba34fb955ff428267195, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
