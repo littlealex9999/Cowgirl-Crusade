@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseDamage: 5
   baseSpeed: 5
+  impact: {fileID: 4488029869421770440, guid: 53ea1b159db136947842fc6d6036bbd4, type: 3}
 --- !u!114 &-2476343665609048771
 MonoBehaviour:
   m_ObjectHideFlags: 0
