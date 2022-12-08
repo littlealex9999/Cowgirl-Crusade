@@ -61,7 +61,7 @@ public class Player : Character
             moveInput.y = -boundaries.y + initialOffset.y - transform.localPosition.y;
         }
 
-        gameObject.transform.localPosition += moveInput;
+        transform.localPosition += moveInput;
     }
 
     void CalculateBoundaries()
@@ -109,7 +109,7 @@ public class Player : Character
     }
 
 
-    public override bool TakeDamage(float damage, float setInvincibleTime = 0)
+    public override bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
         
         //GameManager.instance.ScreenShake(shakeIntensity, shakeDuration);

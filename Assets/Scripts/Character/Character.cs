@@ -97,8 +97,6 @@ public class Character : MonoBehaviour
             GameObject d = Instantiate(destructionPrefab);
             d.transform.position = transform.position;
         }
-
-        GameManager.instance.GetScore.AddPoints(pointsGiven);
     }
 
     #region stat setting
@@ -121,6 +119,11 @@ public class Character : MonoBehaviour
     public void SetShootCooldown(float value)
     {
         shootCooldown = value;
+    }
+
+    public void SetCurrentCooldown(float value)
+    {
+        cldtimer = value;
     }
     #endregion
 
@@ -230,7 +233,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    public virtual bool TakeDamage(float damage, float setInvincibleTime = 0)
+    public virtual bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
         if (invincibleTime > 0) {
             return false;
@@ -248,6 +251,7 @@ public class Character : MonoBehaviour
         }
 
         if (health <= 0) {
+            GameManager.instance.GetScore.AddPoints(pointsGiven);
             Destroy(gameObject);
         }
 
