@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using Cinemachine;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,12 +12,12 @@ public class GameManager : MonoBehaviour
 
     // [SerializeField] CinemachineVirtualCamera virtualCamera;
 
-    [SerializeField] CameraShake cameraShake;
+    [SerializeField] CinemachineVirtualCamera virtualCamera;
 
     [SerializeField] Score scoreObject;
 
-    [SerializeField] Text scoreText;
-    [SerializeField] Text multiplierText;
+    [SerializeField] TMP_Text scoreText;
+    [SerializeField] TMP_Text multiplierText;
 
     [SerializeField] Hitmarker hitmarker;
 
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
 
     public void ScreenShake(float intensity, float duration)
     {
-        cameraShake.Shake(intensity, duration);
+        virtualCamera.GetComponent<CameraShake>().Shake(intensity, duration);
     }
 
     public void HitEnemy()
