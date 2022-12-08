@@ -7,11 +7,11 @@ public class Hitmarker : MonoBehaviour
 {
     Image marker;
 
-    float duration = 0.2f;
+    [SerializeField] float duration = 0.2f;
+
+    float lastHit = 0f;
 
 
-    
-    // Start is called before the first frame update
     void Start()
     {
         marker = GetComponent<Image>();
@@ -19,19 +19,28 @@ public class Hitmarker : MonoBehaviour
     }
 
 
+    void Update()
+    {
+        if (marker.enabled)
+        {
+            lastHit += Time.deltaTime;
+            if(lastHit >= duration)
+            {
+                RemoveHitmarker();
+            }
+        }
+    }
+
     public void HitEnemy()
     {
-        
+        lastHit = 0f;
         marker.enabled = true;
-        StartCoroutine(RemoveHitmarker());
         
     }
 
-    IEnumerator RemoveHitmarker()
+    void RemoveHitmarker()
     {
-        yield return new WaitForSeconds(duration);
         marker.enabled = false;
-
     }
 
 }
