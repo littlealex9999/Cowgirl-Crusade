@@ -378,7 +378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 5
   sdmax: 0
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
@@ -412,7 +412,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inRange: 100
   maxRange: 150
-  onTrigger: 1
+  onTrigger: 0
 --- !u!114 &3936413190566822027
 MonoBehaviour:
   m_ObjectHideFlags: 0
