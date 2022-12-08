@@ -3,7 +3,7 @@ using UnityEngine;
 
 // Require a mesh filter component
 // This script, unfortunately, does not support skinned meshes
-[RequireComponent(typeof(MeshFilter)), ExecuteAlways]
+[RequireComponent(typeof(MeshFilter))]
 public class OutlineNormalsCalculator : MonoBehaviour
 {
     // Store these outline normals in the specified UV/Texcoord channel

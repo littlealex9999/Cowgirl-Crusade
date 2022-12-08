@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SetEnemyTarget_PLAYER : MonoBehaviour
 {
-    public Enemy[] enemiesToSet;
+    public Character[] enemiesToSet;
     Enemy enemy;
     public Character newTarget;
 

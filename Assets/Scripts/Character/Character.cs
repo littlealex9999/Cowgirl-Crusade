@@ -14,8 +14,8 @@ public class Character : MonoBehaviour
 
     [SerializeField] protected Bullet bullet;
     [SerializeField] float deleteBulletsAfterSeconds = 10;
-    [SerializeField] float shootCooldown = 1;
-    [SerializeField, InspectorName("Spawn Shoot Cooldown")] float cldtimer;
+    [SerializeField] protected float shootCooldown = 1;
+    [SerializeField, InspectorName("Spawn Shoot Cooldown")] protected float cldtimer;
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
@@ -46,7 +46,7 @@ public class Character : MonoBehaviour
 
     private Vector3 posLastFrame;
 
-    protected void Start()
+    protected virtual void Start()
     {
         health = hpmax;
         shield = sdmax;
@@ -263,6 +263,11 @@ public class Character : MonoBehaviour
                 }
             }
         }
+    }
+
+    public virtual void SetTarget(Character target)
+    {
+        return; // change functionality with inheritance
     }
     #endregion
 }
