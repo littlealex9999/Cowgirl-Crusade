@@ -66,6 +66,8 @@ public class LaserEnemy : Character
                 shootTimer = shootDuration;
                 firing = true;
 
+                shootingDir = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1)).normalized;
+
                 laserObj = Instantiate(enemyLaser);
                 lr = laserObj.GetComponent<LineRenderer>();
 
