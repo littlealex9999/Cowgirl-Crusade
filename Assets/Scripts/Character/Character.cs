@@ -14,8 +14,8 @@ public class Character : MonoBehaviour
 
     [SerializeField] protected Bullet bullet;
     [SerializeField] float deleteBulletsAfterSeconds = 10;
-    [SerializeField] float shootCooldown = 1;
-    [SerializeField, InspectorName("Spawn Shoot Cooldown")] float cldtimer;
+    [SerializeField] protected float shootCooldown = 1;
+    [SerializeField, InspectorName("Spawn Shoot Cooldown")] protected float cldtimer;
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
@@ -32,6 +32,9 @@ public class Character : MonoBehaviour
     [SerializeField] float bulletSpeedAddition = 0;
     [SerializeField] float bulletSpeedMultiplier = 1;
 
+    EnemyAnimation hostileAnimation;
+    [Space] public bool hostile = false;
+
     List<PowerupStats> powerups = new List<PowerupStats>();
 
     public enum TEAMS
@@ -46,10 +49,12 @@ public class Character : MonoBehaviour
 
     private Vector3 posLastFrame;
 
-    protected void Start()
+    protected virtual void Start()
     {
         health = hpmax;
         shield = sdmax;
+
+        hostileAnimation = GetComponent<EnemyAnimation>();
 
         posLastFrame = transform.position;
         specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
@@ -262,6 +267,29 @@ public class Character : MonoBehaviour
                     break;
                 }
             }
+        }
+    }
+
+    public virtual void SetTarget(Character target)
+    {
+        return; // change functionality with inheritance
+    }
+
+    public void EnterCombat()
+    {
+        hostile = true;
+
+        if (hostileAnimation != null) {
+            hostileAnimation.EnterCombat();
+        }
+    }
+
+    public void ExitCombat()
+    {
+        hostile = false;
+
+        if (hostileAnimation != null) {
+            hostileAnimation.ExitCombat();
         }
     }
     #endregion
