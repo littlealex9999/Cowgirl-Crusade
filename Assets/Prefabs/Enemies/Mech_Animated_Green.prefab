@@ -1075,7 +1075,7 @@ GameObject:
   - component: {fileID: 3936413190566822028}
   - component: {fileID: 3936413190566822024}
   - component: {fileID: 3936413190566822025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mech_Animated_Green
   m_TagString: Enemy
   m_Icon: {fileID: 0}
