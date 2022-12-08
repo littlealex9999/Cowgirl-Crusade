@@ -1226,14 +1226,14 @@ MonoBehaviour:
   dontRotate: 0
   turnMult: {x: 100, y: 100}
   resetRotationStrength: 4
-  pointsGiven: 0
+  pointsGiven: 100
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
+  hostile: 0
   team: 2
   myMoveScript: {fileID: 0}
-  hostile: 0
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &3936413190566822031

@@ -2,13 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Cinemachine;
 
 public class GameManager : MonoBehaviour
 {
     static public GameManager instance { get; private set; }
 
     [SerializeField] GameObject player;
-    
+
+    // [SerializeField] CinemachineVirtualCamera virtualCamera;
+
+    [SerializeField] CameraShake cameraShake;
+
     [SerializeField] Score scoreObject;
 
     [SerializeField] Text scoreText;
@@ -57,9 +62,9 @@ public class GameManager : MonoBehaviour
     }
 
 
-    public void ScreenShake(float amount, float duration)
+    public void ScreenShake(float intensity, float duration)
     {
-
+        cameraShake.Shake(intensity, duration);
     }
 
     public void HitEnemy()
