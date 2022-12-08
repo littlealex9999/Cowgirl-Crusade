@@ -9,6 +9,7 @@ public class Character : MonoBehaviour
     float shield;
     [SerializeField, InspectorName("Max Health")] float hpmax = 50;
     [SerializeField, InspectorName("Max Shield")] float sdmax = 20;
+    [SerializeField] GameObject destructionPrefab;
 
     float invincibleTime;
 
@@ -92,6 +93,11 @@ public class Character : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
+        if (destructionPrefab != null) {
+            GameObject d = Instantiate(destructionPrefab);
+            d.transform.position = transform.position;
+        }
+
         GameManager.instance.GetScore.AddPoints(pointsGiven);
     }
 
