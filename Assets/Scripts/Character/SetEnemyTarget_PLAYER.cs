@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SetEnemyTarget_PLAYER : MonoBehaviour
 {
-    public Enemy[] enemiesToSet;
-    Enemy enemy;
+    public Character[] enemiesToSet;
+    BasicEnemy enemy;
     public Character newTarget;
 
     public bool justFigureOutWhoThePlayerIs;
@@ -15,7 +15,7 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player" && enemiesToSet != null && !triggeredByEnemy) {
-            foreach (Enemy e in enemiesToSet) {
+            foreach (BasicEnemy e in enemiesToSet) {
                 if (justFigureOutWhoThePlayerIs) {
                     e.SetTarget(other.GetComponentInChildren<Player>());
                     e.EnterCombat();
@@ -30,7 +30,7 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
 
         } else if (other.tag == "Enemy" && triggeredByEnemy)
         {
-            enemy = other.gameObject.GetComponent<Enemy>();
+            enemy = other.gameObject.GetComponent<BasicEnemy>();
             if (justFigureOutWhoThePlayerIs)
             {
                 enemy.SetTarget(GameManager.instance.GetPlayer.GetComponent<Character>());

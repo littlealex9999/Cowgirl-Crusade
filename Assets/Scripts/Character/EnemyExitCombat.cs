@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class EnemyExitCombat : MonoBehaviour
 {
-    public Enemy[] enemiesToSet;
-    Enemy enemy;
+    public BasicEnemy[] enemiesToSet;
+    BasicEnemy enemy;
 
     [SerializeField] bool triggeredByEnemy = false;
 
@@ -13,7 +13,7 @@ public class EnemyExitCombat : MonoBehaviour
     {
         if (other.tag == "Player" && enemiesToSet != null && !triggeredByEnemy)
         {
-            foreach (Enemy e in enemiesToSet)
+            foreach (BasicEnemy e in enemiesToSet)
             {
                 e.SetTarget(null);
                 e.ExitCombat();
@@ -21,7 +21,7 @@ public class EnemyExitCombat : MonoBehaviour
             }
         }else if(other.tag == "Enemy" && triggeredByEnemy)
         {
-            enemy = other.gameObject.GetComponent<Enemy>();
+            enemy = other.gameObject.GetComponent<BasicEnemy>();
             enemy.SetTarget(null);
             enemy.ExitCombat();
         }
