@@ -16,6 +16,10 @@ public class EnemyAnimation : MonoBehaviour
 
     [SerializeField, Space] bool alsoSetShootTarget;
 
+    [SerializeField] float setCooldownTo;
+    [SerializeField] float setCooldownRandomRange;
+    [SerializeField] float cooldownMinimum;
+
     Character enemy;
 
     // Start is called before the first frame update
@@ -56,6 +60,7 @@ public class EnemyAnimation : MonoBehaviour
     {
         animator.SetTrigger("Hostile");
         enemy.SetTarget(GameManager.instance.GetPlayer.GetComponentInChildren<Player>());
+        enemy.SetCurrentCooldown(CalculateCooldown());
     }
 
 
@@ -74,7 +79,11 @@ public class EnemyAnimation : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, maxRange);
         }
-
     }
 
+
+    float CalculateCooldown()
+    {
+        return Mathf.Clamp(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange), cooldownMinimum, setCooldownTo + setCooldownRandomRange);
+    }
 }

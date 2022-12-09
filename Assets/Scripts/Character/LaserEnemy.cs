@@ -75,7 +75,7 @@ public class LaserEnemy : Character
                 laserObj = Instantiate(enemyLaser);
                 lr = laserObj.GetComponent<LineRenderer>();
 
-                laserObj.transform.rotation = Quaternion.LookRotation((shootingPos + target.transform.parent.position) - (transform.position + transform.forward * forwardOffset));
+                laserObj.transform.rotation = Quaternion.LookRotation((shootingPos + target.transform.parent.position) - (transform.position + transform.forward * forwardOffset)) * Quaternion.Euler(90, 0, 0);
             }
         }
     }
