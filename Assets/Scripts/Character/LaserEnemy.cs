@@ -8,7 +8,8 @@ public class LaserEnemy : Character
 
     Character shootTarget;
 
-    [SerializeField, Space] GameObject enemyLaser;
+    [SerializeField, Range(-1, 1), Space] float targetRelativeLookShootLimit = -0.1f;
+    [SerializeField] GameObject enemyLaser;
     [SerializeField] float shootDuration = 5;
     [SerializeField] float laserMoveSpeed = 5;
     [SerializeField] float forwardOffset = 1;
@@ -57,7 +58,7 @@ public class LaserEnemy : Character
 
     private void Shoot()
     {
-        if (shootTarget != null) {
+        if (shootTarget != null && Vector3.Dot(shootTarget.transform.forward, transform.forward) <= targetRelativeLookShootLimit) {
             if (firing) {
                 shootingPos += shootingDir * laserMoveSpeed * Time.deltaTime;
 
@@ -82,6 +83,9 @@ public class LaserEnemy : Character
 
                 laserObj.transform.rotation = Quaternion.LookRotation((shootingPos + shootTarget.transform.parent.position) - (transform.position + transform.forward * forwardOffset)) * Quaternion.Euler(90, 0, 0);
             }
+        } else if (laserObj != null) {
+            Destroy(laserObj);
+            firing = false;
         }
     }
 
