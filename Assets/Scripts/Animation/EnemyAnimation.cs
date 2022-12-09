@@ -14,41 +14,38 @@ public class EnemyAnimation : MonoBehaviour
 
     [SerializeField] bool onTrigger = true;
 
-    BasicEnemy enemy;
+    [SerializeField, Space] bool alsoSetShootTarget;
+
+    Character enemy;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        enemy = GetComponent<BasicEnemy>();
-        
+        enemy = GetComponent<Character>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (!onTrigger)
-        {
+        if (!onTrigger) {
             SearchForTarget();
         }
-        
+
     }
 
 
     private void SearchForTarget()
     {
-        float distance = GameManager.instance.DistanceFromPlayer(gameObject.transform);
+        float distance = (GameManager.instance.GetPlayer.transform.position - transform.position).sqrMagnitude;
 
-        if (distance < inRange)
-        {
-            if (!enemy.hostile)
-            {
+        if (distance < inRange * inRange) {
+            if (!enemy.hostile) {
                 EnterCombat();
             }
-        }else if (distance > maxRange)
-        {
-            if (enemy.hostile)
-            {
+        } else if (distance > maxRange * maxRange) {
+            if (enemy.hostile) {
                 ExitCombat();
             }
         }
@@ -58,25 +55,26 @@ public class EnemyAnimation : MonoBehaviour
     public void EnterCombat()
     {
         animator.SetTrigger("Hostile");
+        enemy.SetTarget(GameManager.instance.GetPlayer.GetComponentInChildren<Player>());
     }
 
 
     public void ExitCombat()
     {
         animator.SetTrigger("NotHostile");
+        enemy.SetTarget(null);
     }
 
 
     void OnDrawGizmosSelected()
     {
-        if (!onTrigger)
-        {
+        if (!onTrigger) {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, inRange);
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, maxRange);
         }
-        
+
     }
 
 }

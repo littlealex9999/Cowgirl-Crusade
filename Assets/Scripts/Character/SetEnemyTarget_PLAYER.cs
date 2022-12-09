@@ -21,37 +21,48 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
         if (other.tag == "Player" && enemiesToSet != null && !triggeredByEnemy) {
             foreach (Character e in enemiesToSet) {
                 if (justFigureOutWhoThePlayerIs) {
-                    e.SetTarget(other.GetComponentInChildren<Player>());
-                    e.EnterCombat();
+                    Player player = other.GetComponentInChildren<Player>();
+                    e.SetTarget(player);
 
-                    e.SetCurrentCooldown(CalculateCooldown());
+                    if (player == null) {
+                        e.ExitCombat();
+                    } else {
+                        e.EnterCombat();
+                        e.SetCurrentCooldown(CalculateCooldown());
+                    }
                 } else {
                     e.SetTarget(newTarget);
-                    e.EnterCombat();
 
-                    e.SetCurrentCooldown(CalculateCooldown());
+                    if (newTarget == null) {
+                        e.ExitCombat();
+                    } else {
+                        e.EnterCombat();
+                        e.SetCurrentCooldown(CalculateCooldown());
+                    }
                 }
-
             }
-
-        } else if (other.tag == "Enemy" && triggeredByEnemy)
-        {
+        } else if (other.tag == "Enemy" && triggeredByEnemy) {
             enemy = other.gameObject.GetComponent<Character>();
-            if (justFigureOutWhoThePlayerIs)
-            {
-                enemy.SetTarget(GameManager.instance.GetPlayer.GetComponent<Character>());
-                enemy.EnterCombat();
+            if (justFigureOutWhoThePlayerIs) {
+                Player player = other.GetComponentInChildren<Player>();
+                enemy.SetTarget(player);
 
-                enemy.SetCurrentCooldown(CalculateCooldown());
-            }
-            else
-            {
+                if (player == null) {
+                    enemy.ExitCombat();
+                } else {
+                    enemy.EnterCombat();
+                    enemy.SetCurrentCooldown(CalculateCooldown());
+                }
+            } else {
                 enemy.SetTarget(newTarget);
-                enemy.EnterCombat();
 
-                enemy.SetCurrentCooldown(CalculateCooldown());
+                if (newTarget == null) {
+                    enemy.ExitCombat();
+                } else {
+                    enemy.EnterCombat();
+                    enemy.SetCurrentCooldown(CalculateCooldown());
+                }
             }
-
         }
     }
 
