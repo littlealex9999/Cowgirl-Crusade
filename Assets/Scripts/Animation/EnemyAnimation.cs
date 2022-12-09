@@ -9,7 +9,7 @@ public class EnemyAnimation : MonoBehaviour
 {
     Animator animator;
 
-    [SerializeField] float inRange = 100f;
+    [SerializeField] float minRange = 100f;
     [SerializeField] float maxRange = 150f;
 
     [SerializeField] bool onTrigger = true;
@@ -42,7 +42,7 @@ public class EnemyAnimation : MonoBehaviour
     {
         float distance = (GameManager.instance.GetPlayer.transform.position - transform.position).sqrMagnitude;
 
-        if (distance < inRange * inRange) {
+        if (distance < minRange * minRange) {
             if (!enemy.hostile) {
                 EnterCombat();
             }
@@ -81,7 +81,7 @@ public class EnemyAnimation : MonoBehaviour
     {
         if (!onTrigger) {
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, inRange);
+            Gizmos.DrawWireSphere(transform.position, minRange);
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, maxRange);
         }

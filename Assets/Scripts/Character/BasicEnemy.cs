@@ -8,6 +8,7 @@ public class BasicEnemy : Character
     Character shootTarget;
 
     [SerializeField, Range(-1, 1), Space] float targetRelativeLookShootLimit = -0.1f;
+    [SerializeField] float minDistanceBetweenTarget = 5;
     [SerializeField, Range(0, 1)] float spreadFrequency = 0.5f; // 0 = never spread, 1 = always spread
     [SerializeField] float spread = 3;
     [SerializeField, Space] bool lookAtTarget = true;
@@ -42,7 +43,9 @@ public class BasicEnemy : Character
 
     private void Shoot()
     {
-        if (shootTarget != null && Vector3.Dot(shootTarget.transform.forward, transform.forward) <= targetRelativeLookShootLimit) {
+        if (shootTarget != null &&
+            (shootTarget.transform.position - transform.position).sqrMagnitude >= minDistanceBetweenTarget * minDistanceBetweenTarget &&
+            Vector3.Dot(shootTarget.transform.forward, transform.forward) <= targetRelativeLookShootLimit) {
             Vector3 spreadVector = new Vector3();
 
             if (Random.Range(0, 1) <= spreadFrequency) {
@@ -65,5 +68,11 @@ public class BasicEnemy : Character
     public override void SetTarget(Character chara)
     {
         shootTarget = chara;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, minDistanceBetweenTarget);
     }
 }

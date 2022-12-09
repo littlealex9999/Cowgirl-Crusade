@@ -9,10 +9,12 @@ public class LaserEnemy : Character
     Character shootTarget;
 
     [SerializeField, Range(-1, 1), Space] float targetRelativeLookShootLimit = -0.1f;
+    [SerializeField] float minDistanceBetweenTarget = 5;
     [SerializeField] GameObject enemyLaser;
     [SerializeField] float shootDuration = 5;
     [SerializeField] float laserMoveSpeed = 5;
     [SerializeField] float forwardOffset = 1;
+    [SerializeField, Space] float shootStartDistance = 5;
     float rotationSpeed = 4;
     bool firing;
     Vector3 shootingPos;
@@ -58,7 +60,9 @@ public class LaserEnemy : Character
 
     private void Shoot()
     {
-        if (shootTarget != null && Vector3.Dot(shootTarget.transform.forward, transform.forward) <= targetRelativeLookShootLimit) {
+        if (shootTarget != null &&
+            (shootTarget.transform.position - transform.position).sqrMagnitude >= minDistanceBetweenTarget * minDistanceBetweenTarget && 
+            Vector3.Dot(shootTarget.transform.forward, transform.forward) <= targetRelativeLookShootLimit) {
             if (firing) {
                 shootingPos += shootingDir * laserMoveSpeed * Time.deltaTime;
 
@@ -115,5 +119,10 @@ public class LaserEnemy : Character
     public override void SetTarget(Character target)
     {
         shootTarget = target;
+    }
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, minDistanceBetweenTarget);
     }
 }
