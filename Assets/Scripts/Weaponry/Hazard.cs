@@ -11,6 +11,7 @@ public class Hazard : MonoBehaviour
 
     [SerializeField] bool playerOnly = false;
     [SerializeField] bool destroyOnHit = false;
+    [SerializeField] bool givePointsOnKill = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +34,7 @@ public class Hazard : MonoBehaviour
         Character character = other.gameObject.GetComponent<Character>();
 
         if (character != null) {
-            character.TakeDamage(dmg, invincibilityDuration);
+            character.TakeDamage(dmg, invincibilityDuration, givePointsOnKill);
             if (destroyOnHit) {
                 Destruct();
             }

@@ -1151,9 +1151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fe98dc968978544a0bceac64446f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inRange: 100
-  maxRange: 150
+  inRange: 300
+  maxRange: 300
   onTrigger: 0
+  alsoSetShootTarget: 1
 --- !u!114 &3936413190566822027
 MonoBehaviour:
   m_ObjectHideFlags: 0

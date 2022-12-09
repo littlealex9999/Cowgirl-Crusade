@@ -20,9 +20,9 @@ public class Character : MonoBehaviour
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
-    [SerializeField] bool dontRotate;
-    [SerializeField] Vector2 turnMult = new Vector2(100, 100);
-    [SerializeField] float resetRotationStrength = 4f;
+    [SerializeField] protected bool dontRotate;
+    [SerializeField] protected Vector2 turnMult = new Vector2(100, 100);
+    [SerializeField] protected float resetRotationStrength = 4f;
 
     [SerializeField] int pointsGiven;
 
@@ -263,11 +263,19 @@ public class Character : MonoBehaviour
         PowerupStats pus = Instantiate(stats);
 
         powerups.Add(pus);
+
+        SetMaxHealth(hpmax + pus.maxHealth);
+        SetMaxShield(sdmax + pus.maxShield);
+
         if (pus.health > 0) {
             health += pus.health;
+            if (health > hpmax)
+                health = hpmax;
         }
         if (pus.shield > 0) {
             shield += pus.shield;
+            if (shield > sdmax)
+                shield = sdmax;
         }
 
         if (pus.specialSpawn != null) {
