@@ -1165,7 +1165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3936413190566822026}
-  - component: {fileID: 2200095390610195808}
+  - component: {fileID: 7907177107650121832}
   - component: {fileID: 3936413190566822031}
   - component: {fileID: 3936413190566822027}
   - component: {fileID: 3936413190566822029}
@@ -1204,7 +1204,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2200095390610195808
+--- !u!114 &7907177107650121832
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1213,11 +1213,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3936413190566822030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Script: {fileID: 11500000, guid: b85a0a374d033be4390dc92b9f0c0738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hpmax: 5
   sdmax: 0
+  destructionPrefab: {fileID: 0}
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
@@ -1226,16 +1227,17 @@ MonoBehaviour:
   dontRotate: 0
   turnMult: {x: 100, y: 100}
   resetRotationStrength: 4
-  pointsGiven: 100
+  pointsGiven: 0
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
-  myMoveScript: {fileID: 0}
-  spreadFrequency: 0.5
-  spread: 3
+  enemyLaser: {fileID: 6397197259262075677, guid: facfaea9011225246bcaef8aeaa6cbaa, type: 3}
+  shootDuration: 5
+  laserMoveSpeed: 5
+  forwardOffset: 1
 --- !u!114 &3936413190566822031
 MonoBehaviour:
   m_ObjectHideFlags: 0

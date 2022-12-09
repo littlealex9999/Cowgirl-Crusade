@@ -1121,10 +1121,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 5
   sdmax: 0
-  bullet: {fileID: 0}
+  destructionPrefab: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 5
+  cldtimer: 3
   maxSpecialProjectiles: 3
   dontRotate: 0
   turnMult: {x: 100, y: 100}
@@ -1133,10 +1134,9 @@ MonoBehaviour:
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 55
   hostile: 0
   team: 2
-  myMoveScript: {fileID: 0}
   spreadFrequency: 0.5
   spread: 3
 --- !u!114 &3936413190566822031

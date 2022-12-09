@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class LaserEnemy : Character
 {
-    [SerializeField] CM_FollowLeader myMoveScript;
+    CM_FollowLeader myMoveScript;
 
     Character target;
 

@@ -26,7 +26,7 @@ public class Hazard : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (playerOnly && other.tag == "Player") {
+        if (playerOnly && other.tag != "Player") {
             return;
         }
 

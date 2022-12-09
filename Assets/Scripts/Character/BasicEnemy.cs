@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class BasicEnemy : Character
 {
-    [SerializeField] CM_FollowLeader myMoveScript;
+    CM_FollowLeader myMoveScript;
     Character shootTarget;
 
     [SerializeField, Range(0, 1)] float spreadFrequency = 0.5f; // 0 = never spread, 1 = always spread
     [SerializeField] float spread = 3;
 
-    void Start()
+    protected override void Start()
     {
         base.Start();
 
