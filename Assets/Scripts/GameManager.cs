@@ -61,7 +61,6 @@ public class GameManager : MonoBehaviour
         return distance;
     }
 
-
     public void ScreenShake(float intensity, float duration)
     {
         virtualCamera.GetComponent<CameraShake>().Shake(intensity, duration);

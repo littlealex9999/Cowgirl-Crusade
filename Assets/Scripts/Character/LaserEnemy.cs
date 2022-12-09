@@ -46,7 +46,7 @@ public class LaserEnemy : Character
     protected override void OnDestroy()
     {
         base.OnDestroy();
-        if (myMoveScript.leader.tag == "Player") {
+        if (myMoveScript != null && myMoveScript.leader.tag == "Player") {
             Player.RemoveAttacker();
         }
 
