@@ -5,7 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Powerup", menuName = "Powerup")]
 public class PowerupStats : ScriptableObject
 {
-    [Header("Health Stats")] public float health = 0;
+    [Header("Health Stats")] public float maxHealth = 0;
+    public float maxShield = 0;
+    public float health = 0;
     public float shield = 0;
 
     [Header("Bullet Attributes"), Space] public float bulletDamageAddition = 0;
