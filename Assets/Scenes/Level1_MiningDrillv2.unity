@@ -425,6 +425,7 @@ MonoBehaviour:
   team: 2
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!65 &11656248
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8409,7 +8410,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8458,6 +8459,18 @@ PrefabInstance:
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -11542,6 +11555,7 @@ MonoBehaviour:
   team: 2
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!65 &372228944
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13238,7 +13252,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13287,6 +13301,18 @@ PrefabInstance:
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -18892,6 +18918,7 @@ MonoBehaviour:
   team: 2
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!65 &611949104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -22779,11 +22806,11 @@ Transform:
   m_LocalPosition: {x: -0.00012207031, y: -22.601212, z: -52.45703}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 437793713}
-  - {fileID: 1526622556}
-  - {fileID: 1452014835}
-  - {fileID: 1000896856}
   - {fileID: 300020197}
+  - {fileID: 1000896856}
+  - {fileID: 1452014835}
+  - {fileID: 1526622556}
+  - {fileID: 437793713}
   - {fileID: 1711549127}
   m_Father: {fileID: 417694899}
   m_RootOrder: 1
@@ -30192,6 +30219,7 @@ MonoBehaviour:
   team: 2
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!65 &868060405
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33582,7 +33610,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_LocalPosition.x
@@ -33631,6 +33659,18 @@ PrefabInstance:
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -39944,6 +39984,18 @@ PrefabInstance:
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -50349,6 +50401,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Animated_Green
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
 --- !u!4 &1427701047 stripped
@@ -55596,6 +55660,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Animated_Green (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
 --- !u!4 &1452014835 stripped
@@ -57066,7 +57142,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_LocalPosition.x
@@ -57115,6 +57191,18 @@ PrefabInstance:
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -62710,6 +62798,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mech_Animated_Green (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
 --- !u!4 &1711549127 stripped
@@ -63336,6 +63436,7 @@ MonoBehaviour:
   team: 2
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!65 &1727135276
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69668,6 +69769,18 @@ PrefabInstance:
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownTo
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: cooldownMinimum
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822031, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: setCooldownRandomRange
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}

@@ -1139,6 +1139,7 @@ MonoBehaviour:
   team: 2
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &3936413190566822031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,8 +1152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fe98dc968978544a0bceac64446f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inRange: 300
-  maxRange: 300
+  inRange: 150
+  maxRange: 200
   onTrigger: 0
   alsoSetShootTarget: 1
   setCooldownTo: 5
