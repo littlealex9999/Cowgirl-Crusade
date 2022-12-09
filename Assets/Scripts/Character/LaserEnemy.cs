@@ -44,6 +44,10 @@ public class LaserEnemy : Character
         if (myMoveScript.leader.tag == "Player") {
             Player.RemoveAttacker();
         }
+
+        if (laserObj != null) {
+            Destroy(laserObj);
+        }
     }
 
     private void Shoot()
