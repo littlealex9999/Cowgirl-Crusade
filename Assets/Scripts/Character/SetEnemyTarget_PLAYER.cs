@@ -10,8 +10,9 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
 
     public float setCooldownTo;
     public float setCooldownRandomRange;
+    public float cooldownMinimum;
 
-    public bool justFigureOutWhoThePlayerIs;
+    [Space] public bool justFigureOutWhoThePlayerIs;
 
     [SerializeField] bool triggeredByEnemy = false;
 
@@ -23,12 +24,12 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
                     e.SetTarget(other.GetComponentInChildren<Player>());
                     e.EnterCombat();
 
-                    e.SetCurrentCooldown(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange));
+                    e.SetCurrentCooldown(CalculateCooldown());
                 } else {
                     e.SetTarget(newTarget);
                     e.EnterCombat();
 
-                    e.SetCurrentCooldown(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange));
+                    e.SetCurrentCooldown(CalculateCooldown());
                 }
 
             }
@@ -41,17 +42,22 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
                 enemy.SetTarget(GameManager.instance.GetPlayer.GetComponent<Character>());
                 enemy.EnterCombat();
 
-                enemy.SetCurrentCooldown(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange));
+                enemy.SetCurrentCooldown(CalculateCooldown());
             }
             else
             {
                 enemy.SetTarget(newTarget);
                 enemy.EnterCombat();
 
-                enemy.SetCurrentCooldown(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange));
+                enemy.SetCurrentCooldown(CalculateCooldown());
             }
 
         }
     }
 
+
+    float CalculateCooldown()
+    {
+        return Mathf.Clamp(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange), cooldownMinimum, setCooldownTo + setCooldownRandomRange);
+    }
 }
