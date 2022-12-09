@@ -423,6 +423,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -581,6 +582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 10931210}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -625,6 +630,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green
@@ -850,6 +859,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -894,6 +907,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (1)
@@ -2836,6 +2853,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2880,6 +2901,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (7)
@@ -2982,6 +3007,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -3026,6 +3055,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (5)
@@ -6724,6 +6757,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Purple (1)
@@ -7326,6 +7363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138477022}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -7370,6 +7411,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (5)
@@ -7775,9 +7820,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Purple
+      objectReference: {fileID: 0}
+    - target: {fileID: 7907177107650121832, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
@@ -9669,6 +9722,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9713,6 +9770,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (7)
@@ -11197,6 +11258,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138477022}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -11241,6 +11306,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (6)
@@ -11553,6 +11622,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -12752,13 +12822,13 @@ MonoBehaviour:
     width: 1
   m_Looped: 0
   m_Waypoints:
-  - position: {x: 0, y: -22.601196, z: -52.45703}
+  - position: {x: -417.1001, y: -22.601196, z: -52.45703}
     roll: 0
-  - position: {x: -39.970215, y: -19.516083, z: 54.52832}
+  - position: {x: -272.63086, y: -19.516083, z: 54.52832}
     roll: 0
-  - position: {x: -144.99292, y: -72.808105, z: 233.11328}
+  - position: {x: -424.562, y: -72.808105, z: 233.11328}
     roll: 0
-  - position: {x: -150.9231, y: -183.8227, z: 323.37524}
+  - position: {x: -335.8335, y: -183.8227, z: 369.339}
     roll: 0
   - position: {x: -70.52783, y: -251.8416, z: 485.95776}
     roll: 0
@@ -12779,6 +12849,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -12823,6 +12897,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (1)
@@ -14901,6 +14979,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -14945,6 +15027,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (8)
@@ -17484,6 +17570,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -17528,6 +17618,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (3)
@@ -18916,6 +19010,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -19157,13 +19252,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614758745}
-  m_LocalRotation: {x: -0, y: -0.8475405, z: -0, w: 0.5307308}
-  m_LocalPosition: {x: -210.27, y: -80.25, z: 760.33}
+  m_LocalRotation: {x: -0, y: -0.83176446, z: -0, w: 0.5551288}
+  m_LocalPosition: {x: -159.7, y: -80.25, z: 570.3}
   m_LocalScale: {x: 1, y: 2.0985, z: 2.9632845}
   m_Children: []
   m_Father: {fileID: 1320841865}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: -55.955, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -112.561, z: 0}
 --- !u!114 &614758747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23062,6 +23157,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138477022}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -23106,6 +23205,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (4)
@@ -29686,6 +29789,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Purple
@@ -30062,6 +30169,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 10931210}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -30106,6 +30217,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (3)
@@ -30221,6 +30336,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -30644,6 +30760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -30688,6 +30808,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (6)
@@ -31138,7 +31262,7 @@ MonoBehaviour:
   m_Path: {fileID: 1194352379}
   m_UpdateMethod: 0
   m_PositionUnits: 1
-  m_Speed: 40
+  m_Speed: 50
   m_Position: 0
 --- !u!4 &909309844
 Transform:
@@ -31432,6 +31556,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138477022}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -31476,6 +31604,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green
@@ -32711,6 +32843,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138477022}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -32755,6 +32891,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (2)
@@ -35891,6 +36031,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 10931210}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -35935,6 +36079,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (1)
@@ -37333,6 +37481,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 10931210}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -37377,6 +37529,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (2)
@@ -37680,6 +37836,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 25efd7a10fae7a0408c9121d5da1a6b8, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Purple (2)
@@ -40020,6 +40180,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -40064,6 +40228,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green
@@ -49240,6 +49408,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138477022}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -49284,6 +49456,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (3)
@@ -49713,6 +49889,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: shootDistance
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: bulletHomingSpeed
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: bulletSpeedMultiplier
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 8091244507441345688, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -49758,6 +49946,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -49802,6 +49994,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (3)
@@ -50118,6 +50314,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -50162,6 +50362,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (4)
@@ -57591,6 +57795,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2138477022}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -57635,6 +57843,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (1)
@@ -57921,6 +58133,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -57965,6 +58181,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (2)
@@ -57978,6 +58198,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -58022,6 +58246,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (2)
@@ -63438,6 +63666,7 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -64451,6 +64680,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -64495,6 +64728,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (6)
@@ -64523,6 +64760,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 10931210}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -64567,6 +64808,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (5)
@@ -67130,6 +67375,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 10931210}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -67174,6 +67423,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (4)
@@ -68367,6 +68620,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -68411,6 +68668,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green
@@ -72202,6 +72463,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1723281876}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -72246,6 +72511,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (5)
@@ -72751,6 +73020,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 10931210}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -72795,6 +73068,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (6)
@@ -74356,6 +74633,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 62595222}
     m_Modifications:
+    - target: {fileID: 2200095390610195808, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: targetRelativeLookShootLimit
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -74400,6 +74681,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3936413190566822027, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 383443925}
     - target: {fileID: 3936413190566822030, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
       propertyPath: m_Name
       value: Mech_Animated_Green (4)
