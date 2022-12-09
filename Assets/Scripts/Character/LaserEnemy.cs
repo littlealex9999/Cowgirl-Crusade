@@ -6,7 +6,7 @@ public class LaserEnemy : Character
 {
     CM_FollowLeader myMoveScript;
 
-    Character target;
+    Character shootTarget;
 
     [SerializeField, Space] GameObject enemyLaser;
     [SerializeField] float shootDuration = 5;
@@ -35,7 +35,12 @@ public class LaserEnemy : Character
     {
         base.Update();
 
-        Shoot();
+        if (hostile) {
+            Shoot();
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(shootTarget.transform.position - transform.position), resetRotationStrength * Time.deltaTime);
+        } else {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(transform.parent.forward), resetRotationStrength * Time.deltaTime);
+        }
     }
 
     protected override void OnDestroy()

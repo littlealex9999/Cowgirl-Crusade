@@ -36,9 +36,7 @@ public class EnemyAnimation : MonoBehaviour
         if (!onTrigger) {
             SearchForTarget();
         }
-
     }
-
 
     private void SearchForTarget()
     {
