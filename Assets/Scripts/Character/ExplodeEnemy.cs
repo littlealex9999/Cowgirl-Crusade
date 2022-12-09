@@ -30,7 +30,7 @@ public class ExplodeEnemy : Character
             foreach (Collider other in collisions) {
                 if (other.tag == "Player") {
                     other.GetComponent<Player>().TakeDamage(damage);
-                    Destroy(gameObject);
+                    TakeDamage(getCurrentHealth + getCurrentShield, 0, false);
                 }
             }
         }
