@@ -1155,6 +1155,9 @@ MonoBehaviour:
   maxRange: 300
   onTrigger: 0
   alsoSetShootTarget: 1
+  setCooldownTo: 5
+  setCooldownRandomRange: 4
+  cooldownMinimum: 2
 --- !u!114 &3936413190566822027
 MonoBehaviour:
   m_ObjectHideFlags: 0
