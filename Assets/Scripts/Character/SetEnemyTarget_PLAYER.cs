@@ -8,7 +8,11 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
     Character enemy;
     public Character newTarget;
 
-    public bool justFigureOutWhoThePlayerIs;
+    public float setCooldownTo;
+    public float setCooldownRandomRange;
+    public float cooldownMinimum;
+
+    [Space] public bool justFigureOutWhoThePlayerIs;
 
     [SerializeField] bool triggeredByEnemy = false;
 
@@ -20,10 +24,12 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
                     e.SetTarget(other.GetComponentInChildren<Player>());
                     e.EnterCombat();
 
+                    e.SetCurrentCooldown(CalculateCooldown());
                 } else {
                     e.SetTarget(newTarget);
                     e.EnterCombat();
 
+                    e.SetCurrentCooldown(CalculateCooldown());
                 }
 
             }
@@ -35,14 +41,23 @@ public class SetEnemyTarget_PLAYER : MonoBehaviour
             {
                 enemy.SetTarget(GameManager.instance.GetPlayer.GetComponent<Character>());
                 enemy.EnterCombat();
+
+                enemy.SetCurrentCooldown(CalculateCooldown());
             }
             else
             {
                 enemy.SetTarget(newTarget);
                 enemy.EnterCombat();
+
+                enemy.SetCurrentCooldown(CalculateCooldown());
             }
 
         }
     }
 
+
+    float CalculateCooldown()
+    {
+        return Mathf.Clamp(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange), cooldownMinimum, setCooldownTo + setCooldownRandomRange);
+    }
 }
