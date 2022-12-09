@@ -36,9 +36,7 @@ public class EnemyAnimation : MonoBehaviour
         if (!onTrigger) {
             SearchForTarget();
         }
-
     }
-
 
     private void SearchForTarget()
     {
@@ -59,15 +57,23 @@ public class EnemyAnimation : MonoBehaviour
     public void EnterCombat()
     {
         animator.SetTrigger("Hostile");
-        enemy.SetTarget(GameManager.instance.GetPlayer.GetComponentInChildren<Player>());
-        enemy.SetCurrentCooldown(CalculateCooldown());
+
+        if (alsoSetShootTarget) {
+            enemy.SetTarget(GameManager.instance.GetPlayer.GetComponentInChildren<Player>());
+            enemy.SetCurrentCooldown(CalculateCooldown());
+            enemy.hostile = true;
+        }
     }
 
 
     public void ExitCombat()
     {
         animator.SetTrigger("NotHostile");
-        enemy.SetTarget(null);
+
+        if (alsoSetShootTarget) {
+            enemy.SetTarget(null);
+            enemy.hostile = false;
+        }
     }
 
 

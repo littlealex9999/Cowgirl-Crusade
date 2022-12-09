@@ -20,9 +20,9 @@ public class Character : MonoBehaviour
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
-    [SerializeField] bool dontRotate;
-    [SerializeField] Vector2 turnMult = new Vector2(100, 100);
-    [SerializeField] float resetRotationStrength = 4f;
+    [SerializeField] protected bool dontRotate;
+    [SerializeField] protected Vector2 turnMult = new Vector2(100, 100);
+    [SerializeField] protected float resetRotationStrength = 4f;
 
     [SerializeField] int pointsGiven;
 
