@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 using TMPro;
 
 public class GameManager : MonoBehaviour
@@ -10,16 +9,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject player;
 
-    // [SerializeField] CinemachineVirtualCamera virtualCamera;
-
-    [SerializeField] CinemachineVirtualCamera virtualCamera;
-
     [SerializeField] Score scoreObject;
 
     [SerializeField] TMP_Text scoreText;
     [SerializeField] TMP_Text multiplierText;
 
-    [SerializeField] Hitmarker hitmarker;
+    [SerializeField] ShowImage hitmarker;
 
     public Score GetScore { get { return scoreObject; } }
 
@@ -61,14 +56,9 @@ public class GameManager : MonoBehaviour
         return distance;
     }
 
-    public void ScreenShake(float intensity, float duration)
-    {
-        virtualCamera.GetComponent<CameraShake>().Shake(intensity, duration);
-    }
-
     public void HitEnemy()
     {
-        hitmarker.HitEnemy();
+        hitmarker.DisplayImage(0.2f);
     }
 
 }
