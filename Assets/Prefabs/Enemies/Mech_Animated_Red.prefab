@@ -350,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 3936413190566822030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5129167576512075730}
   - {fileID: 6176106625990840617}
@@ -396,8 +396,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
-  explosionRadius: 7
-  damage: 5
+  explosionRadius: 6.3
+  damage: 6.87
 --- !u!114 &3936413190566822031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +413,10 @@ MonoBehaviour:
   inRange: 100
   maxRange: 150
   onTrigger: 0
+  alsoSetShootTarget: 0
+  setCooldownTo: 0
+  setCooldownRandomRange: 0
+  cooldownMinimum: 0
 --- !u!114 &3936413190566822027
 MonoBehaviour:
   m_ObjectHideFlags: 0
