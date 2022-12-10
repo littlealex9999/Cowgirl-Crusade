@@ -10,12 +10,16 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] GameObject player;
 
+    // [SerializeField] CinemachineVirtualCamera virtualCamera;
+
+    [SerializeField] CinemachineVirtualCamera virtualCamera;
+
     [SerializeField] Score scoreObject;
 
     [SerializeField] TMP_Text scoreText;
     [SerializeField] TMP_Text multiplierText;
 
-    [SerializeField] ShowImage hitmarker;
+    [SerializeField] Hitmarker hitmarker;
 
     public Score GetScore { get { return scoreObject; } }
 
@@ -57,10 +61,14 @@ public class GameManager : MonoBehaviour
         return distance;
     }
 
+    public void ScreenShake(float intensity, float duration)
+    {
+        virtualCamera.GetComponent<CameraShake>().Shake(intensity, duration);
+    }
 
     public void HitEnemy()
     {
-        hitmarker.DisplayImage(0.2f);
+        hitmarker.HitEnemy();
     }
 
 }

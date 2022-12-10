@@ -7,6 +7,8 @@ public class BasicEnemy : Character
     CM_FollowLeader myMoveScript;
     Character shootTarget;
 
+    [SerializeField, Range(-1, 1), Space] float targetRelativeLookShootLimit = -0.1f;
+    [SerializeField] float minDistanceBetweenTarget = 5;
     [SerializeField, Range(0, 1)] float spreadFrequency = 0.5f; // 0 = never spread, 1 = always spread
     [SerializeField] float spread = 3;
     [SerializeField, Space] bool lookAtTarget = true;
@@ -34,14 +36,16 @@ public class BasicEnemy : Character
     protected override void OnDestroy()
     {
         base.OnDestroy();
-        if (myMoveScript.leader.tag == "Player") {
+        if (myMoveScript!= null && myMoveScript.leader.tag == "Player") {
             Player.RemoveAttacker();
         }
     }
 
     private void Shoot()
     {
-        if (shootTarget != null) {
+        if (shootTarget != null &&
+            (shootTarget.transform.position - transform.position).sqrMagnitude >= minDistanceBetweenTarget * minDistanceBetweenTarget &&
+            Vector3.Dot(shootTarget.transform.forward, transform.forward) <= targetRelativeLookShootLimit) {
             Vector3 spreadVector = new Vector3();
 
             if (Random.Range(0, 1) <= spreadFrequency) {
@@ -64,5 +68,11 @@ public class BasicEnemy : Character
     public override void SetTarget(Character chara)
     {
         shootTarget = chara;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, minDistanceBetweenTarget);
     }
 }
