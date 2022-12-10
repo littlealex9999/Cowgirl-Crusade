@@ -65,18 +65,20 @@ public class Bullet : MonoBehaviour
 
         if (character != null && character.getTeam != team) {
             if (character.TakeDamage(dmg)) {
+                if (character.getTeam == Character.TEAMS.PLAYER)
+                {
+                    
+                    // I commented out this line of code because I've made it so the screen shake is triggered when the player takes damage
+                    // VirtualCamera.instance.ScreenShake(4f, 0.25f, true);
 
-                if (character.gameObject.CompareTag("Enemy"))
+                }
+                else
                 {
                     GameManager.instance.HitEnemy();
-
-                }else if (character.gameObject.CompareTag("Player"))
-                {
-                    GameManager.instance.ScreenShake(4f, 0.25f);
                 }
 
 
-                if(impact != null)
+                if (impact != null)
                 {
                     Object.Instantiate(impact, transform.position, transform.rotation);
                 }

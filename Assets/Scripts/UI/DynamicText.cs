@@ -16,7 +16,7 @@ public class DynamicText : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        text.color = Color.green;
     }
 
     // public void 

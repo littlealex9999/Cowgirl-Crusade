@@ -15,7 +15,16 @@ public class TestCameraShake : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            GameManager.instance.ScreenShake(4f, 0.25f);
+            
+            VirtualCamera.instance.ScreenShake(10f, 1f, true);
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+
+            VirtualCamera.instance.HealthScreen();
+        }
+
+
     }
 }
