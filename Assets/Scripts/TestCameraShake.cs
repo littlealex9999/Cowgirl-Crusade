@@ -15,14 +15,16 @@ public class TestCameraShake : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            
-            VirtualCamera.instance.ScreenShake(10f, 1f, true);
+
+             VirtualCamera.instance.ScreenShake(1f, 1f, true);
+
+            //VirtualCamera.instance.DoTweenShake();
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
 
-            VirtualCamera.instance.HealthScreen();
+            VirtualCamera.instance.HealthScreen(0.5f);
         }
 
 

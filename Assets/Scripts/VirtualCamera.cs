@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class VirtualCamera : MonoBehaviour
 {
@@ -75,8 +76,8 @@ public class VirtualCamera : MonoBehaviour
 
         if (damageFeedback)
         {
-            healthScreen.RemoveImage();
-            damageScreen.DisplayImage(0.2f);
+            healthScreen.HideImage();
+            damageScreen.DisplayImage(0, 0.1f, duration);
         }
 
         shaking = true;
@@ -84,10 +85,16 @@ public class VirtualCamera : MonoBehaviour
         fadeShake = fade;
     }
 
-    public void HealthScreen()
+
+    public void DoTweenShake()
     {
-        damageScreen.RemoveImage();
-        healthScreen.DisplayImage(0.2f);
+        //transform.DOShakePosition();
+    }
+
+    public void HealthScreen(float duration)
+    {
+        damageScreen.HideImage();
+        healthScreen.DisplayImage(0, 0.1f, duration);
     }
 
     void StopShaking()

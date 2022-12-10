@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
 
     public void HitEnemy()
     {
-        hitmarker.DisplayImage(0.2f);
+        hitmarker.DisplayImage(0.2f, 0.3f, 0.3f);
     }
 
 }

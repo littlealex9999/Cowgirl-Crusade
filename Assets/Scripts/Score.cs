@@ -64,7 +64,7 @@ public class Score : ScriptableObject
                 int temp = scores[i];
                 scores[i] = score;
                 if (i < scores.Length + 1) {
-                    scores[i + 1] = temp;
+                    scores[i + 1] = temp; // Received Index out of Range exception
                 }
             }
         }

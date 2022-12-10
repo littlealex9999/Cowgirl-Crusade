@@ -63,32 +63,48 @@ public class Bullet : MonoBehaviour
     {
         Character character = other.gameObject.GetComponent<Character>();
 
-        if (character != null && character.getTeam != team) {
-            if (character.TakeDamage(dmg)) {
-                if (character.getTeam == Character.TEAMS.PLAYER)
+        if (character != null) {
+            if(character.getTeam != team)
+            {
+                if (character.TakeDamage(dmg))
                 {
-                    
-                    // I commented out this line of code because I've made it so the screen shake is triggered when the player takes damage
-                    // VirtualCamera.instance.ScreenShake(4f, 0.25f, true);
+                    if (character.getTeam == Character.TEAMS.PLAYER)
+                    {
+                        // I have moved the ScreenShake() call to the TakeDamage() override in the Player script
 
+                    }
+                    else
+                    {
+                        GameManager.instance.HitEnemy();
+                    }
+
+                    DestroyBullet();
                 }
-                else
-                {
-                    GameManager.instance.HitEnemy();
-                }
-
-
-                if (impact != null)
-                {
-                    Object.Instantiate(impact, transform.position, transform.rotation);
-                }
-
-                Destroy(gameObject);
             }
+
+        } else {
+            ShootableProp prop = other.gameObject.GetComponent<ShootableProp>();
+
+            if(prop != null)
+            {
+                prop.ShotByBullet(transform.position, transform.rotation);
+                DestroyBullet();
+            }
+
+
         }
+
     }
 
+    void DestroyBullet()
+    {
+        if (impact != null)
+        {
+            Object.Instantiate(impact, transform.position, transform.rotation);
+        }
 
+        Destroy(gameObject);
+    }
 
 
 }

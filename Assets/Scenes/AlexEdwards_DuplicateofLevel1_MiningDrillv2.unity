@@ -230,6 +230,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -582,6 +584,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -1352,6 +1356,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -1702,6 +1708,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -1991,6 +1999,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -3291,6 +3301,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -3421,6 +3433,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -4575,6 +4589,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -7469,6 +7485,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -7866,6 +7884,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -8822,6 +8842,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -9704,6 +9726,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -10661,6 +10685,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -11052,7 +11078,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &343989850
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12058,6 +12084,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -13039,6 +13067,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -13938,6 +13968,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -16243,6 +16275,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -16400,6 +16434,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -16469,6 +16505,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -16743,6 +16781,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -17672,6 +17712,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -19330,6 +19372,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -19859,6 +19903,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -20639,6 +20685,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023368405538822784, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 8714434840823097403}
     - target: {fileID: 1023368405538822785, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.89990234
@@ -20890,6 +20940,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -21403,6 +21455,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -22829,6 +22883,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -23341,6 +23397,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -29478,6 +29536,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -30956,6 +31016,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -31534,6 +31596,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -31742,6 +31806,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -31975,6 +32041,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -32659,6 +32727,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -33852,6 +33922,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -34041,6 +34113,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -34762,6 +34836,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -35228,6 +35304,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -35835,6 +35913,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -36795,6 +36875,7 @@ GameObject:
   - component: {fileID: 1092361171}
   - component: {fileID: 1092361170}
   - component: {fileID: 1092361169}
+  - component: {fileID: 1092361172}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -36860,6 +36941,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1092361172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1092361168}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8a8f72a09b9ed4ba871291ec4d52fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect: {fileID: 4148681207368319014, guid: bff322ec2aeed804ea3e35f0ac97c4bb, type: 3}
 --- !u!4 &1092393636 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -37146,6 +37240,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -37520,6 +37616,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -37986,6 +38084,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -38155,6 +38255,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -38353,6 +38455,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -38517,6 +38621,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -39266,6 +39372,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -40977,6 +41085,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -41033,6 +41143,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -41192,6 +41304,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -41402,6 +41516,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -41619,6 +41735,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -42599,6 +42717,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -42732,6 +42852,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -43361,6 +43483,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -45276,6 +45400,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -45435,6 +45561,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -45586,6 +45714,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -51489,6 +51619,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -51803,6 +51935,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -57976,6 +58110,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -59326,6 +59462,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -59672,6 +59810,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -60362,6 +60502,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -60605,6 +60747,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -61178,6 +61322,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -61961,6 +62107,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -63019,6 +63167,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -63861,6 +64011,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -65435,6 +65587,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -66100,6 +66254,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -66238,6 +66394,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -67350,6 +67508,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -68065,6 +68225,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -68351,6 +68513,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -68871,6 +69035,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -68950,6 +69116,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -69608,6 +69776,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -69825,6 +69995,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -70715,6 +70887,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -70855,6 +71029,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -71393,6 +71569,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -72024,6 +72202,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -72404,6 +72584,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -73075,6 +73257,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -73304,6 +73488,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -73463,6 +73649,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -73876,6 +74064,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -74567,6 +74757,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -74990,6 +75182,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -75299,6 +75493,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -75924,6 +76120,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 1
   hostile: 0
   team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -78074,6 +78272,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 735972389}
     m_Modifications:
+    - target: {fileID: 3380712343592983584, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_AmplitudeGain
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380712343592983584, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_FrequencyGain
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4500529941233416066, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_Name
       value: PlayerCart
@@ -78246,6 +78452,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5087656296109049018, guid: 8a134b3b9b138204da783648184583b3, type: 3}
   m_PrefabInstance: {fileID: 4500529941452975245}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8714434840823097403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+  m_PrefabInstance: {fileID: 4500529941452975245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8714434840823097399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796a3014f28d2ab429d06a5fc0b97e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8714434842249483247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5087656297432694626, guid: 8a134b3b9b138204da783648184583b3, type: 3}

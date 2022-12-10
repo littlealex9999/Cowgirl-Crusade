@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class FadeOutCanvas : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class FadeOutCanvas : MonoBehaviour
 
                 if (showImage != null)
                 {
-                    showImage.RemoveImage();
+                    showImage.HideImage();
                 }
             }
 
