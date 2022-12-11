@@ -20,6 +20,8 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         //Debug.Log("Created Bullet");
+
+        // GameManager.instance.HitEnemy(); (To test hitmarker animation)
     }
 
     void Update()
@@ -78,7 +80,7 @@ public class Bullet : MonoBehaviour
                         GameManager.instance.HitEnemy();
                     }
 
-                    DestroyBullet();
+                    DestroyBullet(true);
                 }
             }
 
@@ -88,7 +90,7 @@ public class Bullet : MonoBehaviour
             if(prop != null)
             {
                 prop.ShotByBullet(transform.position, transform.rotation);
-                DestroyBullet();
+                DestroyBullet(false);
             }
 
 
@@ -96,9 +98,9 @@ public class Bullet : MonoBehaviour
 
     }
 
-    void DestroyBullet()
+    void DestroyBullet(bool playEffect)
     {
-        if (impact != null)
+        if (impact != null && playEffect)
         {
             Object.Instantiate(impact, transform.position, transform.rotation);
         }

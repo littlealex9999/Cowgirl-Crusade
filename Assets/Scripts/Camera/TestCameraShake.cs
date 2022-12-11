@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class TestCameraShake : MonoBehaviour
 {
+    Character character;
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        character = GameManager.instance.GetPlayer.gameObject.GetComponent<Character>();
     }
 
     // Update is called once per frame
@@ -17,6 +19,10 @@ public class TestCameraShake : MonoBehaviour
         {
 
              VirtualCamera.instance.ScreenShake(1f, 1f, true);
+
+            
+
+            character.TakeDamage(5);
 
             //VirtualCamera.instance.DoTweenShake();
         }

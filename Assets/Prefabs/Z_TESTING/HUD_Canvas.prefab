@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1023368405538822785}
-  - component: {fileID: 1023368405538822784}
   m_Layer: 5
   m_Name: Health and Shield meters
   m_TagString: Untagged
@@ -38,21 +37,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.9000244, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1023368405538822784
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023368405538822786}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f05ace831c36a6429eecfbf58dacabd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  healthBar: {fileID: 1023368406074342668}
-  shieldBar: {fileID: 1023368406832278465}
 --- !u!1 &1023368405957733836
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +153,7 @@ GameObject:
   - component: {fileID: 1023368406074342669}
   - component: {fileID: 1023368406074342667}
   - component: {fileID: 1023368406074342668}
+  - component: {fileID: 9067901737645299859}
   m_Layer: 5
   m_Name: Health
   m_TagString: Untagged
@@ -233,6 +218,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &9067901737645299859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023368406074342670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6619f2695b467cf48999adb9125451b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  negativeColor: {r: 1, g: 0, b: 0, a: 1}
+  positiveColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1023368406832278467
 GameObject:
   m_ObjectHideFlags: 0
@@ -545,8 +544,6 @@ GameObject:
   - component: {fileID: 4510399560014969145}
   - component: {fileID: 1649981897075150081}
   - component: {fileID: 8176365706523824205}
-  - component: {fileID: 8882333585254787257}
-  - component: {fileID: 5861826089016372558}
   m_Layer: 5
   m_Name: DamagedFeedback
   m_TagString: Untagged
@@ -626,32 +623,6 @@ MonoBehaviour:
   duration: 0.3
   fade: 1
   scale: 0
---- !u!225 &8882333585254787257
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2505545623386174638}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &5861826089016372558
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2505545623386174638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89aa234e74f78114a9649437272b2747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fading: 0
-  duration: 1
 --- !u!1 &3227509066374571675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,8 +1404,6 @@ GameObject:
   - component: {fileID: 704964110797211119}
   - component: {fileID: 8360604500927404998}
   - component: {fileID: 325001897902409219}
-  - component: {fileID: 4616792486787716436}
-  - component: {fileID: 6189410902013332666}
   m_Layer: 5
   m_Name: HealthFeedback
   m_TagString: Untagged
@@ -1514,32 +1483,6 @@ MonoBehaviour:
   duration: 0.3
   fade: 1
   scale: 0
---- !u!225 &4616792486787716436
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8190405165578967257}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
---- !u!114 &6189410902013332666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8190405165578967257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89aa234e74f78114a9649437272b2747, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fading: 0
-  duration: 1
 --- !u!1 &8227049917079768359
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
     static public GameManager instance { get; private set; }
 
-    [SerializeField] GameObject player;
+    [SerializeField] Player player;
 
     [SerializeField] Score scoreObject;
 
@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public Score GetScore { get { return scoreObject; } }
 
-    public GameObject GetPlayer { get { return player; } }
+    public Player GetPlayer { get { return player; } }
 
     void Start()
     {
@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
 
     public void HitEnemy()
     {
-        hitmarker.DisplayImage(0.2f, 0.3f, 0.3f);
+        hitmarker.DisplayImage(0.3f, 0.3f, 0.3f);
     }
 
 }

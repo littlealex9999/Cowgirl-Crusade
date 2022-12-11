@@ -10,6 +10,8 @@ public class Player : Character
     public float shootDistance = 10;
     public float bulletHomingSpeed = 100;
 
+    
+
     Vector2 boundaries;
     Camera mainCamera;
     Vector3 initialOffset;

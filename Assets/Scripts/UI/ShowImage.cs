@@ -55,7 +55,7 @@ public class ShowImage : MonoBehaviour
             {
                 if(timer >= timeToTriggerExitAnimation)
                 {
-                    ExitAnimation();
+                    ExitAnimation(animationExitTime);
                 }
                 
             }
@@ -71,6 +71,12 @@ public class ShowImage : MonoBehaviour
 
         timeToTriggerExitAnimation = duration + animationEnterTime;
         overallTime = timeToTriggerExitAnimation + animationExitTime;
+
+        if (timer > 0)
+        {
+            ExitAnimation(0f);
+
+        }
 
         timer = 0f;
 
@@ -97,17 +103,17 @@ public class ShowImage : MonoBehaviour
     }
 
 
-    void ExitAnimation()
+    void ExitAnimation(float exitTime)
     {
         if (fade)
         {
-            image.DOFade(0f, animationExitTime);
+            image.DOFade(0f, exitTime);
 
         }
 
         if (scale)
         {
-            transform.DOScale(0f, animationExitTime);
+            transform.DOScale(0f, exitTime);
 
         }
 

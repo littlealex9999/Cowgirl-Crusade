@@ -8,8 +8,10 @@ public class Character : MonoBehaviour
     float health;
     float shield;
     [SerializeField, InspectorName("Max Health")] float hpmax = 50;
-    [SerializeField, InspectorName("Max Shield")] float sdmax = 20;
+    [SerializeField, InspectorName("Max Shield")] float sdmax = 0;
     [SerializeField] GameObject destructionPrefab;
+
+    [SerializeField] Meter healthMeter;
 
     float invincibleTime;
 
@@ -97,6 +99,7 @@ public class Character : MonoBehaviour
             GameObject d = Instantiate(destructionPrefab);
             d.transform.position = transform.position;
         }
+        
     }
 
     #region stat setting
@@ -248,6 +251,14 @@ public class Character : MonoBehaviour
             damage -= shield;
             shield = 0;
             health -= damage;
+
+            health = Mathf.Clamp(health, 0, hpmax);
+
+            if(healthMeter != null)
+            {
+                healthMeter.UpdateMeter(health, hpmax, -damage);
+            }
+
         }
 
         if (health <= 0) {
