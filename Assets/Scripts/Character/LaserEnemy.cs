@@ -10,11 +10,11 @@ public class LaserEnemy : Character
 
     [SerializeField, Range(-1, 1), Space] float targetRelativeLookShootLimit = -0.1f;
     [SerializeField] float minDistanceBetweenTarget = 5;
-    [SerializeField] GameObject enemyLaser;
+    [SerializeField, Space] GameObject enemyLaser;
+    [SerializeField] float shootStartDistance = 5;
     [SerializeField] float shootDuration = 5;
     [SerializeField] float laserMoveSpeed = 5;
     [SerializeField] float forwardOffset = 1;
-    [SerializeField, Space] float shootStartDistance = 5;
     float rotationSpeed = 4;
     bool firing;
     Vector3 shootingPos;
@@ -76,11 +76,11 @@ public class LaserEnemy : Character
                 shootTimer -= Time.deltaTime;
             } else if (cldtimer <= 0) {
                 cldtimer = shootCooldown;
-                shootingPos = shootTarget.transform.localPosition;
+                shootingPos = shootTarget.transform.localPosition + new Vector3(Random.Range(-1, 1), Random.Range(-1, 1)).normalized * shootStartDistance;
                 shootTimer = shootDuration;
                 firing = true;
 
-                shootingDir = new Vector2(Random.Range(-1, 1), Random.Range(-1, 1)).normalized;
+                shootingDir = (shootTarget.transform.localPosition - shootingPos).normalized;
 
                 laserObj = Instantiate(enemyLaser);
                 lr = laserObj.GetComponent<LineRenderer>();
@@ -120,6 +120,7 @@ public class LaserEnemy : Character
     {
         shootTarget = target;
     }
+
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.green;
