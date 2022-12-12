@@ -8,11 +8,14 @@ public class Meter : MonoBehaviour
 {
     Image meter;
 
+    GameObject owner;
+
     Color defaultColor;
 
     [SerializeField] Color negativeColor, positiveColor;
 
     bool animating = false;
+    bool triggerDeath = false;
 
     float timer = 0f;
     float duration = 0.5f;
@@ -35,8 +38,19 @@ public class Meter : MonoBehaviour
             {
                 ResetMeterColor(0.1f);
 
+                if (triggerDeath)
+                {
+                    GameManager.instance.GameOver();
+                    triggerDeath = false;
+                }
+
             }
         }
+    }
+
+    public void SetOwner(GameObject owner) {
+        this.owner = owner;
+
     }
 
 
@@ -58,6 +72,14 @@ public class Meter : MonoBehaviour
         else
         {
             meter.DOColor(positiveColor, duration);
+        }
+
+        if (percentage <= 0)
+        {
+            if (owner.GetComponent<Player>() != null)
+            {
+                triggerDeath = true;
+            }
         }
 
         Debug.Log(percentage);
