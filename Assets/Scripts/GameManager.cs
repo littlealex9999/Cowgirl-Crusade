@@ -39,8 +39,11 @@ public class GameManager : MonoBehaviour
 
         Cursor.visible = false;
 
-        gameOver = GetComponent<GameOver>();
+        if (scoreObject != null && scoreObject.LoadedScores) {
+            scoreObject.LoadHighscoresFromFile();
+        }
 
+        gameOver = GetComponent<GameOver>();
     }
 
     void Update()
@@ -86,6 +89,13 @@ public class GameManager : MonoBehaviour
         hitmarker.DisplayImage(0.3f, 0.3f, 0.3f);
     }
 
+    private void OnApplicationQuit()
+    {
+        if (scoreObject != null) {
+            scoreObject.SaveHighscoresToFile();
+        }
+    }
+
     public void GameOver()
     {
         player.gameObject.SetActive(false);
@@ -94,6 +104,7 @@ public class GameManager : MonoBehaviour
         gameOver.enabled = true;
         gameOver.PlayerDied();
 
+        scoreObject.ResetPoints();
     }
 
     void SuspendGame()
@@ -119,5 +130,4 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         canPause = true;
     }
-
 }
