@@ -218,6 +218,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -574,6 +575,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1349,6 +1351,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1704,6 +1707,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1997,6 +2001,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -2338,7 +2343,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &67703231
 PrefabInstance:
@@ -3302,6 +3307,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -3437,6 +3443,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -4595,6 +4602,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -7265,6 +7273,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -7291,7 +7300,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237945862
 GameObject:
@@ -7671,6 +7680,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -8072,6 +8082,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -9032,6 +9043,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -9918,6 +9930,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -10881,6 +10894,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -11314,7 +11328,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &344627615
 PrefabInstance:
@@ -11963,7 +11977,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &372288230 stripped
 Transform:
@@ -12283,6 +12297,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -13269,6 +13284,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -14173,6 +14189,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -14602,7 +14619,7 @@ Transform:
   - {fileID: 1528600510}
   - {fileID: 731405385}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &449590002
 PrefabInstance:
@@ -15350,7 +15367,7 @@ Transform:
   - {fileID: 1627116663}
   - {fileID: 1505812984}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &473339223
 PrefabInstance:
@@ -16484,6 +16501,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -16546,7 +16564,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &506548690
 PrefabInstance:
@@ -16645,6 +16663,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -16718,6 +16737,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -16998,6 +17018,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -17150,7 +17171,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &525373401
 PrefabInstance:
@@ -17376,7 +17397,7 @@ Transform:
   m_Children:
   - {fileID: 1388176303}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &532891635 stripped
 Transform:
@@ -17931,6 +17952,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -19593,6 +19615,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -20126,6 +20149,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -21193,6 +21217,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -21710,6 +21735,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -22518,7 +22544,7 @@ Transform:
   m_Children:
   - {fileID: 225073936}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -4.885, y: -26.033, z: 2.397}
 --- !u!4 &736236070 stripped
 Transform:
@@ -23140,6 +23166,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -23656,6 +23683,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -28917,7 +28945,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &805714201
 GameObject:
@@ -29800,6 +29828,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -31284,6 +31313,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -31867,6 +31897,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -32079,6 +32110,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -32316,6 +32348,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -33004,6 +33037,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -34203,6 +34237,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -34396,6 +34431,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -35122,6 +35158,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -35593,6 +35630,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -36205,6 +36243,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -36940,7 +36979,7 @@ Transform:
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1068538298 stripped
 Transform:
@@ -37245,7 +37284,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1092393636 stripped
 Transform:
@@ -37521,6 +37560,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -37900,6 +37940,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -37984,7 +38025,7 @@ Transform:
   - {fileID: 480998412}
   - {fileID: 249137486}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1108166710
 PrefabInstance:
@@ -38135,6 +38176,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1001 &1118405754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 162
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1889
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541385579153010031, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_Name
+      value: HealthBalloon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
 --- !u!1001 &1120129441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38370,6 +38468,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -38543,6 +38642,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -38745,6 +38845,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -38913,6 +39014,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -39667,6 +39769,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -40795,7 +40898,7 @@ Transform:
   - {fileID: 724648905}
   - {fileID: 1793331571}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1189924242
 PrefabInstance:
@@ -41382,6 +41485,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -41442,6 +41546,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -41605,6 +41710,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -41819,6 +41925,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -42040,6 +42147,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -43025,6 +43133,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -43162,6 +43271,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -43795,6 +43905,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -45716,6 +45827,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -45879,6 +45991,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -46034,6 +46147,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -51941,6 +52055,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -52259,6 +52374,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -58438,6 +58554,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -58536,7 +58653,7 @@ Transform:
   - {fileID: 1038835899}
   - {fileID: 1322996192}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1486367342
 PrefabInstance:
@@ -59792,6 +59909,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -60142,6 +60260,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -60837,6 +60956,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -61084,6 +61204,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -61661,6 +61782,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -62246,7 +62368,7 @@ Transform:
   - {fileID: 1229502934}
   - {fileID: 1289950227}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1627116662
 GameObject:
@@ -62449,6 +62571,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -63512,6 +63635,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -64360,6 +64484,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -65939,6 +66064,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -66608,6 +66734,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -66750,6 +66877,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -67867,6 +67995,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -68587,6 +68716,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -68877,6 +69007,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -69401,6 +69532,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -69484,6 +69616,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -70147,6 +70280,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -70368,6 +70502,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -71273,6 +71408,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -71417,6 +71553,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -71959,6 +72096,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -72594,6 +72732,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -72978,6 +73117,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -73415,7 +73555,7 @@ Transform:
   - {fileID: 126805018}
   - {fileID: 654120431}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1984900740
 PrefabInstance:
@@ -73653,6 +73793,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -73886,6 +74027,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -74049,6 +74191,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -74466,6 +74609,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -75163,6 +75307,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -75590,6 +75735,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -75903,6 +76049,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -76534,6 +76681,7 @@ MonoBehaviour:
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -78895,67 +79043,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
   m_PrefabInstance: {fileID: 5795977204454687624}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6198855616467841571
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_RootOrder
-      value: 22
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4136
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 229
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1932
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6025514906510632384, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: hpmax
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6541385579153010031, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
-      propertyPath: m_Name
-      value: HealthBalloon
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
 --- !u!114 &8714434840823097403 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}

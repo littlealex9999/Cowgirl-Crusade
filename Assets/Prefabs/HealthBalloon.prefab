@@ -488,12 +488,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a049218ffa1d3be4baf6555f8e08f5cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 15
   sdmax: 0
   destructionPrefab: {fileID: 0}
   destroyOnDeath: 0
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0

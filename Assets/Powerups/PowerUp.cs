@@ -13,10 +13,6 @@ public class PowerUp : MonoBehaviour
     [SerializeField] bool onTrigger = true;
 
     private AudioSource audioSource;
-
-
-    
-
     
     // Start is called before the first frame update
     void Start()
@@ -34,13 +30,12 @@ public class PowerUp : MonoBehaviour
             {
                 Character player = other.gameObject.GetComponentInChildren<Character>();
 
-               // ActivatePowerup(player);
+               ActivatePowerup(player);
             }
 
         }
         
     }
-
 
     public void ActivatePowerup(Character player)
     {
@@ -50,7 +45,7 @@ public class PowerUp : MonoBehaviour
 
         if (effect != null)
         {
-            Object.Instantiate(effect, gameObject.transform.position, Quaternion.identity);
+            Instantiate(effect, gameObject.transform.position, Quaternion.identity);
         }
         
 

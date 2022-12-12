@@ -10,15 +10,9 @@ public class ShootablePowerup : Character
     PowerUp powerup;
     
     // Start is called before the first frame update
-    void Start()
+     void Awake()
     {
         powerup = GetComponent<PowerUp>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
 
