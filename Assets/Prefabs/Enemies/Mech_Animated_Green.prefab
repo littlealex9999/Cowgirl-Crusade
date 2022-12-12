@@ -1121,8 +1121,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 5
   sdmax: 0
-  destructionPrefab: {fileID: 0}
+  destructionPrefab: {fileID: 196169950755043893, guid: 208c2f5712fc22741b91a38c5f3a84d0, type: 3}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
   cldtimer: 3
@@ -1137,8 +1139,8 @@ MonoBehaviour:
   bulletSpeedMultiplier: 40
   hostile: 0
   team: 2
-  targetRelativeLookShootLimit: -0.2
-  minDistanceBetweenTarget: 50
+  targetRelativeLookShootLimit: -0.4
+  minDistanceBetweenTarget: 100
   spreadFrequency: 0.5
   spread: 3
   lookAtTarget: 1
@@ -1154,8 +1156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fe98dc968978544a0bceac64446f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minRange: 250
-  maxRange: 300
+  minRange: 450
+  maxRange: 350
   onTrigger: 0
   alsoSetShootTarget: 1
   setCooldownTo: 5

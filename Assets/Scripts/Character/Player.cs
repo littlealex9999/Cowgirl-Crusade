@@ -10,6 +10,8 @@ public class Player : Character
     public float shootDistance = 10;
     public float bulletHomingSpeed = 100;
 
+    
+
     Vector2 boundaries;
     Camera mainCamera;
     Vector3 initialOffset;
@@ -38,7 +40,7 @@ public class Player : Character
     protected override void OnDestroy()
     {
         base.OnDestroy();
-        GameManager.instance.GetScore.ResetPoints();
+        
     }
 
     void Move()
@@ -111,13 +113,16 @@ public class Player : Character
 
     public override bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
-        
-        //GameManager.instance.ScreenShake(shakeIntensity, shakeDuration);
-        // Red border on screen
+
+        // VirtualCamera.instance.ScreenShake(5, 0.5f, true);
         return base.TakeDamage(damage, setInvincibleTime);
     }
 
-
+    public override void OnDeath()
+    {
+        base.OnDeath();
+        GameManager.instance.GetScore.ResetPoints();
+    }
 
     public static void AddAttacker()
     {

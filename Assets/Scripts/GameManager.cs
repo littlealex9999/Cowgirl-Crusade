@@ -1,29 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 using TMPro;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
     static public GameManager instance { get; private set; }
 
-    [SerializeField] GameObject player;
+    [SerializeField] Player player;
 
-    // [SerializeField] CinemachineVirtualCamera virtualCamera;
+    GameOver gameOver;
 
-    [SerializeField] CinemachineVirtualCamera virtualCamera;
+    bool paused = false;
+    bool canPause = true;
 
     [SerializeField] Score scoreObject;
 
     [SerializeField] TMP_Text scoreText;
     [SerializeField] TMP_Text multiplierText;
 
-    [SerializeField] Hitmarker hitmarker;
+    [SerializeField] ShowImage hitmarker;
 
     public Score GetScore { get { return scoreObject; } }
 
-    public GameObject GetPlayer { get { return player; } }
+    public Player GetPlayer { get { return player; } }
 
     void Start()
     {
@@ -37,10 +38,32 @@ public class GameManager : MonoBehaviour
         }
 
         Cursor.visible = false;
+
+        if (scoreObject != null && scoreObject.LoadedScores) {
+            scoreObject.LoadHighscoresFromFile();
+        }
+
+        gameOver = GetComponent<GameOver>();
     }
 
     void Update()
     {
+        if (canPause)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (paused)
+                {
+                    ResumeGame();
+                }
+                else
+                {
+                    paused = true;
+                    SuspendGame();
+                }
+
+            }
+        }
         
     }
 
@@ -61,14 +84,50 @@ public class GameManager : MonoBehaviour
         return distance;
     }
 
-    public void ScreenShake(float intensity, float duration)
-    {
-        virtualCamera.GetComponent<CameraShake>().Shake(intensity, duration);
-    }
-
     public void HitEnemy()
     {
-        hitmarker.HitEnemy();
+        hitmarker.DisplayImage(0.3f, 0.3f, 0.3f);
     }
 
+    private void OnApplicationQuit()
+    {
+        if (scoreObject != null) {
+            scoreObject.SaveHighscoresToFile();
+        }
+    }
+
+    public void GameOver()
+    {
+        player.gameObject.SetActive(false);
+        canPause = false;
+        SuspendGame();
+        gameOver.enabled = true;
+        gameOver.PlayerDied();
+
+        scoreObject.ResetPoints();
+    }
+
+    void SuspendGame()
+    {
+        Time.timeScale = 0;
+
+    }
+
+    public void ResumeGame()
+    {
+        paused = false;
+        Time.timeScale = 1;
+
+    }
+
+    public void Respawn()
+    {
+        Debug.Log("Respawn");
+        gameOver.enabled = false;
+        player.gameObject.SetActive(true);
+        player.GiveHealth(player.GetHealthMax(), true);
+        
+        Time.timeScale = 1;
+        canPause = true;
+    }
 }
