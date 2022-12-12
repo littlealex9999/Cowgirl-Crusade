@@ -80,6 +80,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ca3f98c2b25a3c4cbe62c93e30eb385, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthScreen: {fileID: 0}
+  damageScreen: {fileID: 0}
+  maxScreenShake: 10
 --- !u!1 &4500529941233416066
 GameObject:
   m_ObjectHideFlags: 0
@@ -191,8 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 796a3014f28d2ab429d06a5fc0b97e9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 100
   sdmax: 0
+  destructionPrefab: {fileID: 0}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 2
   shootCooldown: 0.2

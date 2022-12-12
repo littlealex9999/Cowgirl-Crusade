@@ -215,6 +215,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -570,6 +571,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -1305,6 +1307,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 879905146}
+  disableActually: 0
 --- !u!65 &34967535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1343,6 +1346,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -1491,6 +1495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1236595009}
+  disableActually: 0
 --- !u!65 &40001910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1696,6 +1701,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -1988,6 +1994,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -2632,6 +2639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1049896259}
+  disableActually: 0
 --- !u!4 &81570674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
@@ -3291,6 +3299,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -3386,6 +3395,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1459317914}
+  disableActually: 0
 --- !u!65 &114489216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3424,6 +3434,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -4581,6 +4592,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -5531,6 +5543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 729662095}
+  disableActually: 0
 --- !u!4 &179426806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -5740,6 +5753,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1359865602}
+  disableActually: 0
 --- !u!65 &189446279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7103,6 +7117,182 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &236976700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 236976704}
+  - component: {fileID: 236976702}
+  - component: {fileID: 236976701}
+  - component: {fileID: 236976703}
+  m_Layer: 0
+  m_Name: HealthPickup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &236976701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107c323ad150f014e87e714f2666c2d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupType: {fileID: 11400000, guid: a14d4a7cf05068a48a664128d8e82ecd, type: 2}
+  effect: {fileID: 0}
+  onTrigger: 1
+--- !u!82 &236976702
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &236976703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a049218ffa1d3be4baf6555f8e08f5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpmax: 50
+  sdmax: 0
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
+  bullet: {fileID: 0}
+  deleteBulletsAfterSeconds: 10
+  shootCooldown: 1
+  cldtimer: 0
+  maxSpecialProjectiles: 3
+  dontRotate: 0
+  turnMult: {x: 100, y: 100}
+  resetRotationStrength: 4
+  pointsGiven: 0
+  bulletDamageAddition: 0
+  bulletDamageMultiplier: 1
+  bulletSpeedAddition: 0
+  bulletSpeedMultiplier: 1
+  hostile: 0
+  team: 0
+--- !u!4 &236976704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5719743, y: -0.52387303, z: 2.520951}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237945862
 GameObject:
   m_ObjectHideFlags: 0
@@ -7478,6 +7668,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -7878,6 +8069,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -8837,6 +9029,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -9722,6 +9915,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -9807,6 +10001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1621493009}
+  disableActually: 0
 --- !u!65 &313747131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10221,6 +10416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1101709522}
+  disableActually: 0
 --- !u!65 &322809270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10682,6 +10878,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -10775,6 +10972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 619830782}
+  disableActually: 0
 --- !u!65 &328234567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12082,6 +12280,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -12807,6 +13006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 909309842}
+  disableActually: 0
 --- !u!65 &406125952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13066,6 +13266,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -13607,6 +13808,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1929589576}
+  disableActually: 0
 --- !u!65 &427672258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13968,6 +14170,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -14809,6 +15012,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1981954908}
+  disableActually: 0
 --- !u!65 &460057096
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15534,6 +15738,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1977183792}
+  disableActually: 0
 --- !u!65 &481484758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16276,6 +16481,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -16436,6 +16642,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -16508,6 +16715,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -16601,6 +16809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 697313684}
+  disableActually: 0
 --- !u!65 &512915250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16660,6 +16869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 623212561}
+  disableActually: 0
 --- !u!65 &515747879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16785,6 +16995,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -17717,6 +17928,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -19378,6 +19590,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -19910,6 +20123,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -20976,6 +21190,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -21492,6 +21707,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -22921,6 +23137,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -23436,6 +23653,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -28849,6 +29067,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1236595009}
+  disableActually: 0
 --- !u!65 &810744721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29336,6 +29555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1306026854}
+  disableActually: 0
 --- !u!65 &822553025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29469,6 +29689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 391290836}
+  disableActually: 0
 --- !u!65 &827692078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29576,6 +29797,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -29743,6 +29965,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 416258040}
+  disableActually: 0
 --- !u!65 &831820697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30834,6 +31057,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1309703211}
+  disableActually: 0
 --- !u!65 &882654345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31057,6 +31281,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -31206,6 +31431,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 939148555}
+  disableActually: 0
 --- !u!65 &896904565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31638,6 +31864,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -31849,6 +32076,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -32085,6 +32313,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -32772,6 +33001,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -32914,6 +33144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 129457050}
+  disableActually: 0
 --- !u!65 &946066727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33681,6 +33912,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 622377618}
+  disableActually: 0
 --- !u!65 &974839892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33968,6 +34200,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -34160,6 +34393,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -34332,6 +34566,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1381030870}
+  disableActually: 0
 --- !u!65 &1007081153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34884,6 +35119,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -35033,6 +35269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1799873813}
+  disableActually: 0
 --- !u!65 &1025594886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35353,6 +35590,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -35835,6 +36073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 766134470}
+  disableActually: 0
 --- !u!65 &1042125988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35963,6 +36202,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -36066,6 +36306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 763863046}
+  disableActually: 0
 --- !u!1 &1049896259
 GameObject:
   m_ObjectHideFlags: 0
@@ -36624,7 +36865,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerupType: {fileID: 11400000, guid: f4fa0e0b4d069bd479c7d08dbb15c0a2, type: 2}
   effect: {fileID: 0}
-  amount: 1
+  onTrigger: 1
 --- !u!135 &1067225424
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36695,7 +36936,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067225421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3930, y: 298.2, z: -2201}
+  m_LocalPosition: {x: -3937, y: 298.2, z: -2246}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
@@ -37277,6 +37518,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -37539,6 +37781,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1662214753}
+  disableActually: 0
 --- !u!65 &1104956961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37654,6 +37897,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -38123,6 +38367,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -38295,6 +38540,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -38496,6 +38742,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -38663,6 +38910,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -39018,6 +39266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 578225049}
+  disableActually: 0
 --- !u!65 &1149969716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39415,6 +39664,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -41129,6 +41379,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -41188,6 +41439,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -41350,6 +41602,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -41563,6 +41816,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -41783,6 +42037,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -41963,6 +42218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 194835056}
+  disableActually: 0
 --- !u!4 &1221809534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -42766,6 +43022,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -42902,6 +43159,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -43534,6 +43792,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -44675,6 +44934,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 581456879}
+  disableActually: 0
 --- !u!65 &1301649356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45051,6 +45311,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1177085237}
+  disableActually: 0
 --- !u!65 &1317919526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45452,6 +45713,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -45614,6 +45876,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -45768,6 +46031,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -51674,6 +51938,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -51991,6 +52256,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -52516,6 +52782,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 445218856}
+  disableActually: 0
 --- !u!65 &1428584719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57676,6 +57943,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1952745584}
+  disableActually: 0
 --- !u!65 &1460709520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -58167,6 +58435,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -59520,6 +59789,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -59869,6 +60139,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -60238,6 +60509,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 36252149}
+  disableActually: 0
 --- !u!65 &1567976990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60562,6 +60834,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -60808,6 +61081,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -61384,6 +61658,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -61586,6 +61861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 796310224}
+  disableActually: 0
 --- !u!65 &1612818599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62170,6 +62446,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -62320,6 +62597,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 364045643}
+  disableActually: 0
 --- !u!65 &1637851071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63231,6 +63509,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -63393,6 +63672,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1770264871}
+  disableActually: 0
 --- !u!65 &1666763564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63874,6 +64154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 154061455}
+  disableActually: 0
 --- !u!65 &1678540455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -64076,6 +64357,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -64292,6 +64574,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 2005473964}
+  disableActually: 0
 --- !u!65 &1691029272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65653,6 +65936,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -66321,6 +66605,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -66462,6 +66747,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -66560,6 +66846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1931096521}
+  disableActually: 0
 --- !u!65 &1764222885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67577,6 +67864,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -68020,6 +68308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1259398480}
+  disableActually: 0
 --- !u!65 &1810370957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -68295,6 +68584,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -68584,6 +68874,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -69107,6 +69398,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -69189,6 +69481,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -69351,6 +69644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 55230132}
+  disableActually: 0
 --- !u!65 &1871274028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69850,6 +70144,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -70070,6 +70365,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -70974,6 +71270,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -71117,6 +71414,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -71658,6 +71956,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -72292,6 +72591,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -72675,6 +72975,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -73349,6 +73650,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -73581,6 +73883,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -73743,6 +74046,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -74159,6 +74463,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -74239,6 +74544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1235479466}
+  disableActually: 0
 --- !u!65 &2019650324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74520,6 +74826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1324927432}
+  disableActually: 0
 --- !u!65 &2033986843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74853,6 +75160,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -75279,6 +75587,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -75591,6 +75900,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -75760,6 +76070,7 @@ MonoBehaviour:
   - {fileID: 2045047483}
   - {fileID: 126805016}
   - {fileID: 654120429}
+  disableActually: 0
 --- !u!65 &2063044780
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76022,6 +76333,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1722505199}
+  disableActually: 0
 --- !u!65 &2069402162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -76219,6 +76531,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
   deleteBulletsAfterSeconds: 10
@@ -78582,6 +78895,67 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
   m_PrefabInstance: {fileID: 5795977204454687624}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6198855616467841571
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4136
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 229
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1932
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025514906510632384, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: hpmax
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541385579153010031, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_Name
+      value: HealthBalloon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
 --- !u!114 &8714434840823097403 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}

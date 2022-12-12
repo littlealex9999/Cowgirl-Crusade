@@ -10,10 +10,12 @@ public class PowerUp : MonoBehaviour
     [Header("Powerup Settings")]
     [SerializeField] private PowerupStats powerupType;
     [SerializeField] private GameObject effect;
-    [SerializeField] private int amount = 1;
+    [SerializeField] bool onTrigger = true;
 
     private AudioSource audioSource;
 
+
+    
 
     
     // Start is called before the first frame update
@@ -26,21 +28,33 @@ public class PowerUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if (onTrigger)
         {
-            Character player = other.gameObject.GetComponentInChildren<Character>();
-            player.AddPowerup(powerupType);
+            if (other.CompareTag("Player"))
+            {
+                Character player = other.gameObject.GetComponentInChildren<Character>();
 
-            Debug.Log("Player has received " + powerupType.name + "powerup. Player now has " + player.GetHealthMax() + " max health.");
-
-            // Object.Instantiate(effect, gameObject.transform.position, Quaternion.identity);
-
-            Destroy(gameObject);
+               // ActivatePowerup(player);
+            }
 
         }
+        
     }
 
-   // private void 
 
+    public void ActivatePowerup(Character player)
+    {
+        player.AddPowerup(powerupType);
+
+        Debug.Log("Player has received " + powerupType.name + " powerup.");
+
+        if (effect != null)
+        {
+            Object.Instantiate(effect, gameObject.transform.position, Quaternion.identity);
+        }
+        
+
+        Destroy(gameObject);
+    }
 
 }
