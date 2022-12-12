@@ -19,7 +19,7 @@ public class ShowImage : MonoBehaviour
     bool showing = false;
     bool exiting;
 
-    float timeToTriggerExitAnimation, overallTime;
+    float timeToExit, totalTime;
 
 
 
@@ -47,13 +47,13 @@ public class ShowImage : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if (timer >= overallTime)
+            if (timer >= totalTime)
             {
                 HideImage();
 
             }else if (!exiting)
             {
-                if(timer >= timeToTriggerExitAnimation)
+                if(timer >= timeToExit)
                 {
                     ExitAnimation(animationExitTime);
                 }
@@ -69,8 +69,8 @@ public class ShowImage : MonoBehaviour
         this.animationEnterTime = animationEnterTime;
         this.animationExitTime = animationExitTime;
 
-        timeToTriggerExitAnimation = duration + animationEnterTime;
-        overallTime = timeToTriggerExitAnimation + animationExitTime;
+        timeToExit = duration + animationEnterTime;
+        totalTime = timeToExit + animationExitTime;
 
         if (timer > 0)
         {

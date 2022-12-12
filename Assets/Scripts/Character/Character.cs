@@ -10,10 +10,11 @@ public class Character : MonoBehaviour
     [SerializeField, InspectorName("Max Health")] float hpmax = 50;
     [SerializeField, InspectorName("Max Shield")] float sdmax = 0;
     [SerializeField] GameObject destructionPrefab;
-    [SerializeField] bool destroyOnDeath = true;
+    public bool destroyOnDeath = true;
 
 
     [SerializeField] Meter healthMeter;
+    WeaponHeat weaponHeat;
 
     float invincibleTime;
 
@@ -66,8 +67,10 @@ public class Character : MonoBehaviour
         specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
 
         if (healthMeter != null) {
-            healthMeter.SetOwner(gameObject);
+            healthMeter.SetOwner(this);
         }
+
+        weaponHeat = GetComponent<WeaponHeat>();
 
     }
 
@@ -116,7 +119,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void GiveHealth(float value, bool setHealth = false)
+    public virtual void GiveHealth(float value, bool setHealth = false)
     {
         if (setHealth) {
             health = value;
@@ -223,11 +226,25 @@ public class Character : MonoBehaviour
     public virtual Bullet Shoot(Vector3 shootToPoint, Transform parentOverride = null)
     {
         if (cldtimer <= 0) {
+            
+            if(weaponHeat != null)
+            {
+                weaponHeat.AddWeaponHeat();
+            }
+
             // create bullet & set stats
             if (parentOverride == null) {
                 parentOverride = transform.parent;
             }
+            
+            
             GameObject bulletRef = Instantiate(bullet.gameObject, parentOverride);
+
+            if (shootOrigin != null) {
+                bulletRef.transform.position = shootOrigin.position;
+                // bulletRef.transform.rotation = shootOrigin.rotation;
+            }
+
             Destroy(bulletRef, deleteBulletsAfterSeconds);
 
             if (shootOrigin != null) {

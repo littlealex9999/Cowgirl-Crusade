@@ -7,16 +7,28 @@ public class Player : Character
     [Header("Player Specific"), Space] public float moveSpeed = 10;
     public Vector2 boundaryMoveMultipliers = new Vector2(0.8f, 0.5f);
 
+    [SerializeField] VirtualCamera virtualCam;
+    
+
     public float shootDistance = 10;
     public float bulletHomingSpeed = 100;
-
     
+    WeaponHeat weaponHeat;
 
     Vector2 boundaries;
     Camera mainCamera;
+
     Vector3 initialOffset;
 
     static int numEnemiesAttacking;
+
+    //bool controlsEnabled = true;
+
+    bool controlsEnabled = true;
+
+    public bool ControlsEnabled { get { return controlsEnabled; } set { controlsEnabled = value; } }
+
+    public VirtualCamera GetVirtualCamera { get { return virtualCam; } }
 
     void Start()
     {
@@ -27,15 +39,25 @@ public class Player : Character
         CalculateBoundaries();
 
         numEnemiesAttacking = 0;
+
+        weaponHeat = GetComponent<WeaponHeat>();
+
     }
 
     protected override void Update()
     {
         base.Update();
 
-        Move();
-        Shoot();
+        if (controlsEnabled)
+        {
+            Move();
+            Shoot();
+        }
+
+        
+
     }
+
 
     protected override void OnDestroy()
     {
@@ -77,24 +99,39 @@ public class Player : Character
     void Shoot()
     {
         if (Input.GetMouseButton(0)) {
-            Vector3 shootTo = GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo);
-            if (hitEnemy) {
-                Bullet firedScript = base.Shoot(shootTo);
-
-                if (firedScript != null) { // bullet actually fired
-                    firedScript.SetTarget(hitInfo.collider.gameObject);
-                    firedScript.SetHomingSpeed(bulletHomingSpeed);
-                }
-            } else {
-                base.Shoot(shootTo);
+            if (weaponHeat.Overheated)
+            {
+                
+                // Play sound for not being able to shoot due to being overheated
             }
+            else
+            {
+                Vector3 shootTo = GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo);
+
+                if (hitEnemy)
+                {
+                    Bullet firedScript = base.Shoot(shootTo);
+
+                    if (firedScript != null)
+                    { // bullet actually fired
+                        firedScript.SetTarget(hitInfo.collider.gameObject);
+                        firedScript.SetHomingSpeed(bulletHomingSpeed);
+                    }
+                }
+                else
+                {
+                    base.Shoot(shootTo);
+                }
+            }
+
         }
+
 
         if (Input.GetMouseButtonDown(1)) {
             base.SpawnSpecialProjectile();
         }
     }
-
+        
     public Vector3 GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo)
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
@@ -111,10 +148,21 @@ public class Player : Character
     }
 
 
+    public override void GiveHealth(float value, bool setHealth = false)
+    {
+        base.GiveHealth(value, setHealth);
+
+        virtualCam.HealthScreen(1f);
+    }
+
+
     public override bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
-
+        base.TakeDamage(damage, setInvincibleTime, addPointsIfKilled);
         // VirtualCamera.instance.ScreenShake(5, 0.5f, true);
+        virtualCam.DamageScreen(0.5f);
+       
+
         return base.TakeDamage(damage, setInvincibleTime);
     }
 

@@ -7,7 +7,6 @@ using DG.Tweening;
 
 public class VirtualCamera : MonoBehaviour
 {
-    static public VirtualCamera instance { get; private set; }
     CinemachineVirtualCamera virtualCamera;
     CinemachineBasicMultiChannelPerlin multiChannelPerlin;
 
@@ -21,16 +20,7 @@ public class VirtualCamera : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
+    { 
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
         multiChannelPerlin = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
@@ -64,9 +54,9 @@ public class VirtualCamera : MonoBehaviour
         
     }
 
-    public void ScreenShake(float amplitude, float duration, bool damageFeedback = false, bool fade = true)
+    public void ScreenShake(float amplitude, float duration, bool fade = true)
     {
-        multiChannelPerlin.m_AmplitudeGain += amplitude;
+        multiChannelPerlin.m_AmplitudeGain = amplitude;
         multiChannelPerlin.m_AmplitudeGain = Mathf.Clamp(multiChannelPerlin.m_AmplitudeGain, 0, maxScreenShake);
         
         if(duration > shakingTime)
@@ -74,11 +64,7 @@ public class VirtualCamera : MonoBehaviour
             shakingTime = duration;
         }
 
-        if (damageFeedback)
-        {
-            healthScreen.HideImage();
-            damageScreen.DisplayImage(0, 0.1f, duration);
-        }
+        
 
         shaking = true;
 
@@ -91,10 +77,17 @@ public class VirtualCamera : MonoBehaviour
         //transform.DOShakePosition();
     }
 
-    public void HealthScreen(float duration)
+    public void HealthScreen(float duration = 0.5f)
     {
         damageScreen.HideImage();
-        healthScreen.DisplayImage(0, 0.1f, duration);
+        healthScreen.DisplayImage(0, 0.3f, duration);
+    }
+
+    public void DamageScreen(float duration = 0.5f)
+    {
+        healthScreen.HideImage();
+        damageScreen.DisplayImage(0, 0.3f, duration);
+
     }
 
     void StopShaking()

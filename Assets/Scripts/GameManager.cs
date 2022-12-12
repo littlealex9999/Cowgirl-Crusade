@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     static public GameManager instance { get; private set; }
 
     [SerializeField] Player player;
+    VirtualCamera virtualCam;
 
     GameOver gameOver;
 
@@ -38,10 +39,13 @@ public class GameManager : MonoBehaviour
         }
 
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
 
         if (scoreObject != null && scoreObject.LoadedScores) {
             scoreObject.LoadHighscoresFromFile();
         }
+
+        virtualCam = player.GetVirtualCamera;
 
         gameOver = GetComponent<GameOver>();
     }
@@ -50,7 +54,7 @@ public class GameManager : MonoBehaviour
     {
         if (canPause)
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (paused)
                 {
@@ -89,6 +93,7 @@ public class GameManager : MonoBehaviour
         hitmarker.DisplayImage(0.3f, 0.3f, 0.3f);
     }
 
+
     private void OnApplicationQuit()
     {
         if (scoreObject != null) {
@@ -98,6 +103,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        player.ControlsEnabled = false;
         player.gameObject.SetActive(false);
         canPause = false;
         SuspendGame();
@@ -110,6 +116,7 @@ public class GameManager : MonoBehaviour
     void SuspendGame()
     {
         Time.timeScale = 0;
+        player.ControlsEnabled = false;
 
     }
 
@@ -117,6 +124,7 @@ public class GameManager : MonoBehaviour
     {
         paused = false;
         Time.timeScale = 1;
+        EnablePlayerControls();
 
     }
 
@@ -126,8 +134,21 @@ public class GameManager : MonoBehaviour
         gameOver.enabled = false;
         player.gameObject.SetActive(true);
         player.GiveHealth(player.GetHealthMax(), true);
+        EnablePlayerControls();
         
         Time.timeScale = 1;
         canPause = true;
+    }
+
+    void EnablePlayerControls()
+    {
+        player.ControlsEnabled = true;
+    }
+
+
+    private void OnApplicationFocus(bool focus)
+    {
+        Cursor.visible = false;
+
     }
 }
