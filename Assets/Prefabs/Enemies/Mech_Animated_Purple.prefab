@@ -1218,8 +1218,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 5
   sdmax: 0
-  destructionPrefab: {fileID: 0}
+  destructionPrefab: {fileID: 196169950755043893, guid: 208c2f5712fc22741b91a38c5f3a84d0, type: 3}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1237,10 +1239,10 @@ MonoBehaviour:
   targetRelativeLookShootLimit: -0.5
   minDistanceBetweenTarget: 5
   enemyLaser: {fileID: 6397197259262075677, guid: facfaea9011225246bcaef8aeaa6cbaa, type: 3}
+  shootStartDistance: 5
   shootDuration: 5
   laserMoveSpeed: 5
   forwardOffset: 1
-  shootStartDistance: 5
 --- !u!114 &3936413190566822031
 MonoBehaviour:
   m_ObjectHideFlags: 0
