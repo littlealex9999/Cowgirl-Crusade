@@ -10523,6 +10523,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
   m_PrefabInstance: {fileID: 697087125}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &334280793 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6619f2695b467cf48999adb9125451b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &337247628 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -11422,11 +11433,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
   m_PrefabInstance: {fileID: 369481638}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &369535578 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5087656297432694626, guid: 8a134b3b9b138204da783648184583b3, type: 3}
-  m_PrefabInstance: {fileID: 1391624694}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &370553678 stripped
 Transform:
@@ -50112,6 +50118,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: healthMeter
+      value: 
+      objectReference: {fileID: 334280793}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: shootDistance
       value: 800
       objectReference: {fileID: 0}
@@ -72803,7 +72813,7 @@ PrefabInstance:
     - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 369535578}
+      objectReference: {fileID: 383443928}
     - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
       propertyPath: hitmarker
       value: 
