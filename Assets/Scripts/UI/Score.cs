@@ -69,6 +69,8 @@ public class Score : ScriptableObject
         BinaryFormatter bf = new BinaryFormatter();
         bf.Serialize(file, scores);
         file.Close();
+
+        Debug.Log("Saved Scores");
     }
 
     public void LoadHighscoresFromFile()
@@ -86,6 +88,7 @@ public class Score : ScriptableObject
         int[] scoreArray = (int[])bf.Deserialize(file);
         file.Close();
 
+        Debug.Log("Loaded scores");
         loaded = true;
     }
 
@@ -99,6 +102,8 @@ public class Score : ScriptableObject
                 if (i < scores.Length - 1) {
                     scores[i + 1] = temp;
                 }
+
+                return;
             }
         }
     }

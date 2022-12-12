@@ -104,6 +104,7 @@ public class GameManager : MonoBehaviour
         gameOver.enabled = true;
         gameOver.PlayerDied();
 
+        scoreObject.ResetPoints();
     }
 
     void SuspendGame()
