@@ -11,6 +11,7 @@ public class Character : MonoBehaviour
     [SerializeField, InspectorName("Max Shield")] float sdmax = 0;
     [SerializeField] GameObject destructionPrefab;
 
+
     [SerializeField] Meter healthMeter;
 
     float invincibleTime;
@@ -61,6 +62,12 @@ public class Character : MonoBehaviour
 
         posLastFrame = transform.position;
         specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
+
+        if (healthMeter != null)
+        {
+            healthMeter.SetOwner(gameObject);
+        }
+
     }
 
     protected virtual void Update()
@@ -95,10 +102,7 @@ public class Character : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
-        if (destructionPrefab != null) {
-            GameObject d = Instantiate(destructionPrefab);
-            d.transform.position = transform.position;
-        }
+        
         
     }
 
@@ -111,6 +115,28 @@ public class Character : MonoBehaviour
         }
     }
 
+    public void GiveHealth(float value, bool setHealth = false)
+    {
+        if (setHealth)
+        {
+            health = value;
+        }
+        else
+        {
+            health += value;
+        }
+
+        health = Mathf.Clamp(health, 0, hpmax);
+
+        if (healthMeter != null)
+        {
+            healthMeter.UpdateMeter(health, hpmax, value);
+        }
+
+    }
+    
+    
+    
     public void SetMaxShield(float value)
     {
         sdmax = value;
@@ -262,11 +288,32 @@ public class Character : MonoBehaviour
         }
 
         if (health <= 0) {
-            GameManager.instance.GetScore.AddPoints(pointsGiven);
-            Destroy(gameObject);
+            if (addPointsIfKilled)
+            {
+                GameManager.instance.GetScore.AddPoints(pointsGiven);
+            }
+
+            OnDeath();
+
         }
 
         return true;
+    }
+
+
+    public virtual void OnDeath()
+    {
+        if (destructionPrefab != null)
+        {
+            GameObject d = Instantiate(destructionPrefab);
+            d.transform.position = transform.position;
+        }
+
+        if (GetComponent<Player>() == null)
+        {
+            Destroy(gameObject);
+        }
+        
     }
 
     public virtual void AddPowerup(PowerupStats stats)

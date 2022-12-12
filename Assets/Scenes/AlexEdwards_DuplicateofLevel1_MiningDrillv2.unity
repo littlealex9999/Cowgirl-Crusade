@@ -78463,6 +78463,10 @@ PrefabInstance:
       propertyPath: healthMeter
       value: 
       objectReference: {fileID: 1891124020}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: destroyOnDeath
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.00011253357
