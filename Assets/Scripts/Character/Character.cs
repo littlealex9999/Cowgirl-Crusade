@@ -17,6 +17,7 @@ public class Character : MonoBehaviour
     float invincibleTime;
 
     [SerializeField] protected Bullet bullet;
+    [SerializeField] protected Transform shootOrigin;
     [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] protected float shootCooldown = 1;
     [SerializeField, InspectorName("Spawn Shoot Cooldown")] protected float cldtimer;
@@ -63,8 +64,7 @@ public class Character : MonoBehaviour
         posLastFrame = transform.position;
         specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
 
-        if (healthMeter != null)
-        {
+        if (healthMeter != null) {
             healthMeter.SetOwner(gameObject);
         }
 
@@ -102,8 +102,8 @@ public class Character : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
-        
-        
+
+
     }
 
     #region stat setting
@@ -117,26 +117,22 @@ public class Character : MonoBehaviour
 
     public void GiveHealth(float value, bool setHealth = false)
     {
-        if (setHealth)
-        {
+        if (setHealth) {
             health = value;
-        }
-        else
-        {
+        } else {
             health += value;
         }
 
         health = Mathf.Clamp(health, 0, hpmax);
 
-        if (healthMeter != null)
-        {
+        if (healthMeter != null) {
             healthMeter.UpdateMeter(health, hpmax, value);
         }
 
     }
-    
-    
-    
+
+
+
     public void SetMaxShield(float value)
     {
         sdmax = value;
@@ -232,7 +228,12 @@ public class Character : MonoBehaviour
             }
             GameObject bulletRef = Instantiate(bullet.gameObject, parentOverride);
             Destroy(bulletRef, deleteBulletsAfterSeconds);
-            bulletRef.transform.position = transform.position;
+
+            if (shootOrigin != null) {
+                bulletRef.transform.position = shootOrigin.position;
+            } else {
+                bulletRef.transform.position = transform.position;
+            }
             bulletRef.transform.LookAt(shootToPoint);
             Bullet firedScript = bulletRef.GetComponent<Bullet>();
 
@@ -280,16 +281,14 @@ public class Character : MonoBehaviour
 
             health = Mathf.Clamp(health, 0, hpmax);
 
-            if(healthMeter != null)
-            {
+            if (healthMeter != null) {
                 healthMeter.UpdateMeter(health, hpmax, -damage);
             }
 
         }
 
         if (health <= 0) {
-            if (addPointsIfKilled)
-            {
+            if (addPointsIfKilled) {
                 GameManager.instance.GetScore.AddPoints(pointsGiven);
             }
 
@@ -303,17 +302,15 @@ public class Character : MonoBehaviour
 
     public virtual void OnDeath()
     {
-        if (destructionPrefab != null)
-        {
+        if (destructionPrefab != null) {
             GameObject d = Instantiate(destructionPrefab);
             d.transform.position = transform.position;
         }
 
-        if (GetComponent<Player>() == null)
-        {
+        if (GetComponent<Player>() == null) {
             Destroy(gameObject);
         }
-        
+
     }
 
     public virtual void AddPowerup(PowerupStats stats)
