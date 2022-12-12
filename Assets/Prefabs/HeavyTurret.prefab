@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8730717284709247780}
   m_Layer: 0
   m_Name: HeavyGun_VRotation
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 7897097978346128521}
   m_Layer: 0
   m_Name: Base_HRotation
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,8 +175,8 @@ GameObject:
   - component: {fileID: 4221863601934645577}
   - component: {fileID: 1074531743168692004}
   m_Layer: 0
-  m_Name: HeavyTurret_Low_Merged
-  m_TagString: Untagged
+  m_Name: HeavyTurret
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +190,7 @@ Transform:
   m_GameObject: {fileID: 8163655515015484725}
   m_LocalRotation: {x: -0, y: -0.9089853, z: -0, w: 0.416828}
   m_LocalPosition: {x: -3950.6, y: 121.1, z: -1655.4}
-  m_LocalScale: {x: 12.927907, y: 12.927907, z: 12.927907}
+  m_LocalScale: {x: 13, y: 13, z: 13}
   m_Children:
   - {fileID: 4684091288884339054}
   m_Father: {fileID: 0}
