@@ -1,5 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "ScoresObject", menuName = "Score/ScoreObject")]
@@ -17,6 +19,9 @@ public class Score : ScriptableObject
     public int GetPoints { get { return points; } }
 
     public float GetMultiplier { get { return multiplier; } }
+
+    bool loaded = false;
+    public bool LoadedScores { get { return loaded; } }
 
     public void AddMultiplier(float increase)
     {
@@ -51,9 +56,37 @@ public class Score : ScriptableObject
         GameManager.instance.UpdateScore();
     }
 
-    void SaveHighscoresToFile()
+    public void SaveHighscoresToFile()
     {
+        string destination = Application.persistentDataPath + "/save.dat";
+        FileStream file;
+        if (File.Exists(destination)) {
+            file = File.OpenWrite(destination);
+        } else {
+            file = File.Create(destination);
+        }
 
+        BinaryFormatter bf = new BinaryFormatter();
+        bf.Serialize(file, scores);
+        file.Close();
+    }
+
+    public void LoadHighscoresFromFile()
+    {
+        string destination = Application.persistentDataPath + "/save.dat";
+        FileStream file;
+        if (File.Exists(destination)) {
+            file = File.OpenRead(destination);
+        } else {
+            // no file found
+            return;
+        }
+
+        BinaryFormatter bf = new BinaryFormatter();
+        int[] scoreArray = (int[])bf.Deserialize(file);
+        file.Close();
+
+        loaded = true;
     }
 
 
@@ -63,8 +96,8 @@ public class Score : ScriptableObject
             if (score > scores[i]) {
                 int temp = scores[i];
                 scores[i] = score;
-                if (i < scores.Length + 1) {
-                    scores[i + 1] = temp; // Received Index out of Range exception
+                if (i < scores.Length - 1) {
+                    scores[i + 1] = temp;
                 }
             }
         }

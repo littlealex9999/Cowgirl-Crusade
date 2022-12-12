@@ -32,6 +32,11 @@ public class GameManager : MonoBehaviour
         }
 
         Cursor.visible = false;
+
+
+        if (scoreObject != null && scoreObject.LoadedScores) {
+            scoreObject.LoadHighscoresFromFile();
+        }
     }
 
     void Update()
@@ -61,4 +66,10 @@ public class GameManager : MonoBehaviour
         hitmarker.DisplayImage(0.3f, 0.3f, 0.3f);
     }
 
+    private void OnApplicationQuit()
+    {
+        if (scoreObject != null) {
+            scoreObject.SaveHighscoresToFile();
+        }
+    }
 }
