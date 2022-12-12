@@ -10,6 +10,7 @@ public class Character : MonoBehaviour
     [SerializeField, InspectorName("Max Health")] float hpmax = 50;
     [SerializeField, InspectorName("Max Shield")] float sdmax = 0;
     [SerializeField] GameObject destructionPrefab;
+    [SerializeField] bool destroyOnDeath = true;
 
 
     [SerializeField] Meter healthMeter;
@@ -307,7 +308,7 @@ public class Character : MonoBehaviour
             d.transform.position = transform.position;
         }
 
-        if (GetComponent<Player>() == null) {
+        if (destroyOnDeath) {
             Destroy(gameObject);
         }
 
