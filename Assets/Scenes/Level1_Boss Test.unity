@@ -641,7 +641,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
   m_PrefabInstance: {fileID: 1391624694}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1920412880}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 796a3014f28d2ab429d06a5fc0b97e9b, type: 3}
@@ -1060,6 +1060,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1605,7 +1606,8 @@ MonoBehaviour:
   sdmax: 0
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 1753810290}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1617,7 +1619,7 @@ MonoBehaviour:
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 50
   hostile: 0
   team: 0
   targetRelativeLookShootLimit: -0.1
@@ -7067,7 +7069,8 @@ MonoBehaviour:
   sdmax: 0
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
-  bullet: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 676419893}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -7079,7 +7082,7 @@ MonoBehaviour:
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 1
+  bulletSpeedMultiplier: 50
   hostile: 0
   team: 0
   targetRelativeLookShootLimit: -0.1
@@ -18634,6 +18637,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
   m_PrefabInstance: {fileID: 1889940504}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1920412880 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5087656296109049018, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+  m_PrefabInstance: {fileID: 1391624694}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1937626198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
@@ -19030,6 +19038,7 @@ GameObject:
   - component: {fileID: 2051637101}
   - component: {fileID: 2051637103}
   - component: {fileID: 2051637102}
+  - component: {fileID: 2051637104}
   m_Layer: 0
   m_Name: Boss Trigger
   m_TagString: Untagged
@@ -19081,6 +19090,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 15, z: 15}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2051637104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051637100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 628798400}
+  - {fileID: 811464979}
+  - {fileID: 7504149766679658645}
+  - {fileID: 1721239493220007516}
+  - {fileID: 505175200}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 1
+  setCooldownRandomRange: 1
+  cooldownMinimum: 1
+  justFigureOutWhoThePlayerIs: 0
+  triggeredByEnemy: 0
 --- !u!1 &2111005502 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6755888421356707475, guid: 1c80fbc47378b8c4ba50f77b266b1010, type: 3}
@@ -19404,6 +19437,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -19955,6 +19989,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -19987,6 +20022,7 @@ GameObject:
   - component: {fileID: 2253272393351104131}
   - component: {fileID: 3313143752425525075}
   - component: {fileID: 4593824935249297364}
+  - component: {fileID: 7981630284527521245}
   m_Layer: 0
   m_Name: Turret_Left
   m_TagString: Untagged
@@ -19994,6 +20030,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7981630284527521245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7981630284527521244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d8377ed38e0f947bf8c00a7042f694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1920412880}
 --- !u!4 &8538274892662610411
 Transform:
   m_ObjectHideFlags: 0
@@ -20050,6 +20099,7 @@ GameObject:
   - component: {fileID: 1309693478270256294}
   - component: {fileID: 7217864268056305703}
   - component: {fileID: 3278941672096535325}
+  - component: {fileID: 8877659974372148103}
   m_Layer: 0
   m_Name: Turret_Right
   m_TagString: Untagged
@@ -20057,3 +20107,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8877659974372148103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8877659974372148102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d8377ed38e0f947bf8c00a7042f694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1920412880}
