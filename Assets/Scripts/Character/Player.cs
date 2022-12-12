@@ -40,7 +40,7 @@ public class Player : Character
     protected override void OnDestroy()
     {
         base.OnDestroy();
-        GameManager.instance.GetScore.ResetPoints();
+        
     }
 
     void Move()
@@ -114,11 +114,15 @@ public class Player : Character
     public override bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
 
-        VirtualCamera.instance.ScreenShake(5, 0.5f, true);
+        // VirtualCamera.instance.ScreenShake(5, 0.5f, true);
         return base.TakeDamage(damage, setInvincibleTime);
     }
 
-
+    public override void OnDeath()
+    {
+        base.OnDeath();
+        GameManager.instance.GetScore.ResetPoints();
+    }
 
     public static void AddAttacker()
     {
