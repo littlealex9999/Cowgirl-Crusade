@@ -2,12 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
     static public GameManager instance { get; private set; }
 
     [SerializeField] Player player;
+
+    GameOver gameOver;
+
+    bool paused = false;
+    bool canPause = true;
 
     [SerializeField] Score scoreObject;
 
@@ -32,10 +38,32 @@ public class GameManager : MonoBehaviour
         }
 
         Cursor.visible = false;
+
+        if (scoreObject != null && scoreObject.LoadedScores) {
+            scoreObject.LoadHighscoresFromFile();
+        }
+
+        gameOver = GetComponent<GameOver>();
     }
 
     void Update()
     {
+        if (canPause)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                if (paused)
+                {
+                    ResumeGame();
+                }
+                else
+                {
+                    paused = true;
+                    SuspendGame();
+                }
+
+            }
+        }
         
     }
 
@@ -61,4 +89,45 @@ public class GameManager : MonoBehaviour
         hitmarker.DisplayImage(0.3f, 0.3f, 0.3f);
     }
 
+    private void OnApplicationQuit()
+    {
+        if (scoreObject != null) {
+            scoreObject.SaveHighscoresToFile();
+        }
+    }
+
+    public void GameOver()
+    {
+        player.gameObject.SetActive(false);
+        canPause = false;
+        SuspendGame();
+        gameOver.enabled = true;
+        gameOver.PlayerDied();
+
+        scoreObject.ResetPoints();
+    }
+
+    void SuspendGame()
+    {
+        Time.timeScale = 0;
+
+    }
+
+    public void ResumeGame()
+    {
+        paused = false;
+        Time.timeScale = 1;
+
+    }
+
+    public void Respawn()
+    {
+        Debug.Log("Respawn");
+        gameOver.enabled = false;
+        player.gameObject.SetActive(true);
+        player.GiveHealth(player.GetHealthMax(), true);
+        
+        Time.timeScale = 1;
+        canPause = true;
+    }
 }
