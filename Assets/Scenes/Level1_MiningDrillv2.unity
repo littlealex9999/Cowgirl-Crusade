@@ -409,6 +409,7 @@ MonoBehaviour:
   hpmax: 500
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
@@ -3246,6 +3247,69 @@ Transform:
   m_Father: {fileID: 1984087359}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &127097707
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 127097708}
+  - component: {fileID: 127097710}
+  - component: {fileID: 127097709}
+  m_Layer: 0
+  m_Name: B8 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &127097708
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127097707}
+  m_LocalRotation: {x: -0.031180622, y: 0.23442042, z: 0.12811038, w: 0.96315247}
+  m_LocalPosition: {x: 1911.3933, y: 338.4031, z: -664.51184}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2117833181}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: -6.899, y: 26.539, z: 13.524}
+--- !u!65 &127097709
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127097707}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &127097710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 127097707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!1001 &127510378
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3889,6 +3953,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
   m_PrefabInstance: {fileID: 151868935}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &153104887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 153104888}
+  - component: {fileID: 153104890}
+  - component: {fileID: 153104889}
+  m_Layer: 0
+  m_Name: B7 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &153104888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153104887}
+  m_LocalRotation: {x: 0.15027694, y: -0.79827595, z: -0.09190368, w: 0.5759567}
+  m_LocalPosition: {x: -279.15112, y: 1095.3923, z: -513.2035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1796380048}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 1.511, y: -108.649, z: -20.237}
+--- !u!114 &153104889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153104887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &153104890
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 153104887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &154061455
 GameObject:
   m_ObjectHideFlags: 0
@@ -4292,6 +4419,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 1871331380}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &161282764
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161282765}
+  - component: {fileID: 161282767}
+  - component: {fileID: 161282766}
+  m_Layer: 0
+  m_Name: BB13 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161282765
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161282764}
+  m_LocalRotation: {x: -0, y: 0.9981021, z: -0, w: 0.061580807}
+  m_LocalPosition: {x: -570.2819, y: -130.10852, z: 612.47833}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 214044262}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 121.875, z: 0}
+--- !u!114 &161282766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161282764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &161282767
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161282764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &161804820
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,6 +4512,7 @@ Transform:
   - {fileID: 829931062}
   - {fileID: 1324927433}
   - {fileID: 2033986841}
+  - {fileID: 1439022127}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: -180.575, z: 0}
@@ -5321,6 +5512,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 10931210}
+  - {fileID: 1368568030}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5797,6 +5989,7 @@ Transform:
   m_Children:
   - {fileID: 361312349}
   - {fileID: 1216467751}
+  - {fileID: 161282765}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -51.064, z: 0}
@@ -5830,6 +6023,8 @@ MonoBehaviour:
   - position: {x: -205.01308, y: -133.53195, z: 450.4243}
     roll: 0
   - position: {x: -393.8374, y: -131.82024, z: 592.9967}
+    roll: 0
+  - position: {x: -582.6618, y: -130.10852, z: 611.51416}
     roll: 0
 --- !u!1001 &214491660
 PrefabInstance:
@@ -7782,6 +7977,7 @@ Transform:
   m_Children:
   - {fileID: 1213869765}
   - {fileID: 1918862185}
+  - {fileID: 558093541}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7904,6 +8100,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+--- !u!1 &288854956
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 288854957}
+  - component: {fileID: 288854959}
+  - component: {fileID: 288854958}
+  m_Layer: 0
+  m_Name: B10 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &288854957
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288854956}
+  m_LocalRotation: {x: -0, y: -0.5990965, z: -0, w: 0.80067694}
+  m_LocalPosition: {x: 1911.69, y: 164.38, z: -1130.942}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 387781005}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -73.61, z: 0}
+--- !u!65 &288854958
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288854956}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &288854959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288854956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!4 &294123522 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -11255,6 +11514,7 @@ MonoBehaviour:
   hpmax: 500
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
@@ -11686,6 +11946,7 @@ Transform:
   - {fileID: 283046334}
   - {fileID: 129457051}
   - {fileID: 946066725}
+  - {fileID: 288854957}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12303,6 +12564,69 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spinSpeed: {x: -50, y: 0, z: 0}
+--- !u!1 &410956516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 410956517}
+  - component: {fileID: 410956519}
+  - component: {fileID: 410956518}
+  m_Layer: 0
+  m_Name: B9 Destory Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &410956517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410956516}
+  m_LocalRotation: {x: -0, y: -0.6650763, z: -0, w: 0.7467754}
+  m_LocalPosition: {x: -47.546875, y: -68.55426, z: 478.82788}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 534524318}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -83.376, z: 0}
+--- !u!114 &410956518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410956516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &410956519
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410956516}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &413214304
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12981,6 +13305,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
   m_PrefabInstance: {fileID: 1433502840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &436627467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 436627468}
+  - component: {fileID: 436627470}
+  - component: {fileID: 436627469}
+  m_Layer: 0
+  m_Name: BB 7 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &436627468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436627467}
+  m_LocalRotation: {x: 0.018028129, y: -0.16011345, z: -0.110427, w: 0.98073673}
+  m_LocalPosition: {x: -695.32996, y: 120.883286, z: -609.94006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1134393949}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -18.544, z: -12.848}
+--- !u!114 &436627469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436627467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &436627470
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 436627467}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &437720206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -15130,6 +15517,7 @@ Transform:
   - {fileID: 20140950}
   - {fileID: 154061457}
   - {fileID: 1678540453}
+  - {fileID: 2058306677}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16447,6 +16835,7 @@ Transform:
   - {fileID: 489456108}
   - {fileID: 391290837}
   - {fileID: 827692076}
+  - {fileID: 410956517}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16696,6 +17085,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+--- !u!1 &546237081
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 546237082}
+  - component: {fileID: 546237084}
+  - component: {fileID: 546237083}
+  m_Layer: 0
+  m_Name: B18 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &546237082
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546237081}
+  m_LocalRotation: {x: -0, y: -0.6071007, z: -0, w: 0.7946249}
+  m_LocalPosition: {x: 1005.0879, y: 285.85425, z: -242.8125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2132084052}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -74.76, z: 0}
+--- !u!114 &546237083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546237081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &546237084
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546237081}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &547735077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16927,6 +17379,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &558093540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558093541}
+  - component: {fileID: 558093543}
+  - component: {fileID: 558093542}
+  m_Layer: 0
+  m_Name: BB 17 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &558093541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558093540}
+  m_LocalRotation: {x: 0.03828834, y: 0.10839337, z: 0.33085838, w: 0.93665236}
+  m_LocalPosition: {x: 453.84998, y: 128.5, z: 218.14001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 285722724}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 13.202, z: 38.91}
+--- !u!65 &558093542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558093540}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &558093543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558093540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!1001 &558130895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18561,6 +19076,7 @@ MonoBehaviour:
   hpmax: 500
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
@@ -20147,6 +20663,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 912687886}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &662799641
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 662799642}
+  - component: {fileID: 662799644}
+  - component: {fileID: 662799643}
+  m_Layer: 0
+  m_Name: BB 2 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &662799642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662799641}
+  m_LocalRotation: {x: 0.16685857, y: 0.2872859, z: 0.26053026, w: 0.90650374}
+  m_LocalPosition: {x: 1621.2455, y: 269.61688, z: 138.8374}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 684525347}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 8.791, y: 37.953, z: 35.097}
+--- !u!114 &662799643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662799641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &662799644
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662799641}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &664630848 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -20827,6 +21406,7 @@ Transform:
   m_Children:
   - {fileID: 194835058}
   - {fileID: 1220421300}
+  - {fileID: 662799642}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21477,6 +22057,7 @@ Transform:
   m_Children:
   - {fileID: 1977183794}
   - {fileID: 481484756}
+  - {fileID: 823709505}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -27954,6 +28535,7 @@ Transform:
   - {fileID: 1242907228}
   - {fileID: 364045645}
   - {fileID: 1637851069}
+  - {fileID: 1178120176}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28487,6 +29069,69 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 50, y: 50, z: 50}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &823709504
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 823709505}
+  - component: {fileID: 823709507}
+  - component: {fileID: 823709506}
+  m_Layer: 0
+  m_Name: BB3 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &823709505
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823709504}
+  m_LocalRotation: {x: -0, y: -0.28434896, z: -0, w: 0.95872086}
+  m_LocalPosition: {x: 303.51, y: 25.550003, z: 456.71}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 718815300}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -33.04, z: 0}
+--- !u!65 &823709506
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823709504}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &823709507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823709504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!4 &823975198 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -28919,6 +29564,7 @@ Transform:
   m_Children:
   - {fileID: 1723281876}
   - {fileID: 58504247}
+  - {fileID: 1387507960}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -28947,7 +29593,7 @@ MonoBehaviour:
     roll: 0
   - position: {x: -150.54932, y: 34.59433, z: 591.09546}
     roll: 0
-  - position: {x: -144.73407, y: 89.80626, z: 765.7637}
+  - position: {x: -122.43042, y: 89.80626, z: 765.7637}
     roll: 0
 --- !u!4 &833292479 stripped
 Transform:
@@ -29768,6 +30414,7 @@ MonoBehaviour:
   hpmax: 500
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
@@ -30265,6 +30912,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &895571099
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 895571100}
+  - component: {fileID: 895571102}
+  - component: {fileID: 895571101}
+  m_Layer: 0
+  m_Name: BB10 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &895571100
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895571099}
+  m_LocalRotation: {x: -0, y: 0.7756912, z: -0, w: 0.6311127}
+  m_LocalPosition: {x: -162.45996, y: 88.40999, z: 729.81006}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 929412430}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 101.735, z: 0}
+--- !u!114 &895571101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895571099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &895571102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895571099}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &896904562
 GameObject:
   m_ObjectHideFlags: 0
@@ -30931,6 +31641,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 61944906}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &914608611
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 914608612}
+  - component: {fileID: 914608614}
+  - component: {fileID: 914608613}
+  m_Layer: 0
+  m_Name: B12 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &914608612
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914608611}
+  m_LocalRotation: {x: -0, y: 0.7929966, z: -0, w: 0.60922617}
+  m_LocalPosition: {x: 311.70898, y: -105.73999, z: 287.424}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1138855641}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 80.557, z: 0}
+--- !u!114 &914608613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914608611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &914608614
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914608611}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &914643481
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31243,6 +32016,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2138477022}
+  - {fileID: 895571100}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33078,6 +33852,7 @@ Transform:
   m_Children:
   - {fileID: 1621493010}
   - {fileID: 313747129}
+  - {fileID: 1972701890}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -33110,7 +33885,7 @@ MonoBehaviour:
     roll: -25
   - position: {x: 1017.35144, y: -127.82707, z: -91.24487}
     roll: 0
-  - position: {x: 1140.5717, y: -109.22548, z: 249.8894}
+  - position: {x: 1192.1925, y: -109.22548, z: 249.8894}
     roll: 0
 --- !u!1001 &1000896855
 PrefabInstance:
@@ -35301,6 +36076,7 @@ Transform:
   - {fileID: 1194352380}
   - {fileID: 909309844}
   - {fileID: 406125950}
+  - {fileID: 1831133398}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -36980,6 +37756,7 @@ Transform:
   m_Children:
   - {fileID: 1433832213}
   - {fileID: 578465553}
+  - {fileID: 436627468}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -37052,6 +37829,7 @@ Transform:
   - {fileID: 1094535907}
   - {fileID: 1952745585}
   - {fileID: 1460709518}
+  - {fileID: 914608612}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: -24.376, z: 0}
@@ -37275,6 +38053,7 @@ Transform:
   m_Children:
   - {fileID: 729662097}
   - {fileID: 176354823}
+  - {fileID: 1558367608}
   m_Father: {fileID: 1107433540}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -38261,6 +39040,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &1178120175
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1178120176}
+  - component: {fileID: 1178120178}
+  - component: {fileID: 1178120177}
+  m_Layer: 0
+  m_Name: B16 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1178120176
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178120175}
+  m_LocalRotation: {x: 0.12614974, y: 0.31925428, z: 0.14734928, w: 0.9276051}
+  m_LocalPosition: {x: 417.30884, y: 1044.4023, z: -683.63354}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 805714202}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 8.045, y: 39.473, z: 20.942}
+--- !u!114 &1178120177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178120175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &1178120178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1178120175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1178562192 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -48489,6 +49331,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+--- !u!1 &1368568029
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1368568030}
+  - component: {fileID: 1368568032}
+  - component: {fileID: 1368568031}
+  m_Layer: 0
+  m_Name: BB 11 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1368568030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368568029}
+  m_LocalRotation: {x: -0, y: 0.72724044, z: -0, w: 0.6863829}
+  m_LocalPosition: {x: -122.08, y: -45, z: 727.77}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 201460269}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 93.311, z: 0}
+--- !u!114 &1368568031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368568029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &1368568032
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1368568029}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1372903744
 GameObject:
   m_ObjectHideFlags: 0
@@ -49071,6 +49976,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 534644130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1387507959
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1387507960}
+  - component: {fileID: 1387507962}
+  - component: {fileID: 1387507961}
+  m_Layer: 0
+  m_Name: BB 9&12 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1387507960
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387507959}
+  m_LocalRotation: {x: -0, y: -0.64640784, z: -0, w: 0.7629921}
+  m_LocalPosition: {x: -135.18, y: 88.43, z: 753.32}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 831955245}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -80.543, z: 0}
+--- !u!65 &1387507961
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387507959}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 20.4, z: 38.27}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1387507962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387507959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!4 &1391436685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -50202,8 +51170,71 @@ MonoBehaviour:
     roll: 0
   - position: {x: -165.52985, y: -70.97124, z: 361.14185}
     roll: 0
-  - position: {x: -195.84644, y: -47.52234, z: 771.77356}
+  - position: {x: -131.99957, y: -36.97374, z: 771.77356}
     roll: 0
+--- !u!1 &1439022126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1439022127}
+  - component: {fileID: 1439022129}
+  - component: {fileID: 1439022128}
+  m_Layer: 0
+  m_Name: B13 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1439022127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439022126}
+  m_LocalRotation: {x: -0, y: 0.97109365, z: 0, w: -0.23869911}
+  m_LocalPosition: {x: -1514.8389, y: 88.45001, z: 510.78235}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 161804821}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 27.044, z: 0}
+--- !u!114 &1439022128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439022126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
+--- !u!65 &1439022129
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1439022126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &1441348076 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -57525,6 +58556,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
+--- !u!1 &1558367607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1558367608}
+  - component: {fileID: 1558367609}
+  m_Layer: 0
+  m_Name: BB 4 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1558367608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558367607}
+  m_LocalRotation: {x: -0, y: -0, z: 0.17404306, w: 0.9847381}
+  m_LocalPosition: {x: 1315.345, y: 166.62337, z: 89.727295}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1148938041}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 20.046}
+--- !u!65 &1558367609
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1558367607}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1559011511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62785,6 +63860,7 @@ MonoBehaviour:
   hpmax: 500
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
@@ -64924,6 +66000,7 @@ Transform:
   - {fileID: 2087320782}
   - {fileID: 2005473965}
   - {fileID: 1691029270}
+  - {fileID: 153104888}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -65691,6 +66768,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 953148488}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1831133397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1831133398}
+  - component: {fileID: 1831133400}
+  - component: {fileID: 1831133399}
+  m_Layer: 0
+  m_Name: B14 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1831133398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831133397}
+  m_LocalRotation: {x: -0, y: -0.19149607, z: -0, w: 0.9814934}
+  m_LocalPosition: {x: 1282.1917, y: 87.175476, z: -697.33215}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1072952566}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -22.08, z: 0}
+--- !u!65 &1831133399
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831133397}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1831133400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831133397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!1001 &1832713235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69487,6 +70627,69 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 963846301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1972701889
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1972701890}
+  - component: {fileID: 1972701892}
+  - component: {fileID: 1972701891}
+  m_Layer: 0
+  m_Name: BB1 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1972701890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972701889}
+  m_LocalRotation: {x: -0, y: 0.771165, z: -0, w: 0.6366354}
+  m_LocalPosition: {x: 1189.7301, y: -109.17256, z: 235.91003}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 995131544}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 100.917, z: 0}
+--- !u!65 &1972701891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972701889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1972701892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972701889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!1001 &1972781665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71902,6 +73105,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
+--- !u!1 &2058306676
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2058306677}
+  - component: {fileID: 2058306679}
+  - component: {fileID: 2058306678}
+  m_Layer: 0
+  m_Name: B17 Destroy Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2058306677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058306676}
+  m_LocalRotation: {x: -0.41099635, y: -0.6959699, z: 0.31489983, w: 0.49754006}
+  m_LocalPosition: {x: -823.89233, y: 517.52423, z: 922.69763}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 486759933}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 1.682, y: -107.861, z: 62.352}
+--- !u!65 &2058306678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058306676}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2058306679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058306676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!1 &2063044777
 GameObject:
   m_ObjectHideFlags: 0
@@ -73409,6 +74675,7 @@ Transform:
   - {fileID: 397137007}
   - {fileID: 619830783}
   - {fileID: 328234565}
+  - {fileID: 127097708}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74256,6 +75523,7 @@ Transform:
   - {fileID: 1289569618}
   - {fileID: 55230134}
   - {fileID: 1871274026}
+  - {fileID: 546237082}
   m_Father: {fileID: 1626931662}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
