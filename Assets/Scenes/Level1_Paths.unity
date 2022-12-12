@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.18352517, g: 0.22907414, b: 0.30566868, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1130,6 +1130,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1179,6 +1180,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1228,6 +1230,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1277,6 +1280,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1326,6 +1330,7 @@ MonoBehaviour:
   destructionPrefab: {fileID: 0}
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1600,6 +1605,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 2069903374}
+  disableActually: 0
 --- !u!65 &277283569
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1845,6 +1851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 500771705}
+  disableActually: 0
 --- !u!65 &333202285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2275,6 +2282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1887879924}
+  disableActually: 0
 --- !u!65 &400470740
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3341,6 +3349,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1504426099}
+  disableActually: 0
 --- !u!65 &595224577
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3536,6 +3545,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 562389572}
+  disableActually: 0
 --- !u!65 &734004695
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3791,6 +3801,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 528061121}
+  disableActually: 0
 --- !u!65 &780211865
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3974,6 +3985,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 636231360}
+  disableActually: 0
 --- !u!65 &808230905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4788,6 +4800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1504426099}
+  disableActually: 0
 --- !u!65 &1008749448
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4951,6 +4964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 521929369}
+  disableActually: 0
 --- !u!65 &1071628719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5072,6 +5086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 436334276}
+  disableActually: 0
 --- !u!65 &1086769659
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5676,6 +5691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 53810666}
+  disableActually: 0
 --- !u!65 &1149834802
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5735,6 +5751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1504426099}
+  disableActually: 0
 --- !u!65 &1150157853
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6323,6 +6340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1504426099}
+  disableActually: 0
 --- !u!65 &1185339483
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9352,6 +9370,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1423899175}
+  disableActually: 0
 --- !u!65 &1856930702
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9650,6 +9669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 768875268}
+  disableActually: 0
 --- !u!65 &1947306819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9709,6 +9729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1515971861}
+  disableActually: 0
 --- !u!65 &1947988319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10016,6 +10037,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 414417707}
+  disableActually: 0
 --- !u!65 &1998455470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10261,6 +10283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 521929369}
+  disableActually: 0
 --- !u!65 &2036275572
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10373,6 +10396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 2108448364}
+  disableActually: 0
 --- !u!65 &2084163056
 BoxCollider:
   m_ObjectHideFlags: 0
