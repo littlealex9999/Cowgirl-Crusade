@@ -1186,6 +1186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 879905146}
+  disableActually: 0
 --- !u!65 &34967535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1423,6 +1424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1236595009}
+  disableActually: 0
 --- !u!65 &40001910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1789,6 +1791,7 @@ MonoBehaviour:
   - {fileID: 2138477021}
   - {fileID: 10931209}
   - {fileID: 62595221}
+  disableActually: 0
 --- !u!65 &58504249
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2247,6 +2250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1049896259}
+  disableActually: 0
 --- !u!4 &81570674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
@@ -2941,6 +2945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1459317914}
+  disableActually: 0
 --- !u!65 &114489216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4871,6 +4876,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 729662095}
+  disableActually: 0
 --- !u!4 &176582651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
@@ -5207,6 +5213,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1359865602}
+  disableActually: 0
 --- !u!65 &189446279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7333,6 +7340,7 @@ MonoBehaviour:
   - {fileID: 1983142129}
   - {fileID: 610211506}
   - {fileID: 778244104}
+  disableActually: 0
 --- !u!65 &259086568
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9174,6 +9182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1621493009}
+  disableActually: 0
 --- !u!65 &313747131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9767,6 +9776,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1101709522}
+  disableActually: 0
 --- !u!65 &322809270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9952,6 +9962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 425619005}
+  disableActually: 0
 --- !u!65 &324213966
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10218,6 +10229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 619830782}
+  disableActually: 0
 --- !u!65 &328234567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12470,6 +12482,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 909309842}
+  disableActually: 0
 --- !u!65 &406125952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13204,6 +13217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1929589576}
+  disableActually: 0
 --- !u!65 &427672258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14437,6 +14451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1981954908}
+  disableActually: 0
 --- !u!65 &460057096
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15342,6 +15357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1977183792}
+  disableActually: 0
 --- !u!65 &481484758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16441,6 +16457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 697313684}
+  disableActually: 0
 --- !u!65 &512915250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16500,6 +16517,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 623212561}
+  disableActually: 0
 --- !u!65 &515747879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18014,6 +18032,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1433832211}
+  disableActually: 0
 --- !u!1 &580810972
 GameObject:
   m_ObjectHideFlags: 0
@@ -20259,7 +20278,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &646033360
 Transform:
   m_ObjectHideFlags: 0
@@ -20303,7 +20322,7 @@ MonoBehaviour:
   m_Path: {fileID: 580810974}
   m_UpdateMethod: 0
   m_PositionUnits: 1
-  m_Speed: 50
+  m_Speed: 0
   m_Position: 2150
 --- !u!4 &649203467 stripped
 Transform:
@@ -28717,6 +28736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1236595009}
+  disableActually: 0
 --- !u!65 &810744721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29062,6 +29082,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1306026854}
+  disableActually: 0
 --- !u!65 &822553025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29320,6 +29341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 391290836}
+  disableActually: 0
 --- !u!65 &827692078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29527,6 +29549,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 416258040}
+  disableActually: 0
 --- !u!65 &831820697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30821,6 +30844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1309703211}
+  disableActually: 0
 --- !u!65 &882654345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31027,6 +31051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 939148555}
+  disableActually: 0
 --- !u!65 &896904565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32253,6 +32278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 129457050}
+  disableActually: 0
 --- !u!65 &946066727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33154,6 +33180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 622377618}
+  disableActually: 0
 --- !u!65 &974839892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34091,6 +34118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1381030870}
+  disableActually: 0
 --- !u!65 &1007081153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34705,6 +34733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1799873813}
+  disableActually: 0
 --- !u!65 &1025594886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35358,6 +35387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 766134470}
+  disableActually: 0
 --- !u!65 &1042125988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35450,6 +35480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 763863046}
+  disableActually: 0
 --- !u!1 &1049896259
 GameObject:
   m_ObjectHideFlags: 0
@@ -36961,6 +36992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1662214753}
+  disableActually: 0
 --- !u!65 &1104956961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -38109,6 +38141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 578225049}
+  disableActually: 0
 --- !u!65 &1149969716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -40510,6 +40543,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 361312347}
+  disableActually: 0
 --- !u!4 &1217372624 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -40643,6 +40677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 194835056}
+  disableActually: 0
 --- !u!4 &1221809534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -42790,6 +42825,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 581456879}
+  disableActually: 0
 --- !u!65 &1301649356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43117,6 +43153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1177085237}
+  disableActually: 0
 --- !u!65 &1317919526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -50926,6 +50963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 445218856}
+  disableActually: 0
 --- !u!65 &1428584719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -56413,6 +56451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1952745584}
+  disableActually: 0
 --- !u!65 &1460709520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -59003,6 +59042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 36252149}
+  disableActually: 0
 --- !u!65 &1567976990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60115,6 +60155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 796310224}
+  disableActually: 0
 --- !u!65 &1612818599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60662,6 +60703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 364045643}
+  disableActually: 0
 --- !u!65 &1637851071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61833,6 +61875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1770264871}
+  disableActually: 0
 --- !u!65 &1666763564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62129,6 +62172,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 154061455}
+  disableActually: 0
 --- !u!65 &1678540455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62403,6 +62447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 2005473964}
+  disableActually: 0
 --- !u!65 &1691029272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65048,6 +65093,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1931096521}
+  disableActually: 0
 --- !u!65 &1764222885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66538,6 +66584,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1259398480}
+  disableActually: 0
 --- !u!65 &1810370957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67886,6 +67933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 55230132}
+  disableActually: 0
 --- !u!65 &1871274028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69273,6 +69321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1213869763}
+  disableActually: 0
 --- !u!4 &1918862185
 Transform:
   m_ObjectHideFlags: 0
@@ -71955,6 +72004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1235479466}
+  disableActually: 0
 --- !u!65 &2019650324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72297,6 +72347,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1324927432}
+  disableActually: 0
 --- !u!65 &2033986843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72862,7 +72913,7 @@ GameObject:
   - component: {fileID: 2051637103}
   - component: {fileID: 2051637102}
   m_Layer: 0
-  m_Name: Boss Temp Trigger
+  m_Name: Boss Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72891,11 +72942,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2051637100}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60c370863eeb19147a159a7f8ae49b4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 016b93217a74bde47a9984abe76f43c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsToEnable:
-  - {fileID: 646033359}
+  cartsToSet:
+  - {fileID: 646033362}
+  playerOnlyTrigger: 0
+  destroyOnTrigger: 0
+  speed: 50
 --- !u!65 &2051637103
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -72904,7 +72958,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2051637100}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 15, z: 15}
@@ -73241,6 +73295,7 @@ MonoBehaviour:
   - {fileID: 2045047483}
   - {fileID: 126805016}
   - {fileID: 654120429}
+  disableActually: 0
 --- !u!65 &2063044780
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73576,6 +73631,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1722505199}
+  disableActually: 0
 --- !u!65 &2069402162
 BoxCollider:
   m_ObjectHideFlags: 0
