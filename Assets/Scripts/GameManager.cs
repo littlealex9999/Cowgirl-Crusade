@@ -54,7 +54,7 @@ public class GameManager : MonoBehaviour
     {
         if (canPause)
         {
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.PageUp))
             {
                 if (paused)
                 {
@@ -68,7 +68,6 @@ public class GameManager : MonoBehaviour
 
             }
         }
-        
     }
 
     public void UpdateScore()
