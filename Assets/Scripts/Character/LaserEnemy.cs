@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class LaserEnemy : Character
 {
-    Character target;
+    CM_FollowLeader myMoveScript;
 
+    Character shootTarget;
+
+    [SerializeField, Range(-1, 1), Space] float targetRelativeLookShootLimit = -0.1f;
+    [SerializeField] float minDistanceBetweenTarget = 5;
     [SerializeField, Space] GameObject enemyLaser;
+    [SerializeField] float shootStartDistance = 5;
     [SerializeField] float shootDuration = 5;
     [SerializeField] float laserMoveSpeed = 5;
     [SerializeField] float forwardOffset = 1;
@@ -24,6 +29,8 @@ public class LaserEnemy : Character
     {
         base.Start();
 
+        myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
+
         lr = GetComponent<LineRenderer>();
     }
 
@@ -31,12 +38,31 @@ public class LaserEnemy : Character
     {
         base.Update();
 
-        Shoot();
+        if (hostile) {
+            Shoot();
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(shootTarget.transform.position - transform.position), resetRotationStrength * Time.deltaTime);
+        } else {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(transform.parent.forward), resetRotationStrength * Time.deltaTime);
+        }
+    }
+
+    protected override void OnDestroy()
+    {
+        base.OnDestroy();
+        if (myMoveScript != null && myMoveScript.leader.tag == "Player") {
+            Player.RemoveAttacker();
+        }
+
+        if (laserObj != null) {
+            Destroy(laserObj);
+        }
     }
 
     private void Shoot()
     {
-        if (target != null) {
+        if (shootTarget != null &&
+            (shootTarget.transform.position - transform.position).sqrMagnitude >= minDistanceBetweenTarget * minDistanceBetweenTarget && 
+            Vector3.Dot(shootTarget.transform.forward, transform.forward) <= targetRelativeLookShootLimit) {
             if (firing) {
                 shootingPos += shootingDir * laserMoveSpeed * Time.deltaTime;
 
@@ -50,15 +76,20 @@ public class LaserEnemy : Character
                 shootTimer -= Time.deltaTime;
             } else if (cldtimer <= 0) {
                 cldtimer = shootCooldown;
-                shootingPos = target.transform.localPosition;
+                shootingPos = shootTarget.transform.localPosition + new Vector3(Random.Range(-1, 1), Random.Range(-1, 1)).normalized * shootStartDistance;
                 shootTimer = shootDuration;
                 firing = true;
+
+                shootingDir = (shootTarget.transform.localPosition - shootingPos).normalized;
 
                 laserObj = Instantiate(enemyLaser);
                 lr = laserObj.GetComponent<LineRenderer>();
 
-                laserObj.transform.rotation = Quaternion.LookRotation((shootingPos + target.transform.parent.position) - (transform.position + transform.forward * forwardOffset));
+                laserObj.transform.rotation = Quaternion.LookRotation((shootingPos + shootTarget.transform.parent.position) - (transform.position + transform.forward * forwardOffset)) * Quaternion.Euler(90, 0, 0);
             }
+        } else if (laserObj != null) {
+            Destroy(laserObj);
+            firing = false;
         }
     }
 
@@ -66,12 +97,12 @@ public class LaserEnemy : Character
     {
         if (laserObj != null) {
             laserObj.transform.localScale = new Vector3(laserObj.transform.lossyScale.x,
-                                                        ((transform.position + transform.forward * forwardOffset) - target.transform.position).magnitude,
+                                                        ((transform.position + transform.forward * forwardOffset) - shootTarget.transform.position).magnitude,
                                                         laserObj.transform.lossyScale.z) * 0.5f;
 
-            if (target != null) {
+            if (shootTarget != null) {
                 laserObj.transform.rotation = Quaternion.Slerp(laserObj.transform.rotation * Quaternion.Euler(-90, 0, 0),
-                                                               Quaternion.LookRotation((shootingPos + target.transform.parent.position) - (transform.position + transform.forward * forwardOffset)),
+                                                               Quaternion.LookRotation((shootingPos + shootTarget.transform.parent.position) - (transform.position + transform.forward * forwardOffset)),
                                                                rotationSpeed * Time.deltaTime) * Quaternion.Euler(90, 0, 0);
                 laserObj.transform.position = (transform.position + transform.forward * forwardOffset) + laserObj.transform.lossyScale.y * laserObj.transform.up;
 
@@ -87,6 +118,12 @@ public class LaserEnemy : Character
 
     public override void SetTarget(Character target)
     {
-        this.target = target;
+        shootTarget = target;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, minDistanceBetweenTarget);
     }
 }

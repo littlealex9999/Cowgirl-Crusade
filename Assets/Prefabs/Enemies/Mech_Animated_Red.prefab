@@ -327,14 +327,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3936413190566822026}
-  - component: {fileID: 2200095390610195808}
+  - component: {fileID: 6803085771171021017}
   - component: {fileID: 3936413190566822031}
   - component: {fileID: 3936413190566822027}
   - component: {fileID: 3936413190566822029}
   - component: {fileID: 3936413190566822028}
   - component: {fileID: 3936413190566822024}
   - component: {fileID: 3936413190566822025}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mech_Animated_Red
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -350,7 +350,7 @@ Transform:
   m_GameObject: {fileID: 3936413190566822030}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 5129167576512075730}
   - {fileID: 6176106625990840617}
@@ -366,7 +366,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2200095390610195808
+--- !u!114 &6803085771171021017
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -375,12 +375,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 3936413190566822030}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Script: {fileID: 11500000, guid: c92977525413a554f89660e97202a09b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 5
   sdmax: 0
+  destructionPrefab: {fileID: 196169950755043893, guid: 208c2f5712fc22741b91a38c5f3a84d0, type: 3}
+  healthMeter: {fileID: 0}
   bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -393,11 +396,10 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
-  spreadFrequency: 0.5
-  spread: 3
+  team: 2
+  explosionRadius: 6.3
+  damage: 6.87
 --- !u!114 &3936413190566822031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -410,9 +412,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8fe98dc968978544a0bceac64446f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inRange: 100
+  minRange: 100
   maxRange: 150
-  onTrigger: 1
+  onTrigger: 0
+  alsoSetShootTarget: 0
+  setCooldownTo: 0
+  setCooldownRandomRange: 0
+  cooldownMinimum: 0
 --- !u!114 &3936413190566822027
 MonoBehaviour:
   m_ObjectHideFlags: 0

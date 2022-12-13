@@ -16,6 +16,9 @@ public class PowerupStatsEditor : Editor
         serializedObject.FindProperty("health").floatValue = EditorGUILayout.FloatField("Health", serializedObject.FindProperty("health").floatValue);
         serializedObject.FindProperty("shield").floatValue = EditorGUILayout.FloatField("Shield", serializedObject.FindProperty("shield").floatValue);
 
+        serializedObject.FindProperty("maxHealth").floatValue = EditorGUILayout.FloatField("Max Health", serializedObject.FindProperty("maxHealth").floatValue);
+        serializedObject.FindProperty("maxShield").floatValue = EditorGUILayout.FloatField("Max Shield", serializedObject.FindProperty("maxShield").floatValue);
+
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Bullet Attributes", EditorStyles.boldLabel);
         serializedObject.FindProperty("bulletDamageAddition").floatValue = EditorGUILayout.FloatField("Bullet Damage Addition", serializedObject.FindProperty("bulletDamageAddition").floatValue);

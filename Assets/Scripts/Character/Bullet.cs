@@ -20,6 +20,8 @@ public class Bullet : MonoBehaviour
     private void Start()
     {
         //Debug.Log("Created Bullet");
+
+        // GameManager.instance.HitEnemy(); (To test hitmarker animation)
     }
 
     void Update()
@@ -63,26 +65,48 @@ public class Bullet : MonoBehaviour
     {
         Character character = other.gameObject.GetComponent<Character>();
 
-        if (character != null && character.getTeam != team) {
-            if (character.TakeDamage(dmg)) {
-
-                if (character.gameObject.CompareTag("Enemy"))
+        if (character != null) {
+            if(character.getTeam != team)
+            {
+                if (character.TakeDamage(dmg))
                 {
-                    GameManager.instance.HitEnemy();
+                    if (character.getTeam == Character.TEAMS.PLAYER)
+                    {
+                        // I have moved the ScreenShake() call to the TakeDamage() override in the Player script
+
+                    }
+                    else
+                    {
+                        GameManager.instance.HitEnemy();
+                    }
+
+                    DestroyBullet(true);
                 }
-
-
-                if(impact != null)
-                {
-                    Object.Instantiate(impact, transform.position, transform.rotation);
-                }
-
-                Destroy(gameObject);
             }
+
+        } else {
+            ShootableProp prop = other.gameObject.GetComponent<ShootableProp>();
+
+            if(prop != null)
+            {
+                prop.ShotByBullet(transform.position, transform.rotation);
+                DestroyBullet(false);
+            }
+
+
         }
+
     }
 
+    void DestroyBullet(bool playEffect)
+    {
+        if (impact != null && playEffect)
+        {
+            Object.Instantiate(impact, transform.position, transform.rotation);
+        }
 
+        Destroy(gameObject);
+    }
 
 
 }

@@ -8,20 +8,26 @@ public class Character : MonoBehaviour
     float health;
     float shield;
     [SerializeField, InspectorName("Max Health")] float hpmax = 50;
-    [SerializeField, InspectorName("Max Shield")] float sdmax = 20;
+    [SerializeField, InspectorName("Max Shield")] float sdmax = 0;
+    [SerializeField] GameObject destructionPrefab;
+    [SerializeField] bool destroyOnDeath = true;
+
+
+    [SerializeField] Meter healthMeter;
 
     float invincibleTime;
 
     [SerializeField] protected Bullet bullet;
+    [SerializeField] protected Transform shootOrigin;
     [SerializeField] float deleteBulletsAfterSeconds = 10;
     [SerializeField] protected float shootCooldown = 1;
     [SerializeField, InspectorName("Spawn Shoot Cooldown")] protected float cldtimer;
     [SerializeField] int maxSpecialProjectiles = 3;
     SpecialProjectile[] specialProjectiles;
 
-    [SerializeField] bool dontRotate;
-    [SerializeField] Vector2 turnMult = new Vector2(100, 100);
-    [SerializeField] float resetRotationStrength = 4f;
+    [SerializeField] protected bool dontRotate;
+    [SerializeField] protected Vector2 turnMult = new Vector2(100, 100);
+    [SerializeField] protected float resetRotationStrength = 4f;
 
     [SerializeField] int pointsGiven;
 
@@ -31,6 +37,9 @@ public class Character : MonoBehaviour
     [SerializeField] float bulletDamageMultiplier = 1;
     [SerializeField] float bulletSpeedAddition = 0;
     [SerializeField] float bulletSpeedMultiplier = 1;
+
+    EnemyAnimation hostileAnimation;
+    [Space] public bool hostile = false;
 
     List<PowerupStats> powerups = new List<PowerupStats>();
 
@@ -51,8 +60,15 @@ public class Character : MonoBehaviour
         health = hpmax;
         shield = sdmax;
 
+        hostileAnimation = GetComponent<EnemyAnimation>();
+
         posLastFrame = transform.position;
         specialProjectiles = new SpecialProjectile[maxSpecialProjectiles];
+
+        if (healthMeter != null) {
+            healthMeter.SetOwner(gameObject);
+        }
+
     }
 
     protected virtual void Update()
@@ -87,7 +103,8 @@ public class Character : MonoBehaviour
 
     protected virtual void OnDestroy()
     {
-        GameManager.instance.GetScore.AddPoints(pointsGiven);
+
+
     }
 
     #region stat setting
@@ -98,6 +115,24 @@ public class Character : MonoBehaviour
             health = hpmax;
         }
     }
+
+    public void GiveHealth(float value, bool setHealth = false)
+    {
+        if (setHealth) {
+            health = value;
+        } else {
+            health += value;
+        }
+
+        health = Mathf.Clamp(health, 0, hpmax);
+
+        if (healthMeter != null) {
+            healthMeter.UpdateMeter(health, hpmax, value);
+        }
+
+    }
+
+
 
     public void SetMaxShield(float value)
     {
@@ -110,6 +145,11 @@ public class Character : MonoBehaviour
     public void SetShootCooldown(float value)
     {
         shootCooldown = value;
+    }
+
+    public void SetCurrentCooldown(float value)
+    {
+        cldtimer = value;
     }
     #endregion
 
@@ -189,7 +229,12 @@ public class Character : MonoBehaviour
             }
             GameObject bulletRef = Instantiate(bullet.gameObject, parentOverride);
             Destroy(bulletRef, deleteBulletsAfterSeconds);
-            bulletRef.transform.position = transform.position;
+
+            if (shootOrigin != null) {
+                bulletRef.transform.position = shootOrigin.position;
+            } else {
+                bulletRef.transform.position = transform.position;
+            }
             bulletRef.transform.LookAt(shootToPoint);
             Bullet firedScript = bulletRef.GetComponent<Bullet>();
 
@@ -219,7 +264,7 @@ public class Character : MonoBehaviour
         }
     }
 
-    public virtual bool TakeDamage(float damage, float setInvincibleTime = 0)
+    public virtual bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
         if (invincibleTime > 0) {
             return false;
@@ -234,13 +279,39 @@ public class Character : MonoBehaviour
             damage -= shield;
             shield = 0;
             health -= damage;
+
+            health = Mathf.Clamp(health, 0, hpmax);
+
+            if (healthMeter != null) {
+                healthMeter.UpdateMeter(health, hpmax, -damage);
+            }
+
         }
 
         if (health <= 0) {
-            Destroy(gameObject);
+            if (addPointsIfKilled) {
+                GameManager.instance.GetScore.AddPoints(pointsGiven);
+            }
+
+            OnDeath();
+
         }
 
         return true;
+    }
+
+
+    public virtual void OnDeath()
+    {
+        if (destructionPrefab != null) {
+            GameObject d = Instantiate(destructionPrefab);
+            d.transform.position = transform.position;
+        }
+
+        if (destroyOnDeath) {
+            Destroy(gameObject);
+        }
+
     }
 
     public virtual void AddPowerup(PowerupStats stats)
@@ -248,11 +319,19 @@ public class Character : MonoBehaviour
         PowerupStats pus = Instantiate(stats);
 
         powerups.Add(pus);
+
+        SetMaxHealth(hpmax + pus.maxHealth);
+        SetMaxShield(sdmax + pus.maxShield);
+
         if (pus.health > 0) {
             health += pus.health;
+            if (health > hpmax)
+                health = hpmax;
         }
         if (pus.shield > 0) {
             shield += pus.shield;
+            if (shield > sdmax)
+                shield = sdmax;
         }
 
         if (pus.specialSpawn != null) {
@@ -268,6 +347,24 @@ public class Character : MonoBehaviour
     public virtual void SetTarget(Character target)
     {
         return; // change functionality with inheritance
+    }
+
+    public void EnterCombat()
+    {
+        hostile = true;
+
+        if (hostileAnimation != null) {
+            hostileAnimation.EnterCombat();
+        }
+    }
+
+    public void ExitCombat()
+    {
+        hostile = false;
+
+        if (hostileAnimation != null) {
+            hostileAnimation.ExitCombat();
+        }
     }
     #endregion
 }

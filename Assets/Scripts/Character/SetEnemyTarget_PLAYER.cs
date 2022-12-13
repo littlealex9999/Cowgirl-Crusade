@@ -5,44 +5,70 @@ using UnityEngine;
 public class SetEnemyTarget_PLAYER : MonoBehaviour
 {
     public Character[] enemiesToSet;
-    Enemy enemy;
+    Character enemy;
     public Character newTarget;
 
-    public bool justFigureOutWhoThePlayerIs;
+    public float setCooldownTo;
+    public float setCooldownRandomRange;
+    public float cooldownMinimum;
+
+    [Space] public bool justFigureOutWhoThePlayerIs;
 
     [SerializeField] bool triggeredByEnemy = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player" && enemiesToSet != null && !triggeredByEnemy) {
-            foreach (Enemy e in enemiesToSet) {
+            foreach (Character e in enemiesToSet) {
                 if (justFigureOutWhoThePlayerIs) {
-                    e.SetTarget(other.GetComponentInChildren<Player>());
-                    e.EnterCombat();
+                    Player player = other.GetComponentInChildren<Player>();
+                    e.SetTarget(player);
 
+                    if (player == null) {
+                        e.ExitCombat();
+                    } else {
+                        e.EnterCombat();
+                        e.SetCurrentCooldown(CalculateCooldown());
+                    }
                 } else {
                     e.SetTarget(newTarget);
-                    e.EnterCombat();
 
+                    if (newTarget == null) {
+                        e.ExitCombat();
+                    } else {
+                        e.EnterCombat();
+                        e.SetCurrentCooldown(CalculateCooldown());
+                    }
                 }
-
             }
+        } else if (other.tag == "Enemy" && triggeredByEnemy) {
+            enemy = other.gameObject.GetComponent<Character>();
+            if (justFigureOutWhoThePlayerIs) {
+                Player player = other.GetComponentInChildren<Player>();
+                enemy.SetTarget(player);
 
-        } else if (other.tag == "Enemy" && triggeredByEnemy)
-        {
-            enemy = other.gameObject.GetComponent<Enemy>();
-            if (justFigureOutWhoThePlayerIs)
-            {
-                enemy.SetTarget(GameManager.instance.GetPlayer.GetComponent<Character>());
-                enemy.EnterCombat();
-            }
-            else
-            {
+                if (player == null) {
+                    enemy.ExitCombat();
+                } else {
+                    enemy.EnterCombat();
+                    enemy.SetCurrentCooldown(CalculateCooldown());
+                }
+            } else {
                 enemy.SetTarget(newTarget);
-                enemy.EnterCombat();
-            }
 
+                if (newTarget == null) {
+                    enemy.ExitCombat();
+                } else {
+                    enemy.EnterCombat();
+                    enemy.SetCurrentCooldown(CalculateCooldown());
+                }
+            }
         }
     }
 
+
+    float CalculateCooldown()
+    {
+        return Mathf.Clamp(setCooldownTo + Random.Range(-setCooldownRandomRange, setCooldownRandomRange), cooldownMinimum, setCooldownTo + setCooldownRandomRange);
+    }
 }

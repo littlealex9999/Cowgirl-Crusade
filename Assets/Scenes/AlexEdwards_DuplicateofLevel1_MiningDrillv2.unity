@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingSettings: {fileID: 1638500362}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -214,7 +214,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -227,11 +231,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &6152845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,7 +571,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -578,11 +588,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &13815316
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1297,6 +1309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 879905146}
+  disableActually: 0
 --- !u!65 &34967535
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1334,7 +1347,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1347,11 +1364,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &35277933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1479,6 +1498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1236595009}
+  disableActually: 0
 --- !u!65 &40001910
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1683,7 +1703,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1696,11 +1720,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &41926921
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1971,7 +1997,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -1984,11 +2014,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &51097224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2299,63 +2331,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 479845029}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &66007612
-PrefabInstance:
+--- !u!4 &66007613
+Transform:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 364045645}
-    m_Modifications:
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.4372253
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.3218918
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.360755
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9998697
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.013634094
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.008642942
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00011785468
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 144.835
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388011170240851721, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_Name
-      value: GreenMech
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774665549}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &67703231
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2526,6 +2515,7 @@ MonoBehaviour:
   invincibilityDuration: 0
   playerOnly: 0
   destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!1001 &79406962
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2654,6 +2644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1049896259}
+  disableActually: 0
 --- !u!4 &81570674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
@@ -3312,7 +3303,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -3325,11 +3320,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &108691250
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3404,6 +3401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1459317914}
+  disableActually: 0
 --- !u!65 &114489216
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3441,7 +3439,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -3454,11 +3456,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &114549716
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4594,7 +4598,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -4607,11 +4615,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &153494320
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4948,6 +4958,36 @@ Transform:
   - {fileID: 1666763562}
   m_Father: {fileID: 1984087359}
   m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &155685405
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155685406}
+  m_Layer: 0
+  m_Name: GreenMech (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &155685406
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155685405}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2005473965}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &157993562 stripped
 Transform:
@@ -5511,6 +5551,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 729662095}
+  disableActually: 0
 --- !u!4 &179426806 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -5720,6 +5761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1359865602}
+  disableActually: 0
 --- !u!65 &189446279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7083,6 +7125,183 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &236976700
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 236976704}
+  - component: {fileID: 236976702}
+  - component: {fileID: 236976701}
+  - component: {fileID: 236976703}
+  m_Layer: 0
+  m_Name: HealthPickup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &236976701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107c323ad150f014e87e714f2666c2d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  powerupType: {fileID: 11400000, guid: a14d4a7cf05068a48a664128d8e82ecd, type: 2}
+  effect: {fileID: 0}
+  onTrigger: 1
+--- !u!82 &236976702
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 1
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &236976703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a049218ffa1d3be4baf6555f8e08f5cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpmax: 50
+  sdmax: 0
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
+  bullet: {fileID: 0}
+  shootOrigin: {fileID: 0}
+  deleteBulletsAfterSeconds: 10
+  shootCooldown: 1
+  cldtimer: 0
+  maxSpecialProjectiles: 3
+  dontRotate: 0
+  turnMult: {x: 100, y: 100}
+  resetRotationStrength: 4
+  pointsGiven: 0
+  bulletDamageAddition: 0
+  bulletDamageMultiplier: 1
+  bulletSpeedAddition: 0
+  bulletSpeedMultiplier: 1
+  hostile: 0
+  team: 0
+--- !u!4 &236976704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236976700}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.5719743, y: -0.52387303, z: 2.520951}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &237945862
 GameObject:
   m_ObjectHideFlags: 0
@@ -7457,7 +7676,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -7470,11 +7693,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &242838926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7853,7 +8078,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -7866,11 +8095,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &250293153
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8808,7 +9039,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -8821,11 +9056,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &287490461
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9689,7 +9926,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -9702,11 +9943,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &313018390
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9771,6 +10014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1621493009}
+  disableActually: 0
 --- !u!65 &313747131
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10185,6 +10429,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1101709522}
+  disableActually: 0
 --- !u!65 &322809270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10645,7 +10890,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -10658,11 +10907,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &327248120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10735,6 +10986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 619830782}
+  disableActually: 0
 --- !u!65 &328234567
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11035,6 +11287,49 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 1553299008}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &343989849
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343989851}
+  - component: {fileID: 343989850}
+  m_Layer: 0
+  m_Name: Test CameraShake
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &343989850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343989849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b29af4a065e49c4990e0ffb13f3f023, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &343989851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343989849}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3847.4602, y: 318.36127, z: -2333.418}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &344627615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11448,8 +11743,8 @@ Transform:
   m_LocalPosition: {x: -676.5947, y: 738.9861, z: 237.26721}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1016311270}
-  - {fileID: 1002950579}
+  - {fileID: 865683303}
+  - {fileID: 1799779205}
   m_Father: {fileID: 805714202}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11670,63 +11965,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 1177132221}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &371286522
-PrefabInstance:
+--- !u!4 &371286523
+Transform:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2005473965}
-    m_Modifications:
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9998697
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.013634094
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.008642942
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00011785468
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 144.835
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388011170240851721, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_Name
-      value: GreenMech (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890188492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &372288230 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -12041,7 +12293,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -12054,11 +12310,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &377371647
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12763,6 +13021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 909309842}
+  disableActually: 0
 --- !u!65 &406125952
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13021,7 +13280,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -13034,11 +13297,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &409389685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13559,6 +13824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1929589576}
+  disableActually: 0
 --- !u!65 &427672258
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13919,7 +14185,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -13932,11 +14202,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &440981151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14347,7 +14619,7 @@ Transform:
   - {fileID: 1528600510}
   - {fileID: 731405385}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &449590002
 PrefabInstance:
@@ -14757,6 +15029,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1981954908}
+  disableActually: 0
 --- !u!65 &460057096
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15094,7 +15367,7 @@ Transform:
   - {fileID: 1627116663}
   - {fileID: 1505812984}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &473339223
 PrefabInstance:
@@ -15482,6 +15755,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1977183792}
+  disableActually: 0
 --- !u!65 &481484758
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16223,7 +16497,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -16236,11 +16514,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &500635527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16272,63 +16552,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 1799940953}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &505370929
-PrefabInstance:
+--- !u!4 &505370930
+Transform:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 364045645}
-    m_Modifications:
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.53
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9998697
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.013634094
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.008642942
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00011785468
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 144.835
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388011170240851721, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_Name
-      value: GreenMech (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778657806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &506548690
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16422,7 +16659,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -16435,11 +16676,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &508460667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16490,7 +16733,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -16503,11 +16750,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &511859210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16580,6 +16829,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 697313684}
+  disableActually: 0
 --- !u!65 &512915250
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16639,6 +16889,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 623212561}
+  disableActually: 0
 --- !u!65 &515747879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16763,7 +17014,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -16776,11 +17031,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &519682112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16886,63 +17143,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
   m_PrefabInstance: {fileID: 32824865}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &523915614
-PrefabInstance:
+--- !u!1 &523431308
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 2005473965}
-    m_Modifications:
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.4372253
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.3218918
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.360755
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9998697
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.013634094
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.008642942
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00011785468
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 144.835
-      objectReference: {fileID: 0}
-    - target: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6388011170240851721, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-      propertyPath: m_Name
-      value: GreenMech
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 523915615}
+  m_Layer: 0
+  m_Name: Recovery GameObject (523915615)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523915615
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523431308}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &525373401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17167,7 +17397,7 @@ Transform:
   m_Children:
   - {fileID: 1388176303}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &532891635 stripped
 Transform:
@@ -17298,6 +17528,7 @@ MonoBehaviour:
   invincibilityDuration: 0
   playerOnly: 0
   destroyOnHit: 0
+  givePointsOnKill: 0
 --- !u!65 &536289082
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17492,11 +17723,6 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
   m_PrefabInstance: {fileID: 2047199886}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &553160778 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 371286522}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &554637106
 PrefabInstance:
@@ -17722,7 +17948,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -17735,11 +17965,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &559992754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19379,7 +19611,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -19392,11 +19628,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &627951791
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19907,7 +20145,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -19920,11 +20162,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &650608165
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -20702,6 +20946,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1023368405538822784, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 8714434840823097403}
+    - target: {fileID: 1023368405538822785, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.89990234
+      objectReference: {fileID: 0}
     - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -20712,7 +20964,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_AnchorMax.x
@@ -20809,6 +21061,42 @@ PrefabInstance:
     - target: {fileID: 7592670276787055375, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360604500927404998, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360604500927404998, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 8714434840823097403}
+    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: negativeColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: negativeColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: negativeColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: positiveColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: positiveColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: positiveColor.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
@@ -20925,7 +21213,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -20938,11 +21230,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &684297767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21437,7 +21731,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -21450,11 +21748,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &702029918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22244,13 +22544,8 @@ Transform:
   m_Children:
   - {fileID: 225073936}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -4.885, y: -26.033, z: 2.397}
---- !u!4 &736235916 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 523915614}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &736236070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
@@ -22867,7 +23162,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -22880,11 +23179,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &762321068
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -23378,7 +23679,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -23391,11 +23696,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &789051229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28638,7 +28945,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!1 &805714201
 GameObject:
@@ -28788,6 +29095,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1236595009}
+  disableActually: 0
 --- !u!65 &810744721
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28870,6 +29178,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!114 &814920158 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3188715330647892087, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+  m_PrefabInstance: {fileID: 4500529941452975245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45e653bab7fb20e499bda25e1b646fea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &815118298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29264,6 +29583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1306026854}
+  disableActually: 0
 --- !u!65 &822553025
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29397,6 +29717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 391290836}
+  disableActually: 0
 --- !u!65 &827692078
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29503,7 +29824,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -29516,11 +29841,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &828821158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29667,6 +29994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 416258040}
+  disableActually: 0
 --- !u!65 &831820697
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30262,6 +30590,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
   m_PrefabInstance: {fileID: 1604049555}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &865683302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 865683303}
+  m_Layer: 0
+  m_Name: GreenMech (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &865683303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865683302}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 364045645}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &867030197
 GameObject:
   m_ObjectHideFlags: 0
@@ -30728,6 +31086,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1309703211}
+  disableActually: 0
 --- !u!65 &882654345
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30820,6 +31179,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 275643605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &890188492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 371286523}
+  m_Layer: 0
+  m_Name: Recovery GameObject (371286523)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &890676240
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30934,7 +31309,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -30947,11 +31326,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &890676245
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31080,6 +31461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 939148555}
+  disableActually: 0
 --- !u!65 &896904565
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -31511,7 +31893,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -31524,11 +31910,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &904138948
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31718,7 +32106,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -31731,11 +32123,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &906898292
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -31950,7 +32344,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -31963,11 +32361,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &912096415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32633,7 +33033,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -32646,11 +33050,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &943361142
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32772,6 +33178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 129457050}
+  disableActually: 0
 --- !u!65 &946066727
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33539,6 +33946,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 622377618}
+  disableActually: 0
 --- !u!65 &974839892
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33825,7 +34233,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -33838,11 +34250,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &991679663
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34013,7 +34427,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -34026,11 +34444,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &999252787
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34061,11 +34481,6 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
   m_PrefabInstance: {fileID: 1354277682}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1002950579 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 505370929}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1005019609 stripped
 Transform:
@@ -34187,6 +34602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1381030870}
+  disableActually: 0
 --- !u!65 &1007081153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34614,11 +35030,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
---- !u!4 &1016311270 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6047515150341027251, guid: 31b89b25130cef14b8b11409dc63da82, type: 3}
-  m_PrefabInstance: {fileID: 66007612}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1017316024 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -34743,7 +35154,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -34756,11 +35171,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1018677311
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -34889,6 +35306,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1799873813}
+  disableActually: 0
 --- !u!65 &1025594886
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35208,7 +35626,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -35221,11 +35643,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1033915288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35687,6 +36111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 766134470}
+  disableActually: 0
 --- !u!65 &1042125988
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35814,7 +36239,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -35827,11 +36256,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1043102886
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35914,6 +36345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 763863046}
+  disableActually: 0
 --- !u!1 &1049896259
 GameObject:
   m_ObjectHideFlags: 0
@@ -36037,6 +36469,36 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &1052871530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1052871531}
+  m_Layer: 0
+  m_Name: GreenMech (1) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1052871531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052871530}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2005473965}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1053658820
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36442,7 +36904,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   powerupType: {fileID: 11400000, guid: f4fa0e0b4d069bd479c7d08dbb15c0a2, type: 2}
   effect: {fileID: 0}
-  amount: 1
+  onTrigger: 1
 --- !u!135 &1067225424
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36513,11 +36975,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067225421}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3971.4, y: 298.2, z: -2201}
-  m_LocalScale: {x: 20, y: 20, z: 20}
+  m_LocalPosition: {x: -3937, y: 298.2, z: -2246}
+  m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1068538298 stripped
 Transform:
@@ -36822,7 +37284,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1092393636 stripped
 Transform:
@@ -37094,7 +37556,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -37107,11 +37573,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1098432931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37353,6 +37821,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1662214753}
+  disableActually: 0
 --- !u!65 &1104956961
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37467,7 +37936,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -37480,11 +37953,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1106766955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37550,7 +38025,7 @@ Transform:
   - {fileID: 480998412}
   - {fileID: 249137486}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1108166710
 PrefabInstance:
@@ -37701,6 +38176,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1001 &1118405754
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4104
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 162
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1889
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5876207035522447317, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6541385579153010031, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
+      propertyPath: m_Name
+      value: HealthBalloon
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 03ebac198ec33ba439253fb5f13eef67, type: 3}
 --- !u!1001 &1120129441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37932,7 +38464,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -37945,11 +38481,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1122508103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38100,7 +38638,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -38113,11 +38655,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1127342042
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38297,7 +38841,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -38310,11 +38858,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1130891377
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38460,7 +39010,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -38473,11 +39027,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1134076234
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38755,6 +39311,17 @@ Transform:
   m_Father: {fileID: 1107433540}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1148991844 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8176365706523824205, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062721a67fcef12469b0229c2466ada8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1149969713
 GameObject:
   m_ObjectHideFlags: 0
@@ -38801,6 +39368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 578225049}
+  disableActually: 0
 --- !u!65 &1149969716
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39067,6 +39635,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 1587083766}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1159928509 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 325001897902409219, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062721a67fcef12469b0229c2466ada8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1161692298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -39186,7 +39765,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -39199,11 +39782,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1162882735
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40313,7 +40898,7 @@ Transform:
   - {fileID: 724648905}
   - {fileID: 1793331571}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1189924242
 PrefabInstance:
@@ -40896,7 +41481,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -40909,11 +41498,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1202759359
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -40951,7 +41542,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -40964,11 +41559,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1206892258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41109,7 +41706,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -41122,11 +41723,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1207278922
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41318,7 +41921,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -41331,11 +41938,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1208660503
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41534,7 +42143,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -41547,11 +42160,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1215920413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41711,6 +42326,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 194835056}
+  disableActually: 0
 --- !u!4 &1221809534 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -42247,6 +42863,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!114 &1239785918 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7757243432058252171, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1239978051 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -42502,7 +43129,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -42515,11 +43146,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1243298933
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42634,7 +43267,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -42647,11 +43284,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1246828976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43262,7 +43901,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -43275,11 +43918,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1269662223
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -44400,6 +45045,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 581456879}
+  disableActually: 0
 --- !u!65 &1301649356
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -44776,6 +45422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1177085237}
+  disableActually: 0
 --- !u!65 &1317919526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45176,7 +45823,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -45189,11 +45840,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1339210050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45334,7 +45987,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -45347,11 +46004,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1340433025
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45484,7 +46143,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -45497,11 +46160,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1342116452
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51386,7 +52051,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -51399,11 +52068,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1381031215
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -51699,7 +52370,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -51712,11 +52387,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1389125868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52221,6 +52898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 445218856}
+  disableActually: 0
 --- !u!65 &1428584719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57381,6 +58059,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1952745584}
+  disableActually: 0
 --- !u!65 &1460709520
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -57871,7 +58550,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -57884,11 +58567,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1477473103
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -57968,7 +58653,7 @@ Transform:
   - {fileID: 1038835899}
   - {fileID: 1322996192}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1486367342
 PrefabInstance:
@@ -58423,7 +59108,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: f34d36a62a616634ab6c17d86915fe98, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f34d36a62a616634ab6c17d86915fe98, type: 3}
       propertyPath: m_LocalScale.x
@@ -59220,7 +59905,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -59233,11 +59922,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1548851905
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -59565,7 +60256,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -59578,11 +60273,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1557997937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59931,6 +60628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 36252149}
+  disableActually: 0
 --- !u!65 &1567976990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -60254,7 +60952,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -60267,11 +60969,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1584551762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60496,7 +61200,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -60509,11 +61217,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1591768912
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61068,7 +61778,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -61081,11 +61795,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1609648300
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61267,6 +61983,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 796310224}
+  disableActually: 0
 --- !u!65 &1612818599
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -61651,7 +62368,7 @@ Transform:
   - {fileID: 1229502934}
   - {fileID: 1289950227}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1627116662
 GameObject:
@@ -61850,7 +62567,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -61863,11 +62584,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1629362512
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61997,6 +62720,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 364045643}
+  disableActually: 0
 --- !u!65 &1637851071
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -62079,6 +62803,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!850595691 &1638500362
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 3
+  m_GIWorkflowMode: 1
+  m_EnableBakedLightmaps: 1
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 1
+  m_LightmapMaxSize: 1024
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_TextureCompression: 1
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_ExportTrainingData: 0
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_FinalGather: 0
+  m_FinalGatherRayCount: 256
+  m_FinalGatherFiltering: 1
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 512
+  m_PVREnvironmentSampleCount: 256
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRMinBounces: 1
+  m_PVREnvironmentMIS: 1
+  m_PVRFilteringMode: 1
+  m_PVRDenoiserTypeDirect: 1
+  m_PVRDenoiserTypeIndirect: 1
+  m_PVRDenoiserTypeAO: 1
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 5
+  m_PVRFilteringGaussRadiusAO: 2
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1001 &1639301845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62846,7 +63631,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -62859,11 +63648,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1662305627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63005,6 +63796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1770264871}
+  disableActually: 0
 --- !u!65 &1666763564
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63486,6 +64278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 154061455}
+  disableActually: 0
 --- !u!65 &1678540455
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -63687,7 +64480,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -63700,11 +64497,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1680860885
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -63900,6 +64699,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 2005473964}
+  disableActually: 0
 --- !u!65 &1691029272
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -65260,7 +66060,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -65273,11 +66077,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1739376410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65924,7 +66730,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -65937,11 +66747,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1756111286
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66061,7 +66873,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -66074,11 +66890,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1761211185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66156,6 +66974,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1931096521}
+  disableActually: 0
 --- !u!65 &1764222885
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -66482,6 +67301,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 675546326}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1774665549
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 66007613}
+  m_Layer: 0
+  m_Name: Recovery GameObject (66007613)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &1778302665
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66551,6 +67386,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &1778657806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 505370930}
+  m_Layer: 0
+  m_Name: Recovery GameObject (505370930)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &1786939801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67140,7 +67991,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -67153,11 +68008,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1798753103
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67171,6 +68028,36 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.4948311
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1799779204
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1799779205}
+  m_Layer: 0
+  m_Name: GreenMech (1) (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1799779205
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1799779204}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 364045645}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1799873813
 GameObject:
   m_ObjectHideFlags: 0
@@ -67550,6 +68437,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1259398480}
+  disableActually: 0
 --- !u!65 &1810370957
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -67824,7 +68712,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -67837,11 +68729,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1831064448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68109,7 +69003,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -68122,11 +69020,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1838144948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68628,7 +69528,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -68641,11 +69545,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1856986397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68706,7 +69612,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -68719,11 +69629,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1870356340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68865,6 +69777,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 55230132}
+  disableActually: 0
 --- !u!65 &1871274028
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -69363,7 +70276,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -69376,11 +70293,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1880289326
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69579,7 +70498,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -69592,11 +70515,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1882950039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -69899,6 +70824,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
+--- !u!114 &1891124020 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6619f2695b467cf48999adb9125451b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1892032504 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
@@ -70468,7 +71404,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -70481,11 +71421,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1918590086
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70607,7 +71549,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -70620,11 +71566,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1920793538
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71144,7 +72092,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -71157,11 +72109,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1936386915
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -71774,7 +72728,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -71787,11 +72745,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1955898581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72153,7 +73113,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -72166,11 +73130,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &1966240538
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -72589,7 +73555,7 @@ Transform:
   - {fileID: 126805018}
   - {fileID: 654120431}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1984900740
 PrefabInstance:
@@ -72823,7 +73789,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -72836,11 +73806,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1986802167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73051,7 +74023,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -73064,11 +74040,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!114 &1999616348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73209,7 +74187,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -73222,11 +74204,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &2000004983
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -73337,8 +74321,8 @@ Transform:
   m_LocalPosition: {x: -676.5947, y: 738.9861, z: 237.26721}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 736235916}
-  - {fileID: 553160778}
+  - {fileID: 1052871531}
+  - {fileID: 155685406}
   m_Father: {fileID: 1796380048}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73621,7 +74605,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -73634,11 +74622,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &2018492810
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -73698,6 +74688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1235479466}
+  disableActually: 0
 --- !u!65 &2019650324
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -73979,6 +74970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1324927432}
+  disableActually: 0
 --- !u!65 &2033986843
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -74311,7 +75303,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -74324,11 +75320,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &2039111297
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -74733,7 +75731,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -74746,11 +75748,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &2043466064
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -75041,7 +76045,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -75054,11 +76062,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &2052897019
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -75207,6 +76217,7 @@ MonoBehaviour:
   - {fileID: 2045047483}
   - {fileID: 126805016}
   - {fileID: 654120429}
+  disableActually: 0
 --- !u!65 &2063044780
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75469,6 +76480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToEnable:
   - {fileID: 1722505199}
+  disableActually: 0
 --- !u!65 &2069402162
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -75665,7 +76677,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 1
   sdmax: 20
+  destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 1
   cldtimer: 0
@@ -75678,11 +76694,13 @@ MonoBehaviour:
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
-  team: 2
-  myMoveScript: {fileID: 0}
   hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
+  lookAtTarget: 1
 --- !u!135 &2073783658
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -77556,7 +78574,7 @@ PrefabInstance:
       objectReference: {fileID: 931766622}
     - target: {fileID: 2792323576082638389, guid: ad9b1abe066b6bd498e6e3542117a6ed, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2792323576082638389, guid: ad9b1abe066b6bd498e6e3542117a6ed, type: 3}
       propertyPath: m_LocalPosition.x
@@ -77796,11 +78814,39 @@ PrefabInstance:
     - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 8714434840823097399}
+      objectReference: {fileID: 8714434840823097403}
     - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
       propertyPath: hitmarker
       value: 
       objectReference: {fileID: 618666104}
+    - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
+      propertyPath: scoreText
+      value: 
+      objectReference: {fileID: 1239785918}
+    - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 4500529941452975246}
+    - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
+      propertyPath: scoreObject
+      value: 
+      objectReference: {fileID: 11400000, guid: 4176ad256850897448f534d91a080ace, type: 2}
+    - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
+      propertyPath: damageScreen
+      value: 
+      objectReference: {fileID: 1159928509}
+    - target: {fileID: 2281143386403777341, guid: 970f243267189d240874e322af3592cb, type: 3}
+      propertyPath: virtualCamera
+      value: 
+      objectReference: {fileID: 814920158}
+    - target: {fileID: 7535630379375572624, guid: 970f243267189d240874e322af3592cb, type: 3}
+      propertyPath: frameRate
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7535630379375572624, guid: 970f243267189d240874e322af3592cb, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 970f243267189d240874e322af3592cb, type: 3}
 --- !u!1001 &4500529941452975245
@@ -77810,6 +78856,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 735972389}
     m_Modifications:
+    - target: {fileID: 3380712343592983584, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_AmplitudeGain
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3380712343592983584, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_FrequencyGain
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4500529941233416066, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_Name
       value: PlayerCart
@@ -77862,8 +78916,71 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: hud
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: healthMeter
+      value: 
+      objectReference: {fileID: 1891124020}
+    - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: destroyOnDeath
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.00011253357
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.0199814
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -28.870018
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000000010477379
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.0000044479966
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -7.566996e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642243, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: far clip plane
+      value: 3000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8793959080400111493, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: damageScreen
+      value: 
+      objectReference: {fileID: 1148991844}
+    - target: {fileID: 8793959080400111493, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: healthScreen
+      value: 
+      objectReference: {fileID: 1159928509}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+--- !u!114 &4500529941452975246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8793959080400111493, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+  m_PrefabInstance: {fileID: 4500529941452975245}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca3f98c2b25a3c4cbe62c93e30eb385, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5795977204454687624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -77926,11 +79043,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
   m_PrefabInstance: {fileID: 5795977204454687624}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8714434840823097399 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5087656296109049018, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+--- !u!114 &8714434840823097403 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
   m_PrefabInstance: {fileID: 4500529941452975245}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 796a3014f28d2ab429d06a5fc0b97e9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8714434842249483247 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5087656297432694626, guid: 8a134b3b9b138204da783648184583b3, type: 3}

@@ -9,6 +9,7 @@ public class PlayRandomizedSound : MonoBehaviour
 {
     private AudioSource audioSource;
 
+    [SerializeField] bool dontDestroy = false;
 
     [SerializeField] AudioClip[] soundVariations;
 
@@ -49,12 +50,13 @@ public class PlayRandomizedSound : MonoBehaviour
         if(audioSource.clip != null)
         {
             audioSource.Play();
-            Destroy(gameObject, audioSource.clip.length);
+            DestroySound(audioSource.clip.length);
+
         }
         else
         {
-           // Debug.Log("There were no audio clips assigned to " + gameObject.name + "'s SoundVariations array or audiosource.");
-            Destroy(gameObject);
+            // Debug.Log("There were no audio clips assigned to " + gameObject.name + "'s SoundVariations array or audiosource.");
+            DestroySound();
         }
         
     }
@@ -68,6 +70,15 @@ public class PlayRandomizedSound : MonoBehaviour
     private void RandomizePitch()
     {
         audioSource.pitch = Random.Range(1 - pitchRandomization, 1 + pitchRandomization);
+    }
+
+
+    private void DestroySound(float delay = 0f)
+    {
+        if (!dontDestroy)
+        {
+            Destroy(gameObject, delay);
+        }
     }
 
 }

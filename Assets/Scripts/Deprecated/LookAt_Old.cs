@@ -20,8 +20,8 @@ public class LookAt_Old : MonoBehaviour
     {
         if(target == null)
         {
-            target = GameManager.instance.GetPlayer;
-            Debug.Log(target.name);
+            target = GameManager.instance.GetPlayer.gameObject;
+            //Debug.Log(target.name);
         }
             
     }
