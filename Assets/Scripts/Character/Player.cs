@@ -13,7 +13,7 @@ public class Player : Character
     public float shootDistance = 10;
     public float bulletHomingSpeed = 100;
     
-    WeaponHeat weaponHeat;
+    // WeaponHeat weaponHeat;
 
     Vector2 boundaries;
     Camera mainCamera;
@@ -63,12 +63,6 @@ public class Player : Character
             Move();
             Shoot();
         }
-    }
-
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
-        
     }
     
     #endregion

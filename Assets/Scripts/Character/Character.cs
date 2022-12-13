@@ -14,7 +14,7 @@ public class Character : MonoBehaviour
 
 
     [SerializeField] Meter healthMeter;
-    WeaponHeat weaponHeat;
+    protected WeaponHeat weaponHeat;
 
     float invincibleTime;
 
