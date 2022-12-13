@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3133994762783413723}
   m_LocalRotation: {x: -8.1490725e-10, y: -0.0000044181943, z: 0.0000000010477379, w: -1}
-  m_LocalPosition: {x: 0.00011253357, y: 4.0199814, z: -28.870018}
+  m_LocalPosition: {x: 0.00011253357, y: 4.0199814, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1461410500963786471}
@@ -54,7 +54,7 @@ MonoBehaviour:
   m_LookAt: {fileID: 0}
   m_Follow: {fileID: 0}
   m_Lens:
-    FieldOfView: 41
+    FieldOfView: 80
     OrthographicSize: 5
     NearClipPlane: 0.3
     FarClipPlane: 3000
@@ -82,7 +82,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthScreen: {fileID: 0}
   damageScreen: {fileID: 0}
-  maxScreenShake: 10
 --- !u!1 &4500529941233416066
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,6 +157,7 @@ GameObject:
   - component: {fileID: 5087656296109049017}
   - component: {fileID: 8962463204560775039}
   - component: {fileID: 2790391298359284452}
+  - component: {fileID: 7826332080732346958}
   m_Layer: 0
   m_Name: Player Ship
   m_TagString: Player
@@ -179,6 +179,7 @@ Transform:
   - {fileID: 7410667292621627158}
   - {fileID: 8091244507441345688}
   - {fileID: 2673066736451641203}
+  - {fileID: 7002697664973240924}
   m_Father: {fileID: 5087656297432694625}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -197,8 +198,10 @@ MonoBehaviour:
   hpmax: 100
   sdmax: 0
   destructionPrefab: {fileID: 0}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
+  shootOrigin: {fileID: 7002697664973240924}
   deleteBulletsAfterSeconds: 2
   shootCooldown: 0.2
   cldtimer: 0
@@ -213,9 +216,10 @@ MonoBehaviour:
   bulletSpeedMultiplier: 100
   hostile: 0
   team: 1
-  moveSpeed: 10
+  moveSpeed: 15
   boundaryMoveMultipliers: {x: 0.8, y: 0.6}
-  shootDistance: 500
+  virtualCam: {fileID: 8793959080400111493}
+  shootDistance: 800
   bulletHomingSpeed: 1000
 --- !u!136 &8962463204560775039
 CapsuleCollider:
@@ -247,6 +251,27 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &7826332080732346958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5087656296109049018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63ed9c046b1bc7c4db20c280521a6508, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponMeter: {fileID: 0}
+  heatLimit: 100
+  shotCost: 5
+  standardCooldown: 10
+  overheatedCooldown: 30
+  overheatedDuration: 5
+  overheatColor: {r: 1, g: 0, b: 0, a: 1}
+  overheat_Text: {fileID: 0}
+  coolingDown: 0
 --- !u!1 &5087656297432694626
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +338,36 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &7541108786903225003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7002697664973240924}
+  m_Layer: 0
+  m_Name: ShootingOrigin
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7002697664973240924
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7541108786903225003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0, y: -0.227, z: 3.816}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5087656295666236576}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8407589935284642245
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,7 +396,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8407589935284642245}
   m_LocalRotation: {x: -0.0000000010477379, y: -0.0000044479966, z: -7.566996e-10, w: -1}
-  m_LocalPosition: {x: 0.000113487244, y: 4.0199814, z: -28.870014}
+  m_LocalPosition: {x: 0.000187397, y: 4.0199895, z: -19.000013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5087656297432694625}
@@ -372,7 +427,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 3000
-  field of view: 41
+  field of view: 80
   orthographic: 0
   orthographic size: 5
   m_Depth: -1

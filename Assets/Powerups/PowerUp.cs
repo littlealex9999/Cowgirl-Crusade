@@ -28,7 +28,7 @@ public class PowerUp : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                Character player = other.gameObject.GetComponentInChildren<Character>();
+                Player player = other.gameObject.GetComponentInChildren<Player>();
 
                ActivatePowerup(player);
             }
@@ -37,7 +37,7 @@ public class PowerUp : MonoBehaviour
         
     }
 
-    public void ActivatePowerup(Character player)
+    public void ActivatePowerup(Player player)
     {
         player.AddPowerup(powerupType);
 
@@ -48,6 +48,13 @@ public class PowerUp : MonoBehaviour
             Instantiate(effect, gameObject.transform.position, Quaternion.identity);
         }
         
+
+        // This is a temporary fix, because the scriptable object isn't healing the player
+        if (powerupType.health > 0)
+        {
+            GameManager.instance.GetPlayer.GiveHealth(powerupType.health);
+        }
+
 
         Destroy(gameObject);
     }

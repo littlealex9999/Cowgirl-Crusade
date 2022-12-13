@@ -20,6 +20,6 @@ public class ShootablePowerup : Character
     {
         base.OnDeath();
         Debug.Log("Balloon destroyed");
-        powerup.ActivatePowerup(GameManager.instance.GetPlayer.GetComponent<Character>());
+        powerup.ActivatePowerup(GameManager.instance.GetPlayer);
     }
 }

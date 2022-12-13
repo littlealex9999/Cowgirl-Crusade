@@ -26,7 +26,7 @@ public class GameOver : MonoBehaviour
 
         if (canResume)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 GameManager.instance.Respawn();
             }

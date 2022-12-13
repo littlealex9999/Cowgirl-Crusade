@@ -6,25 +6,40 @@ using DG.Tweening;
 
 public class Meter : MonoBehaviour
 {
+    Player player;
+    
     Image meter;
 
-    GameObject owner;
+    [SerializeField] WeaponHeat weaponHeat;
+    bool triggerOverheat = false;
+    bool triggerCooldown = false;
+
+    Character owner;
 
     Color defaultColor;
 
+    private enum MeterType { Health, Shield, WeaponHeat };
+
+    [SerializeField] private MeterType meterType;
+
     [SerializeField] Color negativeColor, positiveColor;
+
+    bool changeColor = true;
 
     bool animating = false;
     bool triggerDeath = false;
 
     float timer = 0f;
     float duration = 0.5f;
+    float change = 0f;
 
     private void Start()
     {
         meter = GetComponent<Image>();
+
         
         defaultColor = meter.color;
+
     }
 
 
@@ -36,7 +51,10 @@ public class Meter : MonoBehaviour
 
             if (timer >= duration)
             {
-                ResetMeterColor(0.1f);
+                if (changeColor)
+                {
+                    ResetMeterColor(0.1f);
+                }
 
                 if (triggerDeath)
                 {
@@ -44,53 +62,109 @@ public class Meter : MonoBehaviour
                     triggerDeath = false;
                 }
 
+
+                if (weaponHeat != null)
+                {
+                    if (triggerOverheat)
+                    {
+                        weaponHeat.Overheat();
+                        triggerOverheat = false;
+                    }
+
+                    if (triggerCooldown)
+                    {
+                        weaponHeat.coolingDown = true;
+                    }
+                    
+
+                }
+                
+                animating = false;
+
             }
         }
+
     }
 
-    public void SetOwner(GameObject owner) {
+    public void SetOwner(Character owner) {
         this.owner = owner;
+        player = GameManager.instance.GetPlayer;
 
     }
 
-
-    public void UpdateMeter(float currentValue, float maxValue, float change, float duration = 0.5f)
+    public void UpdateMeter(float currentValue, float maxValue, float change, bool changeColor = true, float duration = 0.5f)
     {
-        
+
         float percentage = Mathf.Clamp(currentValue / maxValue, 0, 1);
 
         timer = 0f;
         this.duration = duration;
+        this.change = change;
+        this.changeColor = changeColor;
 
         animating = true;
         
-        if (change < 0)
-        {
-            meter.DOColor(negativeColor, duration);
-            
-        }
-        else
-        {
-            meter.DOColor(positiveColor, duration);
-        }
 
-        if (percentage <= 0)
+        if (changeColor)
         {
-            if (owner.GetComponent<Player>() != null)
+            if (change < 0)
             {
-                triggerDeath = true;
+                SetMeterColor(negativeColor, duration);
+            }
+            else
+            {
+                SetMeterColor(positiveColor, duration);
             }
         }
+        
 
-        Debug.Log(percentage);
         meter.DOFillAmount(percentage, duration);
+
+        CheckConditions(percentage);
         
     }
 
-
-    void ResetMeterColor(float duration)
+    void CheckConditions(float percentage)
     {
-        animating = false;
+        if (weaponHeat != null)
+        {
+            if(change > 0)
+            {
+                weaponHeat.coolingDown = false;
+                triggerCooldown = true;
+            }
+            
+            if (percentage >= 1)
+            {
+                triggerOverheat = true;
+                weaponHeat.Overheated = true;
+            }
+
+        }
+        else
+        {
+            if (meterType == MeterType.Health)
+            {
+                if (percentage <= 0)
+                {
+                    if (owner == player)
+                    {
+                        triggerDeath = true;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    public void SetMeterColor(Color color, float duration = 0.5f)
+    {
+        meter.DOColor(color, duration);
+    }
+    
+    public void ResetMeterColor(float duration = 0.5f)
+    {
         meter.DOColor(defaultColor, duration);
     }
 

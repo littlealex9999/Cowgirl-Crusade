@@ -7,30 +7,21 @@ using DG.Tweening;
 
 public class VirtualCamera : MonoBehaviour
 {
-    static public VirtualCamera instance { get; private set; }
     CinemachineVirtualCamera virtualCamera;
     CinemachineBasicMultiChannelPerlin multiChannelPerlin;
 
+    float amplitude, intensity;
+    float duration;
     float shakingTime = 0f;
-    bool shaking = false;
-    bool fadeShake = true;
+    bool fade;
 
     [SerializeField] ShowImage healthScreen, damageScreen;
-    [SerializeField] float maxScreenShake = 10f;
+    // [SerializeField] float maxScreenShake = 10f;
 
 
     // Start is called before the first frame update
     void Start()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
+    { 
         virtualCamera = GetComponent<CinemachineVirtualCamera>();
         multiChannelPerlin = virtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
     }
@@ -38,70 +29,91 @@ public class VirtualCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(shaking)
+        if(shakingTime > 0)
         {
-            if (fadeShake)
-            {
-                multiChannelPerlin.m_AmplitudeGain -= (Time.deltaTime / shakingTime);
-
-                if(multiChannelPerlin.m_AmplitudeGain <= 0)
-                {
-                    shaking = false;
-                }
-
-            }
-            else
-            {
-                shakingTime -= Time.deltaTime;
-
-                if (shakingTime <= 0)
-                {
-                    StopShaking();
-                }
-            }
-            
+            ScreenShakeCooldown();
         }
         
     }
 
-    public void ScreenShake(float amplitude, float duration, bool damageFeedback = false, bool fade = true)
+    public void ScreenShake(float amplitude, float intensity, float duration, bool fade = true)
     {
-        multiChannelPerlin.m_AmplitudeGain += amplitude;
-        multiChannelPerlin.m_AmplitudeGain = Mathf.Clamp(multiChannelPerlin.m_AmplitudeGain, 0, maxScreenShake);
-        
-        if(duration > shakingTime)
+        if (shakingTime > 0)
+        {
+            if (amplitude >= this.amplitude)
+            {
+                ActivateShake(amplitude, intensity, duration, fade);
+            }
+
+        }else
+        {
+            ActivateShake(amplitude, intensity, duration, fade);
+        }
+
+    }
+
+    void ActivateShake(float amplitude, float intensity, float duration, bool fade = true)
+    {
+        this.amplitude = amplitude;
+        this.duration = duration;
+        this.fade = fade;
+        this.intensity = intensity;
+
+        multiChannelPerlin.m_AmplitudeGain = amplitude;
+        multiChannelPerlin.m_FrequencyGain = intensity;
+
+        // multiChannelPerlin.m_AmplitudeGain = Mathf.Clamp(multiChannelPerlin.m_AmplitudeGain, 0, maxScreenShake);
+
+
+        if (duration > shakingTime)
         {
             shakingTime = duration;
         }
 
-        if (damageFeedback)
-        {
-            healthScreen.HideImage();
-            damageScreen.DisplayImage(0, 0.1f, duration);
-        }
 
-        shaking = true;
-
-        fadeShake = fade;
     }
 
-
-    public void DoTweenShake()
+    void ScreenShakeCooldown()
     {
-        //transform.DOShakePosition();
+        shakingTime -= Time.deltaTime;
+
+        if (fade)
+        {
+            multiChannelPerlin.m_AmplitudeGain = Mathf.Lerp(amplitude, 0f, 1 - (shakingTime / duration));
+            multiChannelPerlin.m_FrequencyGain = Mathf.Lerp(intensity, 0f, 1 - (shakingTime / duration));
+
+            if (multiChannelPerlin.m_AmplitudeGain <= 0)
+            {
+                shakingTime = 0f;
+            }
+
+        }
+        else
+        {
+            // multiChannelPerlin.m_AmplitudeGain -= (Time.deltaTime / shakingTime);
+
+            if (shakingTime <= 0)
+            {
+                multiChannelPerlin.m_AmplitudeGain = 0f;
+                multiChannelPerlin.m_FrequencyGain = 0f;
+                shakingTime = 0f;
+
+            }
+        }
     }
 
-    public void HealthScreen(float duration)
+
+    public void HealthScreen(float duration = 0.5f)
     {
         damageScreen.HideImage();
-        healthScreen.DisplayImage(0, 0.1f, duration);
+        healthScreen.DisplayImage(0, 0.3f, duration);
     }
 
-    void StopShaking()
+    public void DamageScreen(float duration = 0.5f)
     {
-        shaking = false;
-        multiChannelPerlin.m_AmplitudeGain = 0f;
-        
+        healthScreen.HideImage();
+        damageScreen.DisplayImage(0, 0.3f, duration);
+
     }
 
 }
