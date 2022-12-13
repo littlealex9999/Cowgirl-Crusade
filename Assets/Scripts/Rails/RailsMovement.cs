@@ -49,7 +49,7 @@ public class RailsMovement : MonoBehaviour
             }
         } 
         
-        if (loopAtEnd && movingToIndex >= pathToFollow.getPath.Length) {
+        if (pathToFollow != null && loopAtEnd && movingToIndex >= pathToFollow.getPath.Length) {
             movingToIndex = 0;
         }
     }

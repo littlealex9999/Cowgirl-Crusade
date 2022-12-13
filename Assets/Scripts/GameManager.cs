@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] Text scoreText;
     [SerializeField] Text multiplierText;
 
+    [SerializeField] Hitmarker hitmarker;
+
     public Score GetScore { get { return scoreObject; } }
 
     public GameObject GetPlayer { get { return player; } }
@@ -58,6 +60,11 @@ public class GameManager : MonoBehaviour
     public void ScreenShake(float amount, float duration)
     {
 
+    }
+
+    public void HitEnemy()
+    {
+        hitmarker.HitEnemy();
     }
 
 }

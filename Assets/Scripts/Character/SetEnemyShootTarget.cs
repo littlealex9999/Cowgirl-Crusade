@@ -8,7 +8,7 @@ public class SetEnemyShootTarget : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Enemy enemy = other.GetComponent<Enemy>();
+        Character enemy = other.GetComponent<Character>();
         if (enemy != null) {
             enemy.SetTarget(target);
         }

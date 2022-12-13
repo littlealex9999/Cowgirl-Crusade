@@ -41,7 +41,7 @@ public class Enemy : Character
         }
     }
 
-    void Shoot()
+    private void Shoot()
     {
         if (shootTarget != null) {
             Vector3 spreadVector = new Vector3();
@@ -63,7 +63,7 @@ public class Enemy : Character
         }
     }
 
-    public void SetTarget(Character chara)
+    public override void SetTarget(Character chara)
     {
         shootTarget = chara;
     }
