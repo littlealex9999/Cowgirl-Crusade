@@ -229,6 +229,7 @@ public class Character : MonoBehaviour
             
             if(weaponHeat != null)
             {
+                GameManager.instance.ScreenShake(1, 1, 0.5f);
                 weaponHeat.AddWeaponHeat();
             }
 

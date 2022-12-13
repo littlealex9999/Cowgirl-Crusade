@@ -12,7 +12,6 @@ public class WeaponHeat : MonoBehaviour
     [SerializeField] float shotCost = 5f;
     [SerializeField] float standardCooldown = 10f;
     [SerializeField] float overheatedCooldown = 10f;
-    [SerializeField] float overheatedDuration = 5f;
 
     float cooldown;
 

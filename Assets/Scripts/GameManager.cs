@@ -93,6 +93,10 @@ public class GameManager : MonoBehaviour
         hitmarker.DisplayImage(0.3f, 0.3f, 0.3f);
     }
 
+    public void ScreenShake(float amplitude, float intensity, float duration, bool fade = true)
+    {
+        virtualCam.ScreenShake(amplitude, intensity, duration, fade);
+    }
 
     private void OnApplicationQuit()
     {

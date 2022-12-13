@@ -12,6 +12,7 @@ public class Meter : MonoBehaviour
 
     [SerializeField] WeaponHeat weaponHeat;
     bool triggerOverheat = false;
+    bool triggerCooldown = false;
 
     Character owner;
 
@@ -30,6 +31,7 @@ public class Meter : MonoBehaviour
 
     float timer = 0f;
     float duration = 0.5f;
+    float change = 0f;
 
     private void Start()
     {
@@ -69,7 +71,11 @@ public class Meter : MonoBehaviour
                         triggerOverheat = false;
                     }
 
-                    weaponHeat.coolingDown = true;
+                    if (triggerCooldown)
+                    {
+                        weaponHeat.coolingDown = true;
+                    }
+                    
 
                 }
                 
@@ -93,6 +99,7 @@ public class Meter : MonoBehaviour
 
         timer = 0f;
         this.duration = duration;
+        this.change = change;
         this.changeColor = changeColor;
 
         animating = true;
@@ -121,9 +128,16 @@ public class Meter : MonoBehaviour
     {
         if (weaponHeat != null)
         {
+            if(change > 0)
+            {
+                weaponHeat.coolingDown = false;
+                triggerCooldown = true;
+            }
+            
             if (percentage >= 1)
             {
                 triggerOverheat = true;
+                weaponHeat.Overheated = true;
             }
 
         }

@@ -10,12 +10,13 @@ public class VirtualCamera : MonoBehaviour
     CinemachineVirtualCamera virtualCamera;
     CinemachineBasicMultiChannelPerlin multiChannelPerlin;
 
+    float amplitude, intensity;
+    float duration;
     float shakingTime = 0f;
-    bool shaking = false;
-    bool fadeShake = true;
+    bool fade;
 
     [SerializeField] ShowImage healthScreen, damageScreen;
-    [SerializeField] float maxScreenShake = 10f;
+    // [SerializeField] float maxScreenShake = 10f;
 
 
     // Start is called before the first frame update
@@ -28,54 +29,79 @@ public class VirtualCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(shaking)
+        if(shakingTime > 0)
         {
-            if (fadeShake)
-            {
-                multiChannelPerlin.m_AmplitudeGain -= (Time.deltaTime / shakingTime);
-
-                if(multiChannelPerlin.m_AmplitudeGain <= 0)
-                {
-                    shaking = false;
-                }
-
-            }
-            else
-            {
-                shakingTime -= Time.deltaTime;
-
-                if (shakingTime <= 0)
-                {
-                    StopShaking();
-                }
-            }
-            
+            ScreenShakeCooldown();
         }
         
     }
 
-    public void ScreenShake(float amplitude, float duration, bool fade = true)
+    public void ScreenShake(float amplitude, float intensity, float duration, bool fade = true)
     {
+        if (shakingTime > 0)
+        {
+            if (amplitude >= this.amplitude)
+            {
+                ActivateShake(amplitude, intensity, duration, fade);
+            }
+
+        }else
+        {
+            ActivateShake(amplitude, intensity, duration, fade);
+        }
+
+    }
+
+    void ActivateShake(float amplitude, float intensity, float duration, bool fade = true)
+    {
+        this.amplitude = amplitude;
+        this.duration = duration;
+        this.fade = fade;
+        this.intensity = intensity;
+
         multiChannelPerlin.m_AmplitudeGain = amplitude;
-        multiChannelPerlin.m_AmplitudeGain = Mathf.Clamp(multiChannelPerlin.m_AmplitudeGain, 0, maxScreenShake);
-        
-        if(duration > shakingTime)
+        multiChannelPerlin.m_FrequencyGain = intensity;
+
+        // multiChannelPerlin.m_AmplitudeGain = Mathf.Clamp(multiChannelPerlin.m_AmplitudeGain, 0, maxScreenShake);
+
+
+        if (duration > shakingTime)
         {
             shakingTime = duration;
         }
 
-        
 
-        shaking = true;
-
-        fadeShake = fade;
     }
 
-
-    public void DoTweenShake()
+    void ScreenShakeCooldown()
     {
-        //transform.DOShakePosition();
+        shakingTime -= Time.deltaTime;
+
+        if (fade)
+        {
+            multiChannelPerlin.m_AmplitudeGain = Mathf.Lerp(amplitude, 0f, 1 - (shakingTime / duration));
+            multiChannelPerlin.m_FrequencyGain = Mathf.Lerp(intensity, 0f, 1 - (shakingTime / duration));
+
+            if (multiChannelPerlin.m_AmplitudeGain <= 0)
+            {
+                shakingTime = 0f;
+            }
+
+        }
+        else
+        {
+            // multiChannelPerlin.m_AmplitudeGain -= (Time.deltaTime / shakingTime);
+
+            if (shakingTime <= 0)
+            {
+                multiChannelPerlin.m_AmplitudeGain = 0f;
+                multiChannelPerlin.m_FrequencyGain = 0f;
+                shakingTime = 0f;
+
+            }
+        }
     }
+
 
     public void HealthScreen(float duration = 0.5f)
     {
@@ -88,13 +114,6 @@ public class VirtualCamera : MonoBehaviour
         healthScreen.HideImage();
         damageScreen.DisplayImage(0, 0.3f, duration);
 
-    }
-
-    void StopShaking()
-    {
-        shaking = false;
-        multiChannelPerlin.m_AmplitudeGain = 0f;
-        
     }
 
 }

@@ -159,10 +159,9 @@ public class Player : Character
     public override bool TakeDamage(float damage, float setInvincibleTime = 0, bool addPointsIfKilled = true)
     {
         base.TakeDamage(damage, setInvincibleTime, addPointsIfKilled);
-        // VirtualCamera.instance.ScreenShake(5, 0.5f, true);
+        GameManager.instance.ScreenShake(10, 5, 0.8f);
         virtualCam.DamageScreen(0.5f);
        
-
         return base.TakeDamage(damage, setInvincibleTime);
     }
 

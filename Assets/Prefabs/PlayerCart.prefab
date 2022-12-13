@@ -82,7 +82,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthScreen: {fileID: 0}
   damageScreen: {fileID: 0}
-  maxScreenShake: 10
 --- !u!1 &4500529941233416066
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +267,7 @@ MonoBehaviour:
   heatLimit: 100
   shotCost: 5
   standardCooldown: 10
-  overheatedCooldown: 25
+  overheatedCooldown: 30
   overheatedDuration: 5
   overheatColor: {r: 1, g: 0, b: 0, a: 1}
   overheat_Text: {fileID: 0}
