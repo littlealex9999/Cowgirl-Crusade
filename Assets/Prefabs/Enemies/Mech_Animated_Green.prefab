@@ -1121,14 +1121,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 5
   sdmax: 0
-  destructionPrefab: {fileID: 2872564179593449948, guid: 208c2f5712fc22741b91a38c5f3a84d0, type: 3}
+  destructionPrefab: {fileID: 854444678757937977, guid: a8782d8e10adddb4397a8755b2cc3e57, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
-  cldtimer: 3
+  cldtimer: 5
   maxSpecialProjectiles: 3
   dontRotate: 0
   turnMult: {x: 100, y: 100}
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 40
+  bulletSpeedMultiplier: 25
   hostile: 0
   team: 2
   targetRelativeLookShootLimit: -0.4
@@ -1162,8 +1162,8 @@ MonoBehaviour:
   onTrigger: 0
   alsoSetShootTarget: 1
   setCooldownTo: 5
-  setCooldownRandomRange: 4
-  cooldownMinimum: 2
+  setCooldownRandomRange: 5
+  cooldownMinimum: 5
 --- !u!114 &3936413190566822027
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -105,8 +105,8 @@ MonoBehaviour:
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   shootOrigin: {fileID: 7467830518106236752}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 5
+  cldtimer: 5
   maxSpecialProjectiles: 3
   dontRotate: 0
   turnMult: {x: 100, y: 100}
@@ -115,7 +115,7 @@ MonoBehaviour:
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 55
+  bulletSpeedMultiplier: 25
   hostile: 0
   team: 2
   targetRelativeLookShootLimit: -0.1
