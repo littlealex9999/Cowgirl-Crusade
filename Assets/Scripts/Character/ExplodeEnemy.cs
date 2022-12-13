@@ -9,16 +9,14 @@ public class ExplodeEnemy : Character
     [SerializeField] float explosionRadius;
     [SerializeField] float damage;
 
-    protected override void Start()
-    {
-        base.Start();
+    #region Unity functions
+    //void Start()
+    //{
+    //    OnStart();
+    //}
 
-        myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
-    }
-
-    protected override void OnDestroy()
+    void OnDestroy()
     {
-        base.OnDestroy();
         if (myMoveScript.leader.tag == "Player") {
             Player.RemoveAttacker();
         }
@@ -41,4 +39,15 @@ public class ExplodeEnemy : Character
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, explosionRadius);
     }
+    #endregion
+
+    #region Custom Unity Overrides
+    protected override void OnStart()
+    {
+        base.OnStart();
+        myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
+    }
+
+
+    #endregion
 }

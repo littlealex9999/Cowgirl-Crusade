@@ -13,18 +13,36 @@ public class BasicEnemy : Character
     [SerializeField] float spread = 3;
     [SerializeField, Space] bool lookAtTarget = true;
 
-    protected override void Start()
-    {
-        base.Start();
+    #region Unity Functions
+    //void Start()
+    //{
+    //    OnStart();
+    //}
 
+    //void Update()
+    //{
+    //    OnUpdate();
+    //}
+
+    void OnDestroy()
+    {
+        if (myMoveScript!= null && myMoveScript.leader.tag == "Player") {
+            Player.RemoveAttacker();
+        }
+    }
+    #endregion
+
+    #region Custom Unity Overrides
+    protected override void OnStart()
+    {
+        base.OnStart();
         myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
         dontRotate = lookAtTarget;
     }
 
-    void Update()
+    protected override void OnUpdate()
     {
-        base.Update();
-
+        base.OnUpdate();
         if (hostile) {
             Shoot();
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(shootTarget.transform.position - transform.position), resetRotationStrength * Time.deltaTime);
@@ -32,14 +50,7 @@ public class BasicEnemy : Character
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(transform.parent.forward), resetRotationStrength * Time.deltaTime);
         }
     }
-
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
-        if (myMoveScript!= null && myMoveScript.leader.tag == "Player") {
-            Player.RemoveAttacker();
-        }
-    }
+    #endregion
 
     private void Shoot()
     {

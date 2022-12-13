@@ -18,10 +18,22 @@ public class Player : Character
 
     static int numEnemiesAttacking;
 
-    void Start()
-    {
-        base.Start();
+    #region Unity Functions
+    //void Start()
+    //{
+    //    OnStart();
+    //}
 
+    //void Update()
+    //{
+    //    OnUpdate();
+    //}
+    #endregion
+
+    #region Custom Unity Overrides
+    protected override void OnStart()
+    {
+        base.OnStart();
         mainCamera = Camera.main;
         initialOffset = mainCamera.transform.localPosition;
         CalculateBoundaries();
@@ -29,19 +41,13 @@ public class Player : Character
         numEnemiesAttacking = 0;
     }
 
-    protected override void Update()
+    protected override void OnUpdate()
     {
-        base.Update();
-
+        base.OnUpdate();
         Move();
         Shoot();
     }
-
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
-        
-    }
+    #endregion
 
     void Move()
     {
