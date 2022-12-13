@@ -6,6 +6,8 @@ public class FollowCursor : MonoBehaviour
 {
     void Update()
     {
-        transform.position = Input.mousePosition;
+        Vector3 pos = Input.mousePosition;
+        pos.z = 0;
+        transform.position = pos;
     }
 }

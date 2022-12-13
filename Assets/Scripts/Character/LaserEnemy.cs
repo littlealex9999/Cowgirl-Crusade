@@ -52,7 +52,10 @@ public class LaserEnemy : Character
     protected override void OnStart()
     {
         base.OnStart();
-        myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
+
+        if (transform.parent != null) {
+            myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
+        }
 
         lr = GetComponent<LineRenderer>();
     }
@@ -108,7 +111,7 @@ public class LaserEnemy : Character
     {
         if (laserObj != null) {
             laserObj.transform.localScale = new Vector3(laserObj.transform.lossyScale.x,
-                                                        ((transform.position + transform.forward * forwardOffset) - shootTarget.transform.position).magnitude,
+                                                        ((transform.position + transform.forward * forwardOffset) - shootTarget.transform.position).magnitude * 2,
                                                         laserObj.transform.lossyScale.z) * 0.5f;
 
             if (shootTarget != null) {
