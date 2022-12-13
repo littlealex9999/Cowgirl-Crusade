@@ -1128,7 +1128,7 @@ MonoBehaviour:
   shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
   shootCooldown: 5
-  cldtimer: 3
+  cldtimer: 5
   maxSpecialProjectiles: 3
   dontRotate: 0
   turnMult: {x: 100, y: 100}
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   bulletDamageAddition: 0
   bulletDamageMultiplier: 1
   bulletSpeedAddition: 0
-  bulletSpeedMultiplier: 40
+  bulletSpeedMultiplier: 25
   hostile: 0
   team: 2
   targetRelativeLookShootLimit: -0.4
@@ -1162,8 +1162,8 @@ MonoBehaviour:
   onTrigger: 0
   alsoSetShootTarget: 1
   setCooldownTo: 5
-  setCooldownRandomRange: 4
-  cooldownMinimum: 2
+  setCooldownRandomRange: 5
+  cooldownMinimum: 5
 --- !u!114 &3936413190566822027
 MonoBehaviour:
   m_ObjectHideFlags: 0
