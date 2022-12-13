@@ -751,6 +751,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 32570940}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &27504503
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 27504504}
+  - component: {fileID: 27504506}
+  - component: {fileID: 27504505}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 7
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &27504504
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27504503}
+  m_LocalRotation: {x: -0, y: -0.5358604, z: -0, w: 0.84430665}
+  m_LocalPosition: {x: -1381.8075, y: 390.7822, z: -531.53436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: -64.805, z: 0}
+--- !u!65 &27504505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27504503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &27504506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27504503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 1214435343}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
 --- !u!1001 &28632077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1953,6 +2018,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2627826395354968124, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
   m_PrefabInstance: {fileID: 59816267}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &59816269 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474969860901185131, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+  m_PrefabInstance: {fileID: 59816267}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &61007310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4562,6 +4638,72 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 2146161017}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &155958154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 155958155}
+  - component: {fileID: 155958157}
+  - component: {fileID: 155958156}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &155958155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155958154}
+  m_LocalRotation: {x: -0, y: -0.11100877, z: -0, w: 0.9938194}
+  m_LocalPosition: {x: 327.3925, y: 386.6022, z: -2024.2443}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: -12.747, z: 0}
+--- !u!114 &155958156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155958154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 342378533}
+  - {fileID: 740636934}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 0
+  triggeredByEnemy: 0
+--- !u!65 &155958157
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 155958154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &157993562 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -7699,6 +7841,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &275049277 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 275049276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &275643605
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9308,6 +9461,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+--- !u!114 &311282814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474969860901185131, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+  m_PrefabInstance: {fileID: 311282813}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &312477982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -10761,6 +10925,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &342378533 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 342378532}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &342617251 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -17227,6 +17402,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
   m_PrefabInstance: {fileID: 395362681}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &530955580
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 530955581}
+  - component: {fileID: 530955583}
+  - component: {fileID: 530955582}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 8
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &530955581
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530955580}
+  m_LocalRotation: {x: -0, y: 0.16450642, z: -0, w: 0.98637605}
+  m_LocalPosition: {x: -584.4675, y: 388.8222, z: -203.07437}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 18.937, z: 0}
+--- !u!114 &530955582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530955580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 948652878}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 0
+  triggeredByEnemy: 0
+--- !u!65 &530955583
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530955580}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &532448743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18140,6 +18380,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: e1dfc5c99b8e7fb4b80083b69fa63f7d, type: 3}
   m_PrefabInstance: {fileID: 558130895}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &558904502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 558904503}
+  - component: {fileID: 558904505}
+  - component: {fileID: 558904504}
+  m_Layer: 0
+  m_Name: Light Turret Trigger 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &558904503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558904502}
+  m_LocalRotation: {x: -0, y: -0.13243088, z: -0, w: 0.9911923}
+  m_LocalPosition: {x: 546.63245, y: 389.6822, z: -1262.6444}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -15.22, z: 0}
+--- !u!114 &558904504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558904502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 311282814}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
+--- !u!65 &558904505
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558904502}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &559235421 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -18421,6 +18726,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &575753381
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 575753382}
+  - component: {fileID: 575753384}
+  - component: {fileID: 575753383}
+  m_Layer: 0
+  m_Name: Light Turret Trigger 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &575753382
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575753381}
+  m_LocalRotation: {x: -0, y: 0.21739116, z: -0, w: 0.9760846}
+  m_LocalPosition: {x: -931.7175, y: 391.4722, z: -1955.3944}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 25.112, z: 0}
+--- !u!114 &575753383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575753381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 935174344}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
+--- !u!65 &575753384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575753381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &578225049
 GameObject:
   m_ObjectHideFlags: 0
@@ -18960,27 +19330,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 993257530439582138, guid: fb7ab584d466ced42a77b89a7ef17743, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1438.098
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 993257530439582138, guid: fb7ab584d466ced42a77b89a7ef17743, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1438.0978
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 993257530439582138, guid: fb7ab584d466ced42a77b89a7ef17743, type: 3}
       propertyPath: m_LocalScale.z
-      value: 719.049
+      value: 600
       objectReference: {fileID: 0}
     - target: {fileID: 993257530439582138, guid: fb7ab584d466ced42a77b89a7ef17743, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 352.40622
+      value: 343
       objectReference: {fileID: 0}
     - target: {fileID: 993257530439582138, guid: fb7ab584d466ced42a77b89a7ef17743, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1965.4117
+      value: 1122
       objectReference: {fileID: 0}
     - target: {fileID: 993257530439582138, guid: fb7ab584d466ced42a77b89a7ef17743, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2791.1406
+      value: 1942
       objectReference: {fileID: 0}
     - target: {fileID: 993257530439582138, guid: fb7ab584d466ced42a77b89a7ef17743, type: 3}
       propertyPath: m_LocalRotation.w
@@ -20762,6 +21132,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &656501590 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 656501589}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &657447618
 GameObject:
   m_ObjectHideFlags: 0
@@ -20989,6 +21370,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 1037524837}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &670368449
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 670368450}
+  - component: {fileID: 670368452}
+  - component: {fileID: 670368451}
+  m_Layer: 0
+  m_Name: Light Turrter Trigger 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &670368450
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670368449}
+  m_LocalRotation: {x: -0, y: 0.20104606, z: -0, w: 0.97958183}
+  m_LocalPosition: {x: 644.89246, y: 386.4922, z: -652.09436}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 23.196, z: 0}
+--- !u!65 &670368451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670368449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &670368452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670368449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 59816269}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
 --- !u!4 &670979565 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -21667,8 +22113,8 @@ Transform:
   m_Children:
   - {fileID: 948652877}
   - {fileID: 74897911}
-  - {fileID: 337658633}
   - {fileID: 2009954981}
+  - {fileID: 337658633}
   - {fileID: 657604319}
   - {fileID: 439315975}
   - {fileID: 1730125204}
@@ -22601,6 +23047,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &740636934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 740636933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &749002541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7805468667392474374, guid: 1c80fbc47378b8c4ba50f77b266b1010, type: 3}
@@ -23067,6 +23524,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &769269530 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 769269529}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &769506885 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -23326,6 +23794,71 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &780809583
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 780809584}
+  - component: {fileID: 780809586}
+  - component: {fileID: 780809585}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &780809584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780809583}
+  m_LocalRotation: {x: -0, y: 0.04590535, z: -0, w: 0.99894583}
+  m_LocalPosition: {x: -185.59753, y: 392.1022, z: -1183.1144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 5.262, z: 0}
+--- !u!65 &780809585
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780809583}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &780809586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 780809583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 919850497}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
 --- !u!1001 &785720656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25456,6 +25989,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: e1dfc5c99b8e7fb4b80083b69fa63f7d, type: 3}
   m_PrefabInstance: {fileID: 585012871}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &865679595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 865679596}
+  - component: {fileID: 865679598}
+  - component: {fileID: 865679597}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &865679596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865679595}
+  m_LocalRotation: {x: -0, y: 0.31629878, z: -0, w: 0.94865966}
+  m_LocalPosition: {x: -1284.0575, y: 385.96225, z: -1655.2344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 36.878, z: 0}
+--- !u!65 &865679597
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865679595}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &865679598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 865679595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 275049277}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
 --- !u!1001 &866363718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26967,6 +27565,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &919850497 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 919850496}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &921216166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27171,6 +27780,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+--- !u!114 &922226648 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474969860901185131, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+  m_PrefabInstance: {fileID: 922226647}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &922726734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27387,6 +28007,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+--- !u!114 &935174344 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474969860901185131, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+  m_PrefabInstance: {fileID: 935174343}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &937419067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27715,6 +28346,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4810672487077503261, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
   m_PrefabInstance: {fileID: 948652876}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &948652878 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 948652876}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &948653307
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31377,6 +32019,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &1071417593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1071417594}
+  - component: {fileID: 1071417596}
+  - component: {fileID: 1071417595}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1071417594
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071417593}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1870.3375, y: 380.2622, z: -1401.8944}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071417595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071417593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 656501590}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
+--- !u!65 &1071417596
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071417593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1071628716
 GameObject:
   m_ObjectHideFlags: 0
@@ -36273,6 +36980,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+--- !u!114 &1202540892 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474969860901185131, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+  m_PrefabInstance: {fileID: 1202540891}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1207076796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36808,6 +37526,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &1214435343 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 1214435342}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1216467750
 GameObject:
   m_ObjectHideFlags: 0
@@ -37667,6 +38396,71 @@ Transform:
   m_Father: {fileID: 805714202}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 184.946, z: 0}
+--- !u!1 &1245009331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1245009332}
+  - component: {fileID: 1245009334}
+  - component: {fileID: 1245009333}
+  m_Layer: 0
+  m_Name: Light Turret Trigger 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1245009332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245009331}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -314.03754, y: 389.2182, z: -2072.5586}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1245009333
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245009331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1245009334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1245009331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 2014591156}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
 --- !u!1001 &1247514359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38091,6 +38885,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
   m_PrefabInstance: {fileID: 1263818812}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1264627633
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1264627634}
+  - component: {fileID: 1264627636}
+  - component: {fileID: 1264627635}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1264627634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264627633}
+  m_LocalRotation: {x: -0, y: -0.42354348, z: -0, w: 0.90587574}
+  m_LocalPosition: {x: 1275.7024, y: 383.1822, z: -1714.0244}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: -50.117, z: 0}
+--- !u!65 &1264627635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264627633}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1264627636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264627633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 1645956171}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
 --- !u!4 &1265452141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -53797,6 +54656,7 @@ Transform:
   m_Children:
   - {fileID: 691704385}
   - {fileID: 96613566}
+  - {fileID: 1971757058}
   m_Father: {fileID: 447109629}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -57376,6 +58236,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+--- !u!114 &1645956171 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3173035001731423455, guid: 277e8fd9cea83a049a9b35d70a2b9588, type: 3}
+  m_PrefabInstance: {fileID: 1645956170}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1649889080 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
@@ -61405,6 +62276,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3936413190566822026, guid: 39e2cb2d7eacb3c48b52e30a9dd81f84, type: 3}
   m_PrefabInstance: {fileID: 1550841010}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1760639530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1760639531}
+  - component: {fileID: 1760639533}
+  - component: {fileID: 1760639532}
+  m_Layer: 0
+  m_Name: Heavy Turret Trigger 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1760639531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760639530}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2582.4175, y: 380.86218, z: -1246.6744}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1760639532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760639530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1760639533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1760639530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 769269530}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
 --- !u!4 &1763285869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -66935,6 +67871,50 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
   m_PrefabInstance: {fileID: 963846301}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1971757057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1971757058}
+  m_Layer: 0
+  m_Name: Turret Triggers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1971757058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971757057}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2127764348}
+  - {fileID: 575753382}
+  - {fileID: 1245009332}
+  - {fileID: 558904503}
+  - {fileID: 2087478128}
+  - {fileID: 670368450}
+  - {fileID: 1760639531}
+  - {fileID: 1071417594}
+  - {fileID: 865679596}
+  - {fileID: 155958155}
+  - {fileID: 1264627634}
+  - {fileID: 780809584}
+  - {fileID: 27504504}
+  - {fileID: 530955581}
+  m_Father: {fileID: 1521561073}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972701889
 GameObject:
   m_ObjectHideFlags: 0
@@ -68487,6 +69467,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+--- !u!114 &2014591156 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4474969860901185131, guid: 1d06c204c08df0a49866621152c2d8b2, type: 3}
+  m_PrefabInstance: {fileID: 2014591155}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2015376415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -69368,6 +70359,7 @@ GameObject:
   - component: {fileID: 2051637103}
   - component: {fileID: 2051637102}
   - component: {fileID: 2051637104}
+  - component: {fileID: 2051637105}
   m_Layer: 0
   m_Name: Boss Trigger
   m_TagString: Untagged
@@ -69434,13 +70426,32 @@ MonoBehaviour:
   enemiesToSet:
   - {fileID: 6974786721204259729}
   - {fileID: 802886539721510071}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 5
+  setCooldownRandomRange: 5
+  cooldownMinimum: 5
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
+--- !u!114 &2051637105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051637100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
   - {fileID: 5672964238371257553}
   - {fileID: 2520301879478202386}
   newTarget: {fileID: 383443928}
-  setCooldownTo: 1
-  setCooldownRandomRange: 1
-  cooldownMinimum: 1
-  justFigureOutWhoThePlayerIs: 0
+  setCooldownTo: 5
+  setCooldownRandomRange: 10
+  cooldownMinimum: 7
+  justFigureOutWhoThePlayerIs: 1
   triggeredByEnemy: 0
 --- !u!1001 &2052914782
 PrefabInstance:
@@ -70353,6 +71364,71 @@ Transform:
   m_Father: {fileID: 1796380048}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 169.847, z: 0}
+--- !u!1 &2087478127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2087478128}
+  - component: {fileID: 2087478130}
+  - component: {fileID: 2087478129}
+  m_Layer: 0
+  m_Name: Light Turret Trigger 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2087478128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087478127}
+  m_LocalRotation: {x: -0, y: 0.10877329, z: -0, w: 0.9940666}
+  m_LocalPosition: {x: -686.08057, y: 389.9712, z: -1052.2214}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 12.489, z: 0}
+--- !u!114 &2087478129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087478127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 922226648}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
+--- !u!65 &2087478130
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087478127}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2088452803
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71571,6 +72647,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &2127764347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2127764348}
+  - component: {fileID: 2127764350}
+  - component: {fileID: 2127764349}
+  m_Layer: 0
+  m_Name: Light Turret Trigger 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2127764348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127764347}
+  m_LocalRotation: {x: -0, y: -0.22350933, z: -0, w: 0.9747018}
+  m_LocalPosition: {x: -3143.2974, y: 380.3022, z: -1355.5344}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1971757058}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -25.83, z: 0}
+--- !u!114 &2127764349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127764347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4eb0c7c7b09a094588172d33979f362, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemiesToSet:
+  - {fileID: 1202540892}
+  newTarget: {fileID: 383443928}
+  setCooldownTo: 3
+  setCooldownRandomRange: 3
+  cooldownMinimum: 3
+  justFigureOutWhoThePlayerIs: 1
+  triggeredByEnemy: 0
+--- !u!65 &2127764350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127764347}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 15, z: 15}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &2128085054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72486,9 +73627,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1434406705601773274, guid: 56bee2bcffbbb1f40a0f8084eb963e21, type: 3}
+      propertyPath: hpmax
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 1964178144881123201, guid: 56bee2bcffbbb1f40a0f8084eb963e21, type: 3}
+      propertyPath: hpmax
+      value: 150
+      objectReference: {fileID: 0}
     - target: {fileID: 1964178144881123203, guid: 56bee2bcffbbb1f40a0f8084eb963e21, type: 3}
       propertyPath: m_Name
       value: Boss_Mech
+      objectReference: {fileID: 0}
+    - target: {fileID: 4438587936446204314, guid: 56bee2bcffbbb1f40a0f8084eb963e21, type: 3}
+      propertyPath: hpmax
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5898180498842518873, guid: 56bee2bcffbbb1f40a0f8084eb963e21, type: 3}
+      propertyPath: hpmax
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8648898999453104636, guid: 56bee2bcffbbb1f40a0f8084eb963e21, type: 3}
+      propertyPath: hpmax
+      value: 150
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56bee2bcffbbb1f40a0f8084eb963e21, type: 3}
