@@ -32,13 +32,12 @@ public class RGB_Engine : MonoBehaviour
     public IEnumerator CycleColors()
     {
         int i = 0;
-        while (true) { // I'm very sorry
+        while (!false) { // I'm very sorry
             for (float interpolant = 0; interpolant < 1f; interpolant += 0.001f * cycleSpeed) {
                 particles.startColor = Color.Lerp(colors[i % 7], colors[(i + 1) % 7], interpolant);
                 yield return null;
             }
             ++i;
         }
-        yield return null;
     }
 }

@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 5813668388961054299}
   - component: {fileID: 3761916225143523024}
   - component: {fileID: 3466930083277938916}
-  - component: {fileID: 6222735925972047495}
   - component: {fileID: 3959034106741007409}
+  - component: {fileID: -485710432538203481}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: EnemyLaser
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,23 +98,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6222735925972047495
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6397197259262075677}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destructionPrefab: {fileID: 0}
-  dmg: 5
-  invincibilityDuration: 0.5
-  playerOnly: 1
-  destroyOnHit: 0
 --- !u!120 &3959034106741007409
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -213,3 +196,17 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &-485710432538203481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6397197259262075677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1084950e7669fc41bf64691988abb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagePerSecond: 40
+  team: 2
