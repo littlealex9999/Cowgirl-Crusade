@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  giveYRotationToParent: 1
 --- !u!1 &6142202475513144228
 GameObject:
   m_ObjectHideFlags: 0
