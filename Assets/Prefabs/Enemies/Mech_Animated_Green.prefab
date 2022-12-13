@@ -1121,7 +1121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 5
   sdmax: 0
-  destructionPrefab: {fileID: 196169950755043893, guid: 208c2f5712fc22741b91a38c5f3a84d0, type: 3}
+  destructionPrefab: {fileID: 2872564179593449948, guid: 208c2f5712fc22741b91a38c5f3a84d0, type: 3}
+  destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
   shootOrigin: {fileID: 0}
@@ -1176,6 +1177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  giveYRotationToParent: 0
 --- !u!82 &3936413190566822029
 AudioSource:
   m_ObjectHideFlags: 0
