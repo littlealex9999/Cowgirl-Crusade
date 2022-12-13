@@ -46898,6 +46898,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3188715330647892087, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: m_Lens.FieldOfView
+      value: 70
+      objectReference: {fileID: 0}
     - target: {fileID: 4500529941233416066, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_Name
       value: PlayerCart
@@ -47001,6 +47005,10 @@ PrefabInstance:
     - target: {fileID: 8407589935284642242, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_LocalRotation.z
       value: -7.566996e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8407589935284642243, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: field of view
+      value: 70
       objectReference: {fileID: 0}
     - target: {fileID: 8407589935284642243, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: far clip plane
