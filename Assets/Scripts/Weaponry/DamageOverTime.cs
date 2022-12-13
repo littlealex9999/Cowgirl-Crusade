@@ -26,8 +26,11 @@ public class DamageOverTime : MonoBehaviour
 
     private void Update()
     {
+        Debug.Log("Something hit");
         foreach (Character chara in collidingWith.Values) {
-            chara.TakeDamage(damagePerSecond * Time.deltaTime);
+            if (chara.getTeam != team) {
+                chara.TakeDamage(damagePerSecond * Time.deltaTime);
+            }
         }
     }
 }

@@ -56,7 +56,22 @@ public class Character : MonoBehaviour
 
     private Vector3 posLastFrame;
 
-    protected virtual void Start()
+    #region Unity Functions
+
+    void Start()
+    {
+        OnStart();
+    }
+
+    void Update()
+    {
+        OnUpdate();
+    }
+
+    #endregion
+
+    #region Custom Unity Overrides
+    protected virtual void OnStart()
     {
         health = hpmax;
         shield = sdmax;
@@ -71,10 +86,9 @@ public class Character : MonoBehaviour
         }
 
         weaponHeat = GetComponent<WeaponHeat>();
-
     }
 
-    protected virtual void Update()
+    protected virtual void OnUpdate()
     {
         cldtimer -= Time.deltaTime;
         invincibleTime -= Time.deltaTime;
@@ -103,12 +117,7 @@ public class Character : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, transform.parent.rotation, resetRotationStrength * Time.deltaTime);
         }
     }
-
-    protected virtual void OnDestroy()
-    {
-
-
-    }
+    #endregion
 
     #region stat setting
     public void SetMaxHealth(float value)

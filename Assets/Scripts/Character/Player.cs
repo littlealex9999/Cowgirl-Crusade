@@ -22,18 +22,28 @@ public class Player : Character
 
     static int numEnemiesAttacking;
 
-    //bool controlsEnabled = true;
-
     bool controlsEnabled = true;
 
     public bool ControlsEnabled { get { return controlsEnabled; } set { controlsEnabled = value; } }
 
     public VirtualCamera GetVirtualCamera { get { return virtualCam; } }
 
-    void Start()
-    {
-        base.Start();
+    #region Unity Functions
+    //void Start()
+    //{
+    //    OnStart();
+    //}
 
+    //void Update()
+    //{
+    //    OnUpdate();
+    //}
+    #endregion
+
+    #region Custom Unity Overrides
+    protected override void OnStart()
+    {
+        base.OnStart();
         mainCamera = Camera.main;
         initialOffset = mainCamera.transform.localPosition;
         CalculateBoundaries();
@@ -44,27 +54,24 @@ public class Player : Character
 
     }
 
-    protected override void Update()
+    protected override void OnUpdate()
     {
-        base.Update();
+        base.OnUpdate();
 
         if (controlsEnabled)
         {
             Move();
             Shoot();
         }
-
-        
-
     }
-
 
     protected override void OnDestroy()
     {
         base.OnDestroy();
         
     }
-
+    
+    #endregion
     void Move()
     {
         Vector3 moveInput = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));

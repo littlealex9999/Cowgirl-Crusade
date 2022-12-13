@@ -25,30 +25,19 @@ public class LaserEnemy : Character
 
     GameObject laserObj;
 
-    protected override void Start()
+    #region Unity Functions
+    //void Start()
+    //{
+    //    OnStart();
+    //}
+
+    //void Update()
+    //{
+    //    OnUpdate();
+    //}
+
+    void OnDestroy()
     {
-        base.Start();
-
-        myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
-
-        lr = GetComponent<LineRenderer>();
-    }
-
-    protected override void Update()
-    {
-        base.Update();
-
-        if (hostile) {
-            Shoot();
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(shootTarget.transform.position - transform.position), resetRotationStrength * Time.deltaTime);
-        } else {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(transform.parent.forward), resetRotationStrength * Time.deltaTime);
-        }
-    }
-
-    protected override void OnDestroy()
-    {
-        base.OnDestroy();
         if (myMoveScript != null && myMoveScript.leader.tag == "Player") {
             Player.RemoveAttacker();
         }
@@ -57,6 +46,28 @@ public class LaserEnemy : Character
             Destroy(laserObj);
         }
     }
+    #endregion
+
+    #region Custom Unity Overrides
+    protected override void OnStart()
+    {
+        base.OnStart();
+        myMoveScript = transform.parent.GetComponent<CM_FollowLeader>();
+
+        lr = GetComponent<LineRenderer>();
+    }
+
+    protected override void OnUpdate()
+    {
+        base.OnUpdate();
+        if (hostile) {
+            Shoot();
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(shootTarget.transform.position - transform.position), resetRotationStrength * Time.deltaTime);
+        } else {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(transform.parent.forward), resetRotationStrength * Time.deltaTime);
+        }
+    }
+    #endregion
 
     private void Shoot()
     {

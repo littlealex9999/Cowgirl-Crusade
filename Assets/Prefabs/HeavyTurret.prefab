@@ -11,6 +11,9 @@ GameObject:
   - component: {fileID: 2739740608655190356}
   - component: {fileID: 4692585938448720353}
   - component: {fileID: 8730717284709247780}
+  - component: {fileID: 3173035001731423455}
+  - component: {fileID: 4514977655393259303}
+  - component: {fileID: 9084397622369816554}
   m_Layer: 0
   m_Name: HeavyGun_VRotation
   m_TagString: Enemy
@@ -28,7 +31,8 @@ Transform:
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.000000019073486, y: 1.1098144, z: -0.00000023186206}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7467830518106236752}
   m_Father: {fileID: 4684091288884339054}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -81,6 +85,101 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3173035001731423455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253559620210721818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hpmax: 15
+  sdmax: 0
+  destructionPrefab: {fileID: 1273915125232972, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
+  destroyOnDeath: 1
+  healthMeter: {fileID: 0}
+  bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
+  shootOrigin: {fileID: 7467830518106236752}
+  deleteBulletsAfterSeconds: 10
+  shootCooldown: 1
+  cldtimer: 0
+  maxSpecialProjectiles: 3
+  dontRotate: 0
+  turnMult: {x: 100, y: 100}
+  resetRotationStrength: 4
+  pointsGiven: 0
+  bulletDamageAddition: 0
+  bulletDamageMultiplier: 1
+  bulletSpeedAddition: 0
+  bulletSpeedMultiplier: 55
+  hostile: 0
+  team: 2
+  targetRelativeLookShootLimit: -0.1
+  minDistanceBetweenTarget: 5
+  spreadFrequency: 0.5
+  spread: 3
+  lookAtTarget: 0
+--- !u!65 &4514977655393259303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253559620210721818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0647388, y: 2.0627527, z: 4.22263}
+  m_Center: {x: 0.11766227, y: 0.39272878, z: 0.74395925}
+--- !u!114 &9084397622369816554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253559620210721818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d8377ed38e0f947bf8c00a7042f694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  giveYRotationToParent: 1
+--- !u!1 &6142202475513144228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7467830518106236752}
+  m_Layer: 0
+  m_Name: Shoot Spawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7467830518106236752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6142202475513144228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.855}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2739740608655190356}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7021950003474938437
 GameObject:
   m_ObjectHideFlags: 0
