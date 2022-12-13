@@ -13,7 +13,7 @@ public class Character : MonoBehaviour
     public bool destroyOnDeath = true;
 
 
-    [SerializeField] Meter healthMeter;
+    [SerializeField] protected Meter healthMeter;
     protected WeaponHeat weaponHeat;
 
     float invincibleTime;
@@ -163,6 +163,11 @@ public class Character : MonoBehaviour
     {
         cldtimer = value;
     }
+
+    public void SetInvincibilityTime(float value)
+    {
+        invincibleTime = value;
+    }
     #endregion
 
     #region stat getting
@@ -189,6 +194,8 @@ public class Character : MonoBehaviour
     }
 
     public float getCurrentShield { get { return shield; } }
+
+    public float getCooldown { get { return shootCooldown; } }
 
     public float GetBulletDamageAdd()
     {
@@ -235,9 +242,8 @@ public class Character : MonoBehaviour
     public virtual Bullet Shoot(Vector3 shootToPoint, Transform parentOverride = null)
     {
         if (cldtimer <= 0) {
-            
-            if(weaponHeat != null)
-            {
+
+            if (weaponHeat != null) {
                 GameManager.instance.ScreenShake(1, 1, 0.5f);
                 weaponHeat.AddWeaponHeat();
             }
@@ -246,8 +252,8 @@ public class Character : MonoBehaviour
             if (parentOverride == null) {
                 parentOverride = transform.parent;
             }
-            
-            
+
+
             GameObject bulletRef = Instantiate(bullet.gameObject, parentOverride);
 
             if (shootOrigin != null) {

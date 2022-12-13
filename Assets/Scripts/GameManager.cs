@@ -137,6 +137,7 @@ public class GameManager : MonoBehaviour
         gameOver.enabled = false;
         player.gameObject.SetActive(true);
         player.GiveHealth(player.GetHealthMax(), true);
+        player.SetInvincibilityTime(1);
         EnablePlayerControls();
         
         Time.timeScale = 1;

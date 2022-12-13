@@ -50,8 +50,12 @@ public class Player : Character
 
         numEnemiesAttacking = 0;
 
-        weaponHeat = GetComponent<WeaponHeat>();
+        if (healthMeter != null) {
+            healthMeter.runOnEmptyMeter += GameManager.instance.GameOver;
+            healthMeter.runOnAnimationEnd += ResetHealthBarColor;
+        }
 
+        weaponHeat = GetComponent<WeaponHeat>();
     }
 
     protected override void OnUpdate()
@@ -131,6 +135,11 @@ public class Player : Character
         if (Input.GetMouseButtonDown(1)) {
             base.SpawnSpecialProjectile();
         }
+    }
+
+    void ResetHealthBarColor()
+    {
+        healthMeter.ResetMeterColor();
     }
         
     public Vector3 GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo)

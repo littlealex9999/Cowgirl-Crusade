@@ -6,12 +6,16 @@ using DG.Tweening;
 
 public class WeaponHeat : MonoBehaviour
 {
+    Player player;
+
     [Header("Weapon Heat"), Space]
     [SerializeField] Meter weaponMeter;
     [SerializeField] float heatLimit = 100f;
     [SerializeField] float shotCost = 5f;
     [SerializeField] float standardCooldown = 10f;
     [SerializeField] float overheatedCooldown = 10f;
+    [SerializeField] float delayCooldown = 0.5f;
+    float delayTimer;
 
     float cooldown;
 
@@ -27,18 +31,33 @@ public class WeaponHeat : MonoBehaviour
 
     public bool Overheated { get { return overheated; } set { overheated = value; } }
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
         cooldown = standardCooldown;
+
+        if (weaponMeter != null) {
+            weaponMeter.runOnFullMeter += Overheat;
+            weaponMeter.runOnAnimationEnd += SetCoolingTrue;
+        }
+
+        player = GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (coolingDown)
-        {
+        if (delayTimer <= 0) {
+            coolingDown = true;
+
+            if (!overheated)
+                weaponMeter.SetMeterColor(weaponMeter.negativeColor);
+        } else {
+            delayTimer -= Time.deltaTime;
+        }
+
+        if (coolingDown) {
             WeaponCooldown();
         }
     }
@@ -49,10 +68,8 @@ public class WeaponHeat : MonoBehaviour
         weaponHeat -= (cooldown * Time.deltaTime);
         weaponHeat = Mathf.Clamp(weaponHeat, 0, heatLimit);
 
-        if (overheated)
-        {
-            if (weaponHeat <= 0)
-            {
+        if (overheated) {
+            if (weaponHeat <= 0) {
                 FinishedOverheating();
             }
         }
@@ -65,10 +82,13 @@ public class WeaponHeat : MonoBehaviour
     {
         weaponHeat += shotCost;
 
+        if (coolingDown) {
+            coolingDown = false;
+        }
+
         weaponHeat = Mathf.Clamp(weaponHeat, 0, heatLimit);
 
-        weaponMeter.UpdateMeter(weaponHeat, heatLimit, shotCost, true);
-
+        weaponMeter.UpdateMeter(weaponHeat, heatLimit, shotCost, true, player.getCooldown);
     }
 
     public void Overheat()
@@ -80,7 +100,6 @@ public class WeaponHeat : MonoBehaviour
         overheat_Text.transform.DOScale(1, 0.5f);
 
         weaponMeter.SetMeterColor(Color.red);
-
     }
 
     void FinishedOverheating()
@@ -94,4 +113,8 @@ public class WeaponHeat : MonoBehaviour
         weaponMeter.ResetMeterColor();
     }
 
+    void SetCoolingTrue()
+    {
+        delayTimer = delayCooldown;
+    }
 }
