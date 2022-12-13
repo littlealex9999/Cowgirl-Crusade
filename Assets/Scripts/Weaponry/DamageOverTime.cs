@@ -7,7 +7,7 @@ public class DamageOverTime : MonoBehaviour
     public float damagePerSecond;
     public Character.TEAMS team;
 
-    Dictionary<Collider, Character> collidingWith;
+    Dictionary<Collider, Character> collidingWith = new Dictionary<Collider, Character>();
 
     private void OnTriggerEnter(Collider other)
     {
