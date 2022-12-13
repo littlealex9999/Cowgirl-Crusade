@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3761916225143523024}
   - component: {fileID: 3466930083277938916}
   - component: {fileID: 3959034106741007409}
-  - component: {fileID: -485710432538203481}
+  - component: {fileID: -1378255477326879356}
   m_Layer: 0
   m_Name: EnemyLaser
   m_TagString: Untagged
@@ -196,7 +196,7 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
---- !u!114 &-485710432538203481
+--- !u!114 &-1378255477326879356
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,8 +205,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6397197259262075677}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b1084950e7669fc41bf64691988abb1b, type: 3}
+  m_Script: {fileID: 11500000, guid: 96cb73fa3b6c49d43b1cafd11a434e01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerSecond: 40
-  team: 2
+  destructionPrefab: {fileID: 0}
+  dmg: 10
+  invincibilityDuration: 0
+  playerOnly: 0
+  destroyOnHit: 0
+  givePointsOnKill: 0
