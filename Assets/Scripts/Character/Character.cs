@@ -356,15 +356,10 @@ public class Character : MonoBehaviour
         SetMaxHealth(hpmax + pus.maxHealth);
         SetMaxShield(sdmax + pus.maxShield);
 
-        if (pus.health > 0) {
-            health += pus.health;
-            if (health > hpmax)
-                health = hpmax;
-        }
-        if (pus.shield > 0) {
-            shield += pus.shield;
-            if (shield > sdmax)
-                shield = sdmax;
+        if (pus.health > 0)
+        {
+            GiveHealth(pus.health);
+
         }
 
         if (pus.specialSpawn != null) {

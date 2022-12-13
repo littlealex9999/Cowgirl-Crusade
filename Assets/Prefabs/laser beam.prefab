@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac2f5d0703d79f44797532c421eb53e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dontDestroy: 0
   soundVariations:
   - {fileID: 8300000, guid: 5c521a095090aeb49824bd814f3bd35d, type: 3}
   volumeRandomization: 0

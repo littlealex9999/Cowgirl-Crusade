@@ -13,7 +13,7 @@ public class PowerUp : MonoBehaviour
     [SerializeField] bool onTrigger = true;
 
     private AudioSource audioSource;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,17 +24,15 @@ public class PowerUp : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (onTrigger)
-        {
-            if (other.CompareTag("Player"))
-            {
+        if (onTrigger) {
+            if (other.CompareTag("Player")) {
                 Player player = other.gameObject.GetComponentInChildren<Player>();
 
-               ActivatePowerup(player);
+                ActivatePowerup(player);
             }
 
         }
-        
+
     }
 
     public void ActivatePowerup(Player player)
@@ -43,18 +41,9 @@ public class PowerUp : MonoBehaviour
 
         Debug.Log("Player has received " + powerupType.name + " powerup.");
 
-        if (effect != null)
-        {
+        if (effect != null) {
             Instantiate(effect, gameObject.transform.position, Quaternion.identity);
         }
-        
-
-        // This is a temporary fix, because the scriptable object isn't healing the player
-        if (powerupType.health > 0)
-        {
-            GameManager.instance.GetPlayer.GiveHealth(powerupType.health);
-        }
-
 
         Destroy(gameObject);
     }
