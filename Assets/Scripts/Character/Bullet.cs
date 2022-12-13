@@ -27,8 +27,9 @@ public class Bullet : MonoBehaviour
     void Update()
     {
         if (homingTarget != null) {
-            transform.rotation = 
-                Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(homingTarget.transform.position - transform.position), homingRotationSpeed * Time.deltaTime);
+            //transform.rotation = 
+            //    Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(homingTarget.transform.position - transform.position), homingRotationSpeed * Time.deltaTime);
+            transform.LookAt(homingTarget.transform.position);
         }
 
         transform.position += transform.forward * spd * Time.deltaTime;
