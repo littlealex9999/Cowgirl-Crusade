@@ -116,7 +116,7 @@ public class Player : Character
                     if (firedScript != null)
                     { // bullet actually fired
                         firedScript.SetTarget(hitInfo.collider.gameObject);
-                        firedScript.SetHomingSpeed(bulletHomingSpeed);
+                        //firedScript.SetHomingSpeed(bulletHomingSpeed);
                     }
                 }
                 else

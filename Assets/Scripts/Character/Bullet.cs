@@ -15,7 +15,7 @@ public class Bullet : MonoBehaviour
     Character.TEAMS team;
 
     GameObject homingTarget;
-    float homingRotationSpeed = 5;
+    //float homingRotationSpeed = 5;
 
     private void Start()
     {
@@ -56,10 +56,10 @@ public class Bullet : MonoBehaviour
         homingTarget = target;
     }
 
-    public void SetHomingSpeed(float speed)
-    {
-        homingRotationSpeed = speed;
-    }
+    //public void SetHomingSpeed(float speed)
+    //{
+    //    homingRotationSpeed = speed;
+    //}
     #endregion
 
     private void OnTriggerEnter(Collider other)

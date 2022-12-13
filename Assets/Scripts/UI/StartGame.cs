@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    public int sceneToLoad = 2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,15 +20,15 @@ public class StartGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Return))
         {
             Debug.Log("Return pressed");
-            LaunchGame();
+            LoadScene(sceneToLoad);
         }
     }
 
 
-    void LaunchGame()
+    public void LoadScene(int sceneNumber)
     {
         // Play sound effect
         Debug.Log("Play");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(sceneNumber);
     }
 }
