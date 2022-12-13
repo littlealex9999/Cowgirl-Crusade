@@ -8,7 +8,8 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float baseSpeed = 5;
 
     [SerializeField] GameObject impact;
-    
+    [SerializeField] bool collideWithEnvironment = false;
+
     float dmg;
     float spd;
 
@@ -21,7 +22,6 @@ public class Bullet : MonoBehaviour
     {
         //Debug.Log("Created Bullet");
 
-        // GameManager.instance.HitEnemy(); (To test hitmarker animation)
     }
 
     void Update()
@@ -85,15 +85,15 @@ public class Bullet : MonoBehaviour
                 }
             }
 
-        } else {
+        }
+
+        if (collideWithEnvironment) {
             ShootableProp prop = other.gameObject.GetComponent<ShootableProp>();
 
-            if(prop != null)
-            {
+            if (prop != null) {
                 prop.ShotByBullet(transform.position, transform.rotation);
                 DestroyBullet(false);
             }
-
 
         }
 
@@ -103,11 +103,10 @@ public class Bullet : MonoBehaviour
     {
         if (impact != null && playEffect)
         {
-            Object.Instantiate(impact, transform.position, transform.rotation);
+            Instantiate(impact, transform.position, transform.rotation);
         }
 
         Destroy(gameObject);
     }
-
 
 }

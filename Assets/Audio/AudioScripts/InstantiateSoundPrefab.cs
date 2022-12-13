@@ -10,7 +10,7 @@ public class InstantiateSoundPrefab : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Object.Instantiate(soundPrefab, gameObject.transform.position, Quaternion.identity);
+        Instantiate(soundPrefab, gameObject.transform.position, Quaternion.identity);
     }
 
 }
