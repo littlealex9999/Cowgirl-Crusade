@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8730717284709247780}
   - component: {fileID: 3173035001731423455}
   - component: {fileID: 4514977655393259303}
+  - component: {fileID: 9084397622369816554}
   m_Layer: 0
   m_Name: HeavyGun_VRotation
   m_TagString: Enemy
@@ -121,7 +122,7 @@ MonoBehaviour:
   minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
   spread: 3
-  lookAtTarget: 1
+  lookAtTarget: 0
 --- !u!65 &4514977655393259303
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -135,6 +136,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.0647388, y: 2.0627527, z: 4.22263}
   m_Center: {x: 0.11766227, y: 0.39272878, z: 0.74395925}
+--- !u!114 &9084397622369816554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3253559620210721818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9d8377ed38e0f947bf8c00a7042f694, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!1 &6142202475513144228
 GameObject:
   m_ObjectHideFlags: 0
