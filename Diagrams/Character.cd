@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Player">
+    <Position X="5.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAAAAAAEJAQBUAAFAAAAIAIAAAQECAAAAAAgIEAAAA=</HashCode>
+      <FileName>Assets\Scripts\Character\Player.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LaserEnemy">
+    <Position X="8" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAABAEAAAAIAFAAEEAAQAAEAABCIADAAAABgACEBAAI=</HashCode>
+      <FileName>Assets\Scripts\Character\LaserEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ExplodeEnemy">
+    <Position X="12.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAgIAgAAEEAAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Character\ExplodeEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Character" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Character.TEAMS" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Character\Character.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQMAAHAAGKADYIBEAIABIIAMIAQFYCIJRAIiKERQAo=</HashCode>
+      <FileName>Assets\Scripts\Character\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BasicEnemy">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAIAFAAEEAAQEAAAAAAAAAAEAACAAAEBABI=</HashCode>
+      <FileName>Assets\Scripts\Character\BasicEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
