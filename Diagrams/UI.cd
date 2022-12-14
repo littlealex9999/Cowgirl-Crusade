@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DynamicText">
+    <Position X="8.75" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\DynamicText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FollowCursor">
+    <Position X="6.5" Y="6.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\FollowCursor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Meter">
+    <Position X="4.25" Y="1.25" Width="2" />
+    <NestedTypes>
+      <Enum Name="Meter.MeterType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\UI\Meter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Delegate Name="Meter.MeterEvent" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\UI\Meter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQYMkIIACAAhAACAAAASABAQABAAAADAAAAQICIAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Meter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Score">
+    <Position X="6.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAEAIQCAABAQAAgBgEAIAAAAAAAAQQICAAAABAAACAA=</HashCode>
+      <FileName>Assets\Scripts\UI\Score.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ShowImage">
+    <Position X="8.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQACAICACEAAAAAAIAIAAACEQQAAAAAAAIAgAAgAAQ=</HashCode>
+      <FileName>Assets\Scripts\UI\ShowImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MenuManager">
+    <Position X="10.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAACAAAAAAAAAACAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\MenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighscoreText">
+    <Position X="10.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAGAABAAAEAAIBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\HighscoreText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

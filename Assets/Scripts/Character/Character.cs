@@ -316,7 +316,12 @@ public class Character : MonoBehaviour
             health = Mathf.Clamp(health, 0, hpmax);
 
             if (healthMeter != null) {
-                healthMeter.UpdateMeter(health, hpmax, -damage);
+                float timeToChangeHealth = 0.5f;
+                if (health <= 0) {
+                    timeToChangeHealth = 0;
+                }
+
+                healthMeter.UpdateMeter(health, hpmax, -damage, true, timeToChangeHealth);
             }
 
         }

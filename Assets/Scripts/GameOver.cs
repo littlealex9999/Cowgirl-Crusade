@@ -1,54 +1,56 @@
+using Microsoft.Unity.VisualStudio.Editor;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Debug = UnityEngine.Debug;
+using Image = UnityEngine.UI.Image;
 
 public class GameOver : MonoBehaviour
 {
-    bool canResume = false;
+    public Image fadeTo;
 
-    int frameCount; // WaitForSeconds doesn't work if Time.timeScale = 0
-    int delay = 120;
+    public float respawnDelay = 2;
+    Stopwatch stopwatch = new Stopwatch();
+    public int sceneToLoad = 2;
 
-
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-
-    // Update is called once per frame
     void Update()
     {
-        frameCount++;
-        Debug.Log(frameCount);
-
-        if (canResume)
-        {
-            if (Input.GetKeyDown(KeyCode.Space))
-            {
-                GameManager.instance.Respawn();
+#if UNITY_EDITOR
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            GameManager.instance.Respawn();
+            if (fadeTo != null) {
+                Color c = fadeTo.color;
+                c.a = 0;
+                fadeTo.color = c;
+                stopwatch.Stop();
             }
         }
-        else
-        {
-            frameCount++;
+#endif
+        if (fadeTo != null) {
+            Color c = fadeTo.color;
+            c.a = Mathf.Lerp(0, 1, stopwatch.ElapsedMilliseconds / 1000 / respawnDelay);
+            fadeTo.color = c;
 
-            if (frameCount >= delay)
-            {
-                canResume = true;
+            if (stopwatch.ElapsedMilliseconds >= respawnDelay * 1000) {
+                Time.timeScale = 1;
+                SceneManager.LoadScene(sceneToLoad);
             }
+        } else {
+            Time.timeScale = 1;
+            SceneManager.LoadScene(sceneToLoad);
         }
-
     }
 
     public void PlayerDied()
     {
         Debug.Log("Player died");
-        
-        canResume = false;
-        frameCount = delay;
+
+        stopwatch.Reset();
+        stopwatch.Start();
     }
 
 
