@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="DynamicText">
-    <Position X="10.75" Y="3.75" Width="1.5" />
+    <Position X="8.75" Y="6" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\UI\DynamicText.cs</FileName>
@@ -36,7 +36,7 @@
   <Class Name="Score">
     <Position X="6.5" Y="1.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAEAIQCAABAQAAgBgEAIAAAAAAAAQQICAAAAAAAACAA=</HashCode>
+      <HashCode>AAEAIQCAABAQAAgBgEAIAAAAAAAAQQICAAAABAAACAA=</HashCode>
       <FileName>Assets\Scripts\UI\Score.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -47,11 +47,18 @@
       <FileName>Assets\Scripts\UI\ShowImage.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="StartGame">
-    <Position X="10.75" Y="1.25" Width="1.5" />
+  <Class Name="MenuManager">
+    <Position X="10.75" Y="1.25" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAQIAAAAACAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\UI\StartGame.cs</FileName>
+      <HashCode>AAQIAAAAACAAAAAAAAAACAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\MenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HighscoreText">
+    <Position X="10.75" Y="3.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAGAABAAAEAAIBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\HighscoreText.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
