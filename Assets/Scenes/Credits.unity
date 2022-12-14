@@ -656,6 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52a5421c2d7095409f749eff6e1fa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneToLoad: 2
 --- !u!4 &972557230
 Transform:
   m_ObjectHideFlags: 0
@@ -683,7 +684,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  virtualCamera: {fileID: 0}
   scoreObject: {fileID: 0}
   scoreText: {fileID: 0}
   multiplierText: {fileID: 0}
