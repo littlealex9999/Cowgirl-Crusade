@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TurretTrigger">
+    <Position X="3.25" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="TurretTrigger.TurretActivation" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\TurretTrigger.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>hAAAAAAAQAAABAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\TurretTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RequireDestroyToActivate">
+    <Position X="5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Assets\Scripts\RequireDestroyToActivate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnableObjects">
+    <Position X="1.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAQAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\EnableObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetEnemyTarget_PLAYER">
+    <Position X="1.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAABAAAAAQAAABAAAAQAAAAAAQAFY=</HashCode>
+      <FileName>Assets\Scripts\Character\SetEnemyTarget_PLAYER.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyAnimation">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JAQAAAgAACIEKAAAABAAAIAAAAABAAAAAAAAAIAAABY=</HashCode>
+      <FileName>Assets\Scripts\Animation\EnemyAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoadMainMenu">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\UI\LoadMainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DamageOverTime">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAAAAAAAAEAAAAAAAAAAAAQAIAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Weaponry\DamageOverTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Hazard">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAUAQAAAACAAAIAAAAAAAAAAIAAAFAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Weaponry\Hazard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
