@@ -40,8 +40,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (scoreObject != null && scoreObject.LoadedScores) {
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
+
+        if (scoreObject != null && !scoreObject.LoadedScores) {
             scoreObject.LoadHighscoresFromFile();
+            scoreObject.ResetPoints(false);
         }
 
         virtualCam = player.GetVirtualCamera;
@@ -112,7 +117,7 @@ public class GameManager : MonoBehaviour
         gameOver.enabled = true;
         gameOver.PlayerDied();
 
-        scoreObject.ResetPoints();
+        scoreObject.AddHighscore(scoreObject.GetPoints);
     }
 
     void SuspendGame()
