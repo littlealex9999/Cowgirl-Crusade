@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
@@ -21,6 +22,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text scoreText;
     [SerializeField] TMP_Text multiplierText;
 
+    [SerializeField] Image crosshair;
     [SerializeField] ShowImage hitmarker;
 
     public Score GetScore { get { return scoreObject; } }
@@ -37,6 +39,7 @@ public class GameManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
 
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
@@ -148,12 +151,5 @@ public class GameManager : MonoBehaviour
     void EnablePlayerControls()
     {
         player.ControlsEnabled = true;
-    }
-
-
-    private void OnApplicationFocus(bool focus)
-    {
-        Cursor.visible = false;
-
     }
 }

@@ -321,7 +321,7 @@ public class Character : MonoBehaviour
                     timeToChangeHealth = 0;
                 }
 
-                healthMeter.UpdateMeter(health, hpmax, -damage, true, timeToChangeHealth);
+                healthMeter.UpdateMeter(health, hpmax, -damage, true, false, timeToChangeHealth);
             }
 
         }
