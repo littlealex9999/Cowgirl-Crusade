@@ -250,7 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &6152846
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -607,7 +606,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &13815317
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1383,7 +1381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &35277934
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1542,12 +1539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &40124261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1688,7 +1679,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &41926920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2033,7 +2023,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &51097225
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3288,7 +3277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &108691249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3475,7 +3463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &114549717
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4060,6 +4047,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &128632122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2281143386403777340, guid: 970f243267189d240874e322af3592cb, type: 3}
+  m_PrefabInstance: {fileID: 2281143384660170750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &128632129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128632122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd40919b4b66e74ea359708ab8fcf8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 2800000, guid: ec417f9c1bf8b2f4fbb971d9dbe2ce07, type: 3}
 --- !u!1 &129457050
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,7 +4588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &153494319
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7536,7 +7540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &242838927
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7887,7 +7890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &250293152
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8848,7 +8850,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &287490460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9735,7 +9736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &313018389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10750,7 +10750,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &327248121
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12102,7 +12101,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &377371646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13140,7 +13138,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &409389686
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14045,7 +14042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &440981152
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16357,7 +16353,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &500635528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16530,7 +16525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &508460668
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16604,7 +16598,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &511859211
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16885,7 +16878,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &519682113
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17819,7 +17811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &559992755
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18165,12 +18156,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!4 &584271100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -19482,7 +19467,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &627951792
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19965,7 +19949,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &650608164
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20781,13 +20764,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1023368405538822784, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 8714434840823097403}
-    - target: {fileID: 1023368405538822785, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+    - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.89990234
+      value: 45.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 101.400024
       objectReference: {fileID: 0}
     - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Pivot.x
@@ -20876,66 +20859,6 @@ PrefabInstance:
     - target: {fileID: 1023368405957733836, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Name
       value: HUD_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1328959179801920914, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 104.1001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698624726767889874, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -105.30029
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698624726767889874, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 104.1001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6309829623952240045, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: weaponHeat
-      value: 
-      objectReference: {fileID: 1196273683}
-    - target: {fileID: 6567217452073903448, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 104.1001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7592670276787055375, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8360604500927404998, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8360604500927404998, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 8714434840823097403}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: negativeColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: negativeColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: negativeColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: positiveColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: positiveColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: positiveColor.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
@@ -21088,7 +21011,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &684297768
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -21606,7 +21528,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &702029919
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -22521,6 +22442,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!114 &740565385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3294185690158065178, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6619f2695b467cf48999adb9125451b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &744702993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22578,6 +22510,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
+--- !u!114 &747763622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5859824904131159889, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &749002541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7805468667392474374, guid: 1c80fbc47378b8c4ba50f77b266b1010, type: 3}
@@ -22986,7 +22929,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &762321067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23627,7 +23569,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &789051230
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -29772,7 +29713,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &828821159
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30137,6 +30077,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!114 &840134976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7592670276787055375, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &840647676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31206,7 +31157,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &890676244
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31790,7 +31740,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &904138947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32003,7 +31952,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &906898291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32292,7 +32240,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &912096416
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -32740,12 +32687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &939148558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32931,7 +32872,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &943361141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34131,7 +34071,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &991679662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34389,7 +34328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!4 &1001914078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
@@ -35052,7 +34990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1018677310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35575,7 +35512,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1033915289
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -36137,7 +36073,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1043102885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37507,7 +37442,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1098432932
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37598,12 +37532,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1101709525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37887,7 +37815,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1106766956
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38415,7 +38342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1122508104
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38538,7 +38464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1127342041
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38792,7 +38717,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1130891378
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38910,7 +38834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1134076233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39665,7 +39588,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1162882734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40304,12 +40226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1177085240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41034,17 +40950,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
   m_PrefabInstance: {fileID: 1552851323}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1196273683 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
-  m_PrefabInstance: {fileID: 4500529941452975245}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ed9c046b1bc7c4db20c280521a6508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1196463765
 GameObject:
   m_ObjectHideFlags: 0
@@ -41392,7 +41297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1202759358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41504,7 +41408,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1206892259
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -41617,7 +41520,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1207278921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41832,7 +41734,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1208660502
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42105,7 +42006,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1215920414
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42625,12 +42525,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1235479469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -42697,12 +42591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1236595012
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43040,7 +42928,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1243298932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43229,7 +43116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1246828977
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -43863,7 +43749,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1269662224
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45785,7 +45670,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1339210051
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -45898,7 +45782,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1340433024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46054,7 +45937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1342116451
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51336,12 +51218,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1359865605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51840,12 +51716,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1381030873
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51962,7 +51832,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1381031214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52402,7 +52271,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1389125869
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -52957,12 +52825,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1431779059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57981,12 +57843,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1459317917
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58542,7 +58398,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1477473102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59897,7 +59752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1548851904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60299,7 +60153,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1557997938
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -60995,7 +60848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1584551763
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -61192,7 +61044,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1591768911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61770,7 +61621,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1609648299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62559,7 +62409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1629362511
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63411,12 +63260,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1656634864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -63674,7 +63517,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1662305628
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -64472,7 +64314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1680860884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65613,12 +65454,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1722505201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66103,7 +65938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1739376411
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -66600,12 +66434,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1754885635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66722,7 +66550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1756111285
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66916,7 +66743,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1761211186
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -67201,12 +67027,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1770264874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67983,7 +67803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1798753102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68755,7 +68574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1831064449
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69046,7 +68864,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1838144949
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69571,7 +69388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1856986398
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -69655,7 +69471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1870356341
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -70268,7 +70083,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1880289325
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70541,7 +70355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1882950040
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -71396,7 +71209,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1918590085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71592,7 +71404,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1920793539
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -71732,12 +71543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1929589579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71873,12 +71678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1931096524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72084,7 +71883,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1936386914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72771,7 +72569,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1955898582
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -73105,7 +72902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &1966240537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73404,12 +73200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a224d5a3239a843ab7edff56f3f6e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pathToFollow: {fileID: 0}
-  movingToIndex: 0
-  speed: 1
-  rotationSpeed: 5
-  rotationPointOffset: 1
-  loopAtEnd: 1
 --- !u!114 &1981954910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73832,7 +73622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1986802168
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -74066,7 +73855,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!135 &1999616349
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -74179,7 +73967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &2000004982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74597,7 +74384,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &2018492809
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75295,7 +75081,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &2039111296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75761,7 +75546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &2043466063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76075,7 +75859,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &2052897018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76707,7 +76490,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7009545905f2ad64eacec970ae4e6686, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
 --- !u!114 &2073783657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78906,6 +78688,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 735972389}
     m_Modifications:
+    - target: {fileID: 1764921179775691223, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 747763622}
+    - target: {fileID: 1764921179775691223, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: hitmarker
+      value: 
+      objectReference: {fileID: 840134976}
     - target: {fileID: 3188715330647892087, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_Lens.FieldOfView
       value: 80
@@ -78997,7 +78787,7 @@ PrefabInstance:
     - target: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: weaponMeter
       value: 
-      objectReference: {fileID: 501412066}
+      objectReference: {fileID: 740565385}
     - target: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: overheat_Text
       value: 

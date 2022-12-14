@@ -111,10 +111,4 @@ public class Score : ScriptableObject
             }
         }
     }
-
-    public void OnGameQuit()
-    {
-        ResetPoints();
-        SaveHighscoresToFile();
-    }
 }

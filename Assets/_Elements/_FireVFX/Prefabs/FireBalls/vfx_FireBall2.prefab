@@ -4875,7 +4875,6 @@ GameObject:
   - component: {fileID: 5862644695711814033}
   - component: {fileID: 5862644695711814036}
   - component: {fileID: 5862644695711814037}
-  - component: {fileID: 7389866810390604144}
   m_Layer: 0
   m_Name: vfx_FireBall2
   m_TagString: Untagged
@@ -9759,23 +9758,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7389866810390604144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5862644695711814032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 110e92a32ac20cd4e9c13ccd71d75287, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  madeContact: 0
-  hasBeenFired: 0
-  speed: 15
-  projectileBody: {fileID: 0}
-  impactVFX: {fileID: 6721311882864702839, guid: a711bbf83f08a7f42a2567e0ee34e1b0, type: 3}
 --- !u!1 &5862644696095387367
 GameObject:
   m_ObjectHideFlags: 0

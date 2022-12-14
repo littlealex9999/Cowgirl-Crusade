@@ -20,11 +20,16 @@ public class Meter : MonoBehaviour
 
     public Color negativeColor, positiveColor;
 
+    bool colorLerp;
+    bool dontSetColor;
+
     [SerializeField] bool animating = false;
 
     float timer = 0f;
     float duration = 0.5f;
     float change = 0f;
+    float maxValue = 100f;
+    bool increased = false;
 
     public delegate void MeterEvent();
     public MeterEvent runOnFullMeter;
@@ -52,12 +57,22 @@ public class Meter : MonoBehaviour
         if (animating) {
             timer += Time.deltaTime;
 
+            if (colorLerp && !dontSetColor) {
+                CalculateColor();
+            }
+
             if (timer >= duration) { // completed animation
                 if (fullMeter && runOnFullMeter != null) {
                     runOnFullMeter.Invoke();
+                    if (colorLerp) {
+                        //meter.color = positiveColor;
+                    }
                     fullMeter = false;
                 } else if (emptyMeter && runOnEmptyMeter != null) {
                     runOnEmptyMeter.Invoke();
+                    if (colorLerp) {
+                        //meter.color = negativeColor;
+                    }
                     emptyMeter = false;
                 }
 
@@ -85,26 +100,38 @@ public class Meter : MonoBehaviour
 
     }
 
-    public void UpdateMeter(float currentValue, float maxValue, float change, bool changeColor = true, float duration = 0.5f)
+    public void UpdateMeter(float currentValue, float maxValue, float change, bool colorTween = true, bool dontSetColor = false, float duration = 0.5f)
     {
-
+        if (change > 0) {
+            increased = true;
+        } else {
+            increased = false;
+        }
+        
         float percentage = Mathf.Clamp(currentValue / maxValue, 0, 1);
 
         timer = 0f;
         this.duration = duration;
         this.change = change;
+        this.maxValue = maxValue;
+        this.dontSetColor = dontSetColor;
 
         animating = true;
 
+        if (!dontSetColor) {
+            if (colorTween) {
+                colorLerp = false;
 
-        if (changeColor) {
-            if (change < 0) {
-                SetMeterColor(negativeColor, duration);
+                if (increased) {
+                    SetMeterColor(positiveColor, duration);
+                } else {
+                    SetMeterColor(negativeColor, duration);
+                }
+
             } else {
-                SetMeterColor(positiveColor, duration);
+                colorLerp = true;
             }
         }
-
 
         meter.DOFillAmount(percentage, duration);
 
@@ -118,6 +145,17 @@ public class Meter : MonoBehaviour
             fullMeter = true;
         } else if (percentage <= 0) {
             emptyMeter = true;
+        }
+    }
+
+    void CalculateColor()
+    {
+        float rate = Mathf.Abs(change) / maxValue;
+        
+        if (increased) {
+            meter.color = Color.Lerp(meter.color, positiveColor, timer * rate);
+        } else {
+            meter.color = Color.Lerp(meter.color, negativeColor, timer * rate);
         }
     }
 
