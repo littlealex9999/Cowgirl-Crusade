@@ -1121,7 +1121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 10
   sdmax: 0
-  destructionPrefab: {fileID: 1329845292236604, guid: 9bba9cf244c53c5439505dfc96fdd11c, type: 3}
+  destructionPrefab: {fileID: 4636563180691382126, guid: 00e26af0f7000354c87c5a2dbd3c35c1, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}

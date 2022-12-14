@@ -475,7 +475,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   powerupType: {fileID: 11400000, guid: a14d4a7cf05068a48a664128d8e82ecd, type: 2}
-  effect: {fileID: 0}
+  effect: {fileID: 550491231698497918, guid: d6bd32abe47666b49921de6308e632e4, type: 3}
   onTrigger: 0
 --- !u!114 &6025514906510632384
 MonoBehaviour:
