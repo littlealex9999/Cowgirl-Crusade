@@ -16,6 +16,7 @@ public class Score : ScriptableObject
     [SerializeField] int points = 0;
     [SerializeField] float multiplier = 1.0f;
 
+    public int[] GetHighscores { get { return scores; } }
     public int GetPoints { get { return points; } }
 
     public float GetMultiplier { get { return multiplier; } }
@@ -49,15 +50,17 @@ public class Score : ScriptableObject
     }
 
 
-    public void ResetPoints()
+    public void ResetPoints(bool addToHighScores = true)
     {
-        AddHighscore(points);
+        if (addToHighScores)
+            AddHighscore(points);
         points = 0;
         GameManager.instance.UpdateScore();
     }
 
     public void SaveHighscoresToFile()
     {
+        // C:\Users\USER\AppData\LocalLow\TheBiggerFish\Cowgirl-Crusade
         string destination = Application.persistentDataPath + "/save.dat";
         FileStream file;
         if (File.Exists(destination)) {
@@ -75,6 +78,7 @@ public class Score : ScriptableObject
 
     public void LoadHighscoresFromFile()
     {
+        // C:\Users\USER\AppData\LocalLow\TheBiggerFish\Cowgirl-Crusade
         string destination = Application.persistentDataPath + "/save.dat";
         FileStream file;
         if (File.Exists(destination)) {
@@ -93,7 +97,7 @@ public class Score : ScriptableObject
     }
 
 
-    void AddHighscore(int score)
+    public void AddHighscore(int score)
     {
         for (int i = 0; i < scores.Length; ++i) {
             if (score > scores[i]) {
