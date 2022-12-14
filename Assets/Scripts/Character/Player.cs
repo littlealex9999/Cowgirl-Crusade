@@ -4,16 +4,14 @@ using UnityEngine;
 
 public class Player : Character
 {
+    #region variables
     [Header("Player Specific"), Space] public float moveSpeed = 10;
     public Vector2 boundaryMoveMultipliers = new Vector2(0.8f, 0.5f);
 
     [SerializeField] VirtualCamera virtualCam;
-    
 
     public float shootDistance = 10;
     public float bulletHomingSpeed = 100;
-    
-    // WeaponHeat weaponHeat;
 
     Vector2 boundaries;
     Camera mainCamera;
@@ -23,10 +21,14 @@ public class Player : Character
     static int numEnemiesAttacking;
 
     bool controlsEnabled = true;
+    bool hitEnemy;
+    #endregion
 
+    #region properties
     public bool ControlsEnabled { get { return controlsEnabled; } set { controlsEnabled = value; } }
-
     public VirtualCamera GetVirtualCamera { get { return virtualCam; } }
+    public bool CursorOverEnemy { get { return hitEnemy; } }
+    #endregion
 
     #region Unity Functions
     //void Start()
@@ -68,8 +70,10 @@ public class Player : Character
             Shoot();
         }
     }
-    
+
     #endregion
+
+    #region Methods
     void Move()
     {
         Vector3 moveInput = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
@@ -103,6 +107,8 @@ public class Player : Character
 
     void Shoot()
     {
+        Vector3 shootTo = GetCursorPoint(out hitEnemy, out RaycastHit hitInfo);
+
         if (Input.GetMouseButton(0)) {
             if (weaponHeat.Overheated)
             {
@@ -111,8 +117,6 @@ public class Player : Character
             }
             else
             {
-                Vector3 shootTo = GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo);
-
                 if (hitEnemy)
                 {
                     Bullet firedScript = base.Shoot(shootTo);
@@ -196,4 +200,5 @@ public class Player : Character
     {
         return numEnemiesAttacking;
     }
+    #endregion
 }
