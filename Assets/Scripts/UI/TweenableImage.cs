@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
 
-public class ShowImage : MonoBehaviour
+public class TweenableImage : MonoBehaviour
 {
     Image image;
 
@@ -20,8 +20,6 @@ public class ShowImage : MonoBehaviour
     bool exiting;
 
     float timeToExit, totalTime;
-
-
 
     void Start()
     {
@@ -39,7 +37,6 @@ public class ShowImage : MonoBehaviour
 
 
     }
-
 
     void Update()
     {
@@ -87,8 +84,6 @@ public class ShowImage : MonoBehaviour
     }
 
 
-    
-
     void EnterAnimation()
     {
         if (fade)
@@ -120,8 +115,6 @@ public class ShowImage : MonoBehaviour
     }
 
    
-
-
     public void HideImage()
     {
         if (image.enabled)

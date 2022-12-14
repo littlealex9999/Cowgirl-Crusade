@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] TMP_Text multiplierText;
 
     [SerializeField] Image crosshair;
-    [SerializeField] ShowImage hitmarker;
+    [SerializeField] TweenableImage hitmarker;
 
     public Score GetScore { get { return scoreObject; } }
 

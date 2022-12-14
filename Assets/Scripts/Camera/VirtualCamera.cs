@@ -15,7 +15,7 @@ public class VirtualCamera : MonoBehaviour
     float shakingTime = 0f;
     bool fade;
 
-    [SerializeField] ShowImage healthScreen, damageScreen;
+    [SerializeField] TweenableImage healthScreen, damageScreen;
     // [SerializeField] float maxScreenShake = 10f;
 
 

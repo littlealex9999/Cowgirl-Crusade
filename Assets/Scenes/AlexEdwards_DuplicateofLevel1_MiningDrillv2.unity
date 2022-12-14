@@ -4064,7 +4064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cd40919b4b66e74ea359708ab8fcf8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  crosshair: {fileID: 2800000, guid: 871c9a9c5b79e2742bc00be6473153c2, type: 3}
+  crosshair: {fileID: 2800000, guid: ec417f9c1bf8b2f4fbb971d9dbe2ce07, type: 3}
 --- !u!1 &129457050
 GameObject:
   m_ObjectHideFlags: 0
@@ -22510,6 +22510,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
+--- !u!114 &747763622 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5859824904131159889, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &749002541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7805468667392474374, guid: 1c80fbc47378b8c4ba50f77b266b1010, type: 3}
@@ -30066,6 +30077,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!114 &840134976 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7592670276787055375, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &840647676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78666,6 +78688,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 735972389}
     m_Modifications:
+    - target: {fileID: 1764921179775691223, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 747763622}
+    - target: {fileID: 1764921179775691223, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: hitmarker
+      value: 
+      objectReference: {fileID: 840134976}
     - target: {fileID: 3188715330647892087, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: m_Lens.FieldOfView
       value: 80
