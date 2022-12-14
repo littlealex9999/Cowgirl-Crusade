@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartGame : MonoBehaviour
+public class MenuManager : MonoBehaviour
 {
     public int sceneToLoad = 2;
 
@@ -11,7 +11,8 @@ public class StartGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     // Update is called once per frame
@@ -31,4 +32,11 @@ public class StartGame : MonoBehaviour
         Debug.Log("Play");
         SceneManager.LoadScene(sceneNumber);
     }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        Cursor.visible = false;
+
+    }
+
 }
