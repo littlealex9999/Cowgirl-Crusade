@@ -182,7 +182,6 @@ public class Player : Character
     public override void OnDeath()
     {
         base.OnDeath();
-        GameManager.instance.GetScore.ResetPoints();
     }
 
     public static void AddAttacker()

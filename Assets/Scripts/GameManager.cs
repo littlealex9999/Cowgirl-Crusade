@@ -44,8 +44,10 @@ public class GameManager : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Confined;
 
-        if (scoreObject != null && !scoreObject.LoadedScores) {
-            scoreObject.LoadHighscoresFromFile();
+        if (scoreObject != null) {
+            if (!scoreObject.LoadedScores)
+                scoreObject.LoadHighscoresFromFile();
+
             scoreObject.ResetPoints(false);
         }
 
