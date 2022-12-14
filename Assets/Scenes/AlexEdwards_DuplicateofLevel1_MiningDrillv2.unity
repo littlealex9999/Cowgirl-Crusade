@@ -4047,6 +4047,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!1 &128632122 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2281143386403777340, guid: 970f243267189d240874e322af3592cb, type: 3}
+  m_PrefabInstance: {fileID: 2281143384660170750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &128632129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 128632122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd40919b4b66e74ea359708ab8fcf8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 2800000, guid: 871c9a9c5b79e2742bc00be6473153c2, type: 3}
 --- !u!1 &129457050
 GameObject:
   m_ObjectHideFlags: 0
@@ -20746,13 +20764,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1023368405538822784, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 8714434840823097403}
-    - target: {fileID: 1023368405538822785, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+    - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -0.89990234
+      value: 45.80005
+      objectReference: {fileID: 0}
+    - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 101.400024
       objectReference: {fileID: 0}
     - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Pivot.x
@@ -20841,66 +20859,6 @@ PrefabInstance:
     - target: {fileID: 1023368405957733836, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Name
       value: HUD_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1328959179801920914, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 104.1001
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698624726767889874, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -105.30029
-      objectReference: {fileID: 0}
-    - target: {fileID: 3698624726767889874, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 104.1001
-      objectReference: {fileID: 0}
-    - target: {fileID: 6309829623952240045, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: weaponHeat
-      value: 
-      objectReference: {fileID: 1196273683}
-    - target: {fileID: 6567217452073903448, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 104.1001
-      objectReference: {fileID: 0}
-    - target: {fileID: 7592670276787055375, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8360604500927404998, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8360604500927404998, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 8714434840823097403}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: negativeColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: negativeColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: negativeColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: positiveColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: positiveColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9067901737645299859, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: positiveColor.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
@@ -22484,6 +22442,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
+--- !u!114 &740565385 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3294185690158065178, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6619f2695b467cf48999adb9125451b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &744702993
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40959,17 +40928,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
   m_PrefabInstance: {fileID: 1552851323}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1196273683 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
-  m_PrefabInstance: {fileID: 4500529941452975245}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ed9c046b1bc7c4db20c280521a6508, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1196463765
 GameObject:
   m_ObjectHideFlags: 0
@@ -78799,7 +78757,7 @@ PrefabInstance:
     - target: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: weaponMeter
       value: 
-      objectReference: {fileID: 501412066}
+      objectReference: {fileID: 740565385}
     - target: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: overheat_Text
       value: 
