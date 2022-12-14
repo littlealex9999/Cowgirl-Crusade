@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3435786906959814364}
   - component: {fileID: 7535630379375572624}
   - component: {fileID: 6355447468219208960}
+  - component: {fileID: 7397626928468854128}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -51,6 +52,7 @@ MonoBehaviour:
   scoreObject: {fileID: 0}
   scoreText: {fileID: 0}
   multiplierText: {fileID: 0}
+  crosshair: {fileID: 0}
   hitmarker: {fileID: 0}
 --- !u!114 &2281143386403777339
 MonoBehaviour:
@@ -185,3 +187,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 896130d314cac4d49a1e5b886d067b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fadeTo: {fileID: 0}
+  respawnDelay: 2
+  sceneToLoad: 2
+--- !u!114 &7397626928468854128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2281143386403777340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cd40919b4b66e74ea359708ab8fcf8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  crosshair: {fileID: 2800000, guid: 6de3b991436ecfc43b29bbe32c09056b, type: 3}
