@@ -8243,6 +8243,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cfc31cf2cc1c9714899f67464fa5b5dd, type: 3}
+--- !u!114 &258799491 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5351799714628810277, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+  m_PrefabInstance: {fileID: 676547318}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3530fe93a49a4d2488210fdf1139f7c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &260436841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 252874977479662577, guid: ddac32a9004cbc245a7a955acae4ea31, type: 3}
@@ -16366,17 +16377,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.4948311
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &501412066 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6309829623952240045, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-  m_PrefabInstance: {fileID: 676547318}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6619f2695b467cf48999adb9125451b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &504554232 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5417355817016845513, guid: ce68886f56e7b804f9fd9c61b81285ac, type: 3}
@@ -20764,13 +20764,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 325001897902409219, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: spin
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 45.80005
+      value: 45.799805
       objectReference: {fileID: 0}
     - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 101.400024
+      value: 101.3999
       objectReference: {fileID: 0}
     - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Pivot.x
@@ -20859,6 +20863,34 @@ PrefabInstance:
     - target: {fileID: 1023368405957733836, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Name
       value: HUD_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5351799714628810277, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: displaying
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334612927069612212, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 20.100098
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: displaying
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: images.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: images.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: images.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8743791533073021187, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
@@ -78775,11 +78807,15 @@ PrefabInstance:
     - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: weaponMeter
       value: 
-      objectReference: {fileID: 501412066}
+      objectReference: {fileID: 0}
     - target: {fileID: 5087656296109049017, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: destroyOnDeath
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
+      propertyPath: uiHider
+      value: 
+      objectReference: {fileID: 258799491}
     - target: {fileID: 7826332080732346958, guid: 8a134b3b9b138204da783648184583b3, type: 3}
       propertyPath: heatLimit
       value: 150
