@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Active: 1
   settings:
-    passTag: NewRenderObjects
+    passTag: PurpleOutline
     Event: 300
     filterSettings:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 0
+        m_Bits: 1024
       PassNames: []
     overrideMaterial: {fileID: 2100000, guid: 4d2f3f92b9b5e0743bfb07923b6c9b7f, type: 2}
     overrideMaterialPassIndex: 0
