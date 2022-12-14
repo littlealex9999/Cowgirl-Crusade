@@ -29,4 +29,10 @@ public class HighscoreText : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    private void OnApplicationQuit()
+    {
+        // just incase the game exits on the game over screen
+        scoreObject.SaveHighscoresToFile();
+    }
 }
