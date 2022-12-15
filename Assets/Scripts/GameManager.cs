@@ -115,7 +115,7 @@ public class GameManager : MonoBehaviour
         player.ControlsEnabled = false;
         player.gameObject.SetActive(false);
         canPause = false;
-        SuspendGame();
+        //SuspendGame();
         gameOver.enabled = true;
         gameOver.PlayerDied();
 
