@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TurretTrigger">
-    <Position X="3.25" Y="4" Width="1.5" />
+    <Position X="3.25" Y="4.5" Width="1.5" />
     <NestedTypes>
       <Enum Name="TurretTrigger.TurretActivation" Collapsed="true">
         <TypeIdentifier>
@@ -42,13 +42,6 @@
       <FileName>Assets\Scripts\Animation\EnemyAnimation.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="LoadMainMenu">
-    <Position X="3.25" Y="2" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
-      <FileName>Assets\Scripts\UI\LoadMainMenu.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="DamageOverTime">
     <Position X="5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
@@ -61,6 +54,13 @@
     <TypeIdentifier>
       <HashCode>EAUAQAAAACAAAIAAAAAAAAAAIAAAFAAAQAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\Weaponry\Hazard.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LoadSceneTrigger">
+    <Position X="3.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAIAAAAAAAAAAAAAAQAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Scripts\UI\LoadSceneTrigger.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
