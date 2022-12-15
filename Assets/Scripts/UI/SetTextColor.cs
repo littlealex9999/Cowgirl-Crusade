@@ -3,22 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DynamicText : MonoBehaviour
+public class SetTextColor : MonoBehaviour
 {
     TMP_Text text;
-    
+    [SerializeField] Color color = Color.green;
+
     // Start is called before the first frame update
     void Start()
     {
         text = GetComponent<TMP_Text>();
+        text.color = color;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        text.color = Color.green;
-    }
-
-    // public void 
 
 }

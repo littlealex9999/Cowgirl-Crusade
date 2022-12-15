@@ -215,6 +215,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -571,6 +572,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -1346,6 +1348,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -1694,6 +1697,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -1988,6 +1992,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -3292,6 +3297,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -3428,6 +3434,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -4603,6 +4610,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -7505,6 +7513,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -7905,6 +7914,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -8876,6 +8886,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -9762,6 +9773,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -10726,6 +10738,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -12127,6 +12140,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -13114,6 +13128,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -14018,6 +14033,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -16329,6 +16345,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -16490,6 +16507,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -16563,6 +16581,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -16843,6 +16862,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -17776,6 +17796,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -19432,6 +19453,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -19964,6 +19986,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -20764,18 +20787,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 325001897902409219, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: spin
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 45.799805
-      objectReference: {fileID: 0}
-    - target: {fileID: 521620435400657467, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 101.3999
-      objectReference: {fileID: 0}
     - target: {fileID: 1023368405957733832, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -20863,34 +20874,6 @@ PrefabInstance:
     - target: {fileID: 1023368405957733836, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
       propertyPath: m_Name
       value: HUD_Canvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5351799714628810277, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: displaying
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6334612927069612212, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 20.100098
-      objectReference: {fileID: 0}
-    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: displaying
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: images.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: images.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8664005051272665485, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: images.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8743791533073021187, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ea198018097a38438b32ec63dd2d4ca, type: 3}
@@ -21008,6 +20991,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -21525,6 +21509,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -22976,6 +22961,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -23566,6 +23552,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -29710,6 +29697,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -31204,6 +31192,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -31787,6 +31776,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -31999,6 +31989,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -32237,6 +32228,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -32919,6 +32911,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -34118,6 +34111,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -34312,6 +34306,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -35037,6 +35032,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -35509,6 +35505,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -36120,6 +36117,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -37439,6 +37437,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -37812,6 +37811,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -38350,6 +38350,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -38522,6 +38523,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -38725,6 +38727,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -38892,6 +38895,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -39646,6 +39650,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -41355,6 +41360,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -41416,6 +41422,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -41578,6 +41585,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -41792,6 +41800,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -42014,6 +42023,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -42986,6 +42996,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -43124,6 +43135,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -43757,6 +43769,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -45678,6 +45691,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -45840,6 +45854,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -45995,6 +46010,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -51890,6 +51906,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -52279,6 +52296,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -58456,6 +58474,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -59810,6 +59829,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -60161,6 +60181,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -60856,6 +60877,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -61102,6 +61124,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -61679,6 +61702,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -62467,6 +62491,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -63525,6 +63550,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -64372,6 +64398,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -65946,6 +65973,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -66608,6 +66636,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -66751,6 +66780,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -67861,6 +67891,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -68582,6 +68613,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -68872,6 +68904,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -69396,6 +69429,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -69479,6 +69513,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -70141,6 +70176,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -70363,6 +70399,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -71267,6 +71304,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -71412,6 +71450,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -71941,6 +71980,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -72577,6 +72617,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -72960,6 +73001,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -73630,6 +73672,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -73863,6 +73906,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -74025,6 +74069,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -74442,6 +74487,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -75139,6 +75185,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -75346,6 +75393,7 @@ MonoBehaviour:
   hpmax: 5
   sdmax: 0
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
@@ -75604,6 +75652,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -75917,6 +75966,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
@@ -76548,6 +76598,7 @@ MonoBehaviour:
   hpmax: 1
   sdmax: 20
   destructionPrefab: {fileID: 0}
+  setPrefabToSameParent: 1
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: c72a9ba89a79fdb43967099c33f378f8, type: 3}
