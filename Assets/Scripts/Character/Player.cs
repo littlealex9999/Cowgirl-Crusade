@@ -10,6 +10,7 @@ public class Player : Character
 
     [SerializeField] VirtualCamera virtualCam;
 
+    [SerializeField] float shootingRadius = 0.5f;
     public float shootDistance = 10;
     public float bulletHomingSpeed = 100;
 
@@ -124,7 +125,9 @@ public class Player : Character
                     if (firedScript != null)
                     { // bullet actually fired
                         firedScript.SetTarget(hitInfo.collider.gameObject);
-                        //firedScript.SetHomingSpeed(bulletHomingSpeed);
+                        firedScript.DoFakeHit(hitInfo.collider.gameObject.GetComponentInChildren<Character>());
+
+                        //hitInfo.collider.gameObject.GetComponentInChildren<Character>().TakeDamage(firedScript.getDamage);
                     }
                 }
                 else
@@ -149,7 +152,7 @@ public class Player : Character
     public Vector3 GetCursorPoint(out bool hitEnemy, out RaycastHit hitInfo)
     {
         Ray ray = mainCamera.ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hitInfo, -initialOffset.z + shootDistance, 1 << 6)) {
+        if (Physics.SphereCast(ray, shootingRadius, out hitInfo, -initialOffset.z + shootDistance, 1 << 6)) {
             hitEnemy = true;
             return hitInfo.point;
         } else {

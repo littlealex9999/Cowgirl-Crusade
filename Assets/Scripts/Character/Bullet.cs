@@ -9,6 +9,8 @@ public class Bullet : MonoBehaviour
 
     [SerializeField] GameObject impact;
     [SerializeField] bool collideWithEnvironment = false;
+    bool fakeHit;
+    Character hitscanChara;
 
     float dmg;
     float spd;
@@ -16,19 +18,15 @@ public class Bullet : MonoBehaviour
     Character.TEAMS team;
 
     GameObject homingTarget;
-    //float homingRotationSpeed = 5;
 
     private void Start()
     {
         //Debug.Log("Created Bullet");
-
     }
 
     void Update()
     {
         if (homingTarget != null) {
-            //transform.rotation = 
-            //    Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(homingTarget.transform.position - transform.position), homingRotationSpeed * Time.deltaTime);
             transform.LookAt(homingTarget.transform.position);
         }
 
@@ -62,8 +60,15 @@ public class Bullet : MonoBehaviour
     //}
     #endregion
 
+    #region getters
+    public float getDamage { get { return dmg; } }
+    #endregion
+
     private void OnTriggerEnter(Collider other)
     {
+        if (fakeHit)
+            return;
+
         Character character = other.gameObject.GetComponent<Character>();
 
         if (character != null) {
@@ -109,4 +114,17 @@ public class Bullet : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void PlayerHitscan()
+    {
+        GameManager.instance.HitEnemy();
+        hitscanChara.TakeDamage(dmg);
+        DestroyBullet(true);
+    }
+
+    public void DoFakeHit(Character chara)
+    {
+        fakeHit = true;
+        hitscanChara = chara;
+        Invoke("PlayerHitscan", (homingTarget.transform.position - transform.position).magnitude / spd);
+    }
 }

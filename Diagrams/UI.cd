@@ -29,14 +29,14 @@
       </Delegate>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAQYMkIIACAAhAACAAAASABAQABAAAADAAAAQICIAAA=</HashCode>
+      <HashCode>AAQYMkIIADABhABCAAAASABAQABABCADAAAAQICIAAA=</HashCode>
       <FileName>Assets\Scripts\UI\Meter.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Score">
     <Position X="6.5" Y="1.25" Width="2" />
     <TypeIdentifier>
-      <HashCode>AAEAIQCAABAQAAgBgEAIAAAAAAAAQQICAAAABAAACAA=</HashCode>
+      <HashCode>AAEAIQCAABAQAAABgEAIAAAAAAAAQQICAAAABAAACAA=</HashCode>
       <FileName>Assets\Scripts\UI\Score.cs</FileName>
     </TypeIdentifier>
   </Class>

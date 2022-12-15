@@ -10,7 +10,7 @@
   <Class Name="Player">
     <Position X="5.75" Y="3.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AJAAAABAEJAQBUAAFAAAAIAIAACQECAAgAAAwIEAQAE=</HashCode>
+      <HashCode>AJAAAABAEJAQBUAAFAAAAIAIAACQECAAgAAAwIEQRAE=</HashCode>
       <FileName>Assets\Scripts\Character\Player.cs</FileName>
     </TypeIdentifier>
   </Class>
