@@ -14,6 +14,7 @@ public class DEBUG_NextScene : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+#if UNITY_EDITOR
         if (Input.GetKeyDown(KeyCode.F1)) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
         }
@@ -25,5 +26,6 @@ public class DEBUG_NextScene : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F3)) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
+#endif
     }
 }

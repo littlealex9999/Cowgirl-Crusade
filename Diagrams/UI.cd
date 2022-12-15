@@ -40,13 +40,6 @@
       <FileName>Assets\Scripts\UI\Score.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ShowImage">
-    <Position X="8.75" Y="1.25" Width="1.75" />
-    <TypeIdentifier>
-      <HashCode>AAQACAICACEAAAAAAIAIAAACEQQAAAAAAAIAgAAgAAQ=</HashCode>
-      <FileName>Assets\Scripts\UI\ShowImage.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="MenuManager">
     <Position X="10.75" Y="1.25" Width="1.75" />
     <TypeIdentifier>
