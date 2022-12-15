@@ -76,7 +76,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -175,7 +175,7 @@ MonoBehaviour:
   dontDestroy: 0
   soundVariations:
   - {fileID: 8300000, guid: c5946f3a444bd7549bfa5a128498dc12, type: 3}
-  volumeRandomization: 0.15
+  volumeRandomization: 0.075
   pitchRandomization: 0.25
 --- !u!1001 &7014623381522175860
 PrefabInstance:

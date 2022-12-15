@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 920601045487449055}
   - component: {fileID: 6191845200675350090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,6 +28,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 1.154, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7021056043817704388}
   - {fileID: 7787405906913117865}
   m_Father: {fileID: 4810672487077503261}
   m_RootOrder: 1
@@ -48,6 +49,7 @@ MonoBehaviour:
   - {fileID: 3253559620210721818}
   objectsToActivate:
   - {fileID: 7784171056463176033}
+  - {fileID: 7549063658715130824}
   scriptsToActivate: []
   collidersToActivate: []
 --- !u!1 &3253559620210721818
@@ -64,7 +66,7 @@ GameObject:
   - component: {fileID: 3173035001731423455}
   - component: {fileID: 4514977655393259303}
   - component: {fileID: 9084397622369816554}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeavyGun_VRotation
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -149,7 +151,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hpmax: 15
   sdmax: 0
-  destructionPrefab: {fileID: 7420570923463767353, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+  destructionPrefab: {fileID: 1413068157611612548, guid: 17a9b1bb11d8cd94abb86b4043f8af64, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
@@ -209,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7467830518106236752}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shoot Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -241,7 +243,7 @@ GameObject:
   - component: {fileID: 4684091288884339054}
   - component: {fileID: 5703022163694473410}
   - component: {fileID: 7897097978346128521}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base_HRotation
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -323,7 +325,7 @@ GameObject:
   - component: {fileID: 4810672487077503261}
   - component: {fileID: 4221863601934645577}
   - component: {fileID: 1074531743168692004}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeavyTurret
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -395,6 +397,97 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1024710300301057777
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 920601045487449055}
+    m_Modifications:
+    - target: {fileID: 1573361258622267021, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573361259277649248, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1573361259458982150, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4032649608187968777, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420570923463767353, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_Name
+      value: Turret Explosion
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420570923463767353, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7420570923463767353, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.751
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+--- !u!1 &7549063658715130824 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7420570923463767353, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+  m_PrefabInstance: {fileID: 1024710300301057777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7021056043817704388 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8022966829968114997, guid: 4020b317af7362d438f1fa3d02c75c27, type: 3}
+  m_PrefabInstance: {fileID: 1024710300301057777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7782898327571272749
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -407,12 +500,16 @@ PrefabInstance:
       value: SmokeEffect
       objectReference: {fileID: 0}
     - target: {fileID: 1273915125232972, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273915125232972, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4508696319873668, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4508696319873668, guid: 73767e07adddc394d82b994801f89bbb, type: 3}
       propertyPath: m_LocalScale.x

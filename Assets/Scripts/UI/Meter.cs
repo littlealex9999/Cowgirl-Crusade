@@ -64,15 +64,9 @@ public class Meter : MonoBehaviour
             if (timer >= duration) { // completed animation
                 if (fullMeter && runOnFullMeter != null) {
                     runOnFullMeter.Invoke();
-                    if (colorLerp) {
-                        //meter.color = positiveColor;
-                    }
                     fullMeter = false;
                 } else if (emptyMeter && runOnEmptyMeter != null) {
                     runOnEmptyMeter.Invoke();
-                    if (colorLerp) {
-                        //meter.color = negativeColor;
-                    }
                     emptyMeter = false;
                 }
 

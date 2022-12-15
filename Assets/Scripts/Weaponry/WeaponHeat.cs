@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
 public class WeaponHeat : MonoBehaviour
 {
     Player player;
+    CrosshairColors crosshair;
 
     [Header("Weapon Heat"), Space]
     [SerializeField] Meter weaponMeter;
@@ -22,6 +24,9 @@ public class WeaponHeat : MonoBehaviour
     [SerializeField] Color overheatColor = Color.red;
 
     [SerializeField] TMP_Text overheat_Text;
+
+    [SerializeField] HideInactiveUI uiHider;
+
 
     float weaponHeat = 0f;
     bool overheated = false;
@@ -39,10 +44,12 @@ public class WeaponHeat : MonoBehaviour
 
         if (weaponMeter != null) {
             weaponMeter.runOnFullMeter += Overheat;
+            weaponMeter.runOnEmptyMeter += EmptyMeter;
             weaponMeter.runOnAnimationEnd += SetCoolingTrue;
         }
 
         player = GetComponent<Player>();
+        crosshair = GetComponent<CrosshairColors>();
     }
 
     // Update is called once per frame
@@ -65,6 +72,8 @@ public class WeaponHeat : MonoBehaviour
 
     public void WeaponCooldown()
     {
+        
+
         weaponHeat -= (cooldown * Time.deltaTime);
         weaponHeat = Mathf.Clamp(weaponHeat, 0, heatLimit);
 
@@ -81,6 +90,10 @@ public class WeaponHeat : MonoBehaviour
 
     public void AddWeaponHeat()
     {
+        if (uiHider != null) {
+            uiHider.Activate();
+        }
+
         weaponHeat += shotCost;
 
         if (coolingDown) {
@@ -100,8 +113,13 @@ public class WeaponHeat : MonoBehaviour
 
         overheat_Text.DOFade(1, 0.5f);
         overheat_Text.transform.DOScale(1, 0.5f);
+        overheat_Text.transform.DORotate(new Vector3(0, 0, 720), 0.5f, RotateMode.LocalAxisAdd);
 
-        weaponMeter.SetMeterColor(Color.red);
+        GameManager.instance.ScreenShake(15, 3, 0.8f);
+
+        crosshair.AbleToShoot(false);
+
+        weaponMeter.SetMeterColor(overheatColor);
     }
 
     void FinishedOverheating()
@@ -111,6 +129,9 @@ public class WeaponHeat : MonoBehaviour
 
         overheat_Text.DOFade(0, 0.5f);
         overheat_Text.transform.DOScale(0, 0.5f);
+        overheat_Text.transform.DORotate(new Vector3(0, 0, -720), 2f, RotateMode.LocalAxisAdd);
+
+        crosshair.AbleToShoot(true);
 
         weaponMeter.ResetMeterColor();
     }
@@ -118,5 +139,10 @@ public class WeaponHeat : MonoBehaviour
     void SetCoolingTrue()
     {
         delayTimer = delayCooldown;
+    }
+
+    void EmptyMeter()
+    {
+        uiHider.Idle();
     }
 }
