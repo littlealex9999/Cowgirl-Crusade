@@ -1119,7 +1119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 10
+  hpmax: 5
   sdmax: 0
   destructionPrefab: {fileID: 4636563180691382126, guid: 00e26af0f7000354c87c5a2dbd3c35c1, type: 3}
   destroyOnDeath: 1

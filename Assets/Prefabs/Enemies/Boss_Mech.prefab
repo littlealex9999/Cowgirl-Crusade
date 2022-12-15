@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4525089427368153290}
   - component: {fileID: 307750328165871968}
   - component: {fileID: 8591478448234731208}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretBase_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6171010529988951063}
   - component: {fileID: 8998053655548088283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spark Left Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -143,7 +143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8444548433312138216}
   - component: {fileID: 8054360134039272287}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spark Right Wing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,9 +200,9 @@ GameObject:
   - component: {fileID: 1434406705601773273}
   - component: {fileID: 1434406705601773274}
   - component: {fileID: 1434406705601773275}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wing_Right
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -310,9 +310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 250
   sdmax: 0
-  destructionPrefab: {fileID: 0}
+  destructionPrefab: {fileID: 7199612232453261999, guid: 58e128737e510d745a532156f5840050, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
@@ -363,9 +363,9 @@ GameObject:
   - component: {fileID: 1964178144881123200}
   - component: {fileID: 1964178144881123201}
   - component: {fileID: 1964178144881123202}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Boss_Mech
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -474,9 +474,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 200
   sdmax: 0
-  destructionPrefab: {fileID: 1121192042590650, guid: e1b08032bec16ba4eb1ae23cbd572664, type: 3}
+  destructionPrefab: {fileID: 7199612232453261999, guid: 58e128737e510d745a532156f5840050, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
@@ -494,7 +494,7 @@ MonoBehaviour:
   bulletSpeedAddition: 0
   bulletSpeedMultiplier: 1
   hostile: 0
-  team: 0
+  team: 2
   targetRelativeLookShootLimit: -0.1
   minDistanceBetweenTarget: 5
   spreadFrequency: 0.5
@@ -525,7 +525,7 @@ GameObject:
   - component: {fileID: 6478218605266361148}
   - component: {fileID: 7529790424123397161}
   - component: {fileID: 3083935746610732257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turret_Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -624,9 +624,9 @@ GameObject:
   - component: {fileID: 4438587936446204314}
   - component: {fileID: 4438587936446204315}
   - component: {fileID: 4438587936446204292}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeavyGun_Left
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -706,16 +706,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85a0a374d033be4390dc92b9f0c0738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 250
   sdmax: 0
-  destructionPrefab: {fileID: 0}
+  destructionPrefab: {fileID: 7199612232453261999, guid: 58e128737e510d745a532156f5840050, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
   shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 7
+  cldtimer: 7
   maxSpecialProjectiles: 3
   dontRotate: 0
   turnMult: {x: 100, y: 100}
@@ -776,7 +776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6854949403585542757}
   - component: {fileID: 7924120669535455000}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spark Right Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -832,9 +832,9 @@ GameObject:
   - component: {fileID: 5898180498842518879}
   - component: {fileID: 5898180498842518872}
   - component: {fileID: 5898180498842518873}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HeavyGun_Right
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -946,16 +946,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b85a0a374d033be4390dc92b9f0c0738, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 250
   sdmax: 0
-  destructionPrefab: {fileID: 0}
+  destructionPrefab: {fileID: 7199612232453261999, guid: 58e128737e510d745a532156f5840050, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 0}
   shootOrigin: {fileID: 0}
   deleteBulletsAfterSeconds: 10
-  shootCooldown: 1
-  cldtimer: 0
+  shootCooldown: 7
+  cldtimer: 7
   maxSpecialProjectiles: 3
   dontRotate: 0
   turnMult: {x: 100, y: 100}
@@ -985,7 +985,7 @@ GameObject:
   - component: {fileID: 8335327829730024074}
   - component: {fileID: 8255092032041531822}
   - component: {fileID: 7481621343855370411}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TurretBaseLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1066,7 +1066,7 @@ GameObject:
   - component: {fileID: 8880350376485090330}
   - component: {fileID: 718222821361726354}
   - component: {fileID: 8904561734904912545}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Turret_Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1146,7 +1146,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4212529545643204668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1180,7 +1180,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8296583641642717216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shoot Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1210,7 +1210,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8296583641646393939}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Shoot Spawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1246,9 +1246,9 @@ GameObject:
   - component: {fileID: 8648898999453104626}
   - component: {fileID: 8648898999453104627}
   - component: {fileID: 8648898999453104636}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wing_Left
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1369,9 +1369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 881d93f47eb66134b8f03bcc7df8a329, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hpmax: 50
+  hpmax: 250
   sdmax: 0
-  destructionPrefab: {fileID: 0}
+  destructionPrefab: {fileID: 7199612232453261999, guid: 58e128737e510d745a532156f5840050, type: 3}
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
@@ -1405,7 +1405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5329417443902762890}
   - component: {fileID: 4937323606631614658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spark Left Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,9 +1454,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8444548433312138216}
     m_Modifications:
+    - target: {fileID: 3566492913441546564, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914162091216, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_Name
       value: vfx_Explosion1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_IsActive
@@ -1609,6 +1621,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: P_ShipEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 6923747257842804327, guid: 2a7c03677abd17943ba267c16c10981a, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a7c03677abd17943ba267c16c10981a, type: 3}
 --- !u!4 &1800394250741920812 stripped
@@ -1623,9 +1639,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6854949403585542757}
     m_Modifications:
+    - target: {fileID: 1000010028206846, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011396044746, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011643904424, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_Name
       value: SparksEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_IsActive
@@ -1706,9 +1738,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5329417443902762890}
     m_Modifications:
+    - target: {fileID: 1000010028206846, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011396044746, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011643904424, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_Name
       value: SparksEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_IsActive
@@ -1789,9 +1837,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6171010529988951063}
     m_Modifications:
+    - target: {fileID: 1000010028206846, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011396044746, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011643904424, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_Name
       value: SparksEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_IsActive
@@ -1872,9 +1936,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5329417443902762890}
     m_Modifications:
+    - target: {fileID: 3566492913441546564, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914162091216, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_Name
       value: vfx_Explosion1 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_IsActive
@@ -1959,9 +2035,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6171010529988951063}
     m_Modifications:
+    - target: {fileID: 3566492913441546564, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914162091216, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_Name
       value: vfx_Explosion1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_IsActive
@@ -2046,9 +2134,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6854949403585542757}
     m_Modifications:
+    - target: {fileID: 3566492913441546564, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914162091216, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_Name
       value: vfx_Explosion1 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3566492914204185826, guid: 23bfff31e0cf6a24f8bdd63fc6dcccdf, type: 3}
       propertyPath: m_IsActive
@@ -2133,9 +2233,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8444548433312138216}
     m_Modifications:
+    - target: {fileID: 1000010028206846, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011396044746, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011643904424, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_Name
       value: SparksEffect
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1000011945391522, guid: 78b71003e8b357d4bbf89c8b5e5e4f0e, type: 3}
       propertyPath: m_IsActive
