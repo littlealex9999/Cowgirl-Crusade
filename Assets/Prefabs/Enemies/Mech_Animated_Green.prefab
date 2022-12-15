@@ -1122,6 +1122,7 @@ MonoBehaviour:
   hpmax: 5
   sdmax: 0
   destructionPrefab: {fileID: 4636563180691382126, guid: 00e26af0f7000354c87c5a2dbd3c35c1, type: 3}
+  setPrefabToSameParent: 0
   destroyOnDeath: 1
   healthMeter: {fileID: 0}
   bullet: {fileID: 7045748873781280952, guid: aec4e68686519f845a68673a99963dfa, type: 3}
