@@ -346,10 +346,8 @@ public class Character : MonoBehaviour
             GameObject d = Instantiate(destructionPrefab);
             if (setPrefabToSameParent) {
                 d.transform.parent = transform.parent;
-                d.transform.position = Vector3.zero;
-            } else {
-                d.transform.position = transform.position;
             }
+            d.transform.position = transform.position;
         }
 
         if (destroyOnDeath) {
