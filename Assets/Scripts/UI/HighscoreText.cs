@@ -9,8 +9,11 @@ public class HighscoreText : MonoBehaviour
     public Score scoreObject;
     public TextMeshProUGUI highscores;
     public TextMeshProUGUI currentScore;
+    public TextMeshProUGUI countdown;
 
     public float timeToReturn = 10;
+
+    float timer;
 
     void Start()
     {
@@ -22,7 +25,19 @@ public class HighscoreText : MonoBehaviour
 
         currentScore.text = "Your Score \n" + scoreObject.GetPoints.ToString();
 
-        Invoke("ReturnToMainMenu", timeToReturn);
+        if (timeToReturn != 0) {
+            Invoke("ReturnToMainMenu", timeToReturn);
+            timer = (int) timeToReturn;
+            countdown.SetText(timer.ToString("N0"));
+        }
+    }
+
+    void Update()
+    {
+        if (timer > 0) {
+            timer -= Time.deltaTime;
+            countdown.SetText(timer.ToString("N0"));
+        }
     }
 
     void ReturnToMainMenu()
