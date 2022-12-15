@@ -63,5 +63,19 @@
       <FileName>Assets\Scripts\ShootableProp.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="DontDestroyMusicOnLoad">
+    <Position X="7.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DontDestroyMusicOnLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DestroyParticle">
+    <Position X="5.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\DestroyParticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="DynamicText">
-    <Position X="8.75" Y="6" Width="1.75" />
+    <Position X="6.5" Y="6.25" Width="2" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\UI\DynamicText.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="FollowCursor">
-    <Position X="6.5" Y="6.25" Width="2" />
+    <Position X="8.75" Y="6.25" Width="1.75" />
     <TypeIdentifier>
       <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\UI\FollowCursor.cs</FileName>
@@ -50,8 +50,15 @@
   <Class Name="HighscoreText">
     <Position X="10.75" Y="3.75" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAABAAAGAABAAAEAAIBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAQAABAAAGAABBAAEAAIBAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Assets\Scripts\UI\HighscoreText.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TweenableImage">
+    <Position X="8.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQACAICACEAAAAAAIAIAAACEQQAAAAAAAIAgAAgAAQ=</HashCode>
+      <FileName>Assets\Scripts\UI\TweenableImage.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
