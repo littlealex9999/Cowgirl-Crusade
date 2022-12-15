@@ -10,6 +10,7 @@ public class Character : MonoBehaviour
     [SerializeField, InspectorName("Max Health")] float hpmax = 50;
     [SerializeField, InspectorName("Max Shield")] float sdmax = 0;
     [SerializeField] GameObject destructionPrefab;
+    [SerializeField] bool setPrefabToSameParent = true;
     public bool destroyOnDeath = true;
 
 
@@ -343,7 +344,12 @@ public class Character : MonoBehaviour
     {
         if (destructionPrefab != null) {
             GameObject d = Instantiate(destructionPrefab);
-            d.transform.position = transform.position;
+            if (setPrefabToSameParent) {
+                d.transform.parent = transform.parent;
+                d.transform.position = Vector3.zero;
+            } else {
+                d.transform.position = transform.position;
+            }
         }
 
         if (destroyOnDeath) {
