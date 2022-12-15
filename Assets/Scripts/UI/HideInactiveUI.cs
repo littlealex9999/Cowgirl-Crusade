@@ -29,7 +29,6 @@ public class HideInactiveUI : MonoBehaviour
     {
         if (idle && displaying) {
             if (timer > 0) {
-                Debug.Log(timer);
                 timer -= Time.deltaTime;
             } else {
                 HideElements(fadeTime);
